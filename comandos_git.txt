@@ -1,7 +1,8 @@
 # Repositório GitHub configurado com sucesso!
 # URL: https://github.com/vidalcenter/tese-doutorado-catuxe.git
 
-# O repositório já foi configurado e enviado para o GitHub.
+# PROJETO: Tese de Doutorado - Branding Sustentável Catuxe
+# ARQUIVO PRINCIPAL: Tese-Catuxe-PPGPI.tex
 # Status: ✅ CONCLUÍDO
 
 # Comandos úteis para o futuro:

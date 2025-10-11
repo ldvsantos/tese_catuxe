@@ -76,7 +76,7 @@
 \usepackage{mathtools}
 % \usepackage[pdftex]{hyperref} % Comentado para evitar conflito
 \usepackage{array}
-\usepackage{MnSymbol}
+% \usepackage{MnSymbol} % Comentado devido a conflitos de símbolos
 \usepackage{amssymb}
 \usepackage{multirow}
 % Inclusão de gráficos
@@ -131,7 +131,7 @@
 \if \@degreetype0
    \usepackage{Graduacao}
    \else \if \@degreetype1
-       \usepackage{Mestrado}
+       \usepackage{Doutorado-Catuxe}
    \fi
 \fi
 
