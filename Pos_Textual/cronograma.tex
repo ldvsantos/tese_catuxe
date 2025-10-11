@@ -1,0 +1,72 @@
+\documentclass[tikz]{standalone}
+\usepackage{pgfgantt}
+\title{Gantt Charts with the pgfgantt Package}
+\begin{document}
+\definecolor{barblue}{RGB}{153,204,254}
+\definecolor{groupblue}{RGB}{51,102,254}
+\definecolor{linkred}{RGB}{165,0,33}
+\renewcommand\sfdefault{phv}
+\renewcommand\mddefault{mc}
+\renewcommand\bfdefault{bc}
+\setganttlinklabel{s-s}{START-TO-START}
+\setganttlinklabel{f-s}{FINISH-TO-START}
+\setganttlinklabel{f-f}{FINISH-TO-FINISH}
+\sffamily
+\begin{ganttchart}[
+canvas/.append style={fill=none, draw=black!5, line width=.75pt},
+hgrid style/.style={draw=black!5, line width=.75pt},
+vgrid={*1{draw=black!5, line width=.75pt}},
+today=19,
+today rule/.style={
+draw=black!64,
+dash pattern=on 2.5pt off 4.5pt,
+line width=2.5pt
+}
+today label font=\small\bfseries,
+title/.style={draw=none, fill=none},
+title label font=\bfseries\footnotesize,
+title label node/.append style={below=7pt},
+include title in canvas=false,
+bar label font=\mdseries\small\color{black},
+bar label node/.append style={left=2cm},
+bar/.append style={draw=none, fill=blue, rounded corners=3pt}, %barra de continuidade
+bar incomplete/.append style={fill=barblue},
+bar progress label font=\mdseries\footnotesize\color{blue},
+group incomplete/.append style={fill=barblue},
+group left shift=.0,
+group right shift=0,
+group height=.5,
+group peaks tip position=0,
+group label node/.append style={left=.6cm},
+group progress label font=\bfseries\small,
+link/.style={-latex, line width=1.5pt, linkred},
+link label font=\scriptsize\bfseries,
+link label node/.append style={below left=1pt and 0pt},
+]{1}{30}
+\gantttitle{}{30} \\[grid]
+\gantttitle{Setembro}{4}
+\gantttitle{Outubro}{4}
+\gantttitle{Novembro}{4}
+\gantttitle{Dezembro}{4}
+\gantttitle{Janeiro}{4}
+\gantttitle{Fevereiro}{4}
+\gantttitle{Março}{4}\\
+\gantttitle[
+title label node/.append style={below left=7pt and -3pt}
+]{Semana:\quad1}{1}
+\gantttitlelist{2,...,30}{1} \\
+\ganttgroup[progress=70]{Projeto Dissertação}{1}{30} \\
+\ganttbar[progress=100,name=bar1]{\textbf{Pesquisa do Estado da Arte}}{1}{5} \\
+\ganttbar[progress=100,name=bar2]{\textbf{Delineamento da Pesquisa}}{2}{4} \\
+\ganttbar[progress=100,name=bar3]{\textbf{Elaboração do Projeto de Pesquisa}}{4}{5} \\
+\ganttbar[progress=100,name=bar4]{\textbf{Discussão Metodológica}}{5}{7} \\
+\ganttbar[progress=100,name=bar5]{\textbf{Programa Experimento}}{5}{17} \\
+\ganttbar[progress=50,name=bar6]{\textbf{Aplicação dos testes}}{17}{20} \\\ganttbar[progress=30,name=bar7]{\textbf{Análise dos resultados}}{20}{22}\\
+\ganttbar[bar/.append style={shape=ellipse, fill=yellow, dashed} ]{\textbf{Qualificação}}{20}{26} \ganttnewline
+\ganttbar[progress=00,name=bar8]{\textbf{Correções solicitadas}}{27}{28}\ganttnewline
+\ganttmilestone{Defesa}{29}
+
+\end{ganttchart}
+
+
+\end{document}

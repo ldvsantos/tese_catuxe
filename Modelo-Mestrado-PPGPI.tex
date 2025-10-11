@@ -1,0 +1,94 @@
+\documentclass[brazil,msc] %Opções msc (Mestrado)
+               {ppgpi-abntex2}
+
+
+\DeclareUnicodeCharacter{03B2}{\ensuremath{\beta}}
+\captionsetup[subfigure]{labelformat=simple, labelsep=period}
+\renewcommand\thesubfigure{\thefigure\alph{subfigure}}
+\usepackage{subcaption}
+
+%Compila o indíce
+\makeindex
+
+
+
+\begin{document}
+
+% Seleciona o idioma do documento (conforme pacotes do babel)
+\selectlanguage{brazil}
+
+% Retira espaço extra obsoleto entre as frases.
+\frenchspacing 
+% ----------------------------------------------------------
+% ELEMENTOS PRÉ-TEXTUAIS
+% ----------------------------------------------------------
+
+\pretextual
+
+
+\titulo{Modelo Empírico de Branding Sustentável da Amazônia do Brasil: Uma Perspectiva para o Agroflorestal}
+
+\orientador{Prof. Dr. Francisco Sandro Rodrigues Holanda}
+\author{Luiz Diego Vidal Santos}
+
+
+\curso{Ciência da Propriedade Intelectual-PPGPI/UFS}
+
+\imprimircapa
+
+\imprimirfolhaderosto
+
+\imprimirfichacatalografica
+\imprimiraprovacao
+
+\include{Pre_Textual/Dedicatoria}
+\include{Pre_Textual/Agradecimentos}
+\include{Pre_Textual/Epigrafe}
+\include{Pre_Textual/Resumo}
+\include{Pre_Textual/Abstract}
+    
+ %Lista de Figuras %%%%%%%%%%%%%%
+    \pdfbookmark[0]{\listfigurename}{lof}
+     \listoffigures*
+   \cleardoublepage
+
+%Lista de Tabelas %%%%%%%%%%%%%
+     \pdfbookmark[0]{\listtablename}{lof}
+     \listoftables*
+     \cleardoublepage
+\cleardoublepage
+   
+\include{Pre_Textual/Abreviaturas}
+%\include{Pre_Textual/Simbolos}
+\pdfbookmark[0]{\contentsname}{toc}
+\tableofcontents*
+\cleardoublepage
+
+% ----------------------------------------------------------
+% ELEMENTOS TEXTUAIS
+% ----------------------------------------------------------
+\textual
+
+\include{Conteudo/Introducao}
+\include{Conteudo/Referencial}
+\include{Artigos/Artigo_1}
+%\include{Artigos/Artigo_2}
+%\include{Artigos/Artigo_3}
+%\include{Artigos/Artigo_4}
+%\include{Artigos/Artigo_5}
+%\include{Artigos/Artigo_6}
+%\include{Conteudo/Resultados}
+\include{Conteudo/Consideracoes}
+%\include{Conteudo/TrabalhosRelacionados}
+\bibliography{references}
+
+% ----------------------------------------------------------
+% ELEMENTOS PÓS-TEXTUAIS
+% ----------------------------------------------------------
+
+\postextual
+\renewcommand{\chapnumfont}{\chaptitlefont}
+\renewcommand{\afterchapternum}{}
+\include{Pos_Textual/Apendices}
+%\include{Pos_Textual/Anexos}
+\end{document}
