@@ -52,27 +52,29 @@
 \usepackage{threeparttable}
 \usepackage{booktabs}
 \usepackage{pgfgantt}
-\usepackage{newtxtext, newtxmath} % Usa a fonte Times New Roman
+% \usepackage{newtxtext, newtxmath} % Comentado devido a problemas de formatação
+\usepackage{times} % Usa a fonte Times New Roman
 \renewcommand{\ABNTEXchapterfont}{\rmfamily\bfseries}
-\usepackage{soulutf8}
+% \usepackage{soulutf8} % Temporariamente comentado
 \usepackage{epstopdf}
-\usepackage[lofdepth,lotdepth]{subfig}
+% Comentando todos os pacotes de subfiguras para evitar conflitos
+% \usepackage[lofdepth,lotdepth]{subfig} 
+% \usepackage{subfigure} 
 \usepackage{graphicx}
-\usepackage[lofdepth,lotdepth]{subfigure}
 \usepackage[export]{adjustbox}
 \usepackage{caption}
 \usepackage{import}
-\usepackage{subcaption}
+% \usepackage{subcaption} % Comentado devido ao conflito com subfigure
 \usepackage{multirow}
 \usepackage{longtable}
 \usepackage[T1]{fontenc}		  % Selecao de codigos de fonte
-\usepackage{lastpage}			  % Usado pela Ficha catalográfica
+% \usepackage{lastpage}			  % Já carregado acima
 \usepackage{indentfirst}		  % Indenta o primeiro parágrafo de cada seção
 \usepackage{multicol}   %Multicolunas
 \usepackage{color}
 %\usepackage{subfig} % para as tabelas
 \usepackage{mathtools}
-\usepackage[pdftex]{hyperref}
+% \usepackage[pdftex]{hyperref} % Comentado para evitar conflito
 \usepackage{array}
 \usepackage{MnSymbol}
 \usepackage{amssymb}
