@@ -327,12 +327,12 @@
 \renewcommand{\chapnumfont}{%
     \vspace*{1cm}    
     \usefont{T1}{pnc}{b}{n}%      % choose New Chancery, bold, normal shape
-    \fontsize{14}{14}%          % font size 100pt, baselineskip 100pt
+    \fontsize{18}{18}%          % font size 18pt, baselineskip 18pt
     \color{black}%                 
     \selectfont%                  % activate font
 }
 
-\renewcommand{\chaptitlefont}{\ABNTEXchapterfont\fontsize{14}{14}\selectfont\color{black}}
+\renewcommand{\chaptitlefont}{\ABNTEXchapterfont\fontsize{18}{18}\selectfont\color{black}}
 
 % Ajuste da quebra após o número do capítulo
 \renewcommand{\afterchapternum}{\par}
