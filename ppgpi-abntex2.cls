@@ -87,9 +87,8 @@
 % Citações padrão ABNT
 \usepackage{pdfpages}
 \usepackage{parskip}
-\usepackage{xcolor}
 % espaçamento entre os parágrafos
-\usepackage{pdfpages}
+% \usepackage{pdfpages} % (já carregado acima)
 \usepackage{url}                  % deve ser carregado para tratar url de forma correta e usado pelo abntex2cite
 \usepackage{breakurl}             % trata de forma correta a quebra de url entre linhas
 \usepackage{listings, lstautogobble}
@@ -159,6 +158,9 @@
 % Comandos de dados - Curso
 \providecommand{\imprimircurso}{}
 \newcommand{\curso}[1]{\renewcommand{\imprimircurso}{#1}}
+
+% Logo opcional (fallback vazio para evitar erro se não for definido em um estilo específico)
+\providecommand{\imprimirlogo}{}
 
 \local{S\~ao Crist\'ov\~ao -- Sergipe}
 \data{\the\year}
@@ -332,8 +334,10 @@
 
 \renewcommand{\chaptitlefont}{\ABNTEXchapterfont\fontsize{14}{14}\selectfont\color{black}}
 
-\renewcommand{\afterchapternum}{%
-    \par
+% Ajuste da quebra após o número do capítulo
+\renewcommand{\afterchapternum}{\par}
+
+% Formatação do título do capítulo
 \renewcommand\printchaptertitle[1]{%
     \chaptitlefont
     \ifthenelse{\boolean{abntex@innonumchapter}}{%

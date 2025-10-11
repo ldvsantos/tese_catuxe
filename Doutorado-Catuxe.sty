@@ -70,12 +70,20 @@ PROPRIEDADE INTELECTUAL — PPGPI}
 % do trabalho. Após isso, substitua todo o conteúdo deste arquivo por uma
 % imagem da página assinada pela banca com o comando abaixo:
 %
-\newcommand{\imprimiraprovacao}{
-\begin{aprovacao}
-     \includepdf{apendece/folha_aprovacao.pdf}
- \end{aprovacao}}
+\newcommand{\imprimiraprovacao}{%
+\IfFileExists{apendece/folha_aprovacao.pdf}{%
+  \begin{aprovacao}
+    \includepdf{apendece/folha_aprovacao.pdf}
+  \end{aprovacao}
+}{%
+  % Arquivo de aprovação não encontrado; nada é impresso
+}}
 
-\newcommand{\imprimirfichacatalografica}{
-\begin{fichacatalografica}
-     \includepdf{apendece/ficha_catalografica.pdf}
-\end{fichacatalografica}}
+\newcommand{\imprimirfichacatalografica}{%
+\IfFileExists{apendece/ficha_catalografica.pdf}{%
+  \begin{fichacatalografica}
+    \includepdf{apendece/ficha_catalografica.pdf}
+  \end{fichacatalografica}
+}{%
+  % Arquivo de ficha catalográfica não encontrado; nada é impresso
+}}
