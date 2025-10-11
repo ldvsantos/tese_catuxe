@@ -330,7 +330,7 @@
     \selectfont%                  % activate font
 }
 
-\renewcommand{\chaptitlefont}{\ABNTEXchapterfont\ABNTEX \fontsize{14}{14}\chapterfontsize\color{black}}
+\renewcommand{\chaptitlefont}{\ABNTEXchapterfont\fontsize{14}{14}\selectfont\color{black}}
 
 \renewcommand{\afterchapternum}{%
     \par
