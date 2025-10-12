@@ -325,7 +325,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \renewcommand{\chapnumfont}{%
-    \vspace*{1cm}    
     \usefont{T1}{pnc}{b}{n}%      % choose New Chancery, bold, normal shape
     \fontsize{18}{18}%          % font size 18pt, baselineskip 18pt
     \color{black}%                 
