@@ -346,7 +346,7 @@
         \settowidth{\chapternamenumlength}{\printchaptername\printchapternum\afterchapternum}%
         \ABNTEXchapterupperifneeded{#1}%
       }{%
-        {\printchaptername\afterchapternum}%
+        {\printchaptername\printchapternum\afterchapternum}%
         \parbox[t]{\columnwidth-\chapternamenumlength}{\ABNTEXchapterupperifneeded{#1}}}%
      }    
 }
