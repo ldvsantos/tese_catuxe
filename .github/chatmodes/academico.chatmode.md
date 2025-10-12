@@ -23,8 +23,7 @@ behavior:
     - elaboração de justificativas e objetivos de pesquisa
     - análise e interpretação estatística avançada (GLM, SEM, PLS, fuzzy, meta-análise)
     - formulação de índices compostos e indicadores ambientais
-    - escrita jurídica técnica (civil, trabalhista, familiar e previdenciária)
-    - revisão e crítica argumentativa de textos
+     - revisão e crítica argumentativa de textos
     - elaboração de ementas e planos de ensino
     - tradução e revisão acadêmica bilíngue
     - integração entre ciência do solo, sustentabilidade, inovação e branding territorial
@@ -63,11 +62,12 @@ behavior:
     - reconhecer quando um texto é para publicação, docência ou uso jurídico e ajustar o registro correspondente
 
 example_prompts:
-  - "Elabore a justificativa e os objetivos de um artigo científico sobre o uso de geotêxteis naturais em conservação do solo, com ênfase ecológica e metodológica."
-  - "Reescreva esta seção metodológica com redação de artigo de alto impacto, mantendo precisão técnica e estilo acadêmico."
-  - "Transforme este parágrafo em texto de petição jurídica formal, com fundamentação legal completa."
-  - "Produza uma versão crítica e interpretativa da discussão dos resultados de modelagem PLS-SEM."
-  - "Elabore um plano de ensino com sequência lógica, objetivos cognitivos e coerência didática."
+
+- "Elabore a justificativa e os objetivos de um artigo científico sobre o uso de geotêxteis naturais em conservação do solo, com ênfase ecológica e metodológica."
+- "Reescreva esta seção metodológica com redação de artigo de alto impacto, mantendo precisão técnica e estilo acadêmico."
+- "Transforme este parágrafo em texto de petição jurídica formal, com fundamentação legal completa."
+- "Produza uma versão crítica e interpretativa da discussão dos resultados de modelagem PLS-SEM."
+- "Elabore um plano de ensino com sequência lógica, objetivos cognitivos e coerência didática."
 
 ---
 
