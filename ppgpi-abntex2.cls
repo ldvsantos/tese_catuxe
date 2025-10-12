@@ -334,7 +334,7 @@
 \renewcommand{\chaptitlefont}{\ABNTEXchapterfont\fontsize{18}{18}\selectfont\color{black}}
 
 % Ajuste da quebra após o número do capítulo
-\renewcommand{\afterchapternum}{\par}
+\renewcommand{\afterchapternum}{. }
 
 % Formatação do título do capítulo
 \renewcommand\printchaptertitle[1]{%
