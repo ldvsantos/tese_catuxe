@@ -1,0 +1,727 @@
+RELATÓRIO DE FILTRAGEM DE REFERÊNCIAS BIBLIOGRÁFICAS V2.0
+=================================================================
+
+TEMA DA PESQUISA:
+Saberes agroecológicos tradicionais e machine learning para preservação de conhecimentos
+
+RESUMO DA FILTRAGEM:
+• Total de referências analisadas: 1412
+• Referências RELEVANTES: 605 (42.8%)
+• Referências IRRELEVANTES: 807 (57.2%)
+• Threshold utilizado: 5.0 pontos
+
+REFERÊNCIAS RELEVANTES (TOP 50):
+--------------------------------------------------
+ 1. Halbe2015 (Score: 62.0)
+    Título: Governance of transitions towards sustainable development – the water–energy–food nexus in Cyprus},
+   volume = {40},
+   year = {2015}
+}...
+    Ano: 2015}
+}
+    Termos encontrados: Alta: sustainable agriculture, Alta: organic farming, Alta: participatory, Alta: water management, Média: agriculture, Média: farming, Média: agricultural, Média: sustainability
+
+ 2. Rosa2018 (Score: 51.0)
+    Título: Closing the yield gap while ensuring water sustainability},
+   volume = {13},
+   url = {https://www.scopus.com/inward/record.uri?eid=2-s2.0-8505583925...
+    Ano: 2018}
+}
+    Termos encontrados: Alta: food security, Alta: resilience, Alta: dryland, Alta: water management, Média: agriculture, Média: farming, Média: agricultural, Média: sustainability
+
+ 3. DelCorso2015 (Score: 48.0)
+    Título: Legitimizing farmers' new knowledge, learning and practices through communicative action: Application of an agro-environmental policy},
+   volume = {1...
+    Ano: 2015}
+}
+    Termos encontrados: Alta: ecosystem services, Alta: agricultural innovation, Alta: water management, Média: agriculture, Média: farming, Média: farmer, Média: agricultural, Média: sustainability
+
+ 4. Yang2015a (Score: 46.0)
+    Título: Community structure of arbuscular mycorrhizal fungi associated with Robinia pseudoacacia in uncontaminated and heavy metal contaminated soils},
+   vol...
+    Ano: 2015}
+}
+    Termos encontrados: Alta: resilience, Média: agricultural, Média: environmental, Média: ecological, Média: conservation, Média: plant, Média: crop, Média: cultivation
+
+ 5. Yang2015a (Score: 46.0)
+    Título: Community structure of arbuscular mycorrhizal fungi associated with Robinia pseudoacacia in uncontaminated and heavy metal contaminated soils},
+   vol...
+    Ano: 2015}
+}
+    Termos encontrados: Alta: resilience, Média: agricultural, Média: environmental, Média: ecological, Média: conservation, Média: plant, Média: crop, Média: cultivation
+
+ 6. Yang2015a (Score: 46.0)
+    Título: Community structure of arbuscular mycorrhizal fungi associated with Robinia pseudoacacia in uncontaminated and heavy metal contaminated soils},
+   vol...
+    Ano: 2015}
+}
+    Termos encontrados: Alta: resilience, Média: agricultural, Média: environmental, Média: ecological, Média: conservation, Média: plant, Média: crop, Média: cultivation
+
+ 7. Montanari2015 (Score: 43.0)
+    Título: Fifty years of Water Resources Research: Legacy and perspectives for the science of hydrology},
+   volume = {51},
+   url = {https://www.scopus.com/inw...
+    Ano: 2015}
+}
+    Termos encontrados: Alta: food security, Alta: resilience, Alta: cultural landscape, Alta: water management, Média: agriculture, Média: agricultural, Média: environmental, Média: ecological
+
+ 8. Montanari2015 (Score: 43.0)
+    Título: Fifty years of Water Resources Research: Legacy and perspectives for the science of hydrology},
+   volume = {51},
+   url = {https://www.scopus.com/inw...
+    Ano: 2015}
+}
+    Termos encontrados: Alta: food security, Alta: resilience, Alta: cultural landscape, Alta: water management, Média: agriculture, Média: agricultural, Média: environmental, Média: ecological
+
+ 9. Montanari2015 (Score: 43.0)
+    Título: Fifty years of Water Resources Research: Legacy and perspectives for the science of hydrology},
+   volume = {51},
+   url = {https://www.scopus.com/inw...
+    Ano: 2015}
+}
+    Termos encontrados: Alta: food security, Alta: resilience, Alta: cultural landscape, Alta: water management, Média: agriculture, Média: agricultural, Média: environmental, Média: ecological
+
+10. Ruiz-Penalver2015 (Score: 38.0)
+    Título: Development of an innovative low cost weighing lysimeter for potted plants: Application in lysimetric stations},
+   volume = {151},
+   url = {https://...
+    Ano: 2015}
+}
+    Termos encontrados: Alta: water management, Alta: crop management, Média: agriculture, Média: agricultural, Média: sustainability, Média: plant, Média: crop, Média: management
+
+11. Ruiz-Penalver2015 (Score: 38.0)
+    Título: Development of an innovative low cost weighing lysimeter for potted plants: Application in lysimetric stations},
+   volume = {151},
+   url = {https://...
+    Ano: 2015}
+}
+    Termos encontrados: Alta: water management, Alta: crop management, Média: agriculture, Média: agricultural, Média: sustainability, Média: plant, Média: crop, Média: management
+
+12. Ruiz-Penalver2015 (Score: 38.0)
+    Título: Development of an innovative low cost weighing lysimeter for potted plants: Application in lysimetric stations},
+   volume = {151},
+   url = {https://...
+    Ano: 2015}
+}
+    Termos encontrados: Alta: water management, Alta: crop management, Média: agriculture, Média: agricultural, Média: sustainability, Média: plant, Média: crop, Média: management
+
+13. DelCorso2015 (Score: 35.0)
+    Título: Legitimizing farmers' new knowledge, learning and practices through communicative action: Application of an agro-environmental policy},
+   volume = {1...
+    Ano: 2015}
+}
+    Termos encontrados: Alta: agricultural innovation, Alta: water management, Média: agriculture, Média: farming, Média: farmer, Média: agricultural, Média: sustainability, Média: environmental
+
+14. Venter2019 (Score: 35.0)
+    Título: The effect of fostering partnerships on broadening the food base: The role of cactus pear, an underutilised crop with unlimited potential – the South ...
+    Ano: 2019}
+}
+    Termos encontrados: Alta: sustainable agriculture, Alta: smallholder, Alta: food security, Alta: agricultural innovation, Média: agriculture, Média: farming, Média: agricultural, Média: plant
+
+15. Venter2019 (Score: 35.0)
+    Título: The effect of fostering partnerships on broadening the food base: The role of cactus pear, an underutilised crop with unlimited potential – the South ...
+    Ano: 2019}
+}
+    Termos encontrados: Alta: sustainable agriculture, Alta: smallholder, Alta: food security, Alta: agricultural innovation, Média: agriculture, Média: farming, Média: agricultural, Média: plant
+
+16. Cofie2015 (Score: 35.0)
+    Título: {Water management for sustainable agricultural intensification and smallholder resilience in sub-Saharan Africa}},
+    year = {2015},
+    journal = {W...
+    Ano: 2015},
+    journal = {Water Resources and Rural Development},
+    author = {Cofie, O and Amede, T},
+    pages = {3--11},
+    volume = {6},
+    url = {https://www.scopus.com/inward/record.uri?eid=2-s2.0-84947556283&doi=10.1016%2Fj.wrr.2015.10.001&partnerID=40&md5=a48ead38570f20f846cdbc1217d5e1f9},
+    doi = {10.1016/j.wrr.2015.10.001},
+    issn = {22126082 (ISSN)},
+    keywords = {Farm-level, Food security, Investment, Policy, Rainwater, Sub-Saharan Africa, Water harvesting, agri-environmental policy, agricultural intensification, agroecology, alternative agriculture, crop production, food security, investment, rainfed agriculture, river basin, smallholder, water management, water resource},
+    language = {English}
+}
+    Termos encontrados: Prioritário: agroecology, Alta: smallholder, Alta: rural development, Alta: food security, Alta: resilience, Alta: water management, Média: agriculture, Média: rural
+
+17. Mosbah2018 (Score: 31.0)
+    Título: Invasive character of Prosopis juliflora facilitated by its Allelopathy and a wide Mutualistic interaction with soil microorganisms},
+   volume = {18}...
+    Ano: 2018}
+}
+    Termos encontrados: Alta: semiarid, Alta: medicinal plant, Média: environmental, Média: ecological, Média: plant, Média: crop, Média: management, Média: system
+
+18. DelCorso2015 (Score: 31.0)
+    Título: {Legitimizing farmers' new knowledge, learning and practices through communicative action: Application of an agro-environmental policy}},
+    year = {...
+    Ano: 2015},
+    journal = {Ecological Economics},
+    author = {Del Corso, J.-P. and Kephaliacos, C and Plumecocq, G},
+    pages = {86--96},
+    volume = {117},
+    url = {https://www.scopus.com/inward/record.uri?eid=2-s2.0-84947460689&doi=10.1016%2Fj.ecolecon.2015.05.017&partnerID=40&md5=9a4d86def224cc029a3f5d1d69b480dd},
+    doi = {10.1016/j.ecolecon.2015.05.017},
+    issn = {09218009 (ISSN)},
+    keywords = {Agricultural advice, Agricultural innovations, Agro-environmental policy, Communicative action theory, Learning processes, agri-environmental policy, agricultural practice, agricultural worker, alternative agriculture, economic analysis, knowledge, learning, sustainability, sustainable development, water management, water resource},
+    language = {English}
+}
+    Termos encontrados: Alta: agricultural innovation, Alta: water management, Média: agriculture, Média: farmer, Média: agricultural, Média: sustainability, Média: environmental, Média: ecological
+
+19. DelCorso2015 (Score: 31.0)
+    Título: {Legitimizing farmers' new knowledge, learning and practices through communicative action: Application of an agro-environmental policy}},
+    year = {...
+    Ano: 2015},
+    journal = {Ecological Economics},
+    author = {Del Corso, J.-P. and Kephaliacos, C and Plumecocq, G},
+    pages = {86--96},
+    volume = {117},
+    url = {https://www.scopus.com/inward/record.uri?eid=2-s2.0-84947460689&doi=10.1016%2Fj.ecolecon.2015.05.017&partnerID=40&md5=9a4d86def224cc029a3f5d1d69b480dd},
+    doi = {10.1016/j.ecolecon.2015.05.017},
+    issn = {09218009 (ISSN)},
+    keywords = {Agricultural advice, Agricultural innovations, Agro-environmental policy, Communicative action theory, Learning processes, agri-environmental policy, agricultural practice, agricultural worker, alternative agriculture, economic analysis, knowledge, learning, sustainability, sustainable development, water management, water resource},
+    language = {English}
+}
+    Termos encontrados: Alta: agricultural innovation, Alta: water management, Média: agriculture, Média: farmer, Média: agricultural, Média: sustainability, Média: environmental, Média: ecological
+
+20. Everard2018 (Score: 30.0)
+    Título: {Assessing the feasibility of integrating ecosystem-based with engineered water resource governance and management for water security in semi-arid lan...
+    Ano: 2018},
+    journal = {Science of the Total Environment},
+    author = {Everard, M and Sharma, O P and Vishwakarma, V K and Khandal, D and Sahu, Y K and Bhatnagar, R and Singh, J K and Kumar, R and Nawab, A and Kumar, A and Kumar, V and Kashyap, A and Pandey, D N and Pinder, A C},
+    pages = {1249--1265},
+    volume = {612},
+    url = {https://www.scopus.com/inward/record.uri?eid=2-s2.0-85028838330&doi=10.1016%2Fj.scitotenv.2017.08.308&partnerID=40&md5=438b9491ad85dfb0078cc4f7509371c7},
+    doi = {10.1016/j.scitotenv.2017.08.308},
+    issn = {00489697 (ISSN)},
+    keywords = {Article, Banas, Banas River, Bisalpur, Bisalpur Dam, Budget control, Climate change, Community-based, Community-based recharge, Developing countries, Ecology, Ecosystem services, Ecosystems, Extraction, Flood control, Groundwater, Groundwater pollution, Groundwater resources, India, Irrigation, Population statistics, Rajasthan, Recharging (underground waters), Regional planning, River diversion, Runoff, Rural areas, Urban growth, Vulnerability, Water resources, Water supply, case study, catchment, climate change, controlled study, ecosystem service, environmental policy, feasibility study, governance approach, ground water, irrigation (agriculture), landscape, limit of quantitation, population growth, priority journal, recharge, rural area, semiarid region, urban area, vulnerability, water management, water resource, water security, water supply},
+    language = {English}
+}
+    Termos encontrados: Alta: community-based, Alta: ecosystem services, Alta: semiarid, Alta: water management, Média: agriculture, Média: rural, Média: environmental, Média: management
+
+21. Baratella2018 (Score: 27.0)
+    Título: {Organosilicone surfactants as innovative irrigation adjuvants: Can they improve water use efficiency and nutrient uptake in crop production?}},
+    y...
+    Ano: 2018},
+    journal = {Agricultural Water Management},
+    author = {Baratella, V and Trinchera, A},
+    pages = {149--161},
+    volume = {204},
+    url = {https://www.scopus.com/inward/record.uri?eid=2-s2.0-85045643116&doi=10.1016%2Fj.agwat.2018.04.003&partnerID=40&md5=f0872b007476106e8304e15e2d00b759},
+    doi = {10.1016/j.agwat.2018.04.003},
+    issn = {03783774 (ISSN)},
+    keywords = {Capillary model, Climate models, Climate-smart agriculture, Cultivation, Efficiency, Irrigation, Lactuca, Lettuce, Matric potential, Nitrogen use efficiency, Nitrogen-use efficiency, Non-ionic surfactants, Nutrients, Porous materials, Smart agricultures, Soil capillary model, Soil testing, Surface active agents, Sustainability, Sustainable development, Water conservation, Water resources, adsorption, agricultural ecosystem, crop production, innovation, leafy vegetable, nutrient uptake, porous medium, root-shoot ratio, surfactant, sustainability, water use efficiency},
+    language = {English}
+}
+    Termos encontrados: Alta: water management, Média: agriculture, Média: agricultural, Média: sustainability, Média: conservation, Média: crop, Média: cultivation, Média: management
+
+22. Konvalinkova2015 (Score: 26.0)
+    Título: Duration and intensity of shade differentially affects mycorrhizal growth- and phosphorus uptake responses of Medicago truncatula},
+   volume = {6},
+ ...
+    Ano: 2015}
+}
+    Termos encontrados: Alta: sustainable agriculture, Média: agriculture, Média: environmental, Média: plant, Média: crop, Média: system, Média: community, Média: technology
+
+23. Drottberger2021 (Score: 25.0)
+    Título: {Alternative food networks in food system transition—values, motivation, and capacity building among young swedish market gardeners}},
+    year = {202...
+    Ano: 2021},
+    journal = {SUSTAINABILITY},
+    author = {Drottberger, A and Melin, M and Lundgren, L},
+    number = {8},
+    volume = {13},
+    publisher = {MDPI AG},
+    url = {https://www.scopus.com/inward/record.uri?eid=2-s2.0-85104947385&doi=10.3390%2Fsu13084502&partnerID=40&md5=cade997050b6d157a2fbfb383706bf4e},
+    address = {Department of Biosystems and Technology, Swedish University of Agricultural Sciences, Lomma, 234 22, Sweden},
+    doi = {10.3390/su13084502},
+    issn = {2071-1050 J9  - SUSTAINABILITY-BASEL JI  - Sustainability},
+    keywords = {AGROECOLOGY, Agroecology, Competencies, ECOLOGY, FARMERS, Food system, INNOVATIONS, Lock-in, Market gardening, STRATEGIC NICHE MANAGEMENT, SUSTAINABILITY, Skills, Sustainability, Sweden, Transition, Urban farming, agroecology, capacity building, competencies, food production, food system, knowledge, lea, learning, lock-in, market conditions, market gardening, skills, sustainability, transition, urban farming},
+    language = {English}
+}
+    Termos encontrados: Prioritário: agroecology, Média: farming, Média: farmer, Média: agricultural, Média: sustainability, Média: management, Média: system, Média: knowledge
+
+24. Smith2019 (Score: 23.0)
+    Título: {Connecting new farmers to place, agroecology, and community through a bilingual organic farm incubator}},
+    year = {2019},
+    journal = {JOURNAL O...
+    Ano: 2019},
+    journal = {JOURNAL OF AGRICULTURE FOOD SYSTEMS AND COMMUNITY DEVELOPMENT},
+    author = {Smith, K S and Ostrom, M and McMoran, D and Carpenter-Boggs, L},
+    pages = {111--124},
+    volume = {9},
+    doi = {10.5304/jafscd.2019.091.030},
+    issn = {2152-0798},
+    keywords = {AGRICULTURE, Agroecology, Beginning Farmers, Bilingual Education, Community Food Systems, Farm Incubator, Food Sovereignty, GRASS, INNOVATION, KNOWLEDGE EXCHANGE, LOCAL FOOD, Organic Farming, Place-based Food Systems, Values-based Food Systems},
+    language = {English}
+}
+    Termos encontrados: Prioritário: agroecology, Alta: organic farming, Média: agriculture, Média: farming, Média: farmer, Média: system, Média: knowledge, Média: community
+
+25. Lu2019 (Score: 23.0)
+    Título: {Impacts of climate change on water resources and grain production}},
+    year = {2019},
+    journal = {Technological Forecasting and Social Change},
+...
+    Ano: 2019},
+    journal = {Technological Forecasting and Social Change},
+    author = {Lu, S and Bai, X and Li, W and Wang, N},
+    pages = {76--84},
+    volume = {143},
+    url = {https://www.scopus.com/inward/record.uri?eid=2-s2.0-85063211099&doi=10.1016%2Fj.techfore.2019.01.015&partnerID=40&md5=7d7704d04bbb1477dd98516bb038dd78},
+    doi = {10.1016/j.techfore.2019.01.015},
+    issn = {00401625 (ISSN)},
+    keywords = {Agricultural technologies, Analysis of the correlation, C modeling, C-D-C model, China, Climate change, Climate change impact assessments, Climate models, Construction investments, Economics, Farmland water conservancies, Food supply, Grain (agricultural product), Grain production, Irrigation, Resource restrictions, Scientific researches, Water management, Water resources, adaptive management, climate change, climate effect, crop production, food security, income, innovation, technological development, warming, water resource},
+    language = {English}
+}
+    Termos encontrados: Alta: food security, Alta: water management, Média: agricultural, Média: crop, Média: management, Média: cultural, Média: social, Média: innovation
+
+26. Smith2019 (Score: 23.0)
+    Título: {Connecting new farmers to place, agroecology, and community through a bilingual organic farm incubator}},
+    year = {2019},
+    journal = {JOURNAL O...
+    Ano: 2019},
+    journal = {JOURNAL OF AGRICULTURE FOOD SYSTEMS AND COMMUNITY DEVELOPMENT},
+    author = {Smith, K S and Ostrom, M and McMoran, D and Carpenter-Boggs, L},
+    pages = {111--124},
+    volume = {9},
+    doi = {10.5304/jafscd.2019.091.030},
+    issn = {2152-0798},
+    keywords = {AGRICULTURE, Agroecology, Beginning Farmers, Bilingual Education, Community Food Systems, Farm Incubator, Food Sovereignty, GRASS, INNOVATION, KNOWLEDGE EXCHANGE, LOCAL FOOD, Organic Farming, Place-based Food Systems, Values-based Food Systems},
+    language = {English}
+}
+    Termos encontrados: Prioritário: agroecology, Alta: organic farming, Média: agriculture, Média: farming, Média: farmer, Média: system, Média: knowledge, Média: community
+
+27. Namtak2018 (Score: 23.0)
+    Título: {Traditional knowledge and innovative practices for water management and conservation in indian cold desert, leh ladakh}},
+    year = {2018},
+    jour...
+    Ano: 2018},
+    journal = {Indian Journal of Ecology},
+    author = {Namtak, S and Sharma, R C},
+    number = {4},
+    pages = {737--744},
+    volume = {45},
+    url = {https://www.scopus.com/inward/record.uri?eid=2-s2.0-85061674381&partnerID=40&md5=ca56b52d2f4fd85cab9d7dbe45efdd52},
+    issn = {03045250 (ISSN)},
+    keywords = {Leh ladakh, Traditional ecological knowledge, Water conservation, Water security},
+    language = {English}
+}
+    Termos encontrados: Prioritário: traditional knowledge, Prioritário: traditional ecological knowledge, Alta: water management, Média: ecological, Média: conservation, Média: management, Média: practice, Média: knowledge
+
+28. Seo2015 (Score: 22.0)
+    Título: A new way for incorporating GCM information into water shortage projections},
+   volume = {7},
+   url = {https://www.scopus.com/inward/record.uri?eid=...
+    Ano: 2015}
+}
+    Termos encontrados: Alta: water management, Média: agriculture, Média: environmental, Média: crop, Média: management, Média: system, Média: innovation, Média: technology
+
+29. Seo2015 (Score: 22.0)
+    Título: A new way for incorporating GCM information into water shortage projections},
+   volume = {7},
+   url = {https://www.scopus.com/inward/record.uri?eid=...
+    Ano: 2015}
+}
+    Termos encontrados: Alta: water management, Média: agriculture, Média: environmental, Média: crop, Média: management, Média: system, Média: innovation, Média: technology
+
+30. Orimi2015 (Score: 22.0)
+    Título: Cprecip parameter for checking snow entry for forecasting weekly discharge of the Haraz River flow by artificial neural network},
+   volume = {42},
+  ...
+    Ano: 2015}
+}
+    Termos encontrados: Alta: water management, Média: management, Média: system, Média: innovation, Média: ecosystem, Contexto: method, Contexto: approach, Contexto: technique
+
+31. Orimi2015 (Score: 22.0)
+    Título: Cprecip parameter for checking snow entry for forecasting weekly discharge of the Haraz River flow by artificial neural network},
+   volume = {42},
+  ...
+    Ano: 2015}
+}
+    Termos encontrados: Alta: water management, Média: management, Média: system, Média: innovation, Média: ecosystem, Contexto: method, Contexto: approach, Contexto: technique
+
+32. Lasage2015 (Score: 22.0)
+    Título: {A Stepwise, participatory approach to design and implement community based adaptation to drought in the Peruvian Andes}},
+    year = {2015},
+    jour...
+    Ano: 2015},
+    journal = {Sustainability (Switzerland)},
+    author = {Lasage, R and Muis, S and Sardella, C S E and van Drunen, M A and Verburg, P H and Aerts, J.C.J.H.},
+    number = {2},
+    pages = {1742--1773},
+    volume = {7},
+    url = {https://www.scopus.com/inward/record.uri?eid=2-s2.0-84923241046&doi=10.3390%2Fsu7021742&partnerID=40&md5=54dad4c8456666acbecfed5a9db583ff},
+    doi = {10.3390/su7021742},
+    issn = {20711050 (ISSN)},
+    keywords = {Andes, Climate change, Georgia, Hydrology, Impact, Modeling, Oconee Basin, Subsistence farming, Survey, United States, Vulnerability assessment, Water resources, Water rights, agricultural land, catchment, climate change, community development, drought, household survey, innovation, irrigation system, participatory approach, rainwater, river basin, vulnerability, water availability, water use efficiency},
+    language = {English}
+}
+    Termos encontrados: Alta: participatory, Média: farming, Média: agricultural, Média: sustainability, Média: system, Média: community, Média: cultural, Média: innovation
+
+33. Hilkens2018 (Score: 22.0)
+    Título: {Money talk: How relations between farmers and advisors around financial management are shaped}},
+    year = {2018},
+    journal = {Journal of Rural S...
+    Ano: 2018},
+    journal = {Journal of Rural Studies},
+    author = {Hilkens, A and Reid, J I and Klerkx, L and Gray, D I},
+    pages = {83--95},
+    volume = {63},
+    publisher = {Elsevier Ltd},
+    url = {https://www.scopus.com/inward/record.uri?eid=2-s2.0-85053537084&doi=10.1016%2Fj.jrurstud.2018.09.002&partnerID=40&md5=71207dfdf031a6d75672c9474808bc1d},
+    address = {School of Agriculture and Environment, Massey University, New Zealand},
+    doi = {10.1016/j.jrurstud.2018.09.002},
+    issn = {07430167},
+    keywords = {ACCOUNTANTS, ADVISORY SERVICES, AGRICULTURAL EXTENSION SERVICES, Agricultural Knowledge and Innovation Systems (AKI, Agricultural advice, Agricultural entrepreneurship, Agricultural finance, Animalia, CUSTOMER RELATIONSHIPS, Dairy, ENTREPRENEURIAL SKILLS, Farm management, Farmer-advisor relationships, Financial management, KNOWLEDGE EXCHANGE, LAND MANAGEMENT, NEW-ZEALAND, Rural extension, SMALL BUSINESS, TRUST, a, agricultural economics, agricultural management, agricultural practice, agricultural production, dairy farming, entrepreneur, farmers knowledge, rural area},
+    language = {English}
+}
+    Termos encontrados: Média: agriculture, Média: farming, Média: rural, Média: farmer, Média: agricultural, Média: management, Média: practice, Média: system
+
+34. Lasage2015 (Score: 22.0)
+    Título: {A Stepwise, participatory approach to design and implement community based adaptation to drought in the Peruvian Andes}},
+    year = {2015},
+    jour...
+    Ano: 2015},
+    journal = {Sustainability (Switzerland)},
+    author = {Lasage, R and Muis, S and Sardella, C S E and van Drunen, M A and Verburg, P H and Aerts, J.C.J.H.},
+    number = {2},
+    pages = {1742--1773},
+    volume = {7},
+    url = {https://www.scopus.com/inward/record.uri?eid=2-s2.0-84923241046&doi=10.3390%2Fsu7021742&partnerID=40&md5=54dad4c8456666acbecfed5a9db583ff},
+    doi = {10.3390/su7021742},
+    issn = {20711050 (ISSN)},
+    keywords = {Andes, Climate change, Georgia, Hydrology, Impact, Modeling, Oconee Basin, Subsistence farming, Survey, United States, Vulnerability assessment, Water resources, Water rights, agricultural land, catchment, climate change, community development, drought, household survey, innovation, irrigation system, participatory approach, rainwater, river basin, vulnerability, water availability, water use efficiency},
+    language = {English}
+}
+    Termos encontrados: Alta: participatory, Média: farming, Média: agricultural, Média: sustainability, Média: system, Média: community, Média: cultural, Média: innovation
+
+35. Lasage2015 (Score: 22.0)
+    Título: {A Stepwise, participatory approach to design and implement community based adaptation to drought in the Peruvian Andes}},
+    year = {2015},
+    jour...
+    Ano: 2015},
+    journal = {Sustainability (Switzerland)},
+    author = {Lasage, R and Muis, S and Sardella, C S E and van Drunen, M A and Verburg, P H and Aerts, J.C.J.H.},
+    number = {2},
+    pages = {1742--1773},
+    volume = {7},
+    url = {https://www.scopus.com/inward/record.uri?eid=2-s2.0-84923241046&doi=10.3390%2Fsu7021742&partnerID=40&md5=54dad4c8456666acbecfed5a9db583ff},
+    doi = {10.3390/su7021742},
+    issn = {20711050 (ISSN)},
+    keywords = {Andes, Climate change, Georgia, Hydrology, Impact, Modeling, Oconee Basin, Subsistence farming, Survey, United States, Vulnerability assessment, Water resources, Water rights, agricultural land, catchment, climate change, community development, drought, household survey, innovation, irrigation system, participatory approach, rainwater, river basin, vulnerability, water availability, water use efficiency},
+    language = {English}
+}
+    Termos encontrados: Alta: participatory, Média: farming, Média: agricultural, Média: sustainability, Média: system, Média: community, Média: cultural, Média: innovation
+
+36. Hilkens2018 (Score: 22.0)
+    Título: {Money talk: How relations between farmers and advisors around financial management are shaped}},
+    year = {2018},
+    journal = {Journal of Rural S...
+    Ano: 2018},
+    journal = {Journal of Rural Studies},
+    author = {Hilkens, A and Reid, J I and Klerkx, L and Gray, D I},
+    pages = {83--95},
+    volume = {63},
+    publisher = {Elsevier Ltd},
+    url = {https://www.scopus.com/inward/record.uri?eid=2-s2.0-85053537084&doi=10.1016%2Fj.jrurstud.2018.09.002&partnerID=40&md5=71207dfdf031a6d75672c9474808bc1d},
+    address = {School of Agriculture and Environment, Massey University, New Zealand},
+    doi = {10.1016/j.jrurstud.2018.09.002},
+    issn = {07430167},
+    keywords = {ACCOUNTANTS, ADVISORY SERVICES, AGRICULTURAL EXTENSION SERVICES, Agricultural Knowledge and Innovation Systems (AKI, Agricultural advice, Agricultural entrepreneurship, Agricultural finance, Animalia, CUSTOMER RELATIONSHIPS, Dairy, ENTREPRENEURIAL SKILLS, Farm management, Farmer-advisor relationships, Financial management, KNOWLEDGE EXCHANGE, LAND MANAGEMENT, NEW-ZEALAND, Rural extension, SMALL BUSINESS, TRUST, a, agricultural economics, agricultural management, agricultural practice, agricultural production, dairy farming, entrepreneur, farmers knowledge, rural area},
+    language = {English}
+}
+    Termos encontrados: Média: agriculture, Média: farming, Média: rural, Média: farmer, Média: agricultural, Média: management, Média: practice, Média: system
+
+37. Ado2019a (Score: 21.0)
+    Título: {Livelihood strategies and household resilience to food insecurity: insight from a farming community in Aguie district of Niger}},
+    year = {2019},
+...
+    Ano: 2019},
+    journal = {Agriculture and Human Values},
+    author = {Ado, A M and Savadogo, P and Abdoul-Azize, H T},
+    number = {4},
+    pages = {747--761},
+    volume = {36},
+    publisher = {Springer Netherlands},
+    url = {https://www.scopus.com/inward/record.uri?eid=2-s2.0-85066814277&doi=10.1007%2Fs10460-019-09951-0&partnerID=40&md5=ab228475bab1abd295d29ecffd4d75b4},
+    address = {West and Central Africa Regional Office - Sahel Node, World Agroforestry (ICRAF), BP E5118, Bamako, Mali},
+    doi = {10.1007/s10460-019-09951-0},
+    issn = {0889048X},
+    keywords = {Adaptation, CLIMATE-CHANGE, Climate change, Drought, Dryland, FARMERS, Food security, Vulnerability},
+    language = {English}
+}
+    Termos encontrados: Alta: food security, Alta: resilience, Alta: dryland, Média: agriculture, Média: farming, Média: farmer, Média: community, Média: forestry
+
+38. Schneider2019 (Score: 21.0)
+    Título: {Potential and versatility of WEAP model (Water Evaluation and Planning System) for hydrological assessments of AWD (Alternate Wetting and Drying) in ...
+    Ano: 2019},
+    journal = {Agricultural Water Management},
+    author = {Schneider, P and Sander, B O and Wassmann, R and Asch, F},
+    volume = {224},
+    url = {https://www.scopus.com/inward/record.uri?eid=2-s2.0-85065577391&doi=10.1016%2Fj.agwat.2019.03.030&partnerID=40&md5=8c655979b82ae107853c3d76ce80eef2},
+    doi = {10.1016/j.agwat.2019.03.030},
+    issn = {03783774 (ISSN)},
+    keywords = {Central Luzon, Climate change, Freshwater scarcity, Hydrological impacts, Irrigation, Irrigation canals, Modeling, Models, Oryza sativa, Philippines, Plants (botany), Research institutes, Reservoirs (water), WETTING AND DRYING, Water - savings, Water conservation, Water levels, Water management, Water requirements, Water saving rice, Water saving technology, Wetting, climate change, hydrological modeling, irrigation system, modeling, resource management, rice, streamflow, water availability, water management, water resource, water use, wetting-drying cycle},
+    language = {English}
+}
+    Termos encontrados: Alta: water management, Média: agricultural, Média: conservation, Média: plant, Média: management, Média: system, Média: cultural, Média: technology
+
+39. Polbitsyn2019 (Score: 21.0)
+    Título: {THE ROLE OF TRADITIONAL AGRICULTURE IN DEVELOPING RURAL ENTREPRENEURIAL ECOSYSTEM}},
+    year = {2019},
+    booktitle = {13TH INTERNATIONAL DAYS OF S...
+    Ano: 2019},
+    booktitle = {13TH INTERNATIONAL DAYS OF STATISTICS AND ECONOMICS},
+    author = {Polbitsyn, S and Earl, A},
+    editor = {Loster, T and Pavelka, T},
+    pages = {1206--1214},
+    isbn = {978-80-87990-18-6},
+    doi = {10.18267/pr.2019.los.186.120},
+    keywords = {INNOVATION, New Zealand, Russia, entrepreneurial ecosystem, practices of rural development, traditional agriculture},
+    language = {English}
+}
+    Termos encontrados: Prioritário: traditional agriculture, Alta: rural development, Média: agriculture, Média: rural, Média: practice, Média: system, Média: innovation, Média: ecosystem
+
+40. Ado2019a (Score: 21.0)
+    Título: {Livelihood strategies and household resilience to food insecurity: insight from a farming community in Aguie district of Niger}},
+    year = {2019},
+...
+    Ano: 2019},
+    journal = {Agriculture and Human Values},
+    author = {Ado, A M and Savadogo, P and Abdoul-Azize, H T},
+    number = {4},
+    pages = {747--761},
+    volume = {36},
+    publisher = {Springer Netherlands},
+    url = {https://www.scopus.com/inward/record.uri?eid=2-s2.0-85066814277&doi=10.1007%2Fs10460-019-09951-0&partnerID=40&md5=ab228475bab1abd295d29ecffd4d75b4},
+    address = {West and Central Africa Regional Office - Sahel Node, World Agroforestry (ICRAF), BP E5118, Bamako, Mali},
+    doi = {10.1007/s10460-019-09951-0},
+    issn = {0889048X},
+    keywords = {Adaptation, CLIMATE-CHANGE, Climate change, Drought, Dryland, FARMERS, Food security, Vulnerability},
+    language = {English}
+}
+    Termos encontrados: Alta: food security, Alta: resilience, Alta: dryland, Média: agriculture, Média: farming, Média: farmer, Média: community, Média: forestry
+
+41. Schneider2019 (Score: 21.0)
+    Título: {Potential and versatility of WEAP model (Water Evaluation and Planning System) for hydrological assessments of AWD (Alternate Wetting and Drying) in ...
+    Ano: 2019},
+    journal = {Agricultural Water Management},
+    author = {Schneider, P and Sander, B O and Wassmann, R and Asch, F},
+    volume = {224},
+    url = {https://www.scopus.com/inward/record.uri?eid=2-s2.0-85065577391&doi=10.1016%2Fj.agwat.2019.03.030&partnerID=40&md5=8c655979b82ae107853c3d76ce80eef2},
+    doi = {10.1016/j.agwat.2019.03.030},
+    issn = {03783774 (ISSN)},
+    keywords = {Central Luzon, Climate change, Freshwater scarcity, Hydrological impacts, Irrigation, Irrigation canals, Modeling, Models, Oryza sativa, Philippines, Plants (botany), Research institutes, Reservoirs (water), WETTING AND DRYING, Water - savings, Water conservation, Water levels, Water management, Water requirements, Water saving rice, Water saving technology, Wetting, climate change, hydrological modeling, irrigation system, modeling, resource management, rice, streamflow, water availability, water management, water resource, water use, wetting-drying cycle},
+    language = {English}
+}
+    Termos encontrados: Alta: water management, Média: agricultural, Média: conservation, Média: plant, Média: management, Média: system, Média: cultural, Média: technology
+
+42. Polbitsyn2019 (Score: 21.0)
+    Título: {THE ROLE OF TRADITIONAL AGRICULTURE IN DEVELOPING RURAL ENTREPRENEURIAL ECOSYSTEM}},
+    year = {2019},
+    booktitle = {13TH INTERNATIONAL DAYS OF S...
+    Ano: 2019},
+    booktitle = {13TH INTERNATIONAL DAYS OF STATISTICS AND ECONOMICS},
+    author = {Polbitsyn, S and Earl, A},
+    editor = {Loster, T and Pavelka, T},
+    pages = {1206--1214},
+    isbn = {978-80-87990-18-6},
+    doi = {10.18267/pr.2019.los.186.120},
+    keywords = {INNOVATION, New Zealand, Russia, entrepreneurial ecosystem, practices of rural development, traditional agriculture},
+    language = {English}
+}
+    Termos encontrados: Prioritário: traditional agriculture, Alta: rural development, Média: agriculture, Média: rural, Média: practice, Média: system, Média: innovation, Média: ecosystem
+
+43. Ado2019a (Score: 21.0)
+    Título: {Livelihood strategies and household resilience to food insecurity: insight from a farming community in Aguie district of Niger}},
+    year = {2019},
+...
+    Ano: 2019},
+    journal = {Agriculture and Human Values},
+    author = {Ado, A M and Savadogo, P and Abdoul-Azize, H T},
+    number = {4},
+    pages = {747--761},
+    volume = {36},
+    publisher = {Springer Netherlands},
+    url = {https://www.scopus.com/inward/record.uri?eid=2-s2.0-85066814277&doi=10.1007%2Fs10460-019-09951-0&partnerID=40&md5=ab228475bab1abd295d29ecffd4d75b4},
+    address = {West and Central Africa Regional Office - Sahel Node, World Agroforestry (ICRAF), BP E5118, Bamako, Mali},
+    doi = {10.1007/s10460-019-09951-0},
+    issn = {0889048X},
+    keywords = {Adaptation, CLIMATE-CHANGE, Climate change, Drought, Dryland, FARMERS, Food security, Vulnerability},
+    language = {English}
+}
+    Termos encontrados: Alta: food security, Alta: resilience, Alta: dryland, Média: agriculture, Média: farming, Média: farmer, Média: community, Média: forestry
+
+44. Schneider2019 (Score: 21.0)
+    Título: {Potential and versatility of WEAP model (Water Evaluation and Planning System) for hydrological assessments of AWD (Alternate Wetting and Drying) in ...
+    Ano: 2019},
+    journal = {Agricultural Water Management},
+    author = {Schneider, P and Sander, B O and Wassmann, R and Asch, F},
+    volume = {224},
+    url = {https://www.scopus.com/inward/record.uri?eid=2-s2.0-85065577391&doi=10.1016%2Fj.agwat.2019.03.030&partnerID=40&md5=8c655979b82ae107853c3d76ce80eef2},
+    doi = {10.1016/j.agwat.2019.03.030},
+    issn = {03783774 (ISSN)},
+    keywords = {Central Luzon, Climate change, Freshwater scarcity, Hydrological impacts, Irrigation, Irrigation canals, Modeling, Models, Oryza sativa, Philippines, Plants (botany), Research institutes, Reservoirs (water), WETTING AND DRYING, Water - savings, Water conservation, Water levels, Water management, Water requirements, Water saving rice, Water saving technology, Wetting, climate change, hydrological modeling, irrigation system, modeling, resource management, rice, streamflow, water availability, water management, water resource, water use, wetting-drying cycle},
+    language = {English}
+}
+    Termos encontrados: Alta: water management, Média: agricultural, Média: conservation, Média: plant, Média: management, Média: system, Média: cultural, Média: technology
+
+45. Polbitsyn2019 (Score: 21.0)
+    Título: {THE ROLE OF TRADITIONAL AGRICULTURE IN DEVELOPING RURAL ENTREPRENEURIAL ECOSYSTEM}},
+    year = {2019},
+    booktitle = {13TH INTERNATIONAL DAYS OF S...
+    Ano: 2019},
+    booktitle = {13TH INTERNATIONAL DAYS OF STATISTICS AND ECONOMICS},
+    author = {Polbitsyn, S and Earl, A},
+    editor = {Loster, T and Pavelka, T},
+    pages = {1206--1214},
+    isbn = {978-80-87990-18-6},
+    doi = {10.18267/pr.2019.los.186.120},
+    keywords = {INNOVATION, New Zealand, Russia, entrepreneurial ecosystem, practices of rural development, traditional agriculture},
+    language = {English}
+}
+    Termos encontrados: Prioritário: traditional agriculture, Alta: rural development, Média: agriculture, Média: rural, Média: practice, Média: system, Média: innovation, Média: ecosystem
+
+46. Yu2015 (Score: 20.0)
+    Título: A review of china's rural water management},
+   volume = {7},
+   url = {https://www.scopus.com/inward/record.uri?eid=2-s2.0-84934881005&doi=10.3390%2F...
+    Ano: 2015}
+}
+    Termos encontrados: Alta: water management, Média: rural, Média: agricultural, Média: sustainability, Média: environmental, Média: management, Média: system, Média: cultural
+
+47. Yu2015 (Score: 20.0)
+    Título: A review of china's rural water management},
+   volume = {7},
+   url = {https://www.scopus.com/inward/record.uri?eid=2-s2.0-84934881005&doi=10.3390%2F...
+    Ano: 2015}
+}
+    Termos encontrados: Alta: water management, Média: rural, Média: agricultural, Média: sustainability, Média: environmental, Média: management, Média: system, Média: cultural
+
+48. Mitchell2015 (Score: 20.0)
+    Título: {Developing resilience to England's future droughts: Time for cap and trade?}},
+    year = {2015},
+    journal = {Journal of Environmental Management}...
+    Ano: 2015},
+    journal = {Journal of Environmental Management},
+    author = {Mitchell, G and McDonald, A},
+    pages = {97--107},
+    volume = {149},
+    url = {https://www.scopus.com/inward/record.uri?eid=2-s2.0-84930520561&doi=10.1016%2Fj.jenvman.2014.10.012&partnerID=40&md5=ca6aee004e808cee32ac8145f635546d},
+    doi = {10.1016/j.jenvman.2014.10.012},
+    issn = {03014797 (ISSN)},
+    keywords = {Article, Commerce, Conservation of Natural Resources, Demand management, Drought resilience, Droughts, England, TWUC, United Kingdom, Water Supply, Water resource trading, Water scarcity, climate change, commercial phenomena, cost analysis, cost effectiveness analysis, desalination, drought, economics, ecosystem resilience, environmental protection, future prospect, geographic distribution, human, long-term change, modeling, price dynamics, procedures, resilience, resource management, river basin, summer, water demand, water management, water resource, water stress, water supply},
+    language = {English}
+}
+    Termos encontrados: Alta: resilience, Alta: water management, Média: environmental, Média: conservation, Média: management, Média: system, Média: natural resource, Média: ecosystem
+
+49. Ramos-Sandoval2019 (Score: 20.0)
+    Título: {Innovative capabilities of users of agricultural R{\&}D services}},
+    year = {2019},
+    journal = {REGIONAL SCIENCE POLICY AND PRACTICE},
+    auth...
+    Ano: 2019},
+    journal = {REGIONAL SCIENCE POLICY AND PRACTICE},
+    author = {Ramos-Sandoval, R and Alvarez-Coque, J M G and Mas-Verdu, F},
+    number = {2},
+    pages = {295-+},
+    volume = {11},
+    doi = {10.1111/rsp3.12152},
+    issn = {1757-7802 J9  - REG SCI POLICY PRACT JI  - Reg. Sci. Policy Pract.},
+    keywords = {BUSINESS, DECISIONS, EXTENSION, FARMERS, KNOWLEDGE, LEARNING ORIENTATION, MANAGEMENT, MARKET ORIENTATION, R{\&}D Services, SYSTEMS, TECHNOLOGY, farmers, human capital, innovation attitude, learning orientation, market orientation, sub-territory},
+    language = {English}
+}
+    Termos encontrados: Média: farmer, Média: agricultural, Média: management, Média: practice, Média: system, Média: knowledge, Média: cultural, Média: innovation
+
+50. Mitchell2015 (Score: 20.0)
+    Título: {Developing resilience to England's future droughts: Time for cap and trade?}},
+    year = {2015},
+    journal = {Journal of Environmental Management}...
+    Ano: 2015},
+    journal = {Journal of Environmental Management},
+    author = {Mitchell, G and McDonald, A},
+    pages = {97--107},
+    volume = {149},
+    url = {https://www.scopus.com/inward/record.uri?eid=2-s2.0-84930520561&doi=10.1016%2Fj.jenvman.2014.10.012&partnerID=40&md5=ca6aee004e808cee32ac8145f635546d},
+    doi = {10.1016/j.jenvman.2014.10.012},
+    issn = {03014797 (ISSN)},
+    keywords = {Article, Commerce, Conservation of Natural Resources, Demand management, Drought resilience, Droughts, England, TWUC, United Kingdom, Water Supply, Water resource trading, Water scarcity, climate change, commercial phenomena, cost analysis, cost effectiveness analysis, desalination, drought, economics, ecosystem resilience, environmental protection, future prospect, geographic distribution, human, long-term change, modeling, price dynamics, procedures, resilience, resource management, river basin, summer, water demand, water management, water resource, water stress, water supply},
+    language = {English}
+}
+    Termos encontrados: Alta: resilience, Alta: water management, Média: environmental, Média: conservation, Média: management, Média: system, Média: natural resource, Média: ecosystem
+
+REFERÊNCIAS IRRELEVANTES (SCORE MAIS ALTO):
+--------------------------------------------------
+ 1. Koppa2019 (Score: 4.0)
+    Título: Seasonal Hydropower Planning for Data-Scarce Regions Using Multimodel Ensemble Forecasts, Remote Sen...
+    Principais termos: Contexto: method, Contexto: model, Contexto: study
+
+ 2. Koppa2019 (Score: 4.0)
+    Título: Seasonal Hydropower Planning for Data-Scarce Regions Using Multimodel Ensemble Forecasts, Remote Sen...
+    Principais termos: Contexto: method, Contexto: model, Contexto: study
+
+ 3. Amaral2015 (Score: 4.0)
+    Título: {AMAZON BRAND STRATEGIES COMMUNICATION PUBLICITARIA ENVIRONMENTALISM AND SUSTAINABILITY}},
+    year ...
+    Principais termos: Média: sustainability, Média: environmental
+
+ 4. Marquis2015 (Score: 4.0)
+    Título: {An Integrated Microcredit, Entrepreneurial Training, and Nutrition Education Intervention Is Associ...
+    Principais termos: Média: rural, Média: knowledge
+
+ 5. Zhang2015 (Score: 4.0)
+    Título: {Arbuscular mycorrhizal symbiosis influences arsenic accumulation and speciation in Medicago truncat...
+    Principais termos: Média: plant, Contexto: analysis, Contexto: study
+
+ 6. Persson2015 (Score: 4.0)
+    Título: {Candidatus Frankia datiscae Dg1, the Actinobacterial microsymbiont of datisca glomerata, expresses ...
+    Principais termos: Média: plant, Contexto: analysis, Contexto: study
+
+ 7. Wan2015395 (Score: 4.0)
+    Título: {Consumers' environmental perceptions of children's furniture in China}},
+    year = {2015},
+    jou...
+    Principais termos: Média: environmental, Contexto: development, Contexto: analysis
+
+ 8. Shaheen2015DefinitionsUnderstanding (Score: 4.0)
+    Título: {Definitions, Industry Developments, and Early Understanding}},
+    year = {2015},
+    booktitle = {...
+    Principais termos: Média: sustainability, Contexto: development, Contexto: research
+
+ 9. Oner2015 (Score: 4.0)
+    Título: {Emerging Towers in Bayrakli: Sustainability as a Branding Strategy or a Tool for Local Development?...
+    Principais termos: Média: sustainability, Contexto: development, Contexto: strategy
+
+10. Khashe2015 (Score: 4.0)
+    Título: {Influence of LEED branding on building occupants' pro-environmental behavior}},
+    year = {2015},
+...
+    Principais termos: Média: sustainability, Média: environmental
+
+11. Urbini2015 (Score: 4.0)
+    Título: {Internationalization, education and technological innovation: Three key factors to improve the qual...
+    Principais termos: Média: environmental, Média: innovation
+
+12. Yang2015b (Score: 4.0)
+    Título: {The combined effects of arbuscular mycorrhizal fungi (AMF) and lead (Pb) stress on Pb accumulation,...
+    Principais termos: Média: plant, Contexto: development, Contexto: study
+
+13. Garcia2015 (Score: 4.0)
+    Título: {THE USE OF GASTRONOMY AS A TOURIST ATTRACTION: A CONTRIBUTION TO THE EXTENSION PROJECT "TOURISM AND...
+    Principais termos: Média: knowledge, Média: cultural
+
+14. Lammel2015 (Score: 4.0)
+    Título: {Woody Mimosa species are nodulated by Burkholderia in ombrophylous forest soils and their symbioses...
+    Principais termos: Média: plant, Média: management
+
+15. Raper2005 (Score: 4.0)
+    Título: {Agricultural traffic impacts on soil}},
+    year = {2005},
+    journal = {Journal of Terramechanics...
+    Principais termos: Média: agricultural, Média: cultural
+
+
+CRITÉRIOS DE PONTUAÇÃO:
+• Termos Prioritários: +5 pontos
+• Termos Alta Relevância: +3 pontos
+• Termos Média Relevância: +2 pontos
+• Termos de Contexto: +1 ponto
+• Termos Exclusão Forte: -5 pontos
+• Termos Exclusão Moderada: -2 pontos

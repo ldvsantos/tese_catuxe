@@ -1,31 +1,80 @@
-\backcite {Paulovich2008,DaSilvaCezar2018}{{32}{3.1.1.2}{section*.16}}
-\backcite {Paulovich2008,DaSilvaCezar2018}{{32}{3.1.1.2}{section*.16}}
-\backcite {Fernandes2018ManualPortuges}{{32}{3.1.1.2}{section*.16}}
-\backcite {Mendes2019,Carvalho2020a}{{33}{3.1.1.2}{section*.17}}
-\backcite {Mendes2019,Carvalho2020a}{{33}{3.1.1.2}{section*.17}}
-\backcite {Gavasso2016}{{33}{3.1.1.2}{section*.17}}
-\backcite {Association2018}{{33}{3.1.2}{section*.18}}
-\backcite {Santos2018,Gurgel2021}{{34}{3.1.2}{section*.19}}
-\backcite {Santos2018,Gurgel2021}{{34}{3.1.2}{section*.19}}
-\backcite {Hasson2000}{{35}{3.1.2}{equation.3.1.2}}
-\backcite {Borsa2018}{{35}{3.1.2}{Item.14}}
-\backcite {Cheung2002EvaluatingInvariance}{{35}{3.1.2}{Item.14}}
-\backcite {Milfont2010TestingResearch.}{{35}{3.1.2}{Item.14}}
-\backcite {Kane2010}{{35}{3.1.2}{section*.22}}
-\backcite {Lane2014ValidityConsequences}{{35}{3.1.2}{section*.22}}
-\backcite {Zhang_J}{{36}{3.1.2}{section*.22}}
-\backcite {Tarka2018AnSciences}{{37}{3.1.2}{section*.25}}
-\backcite {spearman_C_1904,Spearman_1927}{{37}{3.1.2}{section*.25}}
-\backcite {spearman_C_1904,Spearman_1927}{{37}{3.1.2}{section*.25}}
-\backcite {Xiong2016}{{37}{3.1.2}{section*.25}}
-\backcite {SPSSCorp2017}{{37}{3.1.2}{section*.25}}
-\backcite {Iacobucci2010StructuralTopics}{{37}{3.1.2}{section*.25}}
-\backcite {Iacobucci2009EverythingAsk}{{38}{3.1.2}{section*.25}}
-\backcite {HairJr2021APLS-SEM}{{38}{3.1.2}{section*.25}}
-\backcite {Andrich1978ACategories}{{38}{3.1.2}{section*.26}}
+\backcite {Fletcher2021}{{13}{1}{chapter.1}}
+\backcite {Mekonen2017}{{13}{1}{chapter.1}}
+\backcite {Cebrian-Piqueras2020, Mantyka-Pringle2017}{{13}{1}{chapter.1}}
+\backcite {Cebrian-Piqueras2020, Mantyka-Pringle2017}{{13}{1}{chapter.1}}
+\backcite {Olsson2001, Folke2001}{{13}{1}{chapter.1}}
+\backcite {Olsson2001, Folke2001}{{13}{1}{chapter.1}}
+\backcite {Thorn2020}{{13}{1}{chapter.1}}
+\backcite {Vega2023}{{13}{1}{chapter.1}}
+\backcite {Morin-Labatut1992, Akhtar1992}{{13}{1}{chapter.1}}
+\backcite {Morin-Labatut1992, Akhtar1992}{{13}{1}{chapter.1}}
+\backcite {Mistry2016, Berardi2016}{{13}{1}{chapter.1}}
+\backcite {Mistry2016, Berardi2016}{{13}{1}{chapter.1}}
+\backcite {Anderson2007, Daim2007, Lavoie2007}{{13}{1}{chapter.1}}
+\backcite {Anderson2007, Daim2007, Lavoie2007}{{13}{1}{chapter.1}}
+\backcite {Anderson2007, Daim2007, Lavoie2007}{{13}{1}{chapter.1}}
+\backcite {Purwanto2022}{{13}{1}{chapter.1}}
+\backcite {Bokic2014, Cikic2014}{{13}{1}{chapter.1}}
+\backcite {Bokic2014, Cikic2014}{{13}{1}{chapter.1}}
+\backcite {Brasil2015}{{14}{1}{chapter.1}}
+\backcite {Brasil2000}{{14}{1}{chapter.1}}
+\backcite {Brasil2015}{{14}{1}{chapter.1}}
+\backcite {Gafner-Rojas2020}{{14}{1}{chapter.1}}
+\backcite {Ens2016}{{14}{1}{chapter.1}}
+\backcite {Fajardo2021}{{14}{1}{chapter.1}}
+\backcite {Degryse2009}{{14}{1}{chapter.1}}
+\backcite {Padigala2015}{{29}{3.1.1.1}{subsubsection.3.1.1.1}}
+\backcite {BarreraBassols2006}{{30}{3.1.1.1}{subsubsection.3.1.1.1}}
+\backcite {Pieroni2005}{{30}{3.1.1.1}{subsubsection.3.1.1.1}}
+\backcite {Lakshmanan2014}{{30}{3.1.1.1}{subsubsection.3.1.1.1}}
+\backcite {Zhong2022}{{30}{3.1.1.1}{subsubsection.3.1.1.1}}
+\backcite {Verma2019}{{30}{3.1.1.1}{subsubsection.3.1.1.1}}
+\backcite {Kline2018}{{30}{3.1.1.1}{subsubsection.3.1.1.1}}
+\backcite {Kawecki2004}{{30}{3.1.1.1}{subsubsection.3.1.1.1}}
+\backcite {DAmbrosio2015}{{30}{3.1.1.1}{subsubsection.3.1.1.1}}
+\backcite {Souravi2019}{{30}{3.1.1.1}{subsubsection.3.1.1.1}}
+\backcite {Altieri2019}{{31}{3.1.1.1}{subsubsection.3.1.1.1}}
+\backcite {Irhza2023}{{31}{3.1.1.1}{subsubsection.3.1.1.1}}
+\backcite {Borah2023,FernandezLlamazares2015,Nazarea2006}{{31}{3.1.1.2}{subsubsection.3.1.1.2}}
+\backcite {Borah2023,FernandezLlamazares2015,Nazarea2006}{{31}{3.1.1.2}{subsubsection.3.1.1.2}}
+\backcite {Borah2023,FernandezLlamazares2015,Nazarea2006}{{31}{3.1.1.2}{subsubsection.3.1.1.2}}
+\backcite {Gavin2015}{{31}{3.1.1.2}{subsubsection.3.1.1.2}}
+\backcite {FernandezLlamazares2018}{{31}{3.1.1.2}{subsubsection.3.1.1.2}}
+\backcite {Altieri2002}{{31}{3.1.1.2}{subsubsection.3.1.1.2}}
+\backcite {Paulovich2008,DaSilvaCezar2018}{{31}{3.1.1.2}{section*.16}}
+\backcite {Paulovich2008,DaSilvaCezar2018}{{31}{3.1.1.2}{section*.16}}
+\backcite {Fernandes2018ManualPortuges}{{31}{3.1.1.2}{section*.16}}
+\backcite {Mendes2019,Carvalho2020a}{{32}{3.1.1.2}{section*.17}}
+\backcite {Mendes2019,Carvalho2020a}{{32}{3.1.1.2}{section*.17}}
+\backcite {Gavasso2016}{{32}{3.1.1.2}{section*.17}}
+\backcite {Association2018}{{32}{3.1.2}{section*.18}}
+\backcite {Santos2018,Gurgel2021}{{33}{3.1.2}{section*.19}}
+\backcite {Santos2018,Gurgel2021}{{33}{3.1.2}{section*.19}}
+\backcite {Hasson2000}{{33}{3.1.2}{equation.3.1.2}}
+\backcite {Borsa2018}{{34}{3.1.2}{Item.14}}
+\backcite {Cheung2002EvaluatingInvariance}{{34}{3.1.2}{Item.14}}
+\backcite {Milfont2010TestingResearch.}{{34}{3.1.2}{Item.14}}
+\backcite {Kane2010}{{34}{3.1.2}{section*.22}}
+\backcite {Lane2014ValidityConsequences}{{34}{3.1.2}{section*.22}}
+\backcite {Zhang_J}{{34}{3.1.2}{section*.22}}
+\backcite {Tarka2018AnSciences}{{36}{3.1.2}{section*.25}}
+\backcite {spearman_C_1904,Spearman_1927}{{36}{3.1.2}{section*.25}}
+\backcite {spearman_C_1904,Spearman_1927}{{36}{3.1.2}{section*.25}}
+\backcite {Xiong2016}{{36}{3.1.2}{section*.25}}
+\backcite {SPSSCorp2017}{{36}{3.1.2}{section*.25}}
+\backcite {Iacobucci2010StructuralTopics}{{36}{3.1.2}{section*.25}}
+\backcite {Iacobucci2009EverythingAsk}{{36}{3.1.2}{section*.25}}
+\backcite {HairJr2021APLS-SEM}{{37}{3.1.2}{section*.25}}
+\backcite {Andrich1978ACategories}{{37}{3.1.2}{section*.26}}
+\backcite {Linacre2012WinstepsGuide}{{37}{3.1.2}{section*.26}}
+\backcite {Boone2016RaschHow,Bond2020ApplyingSciences}{{38}{3.1.2}{section*.26}}
+\backcite {Boone2016RaschHow,Bond2020ApplyingSciences}{{38}{3.1.2}{section*.26}}
+\backcite {Wright1994ReasonableTransactions}{{38}{3.1.2}{section*.26}}
+\backcite {Bond2020ApplyingSciences}{{38}{3.1.2}{section*.26}}
 \backcite {Linacre2012WinstepsGuide}{{38}{3.1.2}{section*.26}}
-\backcite {Boone2016RaschHow,Bond2020ApplyingSciences}{{39}{3.1.2}{section*.26}}
-\backcite {Boone2016RaschHow,Bond2020ApplyingSciences}{{39}{3.1.2}{section*.26}}
-\backcite {Wright1994ReasonableTransactions}{{39}{3.1.2}{section*.26}}
-\backcite {Bond2020ApplyingSciences}{{39}{3.1.2}{section*.26}}
-\backcite {Linacre2012WinstepsGuide}{{39}{3.1.2}{section*.26}}
+\backcite {Elhussiny2023}{{44}{3.1.3}{subsection.3.1.3}}
+\backcite {Kamyab2021,Souza2022,Yeasmin2022}{{46}{3.1.5}{subsection.3.1.5}}
+\backcite {Kamyab2021,Souza2022,Yeasmin2022}{{46}{3.1.5}{subsection.3.1.5}}
+\backcite {Kamyab2021,Souza2022,Yeasmin2022}{{46}{3.1.5}{subsection.3.1.5}}
+\backcite {Tuluxun2025}{{48}{3.1.6}{subsection.3.1.6}}
+\backcite {Tuluxun2025}{{48}{3.1.6}{subsection.3.1.6}}

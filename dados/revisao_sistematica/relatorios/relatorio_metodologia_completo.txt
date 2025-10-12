@@ -1,0 +1,72 @@
+RELATÓRIO COMPLETO - CITAÇÕES DA METODOLOGIA
+==================================================
+
+RESUMO GERAL:
+• Total de citações na metodologia: 57
+• Já estão no references.bib: 29
+
+CITAÇÕES JÁ PRESENTES NO REFERENCES.BIB (29):
+✅ Andrich1978ACategories
+✅ Association2018
+✅ Bond2020ApplyingSciences
+✅ Boone2016RaschHow
+✅ Borsa2018
+✅ Carvalho2020a
+✅ Cheung2002EvaluatingInvariance
+✅ DaSilvaCezar2018
+✅ Fernandes2018ManualPortuges
+✅ Gavasso2016
+✅ Gurgel2021
+✅ HairJr2021APLS-SEM
+✅ Hasson2000
+✅ Iacobucci2009EverythingAsk
+✅ Iacobucci2010StructuralTopics
+✅ Kane2010
+✅ Lane2014ValidityConsequences
+✅ Linacre2012WinstepsGuide
+✅ Lotka1926
+✅ Mendes2019
+✅ Milfont2010TestingResearch.
+✅ Pareto1964
+✅ Paulovich2008
+✅ SPSSCorp2017
+✅ Santos2018
+✅ Tarka2018AnSciences
+✅ Wright1994ReasonableTransactions
+✅ Xiong2016
+✅ Zhang_J
+• Encontradas nos backups: 0
+• Ainda faltantes: 28
+
+CITAÇÕES AINDA FALTANTES (28):
+❌ Altieri2002
+❌ Altieri2019
+❌ BarreraBassols2006
+❌ Borah2023
+❌ DAmbrosio2015
+❌ Elhussiny2023
+❌ FernandezLlamazares2015
+❌ FernandezLlamazares2018
+❌ Gavin2015
+❌ Hernandes2012
+❌ Hong2018
+❌ Irhza2023
+❌ Kamyab2021
+❌ Kawecki2004
+❌ Kline2018
+❌ Lakshmanan2014
+❌ Moher2009
+❌ Nazarea2006
+❌ Padigala2015
+❌ Pieroni2005
+❌ Shea2017
+❌ Souravi2019
+❌ Souza2022
+❌ Tuluxun2025
+❌ VanEck2010
+❌ Verma2019
+❌ Yeasmin2022
+❌ Zhong2022
+
+ACÕES RECOMENDADAS:
+2. Buscar as 28 referências ainda faltantes em outras fontes

@@ -1,0 +1,72 @@
+RELATÓRIO DE VERIFICAÇÃO DE CITAÇÕES - METODOS.TEX
+=======================================================
+
+RESUMO:
+• Total de citações no Metodos.tex: 57
+• Citações encontradas nas referências filtradas: 0
+• Taxa de correspondência: 0.0%
+
+
+CITAÇÕES NÃO ENCONTRADAS:
+- Altieri2002
+- Altieri2019
+- Andrich1978ACategories
+- Association2018
+- BarreraBassols2006
+- Bond2020ApplyingSciences
+- Boone2016RaschHow
+- Borah2023
+- Borsa2018
+- Carvalho2020a
+- Cheung2002EvaluatingInvariance
+- DAmbrosio2015
+- DaSilvaCezar2018
+- Elhussiny2023
+- Fernandes2018ManualPortuges
+- FernandezLlamazares2015
+- FernandezLlamazares2018
+- Gavasso2016
+- Gavin2015
+- Gurgel2021
+- HairJr2021APLS-SEM
+- Hasson2000
+- Hernandes2012
+- Hong2018
+- Iacobucci2009EverythingAsk
+- Iacobucci2010StructuralTopics
+- Irhza2023
+- Kamyab2021
+- Kane2010
+- Kawecki2004
+- Kline2018
+- Lakshmanan2014
+- Lane2014ValidityConsequences
+- Linacre2012WinstepsGuide
+- Lotka1926
+- Mendes2019
+- Milfont2010TestingResearch.
+- Moher2009
+- Nazarea2006
+- Padigala2015
+- Pareto1964
+- Paulovich2008
+- Pieroni2005
+- SPSSCorp2017
+- Santos2018
+- Shea2017
+- Souravi2019
+- Souza2022
+- Tarka2018AnSciences
+- Tuluxun2025
+- VanEck2010
+- Verma2019
+- Wright1994ReasonableTransactions
+- Xiong2016
+- Yeasmin2022
+- Zhang_J
+- Zhong2022
+
+ACÕES RECOMENDADAS:
+1. Adicionar as 0 referências encontradas ao references.bib
+2. Buscar as 57 referências não encontradas em outras fontes
+3. Verificar se as citações não encontradas são realmente necessárias
