@@ -1,0 +1,319 @@
+================================================================================
+                    INSTRUÇÕES DE COMPILAÇÃO - TESE DE DOUTORADO
+                              Catuxe Varjão de Santana Oliveira
+                           PPGPI/UFS - Outubro 2025
+================================================================================
+
+📋 ÍNDICE:
+1. Pré-requisitos
+2. Estrutura do Projeto
+3. Processo de Compilação Completa
+4. Compilação Rápida (Desenvolvimento)
+5. Troubleshooting
+6. Scripts Automatizados
+7. Informações Técnicas
+
+================================================================================
+1. PRÉ-REQUISITOS
+================================================================================
+
+✅ SOFTWARE NECESSÁRIO:
+• MiKTeX 24.1+ (Windows) - Distribuição LaTeX completa
+• Editor LaTeX (VS Code, TeXstudio, ou similar)
+• PowerShell (Windows nativo)
+• Git (para versionamento)
+
+✅ ARQUIVOS ESSENCIAIS:
+• Tese-Catuxe-PPGPI.tex (arquivo principal)
+• references.bib (bibliografia)
+• ppgpi-abntex2.cls (classe de documento)
+• Doutorado-Catuxe.sty (estilo personalizado)
+
+================================================================================
+2. ESTRUTURA DO PROJETO
+================================================================================
+
+📁 TESE_ATUAL/
+├── 📄 Tese-Catuxe-PPGPI.tex          # ⭐ ARQUIVO PRINCIPAL
+├── 📄 references.bib                  # Bibliografia
+├── 📄 ppgpi-abntex2.cls              # Classe de documento
+├── 📄 Doutorado-Catuxe.sty           # Estilo personalizado
+├── 📂 PRE_TEXTUAL/                   # Elementos pré-textuais
+│   ├── Dedicatoria.tex
+│   ├── Agradecimentos.tex
+│   ├── Epigrafe.tex
+│   ├── Resumo.tex
+│   ├── Abstract.tex
+│   └── Abreviaturas.tex
+├── 📂 CONTEUDOS/                     # ⭐ CONTEÚDO PRINCIPAL
+│   ├── 📂 INTRODUÇÃO/
+│   │   ├── Introducao.tex
+│   │   └── Referencial.tex
+│   ├── 📂 METODOLOGIA/               # ⭐ METODOLOGIA MODULAR
+│   │   ├── Metodologia.tex           # Arquivo mestre
+│   │   ├── Met_rs.tex               # Revisão sistemática
+│   │   ├── Met_psicometrica.tex     # Métodos psicométricos
+│   │   └── Met_machine_learning.tex # Machine learning
+│   ├── 📂 RESULTADOS/
+│   │   └── Resultados.tex
+│   └── 📂 CONCLUSAO/
+│       └── Consideracoes.tex
+├── 📂 POS_TEXTUAL/                   # Elementos pós-textuais
+│   └── Apendices.tex
+├── 📂 APENDECES/                     # PDFs dos apêndices
+│   ├── Apendice_B.pdf
+│   ├── Apendice_C.pdf
+│   ├── Apendice_D.pdf
+│   ├── Apendice_E.pdf
+│   ├── Apendice_F.pdf
+│   └── Apendice_H.pdf
+├── 📂 IMAGENS/                       # Figuras e gráficos
+├── 📂 DADOS/                         # Scripts e dados
+│   └── revisao_sistematica/
+└── 📂 OLD/                          # Backup de arquivos antigos
+
+================================================================================
+3. PROCESSO DE COMPILAÇÃO COMPLETA
+================================================================================
+
+🎯 QUANDO USAR: 
+• Primeira compilação após mudanças estruturais
+• Adição/modificação de referências bibliográficas
+• Antes de gerar versão final
+• Após mudanças em múltiplos arquivos
+
+⚡ COMANDOS (Execute no PowerShell):
+
+# Navegue até o diretório da tese
+cd "C:\Users\[seu-usuario]\...\TESE_ATUAL"
+
+# Passo 1: Primeira compilação LaTeX
+pdflatex -interaction=nonstopmode "Tese-Catuxe-PPGPI.tex"
+
+# Passo 2: Processar bibliografia
+bibtex "Tese-Catuxe-PPGPI"
+
+# Passo 3: Segunda compilação (resolve referências cruzadas)
+pdflatex -interaction=nonstopmode "Tese-Catuxe-PPGPI.tex"
+
+# Passo 4: Compilação final (gera PDF definitivo)
+pdflatex -interaction=nonstopmode "Tese-Catuxe-PPGPI.tex"
+
+✅ RESULTADO ESPERADO:
+• Arquivo: Tese-Catuxe-PPGPI.pdf
+• Páginas: ~81 páginas
+• Tamanho: ~1.6-1.7MB
+
+================================================================================
+4. COMPILAÇÃO RÁPIDA (DESENVOLVIMENTO)
+================================================================================
+
+🎯 QUANDO USAR:
+• Mudanças pequenas em texto
+• Verificação rápida de formatação
+• Durante escrita contínua
+
+⚡ COMANDO ÚNICO:
+pdflatex -interaction=nonstopmode "Tese-Catuxe-PPGPI.tex"
+
+⚠️ LIMITAÇÕES:
+• Não atualiza bibliografia
+• Pode não resolver todas as referências cruzadas
+• Use apenas para verificações rápidas
+
+================================================================================
+5. TROUBLESHOOTING
+================================================================================
+
+❌ ERRO: "File not found"
+🔧 SOLUÇÃO:
+• Verifique se está no diretório correto da tese
+• Confirme que o arquivo Tese-Catuxe-PPGPI.tex existe
+• Execute: Get-Location (para ver diretório atual)
+
+❌ ERRO: "Bibliography not found"
+🔧 SOLUÇÃO:
+• Verifique se references.bib existe
+• Execute o passo de bibtex separadamente
+• Comando: bibtex "Tese-Catuxe-PPGPI"
+
+❌ ERRO: "Package not found"
+🔧 SOLUÇÃO:
+• Atualize MiKTeX: miktex-update.exe
+• Instale pacote faltante: miktex-packages.exe
+• Ou pelo console: mpm --install [nome-do-pacote]
+
+❌ ERRO: "Cannot find image/PDF"
+🔧 SOLUÇÃO:
+• Verifique pasta IMAGENS/ para figuras
+• Verifique pasta APENDECES/ para PDFs
+• Confirme nomes exatos dos arquivos (case-sensitive)
+
+❌ WARNINGS: "Citation undefined"
+🔧 SOLUÇÃO:
+• Normal durante desenvolvimento
+• Execute compilação completa (4 passos)
+• Adicione referências faltantes em references.bib
+
+================================================================================
+6. SCRIPTS AUTOMATIZADOS
+================================================================================
+
+🤖 SCRIPT COMPLETO (PowerShell):
+Salve como "compilar_tese.ps1":
+
+```powershell
+# Script de Compilação Completa da Tese
+Write-Host "🔄 Iniciando compilação completa..." -ForegroundColor Yellow
+
+# Passo 1
+Write-Host "📖 Passo 1/4: Primeira compilação LaTeX..." -ForegroundColor Cyan
+pdflatex -interaction=nonstopmode "Tese-Catuxe-PPGPI.tex" | Out-Null
+
+# Passo 2
+Write-Host "📚 Passo 2/4: Processando bibliografia..." -ForegroundColor Cyan
+bibtex "Tese-Catuxe-PPGPI" | Out-Null
+
+# Passo 3
+Write-Host "📖 Passo 3/4: Segunda compilação..." -ForegroundColor Cyan
+pdflatex -interaction=nonstopmode "Tese-Catuxe-PPGPI.tex" | Out-Null
+
+# Passo 4
+Write-Host "📖 Passo 4/4: Compilação final..." -ForegroundColor Cyan
+pdflatex -interaction=nonstopmode "Tese-Catuxe-PPGPI.tex" | Out-Null
+
+# Resultado
+Write-Host "✅ COMPILAÇÃO CONCLUÍDA!" -ForegroundColor Green
+Get-Item "Tese-Catuxe-PPGPI.pdf" | Select-Object Name, Length, LastWriteTime
+```
+
+📖 COMO USAR O SCRIPT:
+1. Salve o código acima como "compilar_tese.ps1"
+2. Abra PowerShell no diretório da tese
+3. Execute: .\compilar_tese.ps1
+
+================================================================================
+7. INFORMAÇÕES TÉCNICAS
+================================================================================
+
+📋 ESPECIFICAÇÕES DO DOCUMENTO:
+• Classe: ppgpi-abntex2 (baseada em abntex2)
+• Estilo: Brasileiro (ABNT)
+• Bibliografia: abntex2-alf.bst
+• Codificação: UTF-8
+• Motor: pdfLaTeX
+
+📊 ESTATÍSTICAS ATUAIS (Outubro 2025):
+• Total de páginas: 81
+• Arquivo PDF: ~1.7MB
+• Estrutura modular: 4 arquivos de metodologia
+• Apêndices: 6 PDFs incluídos
+• Figuras: 2 imagens principais
+
+🔗 DEPENDÊNCIAS PRINCIPAIS:
+• LaTeX: MiKTeX 24.1+
+• Classe: abntex2
+• Bibliografia: BibTeX
+• Figuras: graphicx, pdfpages
+• Tabelas: longtable, booktabs
+• Diagramas: tikz, pgfgantt
+
+📁 ARQUIVOS GERADOS (podem ser deletados):
+• *.aux (informações auxiliares)
+• *.log (logs de compilação)
+• *.bbl (bibliografia processada)
+• *.blg (log da bibliografia)
+• *.toc (índice)
+• *.lof (lista de figuras)
+• *.lot (lista de tabelas)
+• *.idx, *.ind (índice remissivo)
+
+================================================================================
+8. COMO USAR O SCRIPT POWERSHELL
+================================================================================
+
+🤖 COMANDOS BÁSICOS:
+
+✅ Compilação completa (4 passos - recomendado):
+   .\compilar_tese.ps1
+
+✅ Compilação rápida (1 passo apenas):
+   .\compilar_tese.ps1 -Rapida
+
+✅ Limpar arquivos auxiliares antes de compilar:
+   .\compilar_tese.ps1 -Limpar
+
+✅ Compilação silenciosa (sem output detalhado):
+   .\compilar_tese.ps1 -Silenciosa
+
+📋 COMBINAÇÕES ÚTEIS:
+
+• Limpar e compilar completo:
+  .\compilar_tese.ps1 -Limpar
+
+• Compilação rápida e silenciosa:
+  .\compilar_tese.ps1 -Rapida -Silenciosa
+
+• Limpar e compilar silencioso:
+  .\compilar_tese.ps1 -Limpar -Silenciosa
+
+🎯 QUANDO USAR CADA MODO:
+
+• Compilação Completa: Após mudanças nas referências bibliográficas, citações, ou primeira compilação
+• Compilação Rápida: Para pequenas alterações no texto, correções ortográficas
+• Modo Limpar: Quando há problemas de compilação ou arquivos corrompidos
+• Modo Silencioso: Para compilações automáticas ou em scripts batch
+
+📁 ARQUIVOS IMPORTANTES:
+
+• Script: compilar_tese.ps1
+• Instruções: INSTRUCOES_COMPILACAO.txt
+• Arquivo principal: Tese-Catuxe-PPGPI.tex
+• PDF final: Tese-Catuxe-PPGPI.pdf
+
+💡 DICA: Use sempre .\compilar_tese.ps1 para ter controle total e tratamento de erros automático!
+
+❗ IMPORTANTE: Se o script não executar, verifique a política de execução:
+   Get-ExecutionPolicy
+   Se necessário: Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+
+================================================================================
+9. DICAS E BOAS PRÁTICAS
+================================================================================
+
+✅ ANTES DE COMPILAR:
+• Salve todos os arquivos abertos
+• Feche visualizadores de PDF que possam travar o arquivo
+• Verifique se não há caracteres especiais em nomes de arquivo
+
+✅ DURANTE O DESENVOLVIMENTO:
+• Use compilação rápida para verificações
+• Execute compilação completa antes de submissões
+• Mantenha backup regular (Git)
+
+✅ PARA PERFORMANCE:
+• Compile apenas quando necessário
+• Use -interaction=nonstopmode para evitar paradas
+• Redirecione output com > $null para compilação silenciosa
+
+✅ VERSIONAMENTO:
+• Commit frequente no Git
+• Use tags para versões importantes
+• Mantenha histórico de mudanças estruturais
+
+================================================================================
+📞 SUPORTE E CONTATO
+================================================================================
+
+Em caso de problemas:
+1. Consulte este arquivo primeiro
+2. Verifique logs de erro (.log files)
+3. Consulte documentação do abntex2
+4. Contate suporte técnico do PPGPI/UFS
+
+Última atualização: 12 de outubro de 2025
+Estrutura validada e funcional ✅
+
+================================================================================
+                              FIM DAS INSTRUÇÕES
+================================================================================
