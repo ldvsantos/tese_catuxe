@@ -343,10 +343,10 @@
       \centering\ABNTEXchapterupperifneeded{#1}}{%
     \ifthenelse{\boolean{abntex@apendiceousecao}}{%
         \centering%
-        \settowidth{\chapternamenumlength}{\printchaptername\printchapternum\afterchapternum}%
+        \settowidth{\chapternamenumlength}{\printchaptername\afterchapternum}%
         \ABNTEXchapterupperifneeded{#1}%
       }{%
-        {\printchaptername\printchapternum\afterchapternum}%
+        {\printchaptername\afterchapternum}%
         \parbox[t]{\columnwidth-\chapternamenumlength}{\ABNTEXchapterupperifneeded{#1}}}%
      }    
 }
