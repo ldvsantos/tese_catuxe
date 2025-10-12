@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Script para verificar citações do arquivo Metodos.tex no arquivo de referências filtradas
+Script para verificar citações dos arquivos de metodologia (Met_psicometrica.tex, Met_rs.tex e Met_machine_learning.tex) no arquivo de referências filtradas
 """
 
 import re
@@ -13,8 +13,9 @@ def extrair_citacoes_metodos() -> Set[str]:
     """
     citacoes = set()
     arquivos_metodologia = [
-        'Conteudo/Metodos.tex',
-        'Conteudo/metodologia_rs.tex'
+        'CONTEUDOS/METODOLOGIA/Met_psicometrica.tex',
+        'CONTEUDOS/METODOLOGIA/Met_rs.tex',
+        'CONTEUDOS/METODOLOGIA/Met_machine_learning.tex'
     ]
     
     for arquivo_path in arquivos_metodologia:
@@ -89,9 +90,9 @@ def main():
     """
     Função principal
     """
-    print("=== VERIFICAÇÃO DE CITAÇÕES DO METODOS.TEX ===\n")
+    print("=== VERIFICAÇÃO DE CITAÇÕES DA METODOLOGIA ===\n")
     
-    print("1. Extraindo citações do arquivo Metodos.tex...")
+    print("1. Extraindo citações dos arquivos de metodologia...")
     citacoes_metodos = extrair_citacoes_metodos()
     print(f"   Encontradas {len(citacoes_metodos)} citações únicas")
     
@@ -104,7 +105,7 @@ def main():
     citacoes_nao_encontradas = citacoes_metodos - chaves_filtradas
     
     print(f"\n=== RESULTADOS ===")
-    print(f"• Citações no Metodos.tex: {len(citacoes_metodos)}")
+    print(f"• Citações na metodologia: {len(citacoes_metodos)}")
     print(f"• Citações ENCONTRADAS nas referências filtradas: {len(citacoes_encontradas)}")
     print(f"• Citações NÃO ENCONTRADAS: {len(citacoes_nao_encontradas)}")
     
@@ -126,7 +127,7 @@ def main():
         if referencias_completas:
             # Salvar em arquivo
             with open('referencias_metodos_para_adicionar.bib', 'w', encoding='utf-8') as arquivo:
-                arquivo.write("% Referências citadas no arquivo Metodos.tex encontradas nas referências filtradas\n")
+                arquivo.write("% Referências citadas nos arquivos de metodologia encontradas nas referências filtradas\n")
                 arquivo.write(f"% Total: {len(referencias_completas)} referências\n")
                 arquivo.write("% Para adicionar ao arquivo references.bib principal\n\n")
                 
@@ -141,11 +142,11 @@ def main():
     
     # Relatório final
     with open('relatorio_citacoes_metodos.txt', 'w', encoding='utf-8') as arquivo:
-        arquivo.write("RELATÓRIO DE VERIFICAÇÃO DE CITAÇÕES - METODOS.TEX\n")
+        arquivo.write("RELATÓRIO DE VERIFICAÇÃO DE CITAÇÕES - METODOLOGIA\n")
         arquivo.write("=" * 55 + "\n\n")
         
         arquivo.write("RESUMO:\n")
-        arquivo.write(f"• Total de citações no Metodos.tex: {len(citacoes_metodos)}\n")
+        arquivo.write(f"• Total de citações na metodologia: {len(citacoes_metodos)}\n")
         arquivo.write(f"• Citações encontradas nas referências filtradas: {len(citacoes_encontradas)}\n")
         arquivo.write(f"• Taxa de correspondência: {len(citacoes_encontradas)/len(citacoes_metodos)*100:.1f}%\n\n")
         

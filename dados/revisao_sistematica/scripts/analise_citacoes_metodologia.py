@@ -130,14 +130,14 @@ def encontrar_correspondencias(citacoes, chaves_bib):
 
 def main():
     # Caminhos dos arquivos
-    arquivo_tex = Path(r"c:\Users\vidal\OneDrive\Documentos\1 - ACADEMICO\1- UFS\2 - POS\3- DOUTORADO\TESE_ATUAL\Conteudo\metodos.tex")
+    arquivo_tex = Path(r"c:\Users\vidal\OneDrive\Documentos\1 - ACADEMICO\1- UFS\2 - POS\3- DOUTORADO\TESE_ATUAL\CONTEUDOS\METODOLOGIA\Met_psicometrica.tex")
     arquivo_bib_principal = Path(r"c:\Users\vidal\OneDrive\Documentos\1 - ACADEMICO\1- UFS\2 - POS\3- DOUTORADO\TESE_ATUAL\references.bib")
-    arquivo_bib_backup = Path(r"c:\Users\vidal\OneDrive\Documentos\1 - ACADEMICO\1- UFS\2 - POS\3- DOUTORADO\TESE_ATUAL\backup_arquivos_removidos\references_backup.bib")
+    arquivo_bib_backup = Path(r"c:\Users\vidal\OneDrive\Documentos\1 - ACADEMICO\1- UFS\2 - POS\3- DOUTORADO\TESE_ATUAL\OLD\references_backup.bib")
     
     print("=== ANÁLISE DE CITAÇÕES - ARQUIVO METODOLOGIA ===\n")
     
     # Extrair citações do texto
-    print("1. Extraindo citações do arquivo metodos.tex...")
+    print("1. Extraindo citações do arquivo Met_psicometrica.tex...")
     citacoes = extrair_citacoes_do_texto(arquivo_tex)
     print(f"   Encontradas {len(citacoes)} citações\n")
     

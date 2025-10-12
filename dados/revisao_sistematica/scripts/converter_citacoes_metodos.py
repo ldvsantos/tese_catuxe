@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Script para converter citações do formato (Autor, ano) para \cite{chave} no arquivo Metodos.tex
+Script para converter citações do formato (Autor, ano) para \cite{chave} nos arquivos de metodologia
 """
 
 import re
@@ -55,7 +55,7 @@ def criar_mapa_citacoes():
     return mapa
 
 def processar_arquivo_metodos(arquivo_entrada, arquivo_saida=None):
-    """Processa o arquivo Metodos.tex convertendo citações"""
+    """Processa os arquivos de metodologia convertendo citações"""
     if arquivo_saida is None:
         arquivo_saida = arquivo_entrada
     
@@ -134,15 +134,21 @@ def main():
     print("=" * 60)
     
     # Caminho do arquivo
-    arquivo_metodos = r'c:\Users\vidal\OneDrive\Documentos\1 - ACADEMICO\1- UFS\2 - POS\3- DOUTORADO\TESE_ATUAL\Conteudo\Metodos.tex'
+    # Caminhos dos arquivos de metodologia
+    arquivo_met_psicometrica = r'c:\Users\vidal\OneDrive\Documentos\1 - ACADEMICO\1- UFS\2 - POS\3- DOUTORADO\TESE_ATUAL\CONTEUDOS\METODOLOGIA\Met_psicometrica.tex'
+    arquivo_metodologia_rs = r'c:\Users\vidal\OneDrive\Documentos\1 - ACADEMICO\1- UFS\2 - POS\3- DOUTORADO\TESE_ATUAL\CONTEUDOS\METODOLOGIA\Met_rs.tex'
+    arquivo_met_machine_learning = r'c:\Users\vidal\OneDrive\Documentos\1 - ACADEMICO\1- UFS\2 - POS\3- DOUTORADO\TESE_ATUAL\CONTEUDOS\METODOLOGIA\Met_machine_learning.tex'
     
-    # Verifica se o arquivo existe
-    if not os.path.exists(arquivo_metodos):
-        print(f"❌ Arquivo não encontrado: {arquivo_metodos}")
-        return
+    # Verifica se os arquivos existem
+    arquivos_metodologia = [arquivo_met_psicometrica, arquivo_metodologia_rs, arquivo_met_machine_learning]
     
-    # Processa as conversões
-    substituicoes = processar_arquivo_metodos(arquivo_metodos)
+    for arquivo in arquivos_metodologia:
+        if not os.path.exists(arquivo):
+            print(f"❌ Arquivo não encontrado: {arquivo}")
+            continue
+        
+        # Processa as conversões
+        substituicoes = processar_arquivo_metodos(arquivo)
     
     # Verifica referências faltantes
     faltantes, encontradas = verificar_referencias_faltantes()

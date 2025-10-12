@@ -13,8 +13,9 @@ def extrair_citacoes_metodologia() -> Set[str]:
     """
     citacoes = set()
     arquivos_metodologia = [
-        'Conteudo/Metodos.tex',
-        'Conteudo/metodologia_rs.tex'
+        'CONTEUDOS/METODOLOGIA/Met_psicometrica.tex',
+        'CONTEUDOS/METODOLOGIA/Met_rs.tex',
+        'CONTEUDOS/METODOLOGIA/Met_machine_learning.tex'
     ]
     
     print("📖 Extraindo citações dos arquivos de metodologia...")

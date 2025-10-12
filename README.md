@@ -57,7 +57,7 @@ pdflatex Tese-Catuxe-PPGPI.tex
 - ✅ **Bibliografia:** 99%+ das referências resolvidas  
 - ✅ **Figuras:** Todas as imagens carregando
 - ✅ **Estrutura:** Conforme padrão ABNT/PPGPI
-- ✅ **Backup:** Arquivos não utilizados preservados em `backup_arquivos_removidos/`
+- ✅ **Backup:** Arquivos não utilizados preservados em `OLD/`
 
 ## 🎯 **Otimizações Realizadas**
 

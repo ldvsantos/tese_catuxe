@@ -4,7 +4,7 @@
 
 ### 📁 **Estrutura Criada**
 ```
-dados/revisao_sistematica/
+DADOS/revisao_sistematica/
 ├── 📜 README.md                           # Documentação completa do sistema
 ├── 📂 scripts/                            # 6 scripts Python + índice
 ├── 📂 referencias_filtradas/              # Referências processadas (605 itens)
@@ -53,19 +53,19 @@ dados/revisao_sistematica/
 
 ### **Para Nova Filtragem:**
 ```bash
-cd dados/revisao_sistematica/scripts
+cd DADOS/revisao_sistematica/scripts
 python filtrar_referencias_v2.py
 ```
 
 ### **Para Verificar Metodologia:**
 ```bash
-cd dados/revisao_sistematica/scripts
+cd DADOS/revisao_sistematica/scripts
 python verificar_metodologia_completo.py
 ```
 
 ### **Para Converter Citações:**
 ```bash
-cd dados/revisao_sistematica/scripts
+cd DADOS/revisao_sistematica/scripts
 python converter_citacoes_metodos.py
 ```
 
@@ -150,6 +150,6 @@ python converter_citacoes_metodos.py
 **Sistema criado por**: GitHub Copilot & Vidal  
 **Status**: ✅ Produção - Testado e Validado  
 **Data**: 12 de Outubro de 2025  
-**Localização**: `dados/revisao_sistematica/`  
+**Localização**: `DADOS/revisao_sistematica/`  
 
 **🎯 Seu sistema de revisão sistemática está pronto para revolucionar sua pesquisa!** 🚀

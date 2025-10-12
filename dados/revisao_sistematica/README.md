@@ -4,7 +4,7 @@
 ### 📁 Estrutura de Arquivos
 
 ```
-dados/revisao_sistematica/
+DADOS/revisao_sistematica/
 ├── scripts/                           # Scripts Python para automação
 │   ├── filtrar_referencias_v2.py      # Script principal de filtragem (RECOMENDADO)
 │   ├── verificar_metodologia_completo.py  # Verificação de citações da metodologia
