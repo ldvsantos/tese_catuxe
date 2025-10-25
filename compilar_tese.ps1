@@ -1,11 +1,12 @@
-# Script de Compilacao Automatica - Tese de Doutorado
-# Catuxe Varjao de Santana Oliveira - PPGPI/UFS
-# Criado em: 12 de outubro de 2025
+# Script de Compilacao Automatica - Tese de Doutorado PPGPI/UFS
+# Modelo empírico para salvaguarda de saberes agroecológicos
+# Atualizado em: 25 de outubro de 2025
 
 param(
     [switch]$Rapida,     # Compilacao rapida (apenas 1 passo)
     [switch]$Limpar,     # Limpar arquivos auxiliares antes de compilar
-    [switch]$Silenciosa  # Compilacao sem output detalhado
+    [switch]$Silenciosa, # Compilacao sem output detalhado
+    [switch]$Abrir       # Abrir PDF apos compilacao
 )
 
 # Configuracoes
@@ -128,6 +129,12 @@ if (Test-Path $ArquivoPDF) {
     Write-ColorMessage "Tamanho: $sizeMB MB ($sizeKB KB)" "Cyan"
     Write-ColorMessage "Atualizado: $($pdfInfo.LastWriteTime)" "Cyan"
     
+    # Abrir PDF se solicitado
+    if ($Abrir) {
+        Write-ColorMessage "Abrindo PDF..." "Yellow"
+        Start-Process $ArquivoPDF
+    }
+    
 } else {
     Write-ColorMessage "ERRO: PDF nao foi gerado!" "Red"
     Write-ColorMessage "Verifique os logs de erro para mais detalhes." "Yellow"
@@ -141,3 +148,5 @@ Write-ColorMessage "===============================================" "Green"
 # 2. Compilacao rapida: .\compilar_tese.ps1 -Rapida
 # 3. Limpar e compilar: .\compilar_tese.ps1 -Limpar
 # 4. Compilacao silenciosa: .\compilar_tese.ps1 -Silenciosa
+# 5. Compilar e abrir PDF: .\compilar_tese.ps1 -Abrir
+# 6. Limpar, compilar e abrir: .\compilar_tese.ps1 -Limpar -Abrir
