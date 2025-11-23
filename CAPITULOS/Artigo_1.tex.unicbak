@@ -109,13 +109,13 @@ GEN & Generalização e transferibilidade dos métodos propostos & Qualidade Cie
 
 \subsubsection{2.5.1 Procedimentos de Consenso e Validação Interavaliadores}
 
-A avaliação manual incluiu um protocolo de consenso. Inicialmente, os revisores avaliaram independentemente uma amostra piloto de 30 estudos (~11\% do corpus) para calibrar critérios. Para o corpus completo, casos de discordância (diferença \geq 2 pontos) passaram por reavaliação cega e discussão para chegar a um consenso. O coeficiente de correlação intraclasse (ICC) foi calculado de acordo com \cite{shrout1979}, obtendo um valor de 0,87 (IC 95\%: 0,84–0,91), indicando boa concordância.
+A avaliação manual incluiu um protocolo de consenso. Inicialmente, os revisores avaliaram independentemente uma amostra piloto de 30 estudos (~11\% do corpus) para calibrar critérios. Para o corpus completo, casos de discordância (diferença ≥ 2 pontos) passaram por reavaliação cega e discussão para chegar a um consenso. O coeficiente de correlação intraclasse (ICC) foi calculado de acordo com \cite{shrout1979}, obtendo um valor de 0,87 (IC 95\%: 0,84–0,91), indicando boa concordância.
 
 \subsubsection{2.5.2 Critérios Específicos para Estudos Interdisciplinares}
 
 Dada a natureza interdisciplinar dos estudos, os critérios de qualidade examinaram a coerência da integração quantitativa-qualitativa, validação em múltiplos contextos geográficos, transparência algorítmica, adesão ética e aplicabilidade prática para certificação.
 
-Esta fase resultou na seleção de 25 estudos com qualidade metodológica adequada (pontuação \geq 20 pontos) dos 272 artigos iniciais. Estes formaram a base para análises subsequentes. A distribuição incluiu 1 artigo de excelência (\geq40 pts), 2 de alta relevância (\geq30 pts) e 22 adequados (\geq20 pts).
+Esta fase resultou na seleção de 25 estudos com qualidade metodológica adequada (pontuação ≥ 20 pontos) dos 272 artigos iniciais. Estes formaram a base para análises subsequentes. A distribuição incluiu 1 artigo de excelência (≥40 pts), 2 de alta relevância (≥30 pts) e 22 adequados (≥20 pts).
 
 \subsection{2.6 Terceira Fase: Análise Bibliométrica}
 
@@ -144,7 +144,7 @@ Onde:
 
 Análises estatísticas no R \cite{RCoreTeam2024} usando RStudio \cite{RStudioTeam2023} caracterizaram sistematicamente o corpus e identificaram padrões emergentes. A Análise de Correspondência Múltipla (MCA) investigou associações entre variáveis categóricas (algoritmos, produtos, regiões, técnicas analíticas), seguindo \cite{Le2008} e \cite{Greenacre2017}, usando \texttt{FactoMineR} para extrair as principais dimensões. Subsequentemente, a Análise de Cluster (k-means e hierárquica) usando \texttt{FactoMineR} e \texttt{factoextra} identificou agrupamentos recorrentes de produto-instrumento-algoritmo, sintetizando as "famílias tecnológicas" discutidas na Seção 3.8.
 
-A análise de rede mapeou coocorrências entre algoritmos, produtos e regiões \cite{Csardi2006; Schoch202}. Usando \texttt{igraph} e \texttt{ggraph}, um grafo não direcionado foi construído, calculando métricas de centralidade (grau, autovetor, intermediação), e a detecção de comunidade foi realizada com o algoritmo Louvain \cite{Blondel2008} para identificar módulos temáticos (Seção 3.9).
+A análise de rede mapeou coocorrências entre algoritmos, produtos e regiões [@Csardi2006; \cite{Schoch202}0]. Usando \texttt{igraph} e \texttt{ggraph}, um grafo não direcionado foi construído, calculando métricas de centralidade (grau, autovetor, intermediação), e a detecção de comunidade foi realizada com o algoritmo Louvain \cite{Blondel2008} para identificar módulos temáticos (Seção 3.9).
 
 Séries temporais e o teste de correlação de Spearman \cite{Spearman1904} analisaram a evolução temporal das publicações (2010–2025) para detectar tendências no volume de estudos e adoção de algoritmos. Visualizações geradas com \texttt{ggplot2} usaram suavização LOESS \cite{Cleveland1979} para ilustrar a dinâmica de crescimento.
 
