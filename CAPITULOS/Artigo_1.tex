@@ -174,7 +174,7 @@ Esta revisão de escopo, estruturada de acordo com as diretrizes PRISMA-ScR (Fig
 
 % \begin{figure}[h]
 % \centering
-\includegraphics[width=0.8\textwidth]{2-FIGURAS/2-EN/prisma_flowdiagram.png}
+\includegraphics[width=0.8\textwidth]{Imagens/2-EN/prisma_flowdiagram.png}
 % \caption{}
 % \label{fig:prisma2020}
 % \end{figure}
@@ -256,15 +256,15 @@ A escolha do modelo em IGs não é meramente incremental, mas condicionada pela 
 
 Modelos de Machine Learning alcançam desempenho preditivo substancial, com acurácias frequentemente entre 80\% e 100\%, confirmando que assinaturas geográficas são computacionalmente detectáveis. Para tarefas de regressão (ex: acidez, teor de fenol), a qualidade do ajuste é tipicamente medida por MAE e RMSE.
 
-No entanto, o desempenho é heterogêneo e depende do rigor metodológico. Acurácias de 100\% em classificação binária (ex: presunto Jinhua, chá Wuyi Rock) frequentemente refletem alta separabilidade de classes via marcadores únicos [@Chen2020; \cite{Effrosynidis202}1]. Tais resultados justificam ceticismo se não acompanhados de validação externa robusta.
+No entanto, o desempenho é heterogêneo e depende do rigor metodológico. Acurácias de 100\% em classificação binária (ex: presunto Jinhua, chá Wuyi Rock) frequentemente refletem alta separabilidade de classes via marcadores únicos\cite{Chen2020; Effrosynidis2021}. Tais resultados justificam ceticismo se não acompanhados de validação externa robusta.
 
-Uma faixa de desempenho mais realista para problemas multiclasse (ex: múltiplas denominações de vinho) é 88\%–99\%. Estudos alcançando alta sensibilidade (>99,3\%) frequentemente empregam validação rigorosa como k-fold repetido ou leave-one-out [@Mohammadi2024; \cite{Meena202}4]. Na detecção de fraude (54\% dos estudos), o desempenho é priorizado via sensibilidade e especificidade para minimizar falsos negativos, frequentemente usando técnicas de balanceamento de classe.
+Uma faixa de desempenho mais realista para problemas multiclasse (ex: múltiplas denominações de vinho) é 88\%–99\%. Estudos alcançando alta sensibilidade (>99,3\%) frequentemente empregam validação rigorosa como k-fold repetido ou leave-one-out [@; \cite{Meena2024; Mohammadi2024}4]. Na detecção de fraude (54\% dos estudos), o desempenho é priorizado via sensibilidade e especificidade para minimizar falsos negativos, frequentemente usando técnicas de balanceamento de classe.
 
 Uma lacuna crítica é a generalização do modelo. Apenas 23\% dos estudos empregaram validação externa com amostras de origens geográficas independentes. Quando realizada, a acurácia caiu de 2\% a 15\%, consistente com a degradação de desempenho em distribuições deslocadas \cite{Kuhn2013}. Isso sugere que muitos sistemas operam sob otimismo estatístico não controlado. Para defensibilidade legal, modelos de ML devem ser testados em amostras que desafiem sua capacidade de generalização (diferentes safras, regiões, lotes).
 
 Essa falha de validação externa representa não apenas uma limitação metodológica, mas um risco reputacional e econômico substancial para as Indicações Geográficas. Um modelo superestimado pode levar à certificação incorreta de produtos, erodindo a confiança do consumidor no selo de origem e depreciando o valor premium associado ao \emph{terroir} \cite{He2024}. Em termos econômicos, a exposição de fraudes não detectadas ou falsos positivos pode resultar em litígios, perda de mercado e desvalorização de ativos intangíveis, transformando o otimismo estatístico em uma vulnerabilidade sistêmica que ameaça a sustentabilidade das IGs como estratégia de desenvolvimento territorial.
 
-Na modelagem preditiva global, tarefas de regressão mostraram desempenho modesto (RMSE 11,8–12,5, $R^2$ 0,11–0,14), indicando que prever um índice de qualidade sintético a partir de variáveis bibliométricas é difícil [@Hair2010; \cite{Wang201}3]. Por outro lado, tarefas de classificação (alta pontuação vs. outros) mostraram que a Regressão Logística superou o Random Forest (Acurácia 0,69 vs. 0,53), sugerindo que estudos de alta qualidade são distinguidos por padrões relativamente simples e lineares \cite{Rudin2019}. A Figura 6 destaca essa assimetria.
+Na modelagem preditiva global, tarefas de regressão mostraram desempenho modesto (RMSE 11,8–12,5, $R^2$ 0,11–0,14), indicando que prever um índice de qualidade sintético a partir de variáveis bibliométricas é difícil \cite{Hair2010; Wang2013}. Por outro lado, tarefas de classificação (alta pontuação vs. outros) mostraram que a Regressão Logística superou o Random Forest (Acurácia 0,69 vs. 0,53), sugerindo que estudos de alta qualidade são distinguidos por padrões relativamente simples e lineares \cite{Rudin2019}. A Figura 6 destaca essa assimetria.
 
 \textbf{Figura 6.} Comparação do desempenho do modelo de regressão e classificação para prever pontuação contínua e categoria de alta pontuação dos estudos.
 
