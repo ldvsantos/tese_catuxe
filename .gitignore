@@ -1,1 +1,22 @@
 .git/
+
+# Arquivos auxiliares do LaTeX
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.synctex(busy)
+*.toc
+*.lof
+*.lot
+*.pdf
+Rplots.pdf
+
+# Arquivos temporários
+*.tmp
+*.bak
+*~
