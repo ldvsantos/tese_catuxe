@@ -1,0 +1,88 @@
+================================================================================NETWORK ANALYSIS REPORT - ML FOR GEOGRAPHICAL INDICATIONS
+================================================================================Execution date: 2025-11-23 11:12:04.162563
+
+--------------------------------------------------------------------------------
+GENERAL NETWORK STATISTICS
+--------------------------------------------------------------------------------
+Number of nodes: 20
+Number of edges: 123
+Density: 0.6474
+Transitivity (clustering coefficient): 0.8326
+Network diameter: 19
+Average distance: 9.36
+
+--------------------------------------------------------------------------------
+TOP 15 NÓS POR GRAU (DEGREE CENTRALITY)
+--------------------------------------------------------------------------------
+                                     Node Degree
+TraditionalKnowledge TraditionalKnowledge     19
+Conservation                 Conservation     18
+Interview                       Interview     17
+IndigenousPeoples       IndigenousPeoples     17
+Asia                                 Asia     16
+Ethnobotany                   Ethnobotany     15
+LocalKnowledge             LocalKnowledge     15
+Biodiversity                 Biodiversity     15
+Ethnography                   Ethnography     14
+Participatory               Participatory     14
+LatinAmerica                 LatinAmerica     14
+Africa                             Africa     14
+Observation                   Observation     13
+FocusGroup                     FocusGroup     13
+Europe                             Europe      9
+
+--------------------------------------------------------------------------------
+TOP 15 NÓS POR BETWEENNESS CENTRALITY
+--------------------------------------------------------------------------------
+                                     Node Betweenness
+TraditionalFarming     TraditionalFarming  0.19298246
+NeuralNetwork               NeuralNetwork  0.14961014
+TraditionalKnowledge TraditionalKnowledge  0.14230019
+Europe                             Europe  0.14083821
+Conservation                 Conservation  0.13255361
+Agroecology                   Agroecology  0.08966862
+Observation                   Observation  0.08674464
+Asia                                 Asia  0.07699805
+NLP                                   NLP  0.07017544
+Participatory               Participatory  0.05945419
+Ethnography                   Ethnography  0.04873294
+Biodiversity                 Biodiversity  0.03703704
+IndigenousPeoples       IndigenousPeoples  0.02631579
+Africa                             Africa  0.02387914
+LocalKnowledge             LocalKnowledge  0.02339181
+
+--------------------------------------------------------------------------------
+TOP 15 NÓS POR EIGENVECTOR CENTRALITY
+--------------------------------------------------------------------------------
+                                     Node Eigenvector
+Interview                       Interview  1.00000000
+Ethnobotany                   Ethnobotany  0.77226782
+TraditionalKnowledge TraditionalKnowledge  0.76041442
+IndigenousPeoples       IndigenousPeoples  0.73769770
+Conservation                 Conservation  0.64572864
+Asia                                 Asia  0.49483662
+Biodiversity                 Biodiversity  0.34866044
+Africa                             Africa  0.33536079
+LatinAmerica                 LatinAmerica  0.31995724
+FocusGroup                     FocusGroup  0.31499308
+Participatory               Participatory  0.29108543
+LocalKnowledge             LocalKnowledge  0.28861402
+Ethnography                   Ethnography  0.16503155
+Observation                   Observation  0.12632318
+Europe                             Europe  0.06808575
+
+--------------------------------------------------------------------------------
+COMUNIDADES DETECTADAS (LOUVAIN)
+--------------------------------------------------------------------------------
+
+ 1  2 
+16  4 
+
+
+=== COMUNIDADE 1 (n=16) ===
+RandomForest, NeuralNetwork, NLP, Ethnography, Interview, Observation, TraditionalKnowledge, Ethnobotany, IndigenousPeoples, Agroecology, Biodiversity, Conservation, TraditionalFarming, LatinAmerica, Asia, Europe 
+
+=== COMUNIDADE 2 (n=4) ===
+Participatory, FocusGroup, LocalKnowledge, Africa 
+
+================================================================================

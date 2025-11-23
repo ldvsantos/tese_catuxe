@@ -1,0 +1,83 @@
+================================================================================
+RELATÓRIO DE ANÁLISE PCA - MACHINE LEARNING PARA INDICAÇÕES GEOGRÁFICAS
+================================================================================
+
+Data de execução: 2025-11-23 10:42:57.78593
+Total de observações: 670
+Total de variáveis analisadas: 5
+
+--------------------------------------------------------------------------------
+VARIÂNCIA EXPLICADA POR COMPONENTE
+--------------------------------------------------------------------------------
+       eigenvalue percentage of variance cumulative percentage of variance
+comp 1   2.441186               7.628706                          7.628706
+comp 2   1.736007               5.425021                         13.053727
+comp 3   1.631615               5.098796                         18.152523
+comp 4   1.474607               4.608146                         22.760670
+comp 5   1.367037               4.271990                         27.032660
+
+--------------------------------------------------------------------------------
+LOADINGS (CONTRIBUIÇÃO DAS VARIÁVEIS) - PC1 e PC2
+--------------------------------------------------------------------------------
+                             Dim.1       Dim.2
+Ethnobotany              0.6992025 -0.07458141
+Classification           0.6346857 -0.26864607
+SemiStructuredInterview  0.5994891 -0.15820577
+Biodiversity             0.4081810  0.22631610
+Conservation             0.3809845  0.33061302
+FocusGroup               0.3349478  0.20412294
+Oceania                 -0.3280354 -0.36245802
+SpatialAnalysis         -0.2932758  0.03272030
+NeuralNetwork           -0.2580846  0.32907935
+Asia                     0.2553543  0.12967673
+NLP                     -0.2300251  0.03647688
+PatternRecognition      -0.2153037  0.34197518
+Americas                 0.2147519 -0.10811920
+LogisticRegression      -0.2100303 -0.06796557
+KnowledgeMapping         0.2050894  0.12320078
+
+--------------------------------------------------------------------------------
+QUALIDADE DE REPRESENTAÇÃO (COS2) - TOP 15 VARIÁVEIS
+--------------------------------------------------------------------------------
+                              Dim.1       Dim.2
+Ethnobotany             0.488884099 0.005562386
+Classification          0.402825997 0.072170713
+TraditionalKnowledge    0.002907699 0.399462289
+SemiStructuredInterview 0.359387183 0.025029067
+Conservation            0.145149181 0.109304972
+Oceania                 0.107607246 0.131375818
+Biodiversity            0.166611704 0.051218977
+NeuralNetwork           0.066607678 0.108293221
+PatternRecognition      0.046355689 0.116947021
+FocusGroup              0.112189999 0.041666176
+DecisionTree            0.011652206 0.129128325
+IndigenousPeoples       0.031360925 0.080311046
+RandomForest            0.009995660 0.095649968
+CulturalHeritage        0.038161025 0.057166500
+SpatialAnalysis         0.086010693 0.001070618
+
+--------------------------------------------------------------------------------
+CONTRIBUIÇÃO DAS VARIÁVEIS (%) - TOP 15 PARA PC1
+--------------------------------------------------------------------------------
+            Ethnobotany          Classification SemiStructuredInterview 
+              20.026500               16.501242               14.721827 
+           Biodiversity            Conservation              FocusGroup 
+               6.825031                5.945847                4.595717 
+                Oceania         SpatialAnalysis           NeuralNetwork 
+               4.407990                3.523316                2.728497 
+                   Asia                     NLP      PatternRecognition 
+               2.671071                2.167453                1.898900 
+               Americas      LogisticRegression        KnowledgeMapping 
+               1.889180                1.807021                1.723002 
+
+--------------------------------------------------------------------------------
+INTERPRETAÇÃO DOS COMPONENTES PRINCIPAIS
+--------------------------------------------------------------------------------
+PC1: Representa o eixo principal de variação metodológica.
+     Variáveis com alta carga positiva/negativa indicam características distintivas.
+
+PC2: Captura a segunda maior fonte de variação ortogonal a PC1.
+     Frequentemente associado a contrastes entre técnicas ou produtos.
+
+PC1+PC2 juntos explicam a proporção predominante da variância observada.
+================================================================================

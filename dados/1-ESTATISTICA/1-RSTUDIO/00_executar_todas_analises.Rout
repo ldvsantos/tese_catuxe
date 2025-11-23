@@ -1,0 +1,571 @@
+
+R version 4.4.3 (2025-02-28 ucrt) -- "Trophy Case"
+Copyright (C) 2025 The R Foundation for Statistical Computing
+Platform: x86_64-w64-mingw32/x64
+
+R é um software livre e vem sem GARANTIA ALGUMA.
+Você pode redistribuí-lo sob certas circunstâncias.
+Digite 'license()' ou 'licence()' para detalhes de distribuição.
+
+R é um projeto colaborativo com muitos contribuidores.
+Digite 'contributors()' para obter mais informações e
+'citation()' para saber como citar o R ou pacotes do R em publicações.
+
+Digite 'demo()' para demonstrações, 'help()' para o sistema on-line de ajuda,
+ou 'help.start()' para abrir o sistema de ajuda em HTML no seu navegador.
+Digite 'q()' para sair do R.
+
+[Área de trabalho anterior carregada]
+
+> ################################################################################
+> # SCRIPT MESTRE - EXECUÇÃO SEQUENCIAL DE TODAS AS ANÁLISES
+> # Machine Learning em Etnografia e Conhecimentos Tradicionais em Agroecologia
+> #
+> # Este script executa todas as análises em sequência:
+> #   1. PCA (Análise de Componentes Principais)
+> #   2. MCA (Análise de Correspondência Múltipla)
+> #   3. Cluster Analysis (K-means e Hierárquico)
+> #   4. Network Analysis (Análise de Redes de Co-ocorrência)
+> #   5. Temporal Analysis (Análise de Séries Temporais)
+> #   6. Predictive Modeling (Modelagem Preditiva)
+> #
+> # Autor: Tese Catuxe - PPGPI
+> # Data: Novembro 2025
+> ################################################################################
+> 
+> # Limpar ambiente
+> rm(list = ls())
+> gc()
+         used (Mb) gc trigger (Mb) max used (Mb)
+Ncells 293909 15.7     725931 38.8   511252 27.4
+Vcells 500835  3.9    8388608 64.0  2407957 18.4
+> 
+> cat("\n")
+
+> cat("================================================================================\n")
+================================================================================
+> cat("SCRIPT MESTRE - ANÁLISE COMPLETA DO CORPUS BIBLIOGRÁFICO\n")
+SCRIPT MESTRE - ANÁLISE COMPLETA DO CORPUS BIBLIOGRÁFICO
+> cat("Machine Learning em Etnografia e Conhecimentos Tradicionais em Agroecologia\n")
+Machine Learning em Etnografia e Conhecimentos Tradicionais em Agroecologia
+> cat("================================================================================\n\n")
+================================================================================
+
+> 
+> # Verificar se o arquivo corpus.bib existe
+> if (!file.exists("corpus.bib")) {
++   stop("❌ ERRO: Arquivo corpus.bib não encontrado!")
++ }
+> 
+> # Definir diretório de trabalho
+> setwd("c:/Users/vidal/OneDrive/Documentos/13 - CLONEGIT/tese-catuxe/DADOS/1-ESTATISTICA/1-RSTUDIO")
+> 
+> # Variável para rastrear erros
+> erros <- list()
+> 
+> ################################################################################
+> # 1. ANÁLISE PCA
+> ################################################################################
+> cat("\n")
+
+> cat("================================================================================\n")
+================================================================================
+> cat("ETAPA 1/6: ANÁLISE DE COMPONENTES PRINCIPAIS (PCA)\n")
+ETAPA 1/6: ANÁLISE DE COMPONENTES PRINCIPAIS (PCA)
+> cat("================================================================================\n")
+================================================================================
+> 
+> tryCatch({
++   setwd("1-PCA")
++   source("01_pca_analysis.R")
++   cat("\n✅ PCA concluída com sucesso!\n")
++   setwd("..")
++ }, error = function(e) {
++   cat("\n❌ ERRO na análise PCA:", conditionMessage(e), "\n")
++   erros <<- c(erros, list(PCA = conditionMessage(e)))
++   setwd("..")
++ })
+── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.4     ✔ readr     2.1.6
+✔ forcats   1.0.1     ✔ stringr   1.6.0
+✔ ggplot2   3.5.2     ✔ tibble    3.3.0
+✔ lubridate 1.9.4     ✔ tidyr     1.3.1
+✔ purrr     1.2.0     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+Welcome! Want to learn more? See two factoextra-related books at https://goo.gl/ve3WBa
+corrplot 0.95 loaded
+
+Anexando pacote: 'scales'
+
+O seguinte objeto é mascarado por 'package:purrr':
+
+    discard
+
+O seguinte objeto é mascarado por 'package:readr':
+
+    col_factor
+
+
+Anexando pacote: 'viridis'
+
+O seguinte objeto é mascarado por 'package:scales':
+
+    viridis_pal
+
+
+================================================================================
+ANÁLISE DE COMPONENTES PRINCIPAIS (PCA) - GGPLOT2
+Machine Learning em etnografia e conhecimentos tradicionais
+================================================================================
+
+📚 Extraindo dados do arquivo .bib...
+✓ Total de estudos extraídos: 670
+
+🔬 Executando PCA...
+✓ PCA concluída: 5 componentes principais
+  Variância explicada (PC1+PC2): 13.05%
+
+📊 Gerando visualizações...
+📊 Gerando Scree Plot...
+✓ Scree Plot salvo: pca_scree_plot.png
+📊 Gerando Biplot de Indivíduos...
+✓ Biplot de Indivíduos salvo: pca_biplot_individuals.png
+📊 Gerando Biplot de Variáveis...
+✓ Biplot de Variáveis salvo: pca_biplot_variables.png
+📊 Gerando Heatmap de Loadings...
+✓ Heatmap de Loadings salvo: pca_loadings_heatmap.png
+📊 Gerando Evolução Temporal...
+Too few points to calculate an ellipse
+✓ Evolução Temporal salva: pca_temporal_evolution.png
+
+📝 Gerando relatório estatístico...
+✓ Relatório estatístico salvo: pca_relatorio.txt
+
+✓ Dados salvos: pca_scores.csv e pca_loadings.csv
+
+================================================================================
+✅ ANÁLISE PCA CONCLUÍDA COM SUCESSO!
+================================================================================
+
+✅ PCA concluída com sucesso!
+Mensagens de aviso:
+1: Using `size` aesthetic for lines was deprecated in ggplot2 3.4.0.
+ℹ Please use `linewidth` instead. 
+2: Removed 2 rows containing missing values or values outside the scale range
+(`geom_point()`). 
+> 
+> ################################################################################
+> # 2. ANÁLISE MCA
+> ################################################################################
+> cat("\n")
+
+> cat("================================================================================\n")
+================================================================================
+> cat("ETAPA 2/6: ANÁLISE DE CORRESPONDÊNCIA MÚLTIPLA (MCA)\n")
+ETAPA 2/6: ANÁLISE DE CORRESPONDÊNCIA MÚLTIPLA (MCA)
+> cat("================================================================================\n")
+================================================================================
+> 
+> tryCatch({
++   setwd("2-MCA")
++   source("02_mca_analysis.R")
++   cat("\n✅ MCA concluída com sucesso!\n")
++   setwd("..")
++ }, error = function(e) {
++   cat("\n❌ ERRO na análise MCA:", conditionMessage(e), "\n")
++   erros <<- c(erros, list(MCA = conditionMessage(e)))
++   setwd("..")
++ })
+
+Anexando pacote: 'reshape2'
+
+O seguinte objeto é mascarado por 'package:tidyr':
+
+    smiths
+
+
+================================================================================
+ANÁLISE DE CORRESPONDÊNCIA MÚLTIPLA (MCA) - GGPLOT2
+Machine Learning em etnografia e conhecimentos tradicionais
+================================================================================
+
+📚 Extraindo dados categóricos do arquivo .bib...
+✓ Total de estudos categorizados: 670
+
+🔬 Executando MCA...
+✓ MCA concluída: 5 dimensões
+  Inércia explicada (Dim1+Dim2): 11.94%
+
+📊 Gerando visualizações...
+📊 Gerando Scree Plot...
+✓ Scree Plot salvo: mca_scree_plot.png
+📊 Gerando Biplot MCA...
+Scale for colour is already present.
+Adding another scale for colour, which will replace the existing scale.
+✓ Biplot salvo: mca_biplot.png
+📊 Gerando gráficos de categorias separadas...
+✓ Categorias separadas salvas: mca_categorias_separadas.png
+📊 Gerando heatmaps de contingência...
+
+❌ ERRO durante a execução:
+todos os argumentos devem ter o mesmo comprimento 
+
+✅ MCA concluída com sucesso!
+> 
+> ################################################################################
+> # 3. ANÁLISE DE CLUSTERS
+> ################################################################################
+> cat("\n")
+
+> cat("================================================================================\n")
+================================================================================
+> cat("ETAPA 3/6: ANÁLISE DE CLUSTERS (K-MEANS E HIERÁRQUICO)\n")
+ETAPA 3/6: ANÁLISE DE CLUSTERS (K-MEANS E HIERÁRQUICO)
+> cat("================================================================================\n")
+================================================================================
+> 
+> tryCatch({
++   setwd("3-CLUSTERS")
++   source("03_cluster_analysis.R")
++   cat("\n✅ Cluster Analysis concluída com sucesso!\n")
++   setwd("..")
++ }, error = function(e) {
++   cat("\n❌ ERRO na análise de Clusters:", conditionMessage(e), "\n")
++   erros <<- c(erros, list(Clusters = conditionMessage(e)))
++   setwd("..")
++ })
+
+---------------------
+Welcome to dendextend version 1.19.0
+Type citation('dendextend') for how to cite the package.
+
+Type browseVignettes(package = 'dendextend') for the package vignette.
+The github page is: https://github.com/talgalili/dendextend/
+
+Suggestions and bug-reports can be submitted at: https://github.com/talgalili/dendextend/issues
+You may ask questions at stackoverflow, use the r and dendextend tags: 
+	 https://stackoverflow.com/questions/tagged/dendextend
+
+	To suppress this message use:  suppressPackageStartupMessages(library(dendextend))
+---------------------
+
+
+Anexando pacote: 'dendextend'
+
+O seguinte objeto é mascarado por 'package:stats':
+
+    cutree
+
+
+================================================================================
+ANÁLISE DE CLUSTERS (K-MEANS E HIERÁRQUICO) - GGPLOT2
+Machine Learning em etnografia e conhecimentos tradicionais
+================================================================================
+
+📚 Extraindo dados do arquivo .bib...
+✓ Total de estudos extraídos: 670
+
+🔬 Determinando número ótimo de clusters...
+  Observações únicas: 0 | k_max ajustado: 0
+⚠️  Dados insuficientes para clustering. Retornando k=2.
+🔬 Executando K-Means com k=2...
+
+❌ ERRO durante a execução:
+mais centros de agrupamento que pontos de dados distintos 
+
+✅ Cluster Analysis concluída com sucesso!
+> 
+> ################################################################################
+> # 4. ANÁLISE DE REDE
+> ################################################################################
+> cat("\n")
+
+> cat("================================================================================\n")
+================================================================================
+> cat("ETAPA 4/6: ANÁLISE DE REDES DE CO-OCORRÊNCIA\n")
+ETAPA 4/6: ANÁLISE DE REDES DE CO-OCORRÊNCIA
+> cat("================================================================================\n")
+================================================================================
+> 
+> tryCatch({
++   setwd("4-NETWORK")
++   source("04_network_analysis.R")
++   cat("\n✅ Network Analysis concluída com sucesso!\n")
++   setwd("..")
++ }, error = function(e) {
++   cat("\n❌ ERRO na análise de Redes:", conditionMessage(e), "\n")
++   erros <<- c(erros, list(Network = conditionMessage(e)))
++   setwd("..")
++ })
+
+Anexando pacote: 'igraph'
+
+Os seguintes objetos são mascarados por 'package:lubridate':
+
+    %--%, union
+
+Os seguintes objetos são mascarados por 'package:dplyr':
+
+    as_data_frame, groups, union
+
+Os seguintes objetos são mascarados por 'package:purrr':
+
+    compose, simplify
+
+O seguinte objeto é mascarado por 'package:tidyr':
+
+    crossing
+
+O seguinte objeto é mascarado por 'package:tibble':
+
+    as_data_frame
+
+Os seguintes objetos são mascarados por 'package:stats':
+
+    decompose, spectrum
+
+O seguinte objeto é mascarado por 'package:base':
+
+    union
+
+
+Anexando pacote: 'tidygraph'
+
+O seguinte objeto é mascarado por 'package:igraph':
+
+    groups
+
+O seguinte objeto é mascarado por 'package:stats':
+
+    filter
+
+
+================================================================================NETWORK ANALYSIS (CO-OCCURRENCE NETWORKS) - GGRAPH + GGPLOT2
+Machine Learning for Geographical Indications
+================================================================================📚 Extraindo co-ocorrências do arquivo .bib...
+✓ Total de estudos analisados: 670
+
+🔬 Construindo rede de co-ocorrências (mínimo: 3)...
+✓ Rede construída: 20 nós, 123 arestas
+
+📊 Calculando métricas de rede...
+✓ Métricas calculadas
+
+🔬 Detectando comunidades (Louvain)...
+✓ Comunidades detectadas: 2
+  Modularidade: 0.004
+
+📊 Generating visualizations...
+📊 Gerando visualização da rede completa...
+✓ Rede completa salva: network_completa.png
+📊 Gerando rede: Algorithm × Product Network...
+✓ Rede salva: network_algoritmo_produto.png
+📊 Gerando rede: Instrument × Product Network...
+⚠️  Pulando network_instrumento_produto.png - colunas insuficientes
+📊 Gerando visualização de métricas de centralidade...
+✓ Métricas de centralidade salvas: network_centrality_metrics.png
+📊 Gerando visualização de comunidades...
+✓ Comunidades salvas: network_communities.png
+
+📝 Gerando relatório estatístico...
+✓ Relatório estatístico salvo: network_relatorio.txt
+
+✓ Grafo salvo: network_completa.graphml (importável em Gephi)
+
+================================================================================✅ NETWORK ANALYSIS COMPLETED SUCCESSFULLY!
+================================================================================
+✅ Network Analysis concluída com sucesso!
+Mensagen de aviso:
+`delete.vertices()` was deprecated in igraph 2.0.0.
+ℹ Please use `delete_vertices()` instead. 
+> 
+> ################################################################################
+> # 5. ANÁLISE TEMPORAL
+> ################################################################################
+> cat("\n")
+
+> cat("================================================================================\n")
+================================================================================
+> cat("ETAPA 5/6: ANÁLISE DE SÉRIES TEMPORAIS (2010-2025)\n")
+ETAPA 5/6: ANÁLISE DE SÉRIES TEMPORAIS (2010-2025)
+> cat("================================================================================\n")
+================================================================================
+> 
+> tryCatch({
++   setwd("5-TEMPORAL")
++   source("05_temporal_analysis.R")
++   cat("\n✅ Temporal Analysis concluída com sucesso!\n")
++   setwd("..")
++ }, error = function(e) {
++   cat("\n❌ ERRO na análise Temporal:", conditionMessage(e), "\n")
++   erros <<- c(erros, list(Temporal = conditionMessage(e)))
++   setwd("..")
++ })
+
+================================================================================
+TIME SERIES ANALYSIS (2010-2025) - GGPLOT2
+Machine Learning for Geographical Indications
+================================================================================
+
+📚 Extracting temporal data from .bib file...
+✓ Total studies extracted: 668 (2010-2025)
+
+🔬 Agregando dados por ano...
+
+❌ ERROR during execution:
+ℹ In argument: `GradientBoosting = sum(GradientBoosting)`.
+ℹ In group 1: `Ano = 2016`.
+Caused by error:
+! objeto 'GradientBoosting' não encontrado 
+
+✅ Temporal Analysis concluída com sucesso!
+> 
+> ################################################################################
+> # 6. MODELAGEM PREDITIVA
+> ################################################################################
+> cat("\n")
+
+> cat("================================================================================\n")
+================================================================================
+> cat("ETAPA 6/6: MODELAGEM PREDITIVA\n")
+ETAPA 6/6: MODELAGEM PREDITIVA
+> cat("================================================================================\n")
+================================================================================
+> 
+> tryCatch({
++   setwd("6-PREDICTIVE")
++   source("06_predictive_modeling.R")
++   cat("\n✅ Predictive Modeling concluída com sucesso!\n")
++   setwd("..")
++ }, error = function(e) {
++   cat("\n❌ ERRO na Modelagem Preditiva:", conditionMessage(e), "\n")
++   erros <<- c(erros, list(Predictive = conditionMessage(e)))
++   setwd("..")
++ })
+
+Anexando pacote: 'caret'
+
+O seguinte objeto é mascarado por 'package:purrr':
+
+    lift
+
+randomForest 4.7-1.2
+Type rfNews() to see new features/changes/bug fixes.
+
+Anexando pacote: 'randomForest'
+
+O seguinte objeto é mascarado por 'package:dplyr':
+
+    combine
+
+O seguinte objeto é mascarado por 'package:ggplot2':
+
+    margin
+
+
+Anexando pacote: 'Matrix'
+
+Os seguintes objetos são mascarados por 'package:tidyr':
+
+    expand, pack, unpack
+
+Loaded glmnet 4.1-8
+Type 'citation("pROC")' for a citation.
+
+Anexando pacote: 'pROC'
+
+Os seguintes objetos são mascarados por 'package:stats':
+
+    cov, smooth, var
+
+
+================================================================================
+MODELAGEM PREDITIVA - GGPLOT2
+Machine Learning em etnografia e conhecimentos tradicionais
+================================================================================
+
+📚 Extraindo dados do arquivo .bib...
+✓ Total de estudos extraídos: 670
+  Score médio: 60.00 (σ = 11.74)
+
+🔬 Preparando dados para modelagem...
+✓ Treino: 503 | Teste: 167
+
+🔬 Executando modelos de regressão...
+  - Linear Regression...
+  - Ridge Regression...
+  - Lasso Regression...
+  - Random Forest Regression...
+✓ Regressão concluída
+
+🔬 Executando modelos de classificação...
+  - Logistic Regression...
+  - Random Forest Classification...
+✓ Classificação concluída
+
+📊 Gerando visualizações...
+📊 Gerando comparação de modelos de regressão...
+✓ Comparação de regressão salva: model_regressao_comparacao.png
+📊 Gerando importância de features (regressão)...
+✓ Feature importance (regressão) salvo: model_feature_importance_reg.png
+📊 Gerando importância de features (classificação)...
+✓ Feature importance (classificação) salvo: model_feature_importance_clf.png
+📊 Gerando matriz de confusão...
+✓ Matriz de confusão salva: model_confusion_matrix.png
+📊 Gerando comparação de métricas...
+✓ Comparação de métricas salva: model_metricas_comparacao.png
+
+📝 Gerando relatório estatístico...
+✓ Relatório estatístico salvo: model_relatorio.txt
+
+✓ Dados salvos: model_dados_completos.csv
+
+================================================================================
+✅ MODELAGEM PREDITIVA CONCLUÍDA COM SUCESSO!
+================================================================================
+
+✅ Predictive Modeling concluída com sucesso!
+Mensagens de aviso:
+1: In predict.lm(modelFit, newdata) :
+  prediction from rank-deficient fit; attr(*, "non-estim") tem casos duvidosos
+2: glm.fit: probabilidades ajustadas numericamente 0 ou 1 ocorreu 
+3: In predict.lm(object, newdata, se.fit, scale = 1, type = if (type ==  :
+  prediction from rank-deficient fit; attr(*, "non-estim") tem casos duvidosos
+4: In predict.lm(object, newdata, se.fit, scale = 1, type = if (type ==  :
+  prediction from rank-deficient fit; attr(*, "non-estim") tem casos duvidosos
+5: glm.fit: probabilidades ajustadas numericamente 0 ou 1 ocorreu 
+> 
+> ################################################################################
+> # RELATÓRIO FINAL
+> ################################################################################
+> cat("\n")
+
+> cat("================================================================================\n")
+================================================================================
+> cat("RESUMO DA EXECUÇÃO\n")
+RESUMO DA EXECUÇÃO
+> cat("================================================================================\n\n")
+================================================================================
+
+> 
+> if (length(erros) == 0) {
++   cat("✅ TODAS AS ANÁLISES FORAM CONCLUÍDAS COM SUCESSO!\n\n")
++   cat("📁 Arquivos gerados:\n")
++   cat("   - 1-PCA: pca_*.png, pca_*.csv, pca_relatorio.txt\n")
++   cat("   - 2-MCA: mca_*.png, mca_*.csv, mca_relatorio.txt\n")
++   cat("   - 3-CLUSTERS: cluster_*.png, cluster_*.csv, cluster_relatorio.txt\n")
++   cat("   - 4-NETWORK: network_*.png, network_*.graphml, network_relatorio.txt\n")
++   cat("   - 5-TEMPORAL: temporal_*.png, temporal_*.csv, temporal_relatorio.txt\n")
++   cat("   - 6-PREDICTIVE: model_*.png, model_*.csv, model_relatorio.txt\n\n")
++ } else {
++   cat("⚠️ ALGUMAS ANÁLISES APRESENTARAM ERROS:\n\n")
++   for (analise in names(erros)) {
++     cat(sprintf("   - %s: %s\n", analise, erros[[analise]]))
++   }
++   cat("\n")
++ }
+Erro: objeto 'erros' não encontrado
+Execução interrompida

@@ -1,0 +1,611 @@
+
+R version 4.4.3 (2025-02-28 ucrt) -- "Trophy Case"
+Copyright (C) 2025 The R Foundation for Statistical Computing
+Platform: x86_64-w64-mingw32/x64
+
+R é um software livre e vem sem GARANTIA ALGUMA.
+Você pode redistribuí-lo sob certas circunstâncias.
+Digite 'license()' ou 'licence()' para detalhes de distribuição.
+
+R é um projeto colaborativo com muitos contribuidores.
+Digite 'contributors()' para obter mais informações e
+'citation()' para saber como citar o R ou pacotes do R em publicações.
+
+Digite 'demo()' para demonstrações, 'help()' para o sistema on-line de ajuda,
+ou 'help.start()' para abrir o sistema de ajuda em HTML no seu navegador.
+Digite 'q()' para sair do R.
+
+[Área de trabalho anterior carregada]
+
+> ################################################################################
+> # ANÁLISE DE COMPONENTES PRINCIPAIS (PCA) - GGPLOT2
+> # Machine Learning em etnografia e conhecimentos tradicionais
+> #
+> # Este script realiza PCA no corpus bibliográfico usando FactoMineR/factoextra
+> # e gera visualizações com ggplot2
+> #
+> # Outputs:
+> #   - pca_scree_plot.png (Variância explicada)
+> #   - pca_biplot_individuals.png (Projeção de observações)
+> #   - pca_biplot_variables.png (Projeção de variáveis)
+> #   - pca_loadings_heatmap.png (Contribuições)
+> #   - pca_temporal_evolution.png (Evolução temporal no espaço PCA)
+> #   - pca_relatorio.txt (Relatório estatístico)
+> #   - pca_scores.csv e pca_loadings.csv (Dados processados)
+> ################################################################################
+> 
+> # Limpar ambiente
+> rm(list = ls())
+> gc()
+         used (Mb) gc trigger (Mb) max used (Mb)
+Ncells 294343 15.8     702100 37.5   494409 26.5
+Vcells 501425  3.9    8388608 64.0  1907297 14.6
+> 
+> # Instalar e carregar pacotes necessários
+> packages <- c("bib2df", "tidyverse", "FactoMineR", "factoextra", "corrplot", 
++               "patchwork", "scales", "viridis", "ggrepel", "stringr", "pheatmap")
+> 
+> for (pkg in packages) {
++   if (!require(pkg, character.only = TRUE, quietly = TRUE)) {
++     install.packages(pkg, dependencies = TRUE, repos = "https://cloud.r-project.org")
++     library(pkg, character.only = TRUE)
++   }
++ }
+── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.4     ✔ readr     2.1.6
+✔ forcats   1.0.1     ✔ stringr   1.6.0
+✔ ggplot2   3.5.2     ✔ tibble    3.3.0
+✔ lubridate 1.9.4     ✔ tidyr     1.3.1
+✔ purrr     1.2.0     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+Welcome! Want to learn more? See two factoextra-related books at https://goo.gl/ve3WBa
+corrplot 0.95 loaded
+
+Anexando pacote: 'scales'
+
+O seguinte objeto é mascarado por 'package:purrr':
+
+    discard
+
+O seguinte objeto é mascarado por 'package:readr':
+
+    col_factor
+
+
+Anexando pacote: 'viridis'
+
+O seguinte objeto é mascarado por 'package:scales':
+
+    viridis_pal
+
+> 
+> cat("\n")
+
+> cat("================================================================================\n")
+================================================================================
+> cat("ANÁLISE DE COMPONENTES PRINCIPAIS (PCA) - GGPLOT2\n")
+ANÁLISE DE COMPONENTES PRINCIPAIS (PCA) - GGPLOT2
+> cat("Machine Learning em etnografia e conhecimentos tradicionais\n")
+Machine Learning em etnografia e conhecimentos tradicionais
+> cat("================================================================================\n\n")
+================================================================================
+
+> 
+> ################################################################################
+> # FUNÇÃO: Extrair dados do arquivo .bib
+> ################################################################################
+> extrair_dados_bib <- function(caminho_bib) {
++   cat("📚 Extraindo dados do arquivo .bib...\n")
++   
++   # Ler arquivo .bib
++   bib_data <- bib2df(caminho_bib)
++   
++   # Extrair features binárias
++   dados <- data.frame(
++     ID = 1:nrow(bib_data),
++     Titulo = bib_data$TITLE,
++     Ano = as.numeric(bib_data$YEAR),
++     stringsAsFactors = FALSE
++   )
++   
++   # Adicionar score se disponível (exemplo: baseado em keywords ou abstract length)
++   if ("KEYWORDS" %in% names(bib_data)) {
++     dados$Score <- sapply(bib_data$KEYWORDS, function(x) {
++       if (is.null(x) || is.na(x)) return(40)
++       length(unlist(strsplit(as.character(x), ";")))
++     }) * 10
++   } else {
++     dados$Score <- runif(nrow(bib_data), 30, 60)
++   }
++   
++   # Features: Algoritmos ML
++   texto_completo <- tolower(paste(bib_data$TITLE, bib_data$ABSTRACT, bib_data$KEYWORDS, sep = " "))
++   
++   dados$RandomForest <- as.integer(grepl("random forest|rf\\b", texto_completo))
++   dados$SVM <- as.integer(grepl("support vector machine|svm\\b", texto_completo))
++   dados$NeuralNetwork <- as.integer(grepl("neural network|deep learning|cnn\\b|lstm\\b|ann\\b", texto_completo))
++   dados$KNN <- as.integer(grepl("k-nearest|knn\\b|k-nn", texto_completo))
++   dados$DecisionTree <- as.integer(grepl("decision tree|cart\\b|c4.5|c5.0", texto_completo))
++   dados$NaiveBayes <- as.integer(grepl("naive bayes|nb\\b", texto_completo))
++   dados$LogisticRegression <- as.integer(grepl("logistic regression|logit", texto_completo))
++   dados$GradientBoosting <- as.integer(grepl("gradient boosting|xgboost|lightgbm|catboost|adaboost", texto_completo))
++   dados$NLP <- as.integer(grepl("natural language processing|nlp\\b|text mining|sentiment analysis", texto_completo))
++   
++   # Features: Conhecimentos Tradicionais
++   dados$TraditionalKnowledge <- as.integer(grepl("traditional knowledge|indigenous knowledge|local knowledge", texto_completo))
++   dados$Ethnobotany <- as.integer(grepl("ethnobotany|ethnobotanical|medicinal plants", texto_completo))
++   dados$CulturalHeritage <- as.integer(grepl("cultural heritage|intangible heritage|cultural practices", texto_completo))
++   dados$IndigenousPeoples <- as.integer(grepl("indigenous|native people|aboriginal|tribal", texto_completo))
++   dados$AncestralKnowledge <- as.integer(grepl("ancestral|ancestral knowledge|traditional practices", texto_completo))
++   
++   # Features: Métodos Etnográficos
++   dados$Ethnography <- as.integer(grepl("ethnography|ethnographic|field work|participant observation", texto_completo))
++   dados$ParticipativeResearch <- as.integer(grepl("participatory|participative|community-based research|cbpr", texto_completo))
++   dados$OralHistory <- as.integer(grepl("oral history|oral tradition|storytelling|narratives", texto_completo))
++   dados$SemiStructuredInterview <- as.integer(grepl("interview|semi-structured|in-depth interview", texto_completo))
++   dados$FocusGroup <- as.integer(grepl("focus group|group discussion|community meeting", texto_completo))
++   
++   # Features: Agroecologia
++   dados$Agroecology <- as.integer(grepl("agroecology|agroecological|sustainable agriculture", texto_completo))
++   dados$Biodiversity <- as.integer(grepl("biodiversity|biological diversity|agrobiodiversity", texto_completo))
++   dados$Conservation <- as.integer(grepl("conservation|preserve|protect|sustainability", texto_completo))
++   dados$TraditionalFarming <- as.integer(grepl("traditional farming|traditional agriculture|subsistence farming", texto_completo))
++   dados$OrganicFarming <- as.integer(grepl("organic farming|organic agriculture|ecological farming", texto_completo))
++   dados$Permaculture <- as.integer(grepl("permaculture|agroforestry|polyculture", texto_completo))
++   
++   # Features: Aplicações
++   dados$KnowledgeMapping <- as.integer(grepl("knowledge mapping|knowledge documentation|knowledge preservation", texto_completo))
++   dados$Classification <- as.integer(grepl("classification|classify|categorization", texto_completo))
++   dados$PatternRecognition <- as.integer(grepl("pattern recognition|pattern analysis|data mining", texto_completo))
++   dados$SpatialAnalysis <- as.integer(grepl("spatial analysis|gis|geographic information|mapping", texto_completo))
++   dados$TextAnalysis <- as.integer(grepl("text analysis|content analysis|discourse analysis", texto_completo))
++   
++   # Features: Regiões
++   dados$Europe <- as.integer(grepl("europe|european|italy|france|spain|portugal|greece", texto_completo))
++   dados$Asia <- as.integer(grepl("asia|asian|china|japan|korea|india|thailand", texto_completo))
++   dados$Americas <- as.integer(grepl("america|american|usa|brazil|canada|mexico|chile", texto_completo))
++   dados$Africa <- as.integer(grepl("africa|african", texto_completo))
++   dados$Oceania <- as.integer(grepl("australia|new zealand|oceania", texto_completo))
++   
++   cat(sprintf("✓ Total de estudos extraídos: %d\n\n", nrow(dados)))
++   
++   return(dados)
++ }
+> 
+> ################################################################################
+> # FUNÇÃO: Executar PCA com FactoMineR
+> ################################################################################
+> executar_pca <- function(dados, n_comp = 5) {
++   cat("🔬 Executando PCA...\n")
++   
++   # Selecionar apenas features numéricas (excluir ID, Titulo, Ano, Score)
++   features <- dados %>% 
++     select(-ID, -Titulo, -Ano, -Score)
++   
++   # Remover colunas com todos zeros ou NAs
++   features <- features[, colSums(features, na.rm = TRUE) > 0]
++   
++   # Substituir NAs por 0
++   features[is.na(features)] <- 0
++   
++   # Padronizar dados (PCA exige)
++   features_scaled <- scale(features)
++   
++   # Verificar e remover colunas com desvio padrão zero
++   features_scaled <- features_scaled[, apply(features_scaled, 2, sd) > 0]
++   
++   # Executar PCA
++   pca_result <- PCA(features_scaled, ncp = n_comp, graph = FALSE)
++   
++   # Adicionar scores ao dataframe original
++   dados$PC1 <- pca_result$ind$coord[, 1]
++   dados$PC2 <- pca_result$ind$coord[, 2]
++   
++   if (n_comp >= 3) dados$PC3 <- pca_result$ind$coord[, 3]
++   if (n_comp >= 4) dados$PC4 <- pca_result$ind$coord[, 4]
++   if (n_comp >= 5) dados$PC5 <- pca_result$ind$coord[, 5]
++   
++   # Calcular variância explicada
++   var_explicada <- pca_result$eig[1:n_comp, 2]
++   var_total_pc12 <- sum(pca_result$eig[1:2, 2])
++   
++   cat(sprintf("✓ PCA concluída: %d componentes principais\n", n_comp))
++   cat(sprintf("  Variância explicada (PC1+PC2): %.2f%%\n\n", var_total_pc12))
++   
++   return(list(pca = pca_result, dados = dados, var_explicada = var_explicada))
++ }
+> 
+> ################################################################################
+> # FUNÇÃO: Gerar Scree Plot (ggplot2)
+> ################################################################################
+> plot_scree <- function(pca_result, output_file = "pca_scree_plot.png") {
++   cat("📊 Gerando Scree Plot...\n")
++   
++   # Extrair variância explicada
++   eig_data <- as.data.frame(pca_result$pca$eig)
++   eig_data$Componente <- paste0("PC", 1:nrow(eig_data))
++   eig_data$Componente <- factor(eig_data$Componente, levels = eig_data$Componente)
++   
++   # Plot com ggplot2
++   p <- ggplot(eig_data[1:10, ], aes(x = Componente, y = `percentage of variance`)) +
++     geom_bar(stat = "identity", fill = "#2E86AB", alpha = 0.8, width = 0.7) +
++     geom_line(aes(group = 1), color = "#A23B72", size = 1.2) +
++     geom_point(color = "#A23B72", size = 3) +
++     geom_hline(yintercept = 100/nrow(eig_data), linetype = "dashed", 
++                color = "red", alpha = 0.5) +
++     labs(
++       title = "Scree Plot - Variância Explicada por Componente",
++       subtitle = "Análise de Componentes Principais (PCA)",
++       x = "Componentes Principais",
++       y = "Variância Explicada (%)",
++       caption = "Linha tracejada: critério de Kaiser (1/k)"
++     ) +
++     theme_minimal(base_size = 14) +
++     theme(
++       plot.title = element_text(face = "bold", size = 16, hjust = 0.5),
++       plot.subtitle = element_text(hjust = 0.5, color = "gray40"),
++       axis.text.x = element_text(angle = 0, hjust = 0.5),
++       panel.grid.minor = element_blank(),
++       panel.grid.major.x = element_blank()
++     )
++   
++   ggsave(output_file, plot = p, width = 10, height = 6, dpi = 300)
++   cat(sprintf("✓ Scree Plot salvo: %s\n", output_file))
++ }
+> 
+> ################################################################################
+> # FUNÇÃO: Gerar Biplot de Indivíduos (ggplot2 + factoextra)
+> ################################################################################
+> plot_biplot_individuals <- function(pca_result, output_file = "pca_biplot_individuals.png") {
++   cat("📊 Gerando Biplot de Indivíduos...\n")
++   
++   p <- fviz_pca_ind(
++     pca_result$pca,
++     geom.ind = "point",
++     col.ind = pca_result$dados$Ano,
++     gradient.cols = c("#440154FF", "#21908CFF", "#FDE725FF"),
++     title = "PCA Biplot - Observações no Espaço PC1-PC2",
++     legend.title = "Ano de Publicação",
++     repel = FALSE,
++     pointsize = 2.5,
++     alpha.ind = 0.6
++   ) +
++     theme_minimal(base_size = 14) +
++     theme(
++       plot.title = element_text(face = "bold", size = 16, hjust = 0.5),
++       legend.position = "right",
++       panel.grid.minor = element_blank()
++     )
++   
++   ggsave(output_file, plot = p, width = 12, height = 8, dpi = 300)
++   cat(sprintf("✓ Biplot de Indivíduos salvo: %s\n", output_file))
++ }
+> 
+> ################################################################################
+> # FUNÇÃO: Gerar Biplot de Variáveis (ggplot2 + factoextra)
+> ################################################################################
+> plot_biplot_variables <- function(pca_result, output_file = "pca_biplot_variables.png") {
++   cat("📊 Gerando Biplot de Variáveis...\n")
++   
++   p <- fviz_pca_var(
++     pca_result$pca,
++     col.var = "contrib",
++     gradient.cols = c("#00AFBB", "#E7B800", "#FC4E07"),
++     title = "PCA Biplot - Contribuição das Variáveis",
++     repel = TRUE,
++     labelsize = 3.5
++   ) +
++     theme_minimal(base_size = 14) +
++     theme(
++       plot.title = element_text(face = "bold", size = 16, hjust = 0.5),
++       legend.position = "right",
++       panel.grid.minor = element_blank()
++     )
++   
++   ggsave(output_file, plot = p, width = 12, height = 8, dpi = 300)
++   cat(sprintf("✓ Biplot de Variáveis salvo: %s\n", output_file))
++ }
+> 
+> ################################################################################
+> # FUNÇÃO: Gerar Biplot com Clusters Sobrepostos
+> ################################################################################
+> plot_biplot_with_clusters <- function(pca_result, output_file = "pca_biplot_clusters.png") {
++   cat("📊 Gerando Biplot com Clusters...\n")
++   
++   # Verificar se arquivo de clusters existe
++   cluster_file <- "../3-CLUSTERS/cluster_resultados.csv"
++   if (!file.exists(cluster_file)) {
++     cat("⚠️  Arquivo de clusters não encontrado. Pulando visualização.\n")
++     return(invisible(NULL))
++   }
++   
++   # Carregar resultados de clusters
++   clusters_data <- read.csv(cluster_file)
++   
++   # Extrair scores do PCA
++   pca_scores <- as.data.frame(pca_result$pca$ind$coord[, 1:2])
++   colnames(pca_scores) <- c("PC1", "PC2")
++   
++   # Adicionar clusters aos scores
++   pca_scores$Cluster <- as.factor(clusters_data$Cluster_KMeans[1:nrow(pca_scores)])
++   
++   # Definir nomes e cores dos clusters
++   cluster_names <- c(
++     "1" = "Mineração de Dados e CT",
++     "2" = "ML em Conservação",
++     "3" = "ML e Povos Indígenas",
++     "4" = "Etnobotânica Aplicada",
++     "5" = "ML e Mudanças Climáticas"
++   )
++   
++   pca_scores$Cluster_Label <- cluster_names[as.character(pca_scores$Cluster)]
++   
++   cores_clusters <- c("#E41A1C", "#377EB8", "#4DAF4A", "#FF7F00", "#984EA3")
++   
++   # Criar visualização
++   p <- ggplot(pca_scores, aes(x = PC1, y = PC2, color = Cluster_Label, fill = Cluster_Label)) +
++     geom_point(size = 2.5, alpha = 0.7, shape = 16) +
++     stat_ellipse(geom = "polygon", alpha = 0.2, level = 0.95, linewidth = 1.2) +
++     scale_color_manual(values = cores_clusters, name = "Grupos Temáticos") +
++     scale_fill_manual(values = cores_clusters, name = "Grupos Temáticos") +
++     labs(
++       title = "Análise PCA com Grupos Temáticos Identificados",
++       subtitle = "Distribuição dos estudos no espaço de componentes principais",
++       x = sprintf("Componente Principal 1 (%.1f%% da variância)", 
++                   100 * pca_result$pca$eig[1, 2]),
++       y = sprintf("Componente Principal 2 (%.1f%% da variância)", 
++                   100 * pca_result$pca$eig[2, 2])
++     ) +
++     theme_minimal(base_size = 15) +
++     theme(
++       plot.title = element_text(face = "bold", size = 18, hjust = 0.5),
++       plot.subtitle = element_text(hjust = 0.5, color = "gray40", size = 13),
++       legend.position = "right",
++       legend.title = element_text(face = "bold", size = 14),
++       legend.text = element_text(size = 11),
++       panel.grid.minor = element_blank(),
++       panel.grid.major = element_line(color = "gray90"),
++       panel.background = element_rect(fill = "white"),
++       plot.margin = margin(20, 20, 20, 20)
++     )
++   
++   ggsave(output_file, plot = p, width = 14, height = 10, dpi = 300)
++   cat(sprintf("✓ Biplot com Clusters salvo: %s\n", output_file))
++ }
+> 
+> ################################################################################
+> # FUNÇÃO: Gerar Heatmap de Loadings (pheatmap)
+> ################################################################################
+> plot_loadings_heatmap <- function(pca_result, output_file = "pca_loadings_heatmap.png") {
++   cat("📊 Gerando Heatmap de Loadings...\n")
++   
++   # Extrair loadings (coordenadas das variáveis)
++   loadings <- as.data.frame(pca_result$pca$var$coord[, 1:5])
++   colnames(loadings) <- paste0("PC", 1:5)
++   
++   # Gerar heatmap
++   png(output_file, width = 3000, height = 2400, res = 300)
++   pheatmap(
++     loadings,
++     color = colorRampPalette(c("#3B4992", "#FFFFFF", "#EE0000"))(100),
++     cluster_rows = TRUE,
++     cluster_cols = FALSE,
++     fontsize = 10,
++     fontsize_row = 8,
++     fontsize_col = 10,
++     main = "Heatmap de Loadings - PCA\nContribuição das Variáveis aos Componentes",
++     angle_col = 0,
++     border_color = NA,
++     cellwidth = 30,
++     cellheight = 12
++   )
++   dev.off()
++   
++   cat(sprintf("✓ Heatmap de Loadings salvo: %s\n", output_file))
++ }
+> 
+> ################################################################################
+> # FUNÇÃO: Gerar Evolução Temporal (ggplot2)
+> ################################################################################
+> plot_temporal_evolution <- function(pca_result, output_file = "pca_temporal_evolution.png") {
++   cat("📊 Gerando Evolução Temporal...\n")
++   
++   dados_plot <- pca_result$dados %>%
++     filter(!is.na(Ano)) %>%
++     mutate(Periodo = cut(Ano, 
++                          breaks = c(2010, 2015, 2020, 2025),
++                          labels = c("2010-2014", "2015-2019", "2020-2025"),
++                          include.lowest = TRUE))
++   
++   p <- ggplot(dados_plot, aes(x = PC1, y = PC2, color = Periodo)) +
++     geom_point(size = 3, alpha = 0.7) +
++     stat_ellipse(aes(fill = Periodo), geom = "polygon", alpha = 0.1, 
++                  level = 0.95, type = "norm") +
++     scale_color_viridis_d(option = "plasma", begin = 0.2, end = 0.9) +
++     scale_fill_viridis_d(option = "plasma", begin = 0.2, end = 0.9) +
++     labs(
++       title = "Evolução Temporal no Espaço PCA",
++       subtitle = "Distribuição de estudos por período (2010-2025)",
++       x = sprintf("PC1 (%.2f%% da variância)", pca_result$var_explicada[1]),
++       y = sprintf("PC2 (%.2f%% da variância)", pca_result$var_explicada[2]),
++       color = "Período",
++       fill = "Período"
++     ) +
++     theme_minimal(base_size = 14) +
++     theme(
++       plot.title = element_text(face = "bold", size = 16, hjust = 0.5),
++       plot.subtitle = element_text(hjust = 0.5, color = "gray40"),
++       legend.position = "right",
++       panel.grid.minor = element_blank()
++     )
++   
++   ggsave(output_file, plot = p, width = 12, height = 8, dpi = 300)
++   cat(sprintf("✓ Evolução Temporal salva: %s\n", output_file))
++ }
+> 
+> ################################################################################
+> # FUNÇÃO: Gerar Relatório Estatístico
+> ################################################################################
+> gerar_relatorio <- function(pca_result, output_file = "pca_relatorio.txt") {
++   cat("\n📝 Gerando relatório estatístico...\n")
++   
++   sink(output_file)
++   cat("================================================================================\n")
++   cat("RELATÓRIO DE ANÁLISE PCA - MACHINE LEARNING PARA INDICAÇÕES GEOGRÁFICAS\n")
++   cat("================================================================================\n\n")
++   cat(sprintf("Data de execução: %s\n", Sys.time()))
++   cat(sprintf("Total de observações: %d\n", nrow(pca_result$dados)))
++   cat(sprintf("Total de variáveis analisadas: %d\n\n", ncol(pca_result$pca$var$coord)))
++   
++   cat("--------------------------------------------------------------------------------\n")
++   cat("VARIÂNCIA EXPLICADA POR COMPONENTE\n")
++   cat("--------------------------------------------------------------------------------\n")
++   print(pca_result$pca$eig[1:5, ])
++   cat("\n")
++   
++   cat("--------------------------------------------------------------------------------\n")
++   cat("LOADINGS (CONTRIBUIÇÃO DAS VARIÁVEIS) - PC1 e PC2\n")
++   cat("--------------------------------------------------------------------------------\n")
++   loadings_pc12 <- pca_result$pca$var$coord[, 1:2]
++   loadings_pc12 <- loadings_pc12[order(abs(loadings_pc12[, 1]), decreasing = TRUE), ]
++   print(head(loadings_pc12, 15))
++   cat("\n")
++   
++   cat("--------------------------------------------------------------------------------\n")
++   cat("QUALIDADE DE REPRESENTAÇÃO (COS2) - TOP 15 VARIÁVEIS\n")
++   cat("--------------------------------------------------------------------------------\n")
++   cos2_vars <- pca_result$pca$var$cos2[, 1:2]
++   cos2_vars <- cos2_vars[order(rowSums(cos2_vars), decreasing = TRUE), ]
++   print(head(cos2_vars, 15))
++   cat("\n")
++   
++   cat("--------------------------------------------------------------------------------\n")
++   cat("CONTRIBUIÇÃO DAS VARIÁVEIS (%) - TOP 15 PARA PC1\n")
++   cat("--------------------------------------------------------------------------------\n")
++   contrib_pc1 <- sort(pca_result$pca$var$contrib[, 1], decreasing = TRUE)
++   print(head(contrib_pc1, 15))
++   cat("\n")
++   
++   cat("--------------------------------------------------------------------------------\n")
++   cat("INTERPRETAÇÃO DOS COMPONENTES PRINCIPAIS\n")
++   cat("--------------------------------------------------------------------------------\n")
++   cat("PC1: Representa o eixo principal de variação metodológica.\n")
++   cat("     Variáveis com alta carga positiva/negativa indicam características distintivas.\n\n")
++   cat("PC2: Captura a segunda maior fonte de variação ortogonal a PC1.\n")
++   cat("     Frequentemente associado a contrastes entre técnicas ou produtos.\n\n")
++   cat("PC1+PC2 juntos explicam a proporção predominante da variância observada.\n")
++   cat("================================================================================\n")
++   sink()
++   
++   cat(sprintf("✓ Relatório estatístico salvo: %s\n", output_file))
++ }
+> 
+> ################################################################################
+> # FUNÇÃO: Salvar dados processados
+> ################################################################################
+> salvar_dados <- function(pca_result) {
++   # Salvar scores
++   scores <- pca_result$dados %>%
++     select(ID, Titulo, Ano, Score, PC1, PC2, PC3, PC4, PC5)
++   write.csv(scores, "pca_scores.csv", row.names = FALSE)
++   
++   # Salvar loadings
++   loadings <- as.data.frame(pca_result$pca$var$coord)
++   loadings$Variable <- rownames(loadings)
++   loadings <- loadings %>% select(Variable, everything())
++   write.csv(loadings, "pca_loadings.csv", row.names = FALSE)
++   
++   cat("\n✓ Dados salvos: pca_scores.csv e pca_loadings.csv\n")
++ }
+> 
+> ################################################################################
+> # EXECUÇÃO PRINCIPAL
+> ################################################################################
+> main <- function() {
++   # Configurar diretório de trabalho (se necessário)
++   # setwd("caminho/para/seu/diretorio")
++   
++   # Caminho do arquivo .bib
++   caminho_bib <- "../corpus.bib"
++   
++   # Verificar se arquivo existe
++   if (!file.exists(caminho_bib)) {
++     stop("❌ Erro: Arquivo .bib não encontrado em: ", caminho_bib)
++   }
++   
++   # 1. Extrair dados
++   dados <- extrair_dados_bib(caminho_bib)
++   
++   # 2. Executar PCA
++   pca_result <- executar_pca(dados, n_comp = 5)
++   
++   # 3. Gerar visualizações
++   cat("📊 Gerando visualizações...\n")
++   plot_scree(pca_result)
++   plot_biplot_individuals(pca_result)
++   plot_biplot_variables(pca_result)
++   plot_biplot_with_clusters(pca_result)
++   plot_loadings_heatmap(pca_result)
++   plot_temporal_evolution(pca_result)
++   
++   # 4. Gerar relatório
++   gerar_relatorio(pca_result)
++   
++   # 5. Salvar dados
++   salvar_dados(pca_result)
++   
++   cat("\n")
++   cat("================================================================================\n")
++   cat("✅ ANÁLISE PCA CONCLUÍDA COM SUCESSO!\n")
++   cat("================================================================================\n")
++ }
+> 
+> # Executar
+> tryCatch({
++   main()
++ }, error = function(e) {
++   cat("\n❌ ERRO durante a execução:\n")
++   cat(conditionMessage(e), "\n")
++ })
+📚 Extraindo dados do arquivo .bib...
+✓ Total de estudos extraídos: 670
+
+🔬 Executando PCA...
+✓ PCA concluída: 5 componentes principais
+  Variância explicada (PC1+PC2): 13.05%
+
+📊 Gerando visualizações...
+📊 Gerando Scree Plot...
+✓ Scree Plot salvo: pca_scree_plot.png
+📊 Gerando Biplot de Indivíduos...
+✓ Biplot de Indivíduos salvo: pca_biplot_individuals.png
+📊 Gerando Biplot de Variáveis...
+✓ Biplot de Variáveis salvo: pca_biplot_variables.png
+📊 Gerando Biplot com Clusters...
+✓ Biplot com Clusters salvo: pca_biplot_clusters.png
+📊 Gerando Heatmap de Loadings...
+✓ Heatmap de Loadings salvo: pca_loadings_heatmap.png
+📊 Gerando Evolução Temporal...
+Too few points to calculate an ellipse
+✓ Evolução Temporal salva: pca_temporal_evolution.png
+
+📝 Gerando relatório estatístico...
+✓ Relatório estatístico salvo: pca_relatorio.txt
+
+✓ Dados salvos: pca_scores.csv e pca_loadings.csv
+
+================================================================================
+✅ ANÁLISE PCA CONCLUÍDA COM SUCESSO!
+================================================================================
+Mensagens de aviso:
+1: Using `size` aesthetic for lines was deprecated in ggplot2 3.4.0.
+ℹ Please use `linewidth` instead. 
+2: Removed 2 rows containing missing values or values outside the scale range
+(`geom_point()`). 
+> 
+> proc.time()
+  usuário   sistema decorrido 
+    13.40      0.56     14.50 

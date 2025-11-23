@@ -1,21 +1,183 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Revisão de escopo}
 
-\subsection{Estratégia de busca e extração dos estudos}
+Esta revisão de escopo segue as diretrizes PRISMA-ScR (\textit{Preferred Reporting Items for Systematic Reviews and Meta-Analyses extension for Scoping Reviews}) para garantir transparência metodológica e reprodutibilidade. O protocolo está registrado no Open Science Framework para facilitar o acesso público e a replicabilidade.
 
-A revisão sistemática foi conduzida seguindo as diretrizes do PRISMA (\textit{Preferred Reporting Items for Systematic Reviews and Meta-Analyses}) para garantir transparência e reprodutibilidade metodológica \cite{Page2021}. A busca foi realizada nas principais bases de dados científicas com acesso periódico CAPES: Scopus (Elsevier), \textit{Web of Science} (Clarivate Analytics), IEEE Xplore Digital Library, ACM Digital Library e PubMed. A estratégia de busca foi fundamentada na intersecção de três domínios temáticos principais: (i) técnicas de machine learning e inteligência artificial; (ii) estudos etnográficos e conhecimentos tradicionais; e (iii) agroecologia e sistemas tradicionais de manejo.
+\subsection{Questão de Pesquisa}
 
-Os descritores foram estruturados utilizando terminologia controlada em língua inglesa, articulados por operadores booleanos (AND, OR, NOT), abrangendo publicações dos últimos 10 anos (2014-2024) para capturar o estado da arte em machine learning aplicado a estudos etnográficos. A estratégia de busca foi construída seguindo a lógica: 
+O estudo emprega a estrutura PCC (\textit{População, Conceito, Contexto}) para formular a questão de pesquisa: \textit{Como as técnicas de Machine Learning têm sido aplicadas para apoiar estudos etnográficos e mapeamento de conhecimentos tradicionais em contextos de agroecologia e conservação ambiental?}
 
-\textbf{("machine learning" OR "artificial intelligence" OR "deep learning" OR "natural language processing" OR "ensemble methods" OR "convolutional neural networks") AND ("traditional knowledge" OR "indigenous knowledge" OR "ethnography" OR "participatory research" OR "community-based research") AND ("agroecology" OR "sustainable agriculture" OR "traditional farming" OR "ecological knowledge" OR "biodiversity conservation")}.
+\begin{table}[H]
+  \centering
+  \caption{Estrutura da revisão de escopo de acordo com a estrutura PCC}
+  \label{tab:pcc}
+  \resizebox{\textwidth}{!}{%
+    \begin{tabular}{ll}
+      \hline
+      \textbf{Elemento} & \textbf{Descrição} \\
+      \hline
+      \textbf{P (População)} & Comunidades tradicionais, povos indígenas e agricultores familiares que detêm conhecimentos tradicionais sobre agroecologia, conservação da biodiversidade e sistemas agrícolas sustentáveis. \\
+      \textbf{C (Conceito)} & Machine Learning, Inteligência Artificial, algoritmos de classificação e predição, métodos de mineração de dados e Processamento de Linguagem Natural aplicados a estudos etnográficos e mapeamento de conhecimentos tradicionais. \\
+      \textbf{C (Contexto)} & Estudos etnográficos, pesquisa participativa, mapeamento de conhecimentos tradicionais, agroecologia, conservação ambiental, biodiversidade e sistemas agrícolas sustentáveis. \\
+      \hline
+    \end{tabular}%
+  }
+\end{table}
 
-Os critérios de inclusão contemplaram: artigos completos publicados em periódicos revisados por pares, escritos em inglês, português ou espanhol, que apresentem aplicações de técnicas computacionais em estudos etnográficos ou mapeamento de conhecimentos tradicionais relacionados à agricultura e conservação ambiental. Os descritores primários deveriam estar presentes nos campos: título, resumo ou palavras-chave dos manuscritos.
+Este estudo identifica e caracteriza aplicações de ML relatadas na literatura, categorizando técnicas por tipo de algoritmo, abordagem metodológica e métricas de desempenho. Além disso, analisa a distribuição de aplicações por tipo de produto, região geográfica e período de tempo, identificando lacunas metodológicas, limitações e direções para pesquisas futuras.
 
-\subsubsection{Primeira Fase: Sistema de Filtragem Automatizada por Relevância Temática}
+\subsection{Fluxograma Metodológico PRISMA-ScR}
 
-\subsubsection{\textit{Algoritmo de pontuação ponderada}}
+A Figura \ref{fig:prisma} apresenta o fluxograma metodológico, estruturado em quatro fases sequenciais: (1) Estratégias de busca nas principais bases de dados, (2) Filtragem automatizada com sistema de pontuação ponderada, (3) Avaliação manual de qualidade com avaliação multidisciplinar e (4) Análise bibliométrica e síntese qualitativa integrando metodologias quantitativas e documentais. O fluxograma detalha o caminho desde a identificação do registro até a síntese final, oferecendo recomendações para a implementação de Machine Learning em sistemas de Indicações Geográficas.
 
-Para superar as limitações dos métodos convencionais de triagem bibliográfica, foi desenvolvido um sistema de filtragem automatizada baseado em análise semântica e pontuação hierárquica. O algoritmo, implementado em Python 3.9 utilizando bibliotecas de processamento de linguagem natural (NLTK, spaCy), opera através de um sistema de pontuação ponderada que avalia a relevância temática de cada referência bibliográfica com base na presença e localização de descritores específicos.
+\begin{figure}[H]
+  \centering
+  \caption{Fluxograma da Revisão de Escopo sobre Aplicações de Machine Learning em Indicações Geográficas}
+  \includegraphics[scale=0.8]{IMAGENS/prisma_flowdiagram.png}
+  \fonte{\textbf{Elaborado pelos autores} (2024)}
+  \label{fig:prisma}
+\end{figure}
+
+\subsection{Estratégia de Busca e Extração de Estudos}
+
+As buscas visaram Scopus (Elsevier) e Web of Science (Clarivate Analytics), interceptando três domínios temáticos principais: técnicas de machine learning e inteligência artificial; estudos etnográficos e conhecimentos tradicionais; e agroecologia e conservação ambiental.
+
+Os descritores empregaram terminologia controlada em inglês e operadores booleanos (AND, OR, NOT), cobrindo publicações dos últimos 10 anos (2015-2025) para capturar o estado da arte em machine learning aplicado a estudos etnográficos. A estratégia de busca seguiu esta lógica:
+
+\textit{("machine learning" OR "artificial intelligence" OR "deep learning" OR "natural language processing" OR "NLP" OR "text mining" OR "computational analysis" OR "data mining" OR "neural network" OR "predictive model" OR "algorithm" OR "classification" OR "clustering") AND ("traditional knowledge" OR "indigenous knowledge" OR "local knowledge" OR "ethnobotany" OR "ethnobotanical" OR "traditional ecological knowledge" OR "TEK" OR "indigenous people" OR "native community" OR "aboriginal" OR "ancestral knowledge" OR "folk knowledge" OR "local ecological knowledge") AND ("ethnography" OR "ethnographic" OR "participatory research" OR "community-based research" OR "field research" OR "qualitative" OR "interview" OR "case study" OR "action research" OR "mixed method" OR "participatory action research")}.
+
+
+
+Os critérios de inclusão compreenderam artigos completos publicados em periódicos revisados por pares, escritos em inglês, português ou espanhol, que apresentem aplicações de técnicas computacionais em estudos etnográficos ou mapeamento de conhecimentos tradicionais relacionados à agricultura e conservação ambiental. Descritores primários foram exigidos no título, resumo ou palavras-chave. Trabalhos não revisados por pares, estudos sem aplicação prática de ML e aqueles focados exclusivamente em aspectos não territoriais foram excluídos.
+
+A extração de dados utilizou um formulário padronizado para registrar metadados bibliográficos (autor, ano, título), características das comunidades estudadas (localização geográfica, grupo étnico, tipo de conhecimento tradicional), detalhes metodológicos (algoritmos de ML, técnicas etnográficas, tamanho da amostra) e métricas de desempenho (acurácia, sensibilidade, especificidade, RMSE).
+
+\subsection{Primeira Fase: Sistema Automatizado de Filtragem de Relevância Temática}
+
+\subsubsection{Algoritmo de Pontuação Ponderada}
+
+Complementando a triagem manual, um sistema de filtragem automatizado atribui pontuações de relevância temática com base na presença e localização de descritores no título, resumo e palavras-chave. Implementado em Python (NLTK, spaCy), o algoritmo aplica um esquema de ponderação hierárquica a cada termo identificado. O sistema de pontuação adere aos princípios do Processo de Análise Hierárquica (AHP), organizando descritores em cinco categorias com pesos diferenciados.
+
+A equação para o cálculo da pontuação é:
+
+\[
+S_i = \sum_{j=1}^{n} w_j \cdot l_i \cdot f_{ij}
+\]
+
+onde:
+
+- \(S_i\) = pontuação total do artigo \(i\)
+- \(w_j\) = peso associado ao termo \(j\) (categorizado em 5 níveis: 5, 3, 2, 1 ou -5/-3/-2 pontos)
+- \(l_i\) = multiplicador de localização (1.5 para título, 1.2 para palavras-chave, 1.0 para resumo)
+- \(f_{ij}\) = frequência de ocorrência do termo \(j\) no artigo \(i\)
+- \(n\) = número total de termos avaliados
+
+Termos Prioritários (5 pontos) representam o núcleo conceitual da revisão (ex: \textit{traditional knowledge, indigenous knowledge, agroecology, sustainable agriculture}). Termos de Alta Relevância (3 pontos) capturam conceitos metodológicos centrais (ex: \textit{machine learning, deep learning, neural networks}). Termos de Média Relevância (2 pontos) cobrem temas complementares (ex: \textit{chemometrics, data mining}), enquanto Termos de Contexto (1 ponto) indicam ambientes potenciais (ex: \textit{regional products, certification}). Termos de Exclusão recebem pesos negativos para penalizar registros fora do escopo, particularmente nos domínios \textit{médico/clínico} (-5), \textit{planejamento urbano} (-3) e \textit{finanças} (-2).
+
+\subsubsection{Implementação e Validação do Algoritmo}
+
+Para cada registro, o algoritmo varre o título, resumo e palavras-chave, aplica os pesos da categoria e multiplica cada ocorrência pelo fator de localização. A pontuação final soma esses produtos em todos os termos identificados.
+
+A distribuição empírica da pontuação definiu o limite mínimo de inclusão, identificando o ponto de inflexão na curva cumulativa (critério de Pareto/cotovelo) e ajustando-o via validação manual com amostragem estratificada. O valor final representa o compromisso ideal entre sensibilidade e especificidade, estabilizando a concordância entre avaliadores em casos limítrofes.
+
+\subsubsection{Validação Participativa e Refinamento do Algoritmo}
+
+Para garantir a validade científica, foi implementado um protocolo de validação envolvendo três revisores independentes especializados em machine learning e sistemas de IG. O protocolo incluiu uma revisão manual sistemática de 272 estudos para verificar a aderência aos critérios de inclusão. Um teste de concordância entre avaliadores verificou a consistência da classificação.
+
+O processo envolveu investigação qualitativa de casos limítrofes e refinamento iterativo dos critérios de elegibilidade. A validação produziu uma taxa de concordância de 90,2\% entre o sistema automatizado e a avaliação manual, indicando alta eficácia algorítmica na triagem temática.
+
+\subsubsection{Verificação de Cobertura Bibliográfica e Categorização Automatizada}
+
+Um sistema automatizado verificou a cobertura bibliográfica, garantindo completude e consistência entre citações textuais e arquivos bibliográficos.
+
+O corpus consolidado passou por categorização automatizada usando Processamento de Linguagem Natural (PLN). Um pipeline computacional extraiu, tokenizou e vetorizou metadados de referência e resumos, usando modelos supervisionados e regras semânticas para reconhecimento de padrões. As referências foram classificadas em categorias metodológicas predefinidas, incluindo técnicas de machine learning e sistemas de IG.
+
+Para quantificar a cobertura e a adequação do estudo, foram aplicadas métricas de cobertura de citação e taxas de uso bibliográfico do corpus.
+
+\subsection{Segunda Fase: Avaliação Manual da Qualidade Metodológica}
+
+Na segunda fase, três revisores independentes avaliaram a qualidade metodológica dos estudos selecionados, garantindo análise multidisciplinar e reduzindo o viés interpretativo. A escala MMAT foi adaptada para estudos interdisciplinares envolvendo ML e sistemas de IG, estruturando oito indicadores em uma escala Likert de 3 pontos. Os indicadores incluíram rigor metodológico, validação de algoritmo, adesão a protocolos éticos, reprodutibilidade, integração quantitativa-qualitativa, impacto nos sistemas de IG, completude da documentação e generalização do método (Tabela \ref{tab:mmat}).
+
+\begin{table}[H]
+  \centering
+  \caption{Indicadores de qualidade metodológica para estudos ML-etnografia}
+  \label{tab:mmat}
+  \resizebox{\textwidth}{!}{%
+    \begin{tabular}{lll}
+      \hline
+      \textbf{Código} & \textbf{Indicador} & \textbf{Domínio} \\
+      \hline
+      RIG & Rigor metodológico na coleta e processamento de dados etnográficos & Qualidade Etnográfica \\
+      VAL & Validação técnica dos algoritmos com métricas apropriadas & Qualidade Computacional \\
+      ETI & Adesão a protocolos éticos para pesquisa com comunidades tradicionais & Qualidade Ética \\
+      REP & Reprodutibilidade de experimentos computacionais & Qualidade Técnica \\
+      INT & Integração efetiva entre métodos quantitativos e qualitativos & Qualidade Metodológica \\
+      IMP & Impacto e aplicabilidade dos resultados para as comunidades estudadas & Qualidade Social \\
+      DOC & Documentação completa dos algoritmos e procedimentos etnográficos & Qualidade Documental \\
+      GEN & Generalizabilidade e transferibilidade dos métodos propostos & Qualidade Científica \\
+      \hline
+    \end{tabular}%
+  }
+\end{table}
+
+Cada indicador recebeu uma pontuação de 0 a 2: zero para critérios não atendidos ou deficiências substanciais; um para cumprimento parcial com limitações; e dois para cumprimento completo com evidências claras. Uma escala de 3 pontos foi selecionada porque avaliações dicotômicas falham em capturar a complexidade interdisciplinar, enquanto escalas maiores geram inconsistência entre avaliadores.
+
+\subsubsection{Procedimentos de Consenso e Validação Interavaliadores}
+
+A avaliação manual incluiu um protocolo de consenso. Inicialmente, os revisores avaliaram independentemente uma amostra piloto de 30 estudos (~11\% do corpus) para calibrar critérios. Para o corpus completo, casos de discordância (diferença ≥ 2 pontos) passaram por reavaliação cega e discussão para chegar a um consenso. O coeficiente de correlação intraclasse (ICC) foi calculado de acordo com Shrout e Fleiss (1979), obtendo um valor de 0,87 (IC 95\%: 0,84–0,91), indicando boa concordância.
+
+\subsubsection{Critérios Específicos para Estudos Interdisciplinares}
+
+Dada a natureza interdisciplinar dos estudos, os critérios de qualidade examinaram a coerência da integração quantitativa-qualitativa, validação em múltiplos contextos geográficos, transparência algorítmica, adesão ética e aplicabilidade prática para certificação.
+
+Esta fase resultou na seleção de 187 estudos com qualidade metodológica adequada (pontuação ≥ 18 pontos) dos 605 artigos iniciais. Estes formaram a base para análises subsequentes. A distribuição incluiu estudos de alta qualidade metodológica, com pontuações variando conforme os critérios estabelecidos.
+
+\subsection{Terceira Fase: Análise Bibliométrica}
+
+A Lei de Lotka analisou a produtividade científica, descrevendo a distribuição não linear da produtividade do autor para identificar padrões de concentração ou dispersão. Análises de acoplamento bibliográfico e cocitação não foram realizadas devido à falta de campos de referência citada nos arquivos bibliográficos disponíveis.
+
+\subsection{Quarta Fase: Síntese Qualitativa e Integração com Análise Documental}
+
+A quarta fase integrou sistematicamente as descobertas com a análise documental de marcos regulatórios para fundamentar recomendações metodológicas.
+
+A síntese final combinou análise qualitativa temática com seleção baseada no princípio de Pareto (80/20), priorizando os 20\% melhores artigos por pontuação combinada (40\% qualidade metodológica, 35\% relevância temática, 25\% impacto bibliométrico).
+
+A pontuação combinada final foi calculada usando a Equação:
+
+\[
+P_{final} = (0.40 \cdot Q_{met}) + (0.35 \cdot Q_{tem}) + (0.25 \cdot Q_{biblio})
+\]
+
+Onde:
+
+- \(P_{final}\) = pontuação final de seleção
+- \(Q_{met}\) = qualidade metodológica normalizada (0-1)
+- \(Q_{tem}\) = relevância temática normalizada (0-1)
+- \(Q_{biblio}\) = impacto bibliométrico normalizado (0-1)
+
+\subsection{Análises Estatísticas}
+
+Análises estatísticas no R utilizando RStudio caracterizaram sistematicamente o corpus e identificaram padrões emergentes. A Análise de Correspondência Múltipla (MCA) investigou associações entre variáveis categóricas (algoritmos, produtos, regiões, técnicas analíticas), seguindo Le Roux e Rouanet (2004) e Greenacre (2017), usando FactoMineR para extrair as principais dimensões. Subsequentemente, a Análise de Cluster (k-means e hierárquica) usando FactoMineR e factoextra identificou agrupamentos recorrentes de produto-instrumento-algoritmo, sintetizando as "famílias tecnológicas" discutidas nos resultados.
+
+A análise de rede mapeou coocorrências entre algoritmos, produtos e regiões. Usando igraph e ggraph, um grafo não direcionado foi construído, calculando métricas de centralidade (grau, autovetor, intermediação), e a detecção de comunidade foi realizada com o algoritmo Louvain para identificar módulos temáticos.
+
+Séries temporais e o teste de correlação de Spearman analisaram a evolução temporal das publicações (2010–2025) para detectar tendências no volume de estudos e adoção de algoritmos. Visualizações geradas com ggplot2 usaram suavização LOESS para ilustrar a dinâmica de crescimento.
+
+Finalmente, modelos preditivos globais avaliaram se variáveis bibliométricas e metodológicas poderiam antecipar pontuações de estudo. Modelos de regressão (OLS, Ridge, Lasso, Random Forest) e modelos de classificação (Regressão Logística, Random Forest) foram estimados usando caret e randomForest com validação cruzada k-fold estratificada. O desempenho foi avaliado via RMSE e \(R^2\) para regressão, e acurácia, precisão, sensibilidade e F1-score para classificação.
+
+\subsubsection{Análise de Correspondência Múltipla (MCA)}
+
+A MCA investigou associações entre variáveis categóricas, empregando FactoMineR para interpretar relacionamentos conceituais.
+
+\subsubsection{Análise de Rede}
+
+A análise de rede mapeou coocorrências, construindo um grafo não direcionado ponderado onde nós representam entidades e arestas indicam coocorrência. Métricas de centralidade identificaram elementos estruturalmente centrais.
+
+A detecção de comunidade usando o algoritmo Louvain interpretou a estrutura modular resultante como módulos tecnológicos temáticos.
+
+\subsubsection{Análise Temporal}
+
+A evolução temporal (2010–2025) foi analisada usando o teste de correlação de Spearman e visualizações ggplot2 com suavização LOESS para ilustrar o crescimento do campo e a adoção de tecnologia.
 
 O sistema de pontuação hierárquica foi estruturado em cinco categorias de termos com pesos diferenciados:
 

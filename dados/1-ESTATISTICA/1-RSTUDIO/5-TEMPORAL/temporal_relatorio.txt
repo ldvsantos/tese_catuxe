@@ -1,0 +1,55 @@
+================================================================================
+TEMPORAL ANALYSIS REPORT - ML FOR GEOGRAPHICAL INDICATIONS
+================================================================================
+
+Data de execução: 2025-11-23 10:51:24.288097
+Período analisado: 2010-2025
+
+--------------------------------------------------------------------------------
+PUBLICATIONS EVOLUTION
+--------------------------------------------------------------------------------
+# A tibble: 10 × 2
+     Ano Total
+   <dbl> <int>
+ 1  2016    49
+ 2  2017    31
+ 3  2018    45
+ 4  2019    55
+ 5  2020    80
+ 6  2021    66
+ 7  2022    40
+ 8  2023    63
+ 9  2024   105
+10  2025   134
+
+--------------------------------------------------------------------------------
+SIGNIFICANT TEMPORAL TRENDS (p < 0.05)
+--------------------------------------------------------------------------------
+              Feature      Tipo Correlacao      PValue Significativo  Tendencia
+rho...1 NeuralNetwork Algoritmo  0.8622494 0.001329521          TRUE Increasing
+rho...2           NLP Algoritmo  0.8127768 0.004259473          TRUE Increasing
+rho...3  RandomForest Algoritmo  0.7490253 0.012657311          TRUE Increasing
+
+--------------------------------------------------------------------------------
+MOST USED ALGORITHMS (2020-2025)
+--------------------------------------------------------------------------------
+# A tibble: 6 × 2
+  Algoritmo     Total
+  <chr>         <int>
+1 NeuralNetwork    21
+2 NLP              13
+3 RandomForest      5
+4 SVM               3
+5 DecisionTree      3
+6 KNN               0
+
+--------------------------------------------------------------------------------
+MOST STUDIED PRODUCTS (2020-2025)
+--------------------------------------------------------------------------------
+
+❌ ERROR during execution:
+método não aplicável para 'filter' aplicado a um objeto de classe "NULL" 
+
+> proc.time()
+  usuário   sistema decorrido 
+    14.56      0.51     15.64 

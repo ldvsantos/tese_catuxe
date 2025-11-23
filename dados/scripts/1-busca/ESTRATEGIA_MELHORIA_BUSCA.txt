@@ -1,0 +1,369 @@
+================================================================================
+ANÁLISE E MELHORIAS DA ESTRATÉGIA DE BUSCA - TESE CATUXE
+Machine Learning em Etnografia e Conhecimentos Tradicionais em Agroecologia
+================================================================================
+Data: 23 de novembro de 2025
+
+================================================================================
+1. DIAGNÓSTICO DO PROBLEMA ATUAL
+================================================================================
+
+CORPUS ANALISADO: 605 estudos (referencias_filtradas_tema_agroecologia_v2.bib)
+
+PADRÕES ENCONTRADOS (primeiras 100 entradas):
+- Machine Learning: 0 ocorrências (0%)
+- Ethnography: 0 ocorrências (0%)
+- Traditional Knowledge: 1 ocorrência (1%)
+- Indigenous: 0 ocorrências (0%)
+- Agroecology: 6 ocorrências (6%)
+- Biodiversity: 2 ocorrências (2%)
+
+CONCLUSÃO:
+O corpus atual está focado em AGROECOLOGIA GERAL (agricultura sustentável, 
+recursos hídricos, nexo água-energia-alimentos) e NÃO captura a interseção 
+específica de:
+  Machine Learning + Etnografia + Conhecimentos Tradicionais
+
+EXEMPLOS DE TÍTULOS ENCONTRADOS:
+- "Governance of transitions towards sustainable development"
+- "Closing the yield gap while ensuring water sustainability"
+- "Community structure of arbuscular mycorrhizal fungi"
+- "Water Resources Research: Legacy and perspectives"
+
+Estes estudos são sobre AGRICULTURA SUSTENTÁVEL, não sobre ML aplicado a 
+estudos etnográficos de conhecimentos tradicionais.
+
+================================================================================
+2. ESTRATÉGIA DE BUSCA ATUAL (PROBLEMAS IDENTIFICADOS)
+================================================================================
+
+A busca atual provavelmente usou:
+("machine learning" OR "artificial intelligence") 
+AND ("traditional knowledge" OR "ethnography") 
+AND ("agroecology" OR "sustainable agriculture")
+
+PROBLEMA: A busca está muito AMPLA no componente "agroecology", capturando
+estudos de agricultura sustentável SEM componente de ML ou etnografia.
+
+EVIDÊNCIA: Apenas 1% dos estudos mencionam "traditional knowledge" e 0% 
+mencionam "machine learning" ou "ethnography".
+
+================================================================================
+3. ESTRATÉGIAS DE MELHORIA RECOMENDADAS
+================================================================================
+
+───────────────────────────────────────────────────────────────────────────────
+ESTRATÉGIA 1: BUSCA MAIS RESTRITIVA (INTERSEÇÃO OBRIGATÓRIA)
+───────────────────────────────────────────────────────────────────────────────
+
+Exigir que TODOS os componentes estejam presentes:
+
+(ML Terms) AND (Ethnographic Terms) AND (Traditional Knowledge Terms)
+
+QUERY SUGERIDA:
+
+("machine learning" OR "artificial intelligence" OR "deep learning" OR 
+ "natural language processing" OR "text mining" OR "data mining" OR
+ "computational analysis" OR "algorithmic" OR "neural network")
+
+AND
+
+("ethnography" OR "ethnographic" OR "participatory research" OR 
+ "community-based research" OR "field work" OR "qualitative research" OR
+ "mixed methods" OR "grounded theory")
+
+AND
+
+("traditional knowledge" OR "indigenous knowledge" OR "local knowledge" OR
+ "ethnobotany" OR "traditional ecological knowledge" OR "TEK" OR
+ "indigenous peoples" OR "native communities" OR "ancestral knowledge" OR
+ "cultural heritage" OR "intangible heritage")
+
+OPCIONAL (pode ou não ter):
+AND ("agroecology" OR "sustainable agriculture" OR "biodiversity" OR
+     "conservation" OR "ecosystem" OR "rural")
+
+RESULTADO ESPERADO: ~50-150 estudos de ALTA QUALIDADE
+
+───────────────────────────────────────────────────────────────────────────────
+ESTRATÉGIA 2: BUSCA POR TEMAS ESPECÍFICOS (ABORDAGEM DIRIGIDA)
+───────────────────────────────────────────────────────────────────────────────
+
+Focar em aplicações específicas de ML em etnografia:
+
+A. ANÁLISE DE TEXTO ETNOGRÁFICO:
+   ("text analysis" OR "content analysis" OR "discourse analysis" OR 
+    "sentiment analysis" OR "topic modeling" OR "NLP")
+   AND ("interview" OR "narrative" OR "oral history" OR "field notes")
+   AND ("indigenous" OR "traditional" OR "community")
+
+B. MAPEAMENTO DE CONHECIMENTOS:
+   ("knowledge mapping" OR "knowledge representation" OR "ontology" OR
+    "knowledge graph" OR "semantic network")
+   AND ("traditional knowledge" OR "indigenous knowledge" OR "ethnobotany")
+
+C. ANÁLISE ESPACIAL E GEOGRÁFICA:
+   ("spatial analysis" OR "GIS" OR "remote sensing" OR "geographic" OR
+    "spatial modeling")
+   AND ("traditional" OR "indigenous" OR "local communities")
+   AND ("land use" OR "territory" OR "habitat")
+
+D. CLASSIFICAÇÃO E CATEGORIZAÇÃO:
+   ("classification" OR "clustering" OR "pattern recognition" OR "machine learning")
+   AND ("ethnobotany" OR "traditional medicine" OR "plant knowledge")
+
+E. ANÁLISE DE REDES SOCIAIS:
+   ("social network analysis" OR "network analysis" OR "community detection")
+   AND ("indigenous" OR "traditional" OR "local knowledge" OR "knowledge exchange")
+
+RESULTADO ESPERADO: 5-20 estudos por tema = 25-100 estudos totais
+
+───────────────────────────────────────────────────────────────────────────────
+ESTRATÉGIA 3: BUSCA EXPANDIDA COM TERMOS RELACIONADOS
+───────────────────────────────────────────────────────────────────────────────
+
+Incluir termos alternativos para ML que podem aparecer em estudos etnográficos:
+
+ML TERMS EXPANDIDOS:
+- "computational methods"
+- "quantitative analysis" 
+- "statistical modeling"
+- "predictive modeling"
+- "automated analysis"
+- "algorithmic approach"
+- "computational ethnography"
+- "digital humanities"
+- "digital methods"
+- "big data"
+
+ETHNOGRAPHIC TERMS EXPANDIDOS:
+- "qualitative methods"
+- "case study"
+- "action research"
+- "participatory action research" (PAR)
+- "community engagement"
+- "co-design"
+- "indigenous research methods"
+
+RESULTADO ESPERADO: 100-300 estudos
+
+───────────────────────────────────────────────────────────────────────────────
+ESTRATÉGIA 4: BUSCA REVERSA (SNOWBALLING)
+───────────────────────────────────────────────────────────────────────────────
+
+1. Identificar 5-10 artigos-chave (seed articles) que SÃO exatamente o que 
+   você procura
+2. Extrair todas as referências desses artigos (backward snowballing)
+3. Buscar artigos que citam esses estudos (forward snowballing via Google Scholar)
+4. Analisar palavras-chave e termos usados nesses artigos-chave
+
+EXEMPLO DE ARTIGOS SEED (sugestões para buscar):
+- "Machine learning for ethnobotanical research"
+- "Computational approaches to indigenous knowledge"
+- "NLP for analyzing traditional ecological knowledge"
+- "Digital methods in ethnographic research"
+
+───────────────────────────────────────────────────────────────────────────────
+ESTRATÉGIA 5: BUSCA POR PERIÓDICOS ESPECÍFICOS
+───────────────────────────────────────────────────────────────────────────────
+
+Focar em periódicos que publicam na interseção:
+
+PERIÓDICOS DE ETNOBIOLOGIA/CONHECIMENTOS TRADICIONAIS:
+- Journal of Ethnobiology and Ethnomedicine
+- Ethnobotany Research and Applications
+- Journal of Ethnopharmacology
+- Indigenous Peoples Journal
+- AlterNative: An International Journal of Indigenous Peoples
+
+PERIÓDICOS DE DIGITAL HUMANITIES/COMPUTATIONAL METHODS:
+- Digital Scholarship in the Humanities
+- Cultural Analytics
+- Computational Culture
+- Big Data & Society
+
+PERIÓDICOS DE CONSERVATION/SUSTAINABILITY COM COMPONENTE TECH:
+- Environmental Science & Policy
+- Ecological Informatics
+- Computers and Electronics in Agriculture
+- Journal of Environmental Informatics
+
+───────────────────────────────────────────────────────────────────────────────
+ESTRATÉGIA 6: BUSCA POR AUTORES E GRUPOS DE PESQUISA
+───────────────────────────────────────────────────────────────────────────────
+
+Identificar pesquisadores trabalhando na interseção:
+- Buscar por "computational ethnography"
+- Buscar por "digital anthropology"
+- Buscar por "indigenous data sovereignty"
+- Identificar laboratórios/centros de pesquisa específicos
+
+GRUPOS DE PESQUISA RELEVANTES (exemplos):
+- Digital Ethnography Research Centre
+- Indigenous AI (Canada)
+- Te Hiku Media (NZ) - Māori language AI
+- Local Contexts (Indigenous data)
+
+================================================================================
+4. QUERY RECOMENDADA PARA PRÓXIMA BUSCA
+================================================================================
+
+SCOPUS/WEB OF SCIENCE - QUERY OTIMIZADA:
+
+TITLE-ABS-KEY(
+  ("machine learning" OR "artificial intelligence" OR "deep learning" OR 
+   "natural language processing" OR "NLP" OR "text mining" OR 
+   "computational analysis" OR "data mining" OR "neural network" OR
+   "predictive model*" OR "algorithm*" OR "classification" OR "clustering")
+  
+  AND
+  
+  ("traditional knowledge" OR "indigenous knowledge" OR "local knowledge" OR
+   "ethnobotany" OR "ethnobotanical" OR "traditional ecological knowledge" OR
+   "TEK" OR "indigenous people*" OR "native communit*" OR "aboriginal" OR
+   "ancestral knowledge" OR "folk knowledge" OR "local ecological knowledge")
+  
+  AND
+  
+  ("ethnograph*" OR "participatory research" OR "community-based research" OR
+   "field research" OR "qualitative" OR "interview*" OR "case study" OR
+   "action research" OR "mixed method*" OR "participatory action research")
+)
+
+AND PUBYEAR > 2013
+AND LANGUAGE(English OR Portuguese OR Spanish)
+
+FILTROS ADICIONAIS:
+- Document Type: Article, Review
+- Subject Area: Agricultural and Biological Sciences, Computer Science, 
+               Social Sciences, Environmental Science
+
+RESULTADO ESPERADO: 50-200 estudos de ALTA RELEVÂNCIA
+
+================================================================================
+5. VALIDAÇÃO DA BUSCA
+================================================================================
+
+APÓS NOVA BUSCA, VALIDAR:
+
+1. TAXA DE PRECISÃO (% de estudos relevantes):
+   - Meta: >80% dos estudos devem ser diretamente relevantes
+   - Validar manualmente amostra de 30 estudos
+
+2. DISTRIBUIÇÃO DE TERMOS (verificar presença):
+   - Machine Learning: >50% dos estudos
+   - Ethnography/Qualitative: >60% dos estudos
+   - Traditional Knowledge: >70% dos estudos
+
+3. INTERSEÇÃO REAL:
+   - Quantos estudos têm TODOS os 3 componentes?
+   - Meta: >30% com interseção completa
+
+4. APLICABILIDADE:
+   - Estudos apresentam aplicações práticas de ML?
+   - Há descrição metodológica adequada?
+
+================================================================================
+6. PLANO DE AÇÃO RECOMENDADO
+================================================================================
+
+FASE 1: BUSCA RESTRITIVA (SEMANA 1)
+□ Executar Query Otimizada em Scopus
+□ Executar Query Otimizada em Web of Science
+□ Remover duplicatas
+□ Validar amostra de 30 estudos
+→ RESULTADO ESPERADO: 50-150 estudos de alta qualidade
+
+FASE 2: BUSCA COMPLEMENTAR (SEMANA 2)
+□ Busca por temas específicos (5 queries temáticas)
+□ Identificar 10 artigos-chave
+□ Snowballing (backward + forward)
+→ RESULTADO ESPERADO: +50-100 estudos
+
+FASE 3: BUSCA GRAY LITERATURE (SEMANA 3)
+□ Google Scholar com mesma query
+□ Teses e dissertações (BDTD, ProQuest)
+□ Repositórios institucionais
+□ Preprints (arXiv, bioRxiv)
+→ RESULTADO ESPERADO: +20-50 estudos
+
+FASE 4: VALIDAÇÃO E FILTRAGEM (SEMANA 4)
+□ Aplicar critérios de inclusão/exclusão
+□ Avaliação de qualidade (MMAT adaptado)
+□ Extração de dados
+□ Análise final
+→ RESULTADO FINAL: 100-200 estudos para revisão de escopo
+
+================================================================================
+7. ALTERNATIVA: MUDAR O FOCO DA TESE
+================================================================================
+
+Se a busca otimizada ainda retornar poucos estudos (<50), considerar:
+
+OPÇÃO A: AMPLIAR PARA "COMPUTATIONAL METHODS" (não só ML)
+- Incluir análise estatística avançada
+- Incluir modelagem computacional
+- Incluir análise de big data
+→ JUSTIFICATIVA: Campo emergente, literatura ainda limitada
+
+OPÇÃO B: FOCAR EM UM SUB-TEMA ESPECÍFICO
+- Ex: NLP para análise de entrevistas etnográficas
+- Ex: Classificação automática de plantas medicinais
+- Ex: Análise espacial de territórios indígenas
+→ JUSTIFICATIVA: Permite aprofundamento metodológico
+
+OPÇÃO C: INCLUIR ESTUDOS POTENCIAIS/PROPOSTAS
+- Estudos que PROPÕEM uso de ML mas não aplicaram
+- Frameworks e metodologias propostas
+- Revisões teóricas sobre o tema
+→ JUSTIFICATIVA: Captura o estado da arte e direções futuras
+
+================================================================================
+8. MÉTRICAS DE SUCESSO
+================================================================================
+
+CORPUS IDEAL (META):
+✓ Total de estudos: 100-200
+✓ Presença de ML: >60%
+✓ Presença de Ethnography: >70%
+✓ Presença de Traditional Knowledge: >80%
+✓ Interseção completa (3 componentes): >40%
+✓ Período: 2014-2024 (10 anos)
+✓ Idiomas: Inglês (80%), Português (15%), Espanhol (5%)
+✓ Tipos de estudo: Empíricos (60%), Revisões (20%), Propostas (20%)
+
+INDICADORES DE QUALIDADE:
+✓ Estudos com descrição metodológica completa: >70%
+✓ Estudos com validação de resultados: >50%
+✓ Estudos com código/dados disponíveis: >20%
+✓ Estudos com componente participativo: >40%
+
+================================================================================
+9. CONCLUSÃO E RECOMENDAÇÕES FINAIS
+================================================================================
+
+SITUAÇÃO ATUAL:
+O corpus de 605 estudos está DESALINHADO com o tema da tese. Apenas ~1% 
+menciona "traditional knowledge" e 0% menciona "machine learning".
+
+AÇÃO IMEDIATA RECOMENDADA:
+1. REFAZER A BUSCA usando a Query Otimizada (Seção 4)
+2. VALIDAR com diagnóstico similar ao realizado
+3. Se ainda insuficiente, considerar OPÇÕES A, B ou C (Seção 7)
+
+EXPECTATIVA REALISTA:
+Este é um tema de INTERSEÇÃO EMERGENTE. É possível que a literatura seja 
+limitada (~50-100 estudos verdadeiramente relevantes). Isso não é problema
+para uma tese - apenas requer:
+- Justificativa clara da lacuna
+- Contribuição metodológica
+- Proposta de framework para pesquisas futuras
+
+PRÓXIMO PASSO:
+Executar busca otimizada e rodar diagnóstico novamente para comparar:
+Corpus Atual: 0% ML + 1% TK + 0% Ethnography
+Corpus Esperado: >60% ML + >70% TK + >60% Ethnography
+
+================================================================================
+FIM DO DOCUMENTO
+================================================================================

@@ -1,0 +1,117 @@
+================================================================================
+RELATÓRIO DE ANÁLISE DE CLUSTERS - ML PARA INDICAÇÕES GEOGRÁFICAS
+================================================================================
+
+Data de execução: 2025-11-23 10:42:39.37957
+Total de observações: 622
+Número de clusters: 5
+
+--------------------------------------------------------------------------------
+K-MEANS CLUSTERING - ESTATÍSTICAS
+--------------------------------------------------------------------------------
+Between SS / Total SS: 17.27%
+Total Within SS: 15511.35
+
+Tamanho dos clusters (K-Means):
+
+  1   2   3   4   5 
+ 21 159 237 140  65 
+
+--------------------------------------------------------------------------------
+CLUSTERING HIERÁRQUICO - ESTATÍSTICAS
+--------------------------------------------------------------------------------
+Tamanho dos clusters (Hierárquico):
+
+  1   2   3   4   5 
+ 13 551  49   6   3 
+
+--------------------------------------------------------------------------------
+PERFIL DOS CLUSTERS (K-Means) - Características Dominantes
+--------------------------------------------------------------------------------
+
+=== CLUSTER 1 (n=21) ===
+
+Top 10 características mais frequentes:
+# A tibble: 10 × 2
+   Feature              Media
+   <chr>                <dbl>
+ 1 DataMining           0.905
+ 2 TraditionalKnowledge 0.905
+ 3 Assessment           0.857
+ 4 MachineLearning      0.619
+ 5 CaseStudy            0.619
+ 6 Interview            0.476
+ 7 Indigenous           0.381
+ 8 Documentation        0.381
+ 9 SpatialAnalysis      0.381
+10 Ethnography          0.333
+
+=== CLUSTER 2 (n=159) ===
+
+Top 10 características mais frequentes:
+# A tibble: 10 × 2
+   Feature              Media
+   <chr>                <dbl>
+ 1 MachineLearning      1    
+ 2 Assessment           0.925
+ 3 Management           0.906
+ 4 Interview            0.899
+ 5 Conservation         0.868
+ 6 TraditionalKnowledge 0.679
+ 7 Ethnobotany          0.509
+ 8 Developing           0.491
+ 9 Indigenous           0.459
+10 Observation          0.340
+
+=== CLUSTER 3 (n=237) ===
+
+Top 10 características mais frequentes:
+# A tibble: 10 × 2
+   Feature              Media
+   <chr>                <dbl>
+ 1 MachineLearning      0.945
+ 2 Assessment           0.797
+ 3 Indigenous           0.671
+ 4 TraditionalKnowledge 0.549
+ 5 Ethnography          0.456
+ 6 Interview            0.443
+ 7 CaseStudy            0.401
+ 8 Developing           0.270
+ 9 Management           0.266
+10 SpatialAnalysis      0.215
+
+=== CLUSTER 4 (n=140) ===
+
+Top 10 características mais frequentes:
+# A tibble: 10 × 2
+   Feature              Media
+   <chr>                <dbl>
+ 1 MachineLearning      0.979
+ 2 Ethnobotany          0.964
+ 3 Assessment           0.943
+ 4 Interview            0.914
+ 5 TraditionalPractices 0.571
+ 6 Developing           0.371
+ 7 Asia                 0.371
+ 8 TraditionalKnowledge 0.364
+ 9 Indigenous           0.321
+10 Ethnography          0.271
+
+=== CLUSTER 5 (n=65) ===
+
+Top 10 características mais frequentes:
+# A tibble: 10 × 2
+   Feature              Media
+   <chr>                <dbl>
+ 1 ClimateChange        1    
+ 2 MachineLearning      0.954
+ 3 Assessment           0.892
+ 4 TraditionalKnowledge 0.785
+ 5 Management           0.692
+ 6 Conservation         0.615
+ 7 CaseStudy            0.523
+ 8 Interview            0.492
+ 9 Indigenous           0.477
+10 Developing           0.338
+
+================================================================================

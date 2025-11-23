@@ -1,0 +1,382 @@
+================================================================================
+        GUIA PRÁTICO: EXECUTAR BUSCA OTIMIZADA 
+        ML + ETNOGRAFIA + CONHECIMENTOS TRADICIONAIS
+================================================================================
+Data: 23 de novembro de 2025
+Status: PRONTO PARA EXECUÇÃO
+
+================================================================================
+📋 CHECKLIST DE EXECUÇÃO
+================================================================================
+
+FASE 1 - BUSCA PRINCIPAL (30-60 min)
+□ Busca Scopus com query otimizada
+□ Busca Web of Science com query otimizada
+□ Download dos arquivos .bib
+
+FASE 2 - BUSCAS COMPLEMENTARES (60-90 min)
+□ 5 queries temáticas no Scopus
+□ Google Scholar (opcional)
+
+FASE 3 - PROCESSAMENTO (10 min)
+□ Executar script de validação
+□ Verificar qualidade dos resultados
+
+================================================================================
+🎯 PASSO 1: BUSCA NO SCOPUS (Principal)
+================================================================================
+
+1.1 ACESSAR SCOPUS
+    URL: https://www.scopus.com/search/form.uri?display=advanced
+    
+1.2 COPIAR E COLAR A QUERY
+    Arquivo: query_scopus_otimizada.txt
+    
+    Query completa:
+    ──────────────────────────────────────────────────────────────────────
+    TITLE-ABS-KEY(("machine learning" OR "artificial intelligence" OR 
+    "deep learning" OR "natural language processing" OR "NLP" OR 
+    "text mining" OR "computational analysis" OR "data mining" OR 
+    "neural network" OR "predictive model" OR "algorithm" OR 
+    "classification" OR "clustering") AND ("traditional knowledge" OR 
+    "indigenous knowledge" OR "local knowledge" OR "ethnobotany" OR 
+    "ethnobotanical" OR "traditional ecological knowledge" OR "TEK" OR 
+    "indigenous people" OR "native community" OR "aboriginal" OR 
+    "ancestral knowledge" OR "folk knowledge" OR "local ecological knowledge") 
+    AND ("ethnography" OR "ethnographic" OR "participatory research" OR 
+    "community-based research" OR "field research" OR "qualitative" OR 
+    "interview" OR "case study" OR "action research" OR "mixed method" OR 
+    "participatory action research")) AND PUBYEAR > 2013
+    ──────────────────────────────────────────────────────────────────────
+
+1.3 APLICAR FILTROS
+    
+    ┌─────────────────────────────────────────────────────────────────┐
+    │ Document Type:                                                  │
+    │  ☑ Article                                                      │
+    │  ☑ Review                                                       │
+    │  ☑ Conference Paper (opcional)                                 │
+    ├─────────────────────────────────────────────────────────────────┤
+    │ Language:                                                       │
+    │  ☑ English                                                      │
+    │  ☑ Portuguese                                                   │
+    │  ☑ Spanish                                                      │
+    ├─────────────────────────────────────────────────────────────────┤
+    │ Subject Area:                                                   │
+    │  ☑ Agricultural and Biological Sciences                        │
+    │  ☑ Computer Science                                            │
+    │  ☑ Social Sciences                                             │
+    │  ☑ Environmental Science                                       │
+    │  ☑ Engineering (opcional)                                      │
+    ├─────────────────────────────────────────────────────────────────┤
+    │ Year Range:                                                     │
+    │  2014 - 2024                                                    │
+    └─────────────────────────────────────────────────────────────────┘
+
+1.4 VERIFICAR RESULTADOS
+    
+    EXPECTATIVA: 50-200 documentos
+    
+    Se > 500: Busca muito ampla, refinar filtros
+    Se < 20: Busca muito restritiva, considerar queries temáticas
+
+1.5 EXPORTAR RESULTADOS
+    
+    1. Selecionar TODOS os resultados (ou máximo disponível)
+    2. Clicar em "Export"
+    3. Escolher formato: BibTeX (.bib)
+    4. Incluir:
+       ☑ Citation information
+       ☑ Abstract
+       ☑ Keywords
+       ☑ Funding details
+    5. Salvar como: scopus_ml_etnografia_2024.bib
+    6. Salvar em: C:\Users\vidal\...\tese-catuxe\DADOS\
+
+================================================================================
+🎯 PASSO 2: BUSCA NO WEB OF SCIENCE
+================================================================================
+
+2.1 ACESSAR WEB OF SCIENCE
+    URL: https://www.webofscience.com/wos/woscc/advanced-search
+
+2.2 ADAPTAR QUERY PARA SINTAXE WoS
+    
+    Query WoS:
+    ──────────────────────────────────────────────────────────────────────
+    TS=(("machine learning" OR "artificial intelligence" OR "deep learning" 
+    OR "natural language processing" OR "NLP" OR "text mining" OR 
+    "computational analysis" OR "data mining" OR "neural network" OR 
+    "predictive model" OR "algorithm" OR "classification" OR "clustering") 
+    AND ("traditional knowledge" OR "indigenous knowledge" OR "local knowledge" 
+    OR "ethnobotany" OR "ethnobotanical" OR "traditional ecological knowledge" 
+    OR "TEK" OR "indigenous people" OR "native community" OR "aboriginal" OR 
+    "ancestral knowledge" OR "folk knowledge" OR "local ecological knowledge") 
+    AND ("ethnography" OR "ethnographic" OR "participatory research" OR 
+    "community-based research" OR "field research" OR "qualitative" OR 
+    "interview" OR "case study" OR "action research" OR "mixed method" OR 
+    "participatory action research")) AND PY=(2014-2024)
+    ──────────────────────────────────────────────────────────────────────
+
+2.3 APLICAR FILTROS WoS
+    
+    • Document Types: Article, Review Article
+    • Languages: English, Portuguese, Spanish
+    • Research Areas: Similar ao Scopus
+
+2.4 EXPORTAR
+    
+    • Formato: BibTeX
+    • Salvar como: wos_ml_etnografia_2024.bib
+    • Pasta: DADOS/
+
+================================================================================
+🎯 PASSO 3: BUSCAS TEMÁTICAS COMPLEMENTARES (Opcional)
+================================================================================
+
+Execute estas 5 queries no Scopus para capturar estudos específicos:
+
+┌─────────────────────────────────────────────────────────────────────────┐
+│ 3.1 ANÁLISE DE TEXTO ETNOGRÁFICO                                       │
+├─────────────────────────────────────────────────────────────────────────┤
+│ TITLE-ABS-KEY(("text analysis" OR "content analysis" OR "NLP" OR      │
+│ "topic modeling") AND ("interview" OR "narrative" OR "oral history")  │
+│ AND ("indigenous" OR "traditional" OR "community"))                   │
+│                                                                         │
+│ Salvar como: scopus_tema_texto.bib                                    │
+└─────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────┐
+│ 3.2 MAPEAMENTO DE CONHECIMENTOS                                        │
+├─────────────────────────────────────────────────────────────────────────┤
+│ TITLE-ABS-KEY(("knowledge mapping" OR "knowledge graph" OR "ontology")│
+│ AND ("traditional knowledge" OR "indigenous knowledge" OR             │
+│ "ethnobotany"))                                                        │
+│                                                                         │
+│ Salvar como: scopus_tema_mapeamento.bib                              │
+└─────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────┐
+│ 3.3 ANÁLISE ESPACIAL                                                   │
+├─────────────────────────────────────────────────────────────────────────┤
+│ TITLE-ABS-KEY(("spatial analysis" OR "GIS" OR "remote sensing")       │
+│ AND ("traditional" OR "indigenous") AND ("land use" OR "territory"))  │
+│                                                                         │
+│ Salvar como: scopus_tema_espacial.bib                                │
+└─────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────┐
+│ 3.4 CLASSIFICAÇÃO ETNOBOTÂNICA                                         │
+├─────────────────────────────────────────────────────────────────────────┤
+│ TITLE-ABS-KEY(("classification" OR "machine learning" OR              │
+│ "pattern recognition") AND ("ethnobotany" OR "traditional medicine"   │
+│ OR "plant knowledge"))                                                 │
+│                                                                         │
+│ Salvar como: scopus_tema_classificacao.bib                           │
+└─────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────┐
+│ 3.5 ANÁLISE DE REDES SOCIAIS                                           │
+├─────────────────────────────────────────────────────────────────────────┤
+│ TITLE-ABS-KEY(("social network analysis" OR "network analysis")       │
+│ AND ("indigenous" OR "traditional knowledge" OR "knowledge exchange")) │
+│                                                                         │
+│ Salvar como: scopus_tema_redes.bib                                   │
+└─────────────────────────────────────────────────────────────────────────┘
+
+================================================================================
+🎯 PASSO 4: PROCESSAR RESULTADOS
+================================================================================
+
+4.1 VERIFICAR ARQUIVOS BAIXADOS
+    
+    Abrir PowerShell e executar:
+    ──────────────────────────────────────────────────────────────────────
+    cd "C:\Users\vidal\OneDrive\Documentos\13 - CLONEGIT\tese-catuxe\DADOS"
+    Get-ChildItem -Filter "*etnografia*.bib"
+    ──────────────────────────────────────────────────────────────────────
+    
+    Arquivos esperados:
+    ✓ scopus_ml_etnografia_2024.bib
+    ✓ wos_ml_etnografia_2024.bib
+    ✓ scopus_tema_*.bib (opcional, 5 arquivos)
+
+4.2 VALIDAÇÃO RÁPIDA
+    
+    Executar:
+    ──────────────────────────────────────────────────────────────────────
+    cd "C:\Users\vidal\OneDrive\Documentos\13 - CLONEGIT\tese-catuxe\DADOS"
+    & "C:\Program Files\R\R-4.4.3\bin\R.exe" CMD BATCH validar_busca_rapida.R
+    ──────────────────────────────────────────────────────────────────────
+    
+    Verificar output:
+    ──────────────────────────────────────────────────────────────────────
+    Get-Content validar_busca_rapida.Rout -Tail 30
+    ──────────────────────────────────────────────────────────────────────
+
+4.3 PROCESSAR CORPUS COMPLETO
+    
+    Executar script principal:
+    ──────────────────────────────────────────────────────────────────────
+    cd "C:\Users\vidal\OneDrive\Documentos\13 - CLONEGIT\tese-catuxe\DADOS"
+    & "C:\Program Files\R\R-4.4.3\bin\R.exe" CMD BATCH scripts/busca_otimizada_ml_etnografia.R
+    ──────────────────────────────────────────────────────────────────────
+    
+    RESULTADO ESPERADO:
+    ✓ Arquivo: referencias_ml_etnografia_otimizado.bib
+    ✓ Remoção de duplicatas
+    ✓ Estatísticas de validação
+
+================================================================================
+📊 PASSO 5: AVALIAR QUALIDADE DA BUSCA
+================================================================================
+
+5.1 MÉTRICAS DE SUCESSO
+    
+    Verificar no output da validação:
+    
+    ┌─────────────────────────────────────────────────────────────────┐
+    │ MÉTRICA                          │ META    │ OBTIDO │ STATUS   │
+    ├──────────────────────────────────┼─────────┼────────┼──────────┤
+    │ Total de estudos                 │ 50-200  │    ?   │    ?     │
+    │ Presença ML                      │  >60%   │    ?   │    ?     │
+    │ Presença Traditional Knowledge   │  >70%   │    ?   │    ?     │
+    │ Presença Ethnography             │  >60%   │    ?   │    ?     │
+    │ Duplicatas removidas             │  <30%   │    ?   │    ?     │
+    └─────────────────────────────────────────────────────────────────┘
+
+5.2 AÇÕES BASEADAS NOS RESULTADOS
+
+    ┌────────────────────────────────────────────────────────────────┐
+    │ CENÁRIO A: 50-200 estudos com >60% presença dos 3 componentes │
+    │ ✅ SUCESSO! Corpus adequado para análise                      │
+    │ → Prosseguir para análises estatísticas (PCA, MCA, etc.)      │
+    └────────────────────────────────────────────────────────────────┘
+    
+    ┌────────────────────────────────────────────────────────────────┐
+    │ CENÁRIO B: <50 estudos mas alta relevância (>80% presença)    │
+    │ ⚠️  LITERATURA LIMITADA mas alta qualidade                    │
+    │ → Complementar com buscas temáticas                           │
+    │ → Incluir gray literature                                     │
+    │ → Justificar lacuna no campo (positivo para tese!)            │
+    └────────────────────────────────────────────────────────────────┘
+    
+    ┌────────────────────────────────────────────────────────────────┐
+    │ CENÁRIO C: >200 estudos mas baixa relevância (<50% presença)  │
+    │ ❌ BUSCA MUITO AMPLA                                          │
+    │ → Refazer com filtros mais restritivos                        │
+    │ → Focar nas queries temáticas                                 │
+    │ → Considerar apenas estudos empíricos                         │
+    └────────────────────────────────────────────────────────────────┘
+    
+    ┌────────────────────────────────────────────────────────────────┐
+    │ CENÁRIO D: <20 estudos                                         │
+    │ ⚠️  INTERSEÇÃO MUITO ESPECÍFICA                               │
+    │ → Relaxar um dos componentes (ex: retirar "ethnography")     │
+    │ → Incluir termos relacionados (computational methods, etc.)   │
+    │ → Consultar orientador sobre ajuste de escopo                │
+    └────────────────────────────────────────────────────────────────┘
+
+================================================================================
+🔄 PASSO 6: PRÓXIMAS AÇÕES APÓS BUSCA
+================================================================================
+
+6.1 SE BUSCA BEM-SUCEDIDA (50+ estudos relevantes)
+    
+    □ Substituir corpus antigo pelo novo
+    □ Re-executar diagnóstico (diagnostico_corpus.R)
+    □ Comparar métricas: Antigo (0% ML) vs Novo (esperado >60% ML)
+    □ Re-executar análises estatísticas:
+      • PCA (01_pca_analysis.R)
+      • MCA (02_mca_analysis.R)  
+      • Cluster (03_cluster_analysis.R)
+      • Network (04_network_analysis.R)
+      • Temporal (05_temporal_analysis.R)
+      • Predictive (06_predictive_modeling.R)
+    □ Gerar novos gráficos e tabelas para tese
+    □ Atualizar seção de Resultados
+
+6.2 SE BUSCA INSUFICIENTE (<50 estudos)
+    
+    □ Executar buscas temáticas (Passo 3)
+    □ Google Scholar complementar
+    □ Snowballing (5-10 artigos-chave)
+    □ Teses e dissertações (BDTD, ProQuest)
+    □ Considerar ajustar escopo da tese (ver ESTRATEGIA_MELHORIA_BUSCA.txt)
+
+6.3 DOCUMENTAÇÃO
+    
+    □ Criar fluxograma PRISMA atualizado
+    □ Documentar string de busca na metodologia
+    □ Justificar escolha dos termos
+    □ Relatar número de estudos em cada fase
+
+================================================================================
+📌 ARQUIVOS DE REFERÊNCIA
+================================================================================
+
+Consulte estes arquivos para detalhes:
+
+1. ESTRATEGIA_MELHORIA_BUSCA.txt
+   → Análise completa do problema e estratégias
+
+2. query_scopus_otimizada.txt
+   → Query principal para copiar/colar
+
+3. queries_tematicas_complementares.txt
+   → 5 queries específicas para buscas complementares
+
+4. validar_busca_rapida.R
+   → Script para validação rápida dos resultados
+
+5. scripts/busca_otimizada_ml_etnografia.R
+   → Script completo de processamento
+
+================================================================================
+❓ TROUBLESHOOTING
+================================================================================
+
+PROBLEMA: Scopus não retorna resultados
+SOLUÇÃO: Verifique se está logado, tente dividir query em partes menores
+
+PROBLEMA: Erro ao exportar (limite de registros)
+SOLUÇÃO: Exporte em lotes de 500, depois combine os arquivos .bib
+
+PROBLEMA: Script R dá erro "arquivo não encontrado"
+SOLUÇÃO: Verifique se salvou os .bib na pasta DADOS/ correta
+
+PROBLEMA: Validação mostra 0% de presença de termos
+SOLUÇÃO: Corpus baixado está errado, revise a query e refaça busca
+
+PROBLEMA: Muitas duplicatas entre Scopus e WoS (>50%)
+SOLUÇÃO: Normal! Script remove automaticamente, não é problema
+
+================================================================================
+✅ CHECKLIST FINAL
+================================================================================
+
+Antes de considerar a busca concluída, verifique:
+
+□ Executei busca Scopus com query otimizada
+□ Executei busca Web of Science com query adaptada
+□ Baixei arquivos .bib e salvei em DADOS/
+□ Executei validar_busca_rapida.R
+□ Verifiquei métricas de qualidade (>60% ML, >70% TK, >60% Ethno)
+□ Executei busca_otimizada_ml_etnografia.R para processar
+□ Obtive arquivo final: referencias_ml_etnografia_otimizado.bib
+□ Documentei número de estudos encontrados
+□ Comparei com corpus anterior (605 estudos, 0% ML)
+
+RESULTADO FINAL: ______ estudos únicos
+QUALIDADE: □ Alta (>80% relevante) □ Média (50-80%) □ Baixa (<50%)
+
+AÇÃO SEGUINTE: 
+□ Prosseguir com análises estatísticas
+□ Complementar com buscas temáticas
+□ Ajustar escopo da tese
+
+================================================================================
+FIM DO GUIA
+Tempo estimado total: 2-3 horas
+Última atualização: 23 de novembro de 2025
+================================================================================

@@ -1,0 +1,21 @@
+A. Análise de Texto Etnográfico
+TITLE-ABS-KEY(("text analysis" OR "content analysis" OR "NLP" OR "topic modeling") 
+     AND ("interview" OR "narrative" OR "oral history") 
+     AND ("indigenous" OR "traditional" OR "community"))
+
+B. Mapeamento de Conhecimentos
+TITLE-ABS-KEY(("knowledge mapping" OR "knowledge graph" OR "ontology") 
+     AND ("traditional knowledge" OR "indigenous knowledge" OR "ethnobotany"))
+
+C. Análise Espacial
+TITLE-ABS-KEY(("spatial analysis" OR "GIS" OR "remote sensing") 
+     AND ("traditional" OR "indigenous") 
+     AND ("land use" OR "territory"))
+
+D. Classificação Etnobotânica
+TITLE-ABS-KEY(("classification" OR "machine learning" OR "pattern recognition") 
+     AND ("ethnobotany" OR "traditional medicine" OR "plant knowledge"))
+
+E. Análise de Redes Sociais
+TITLE-ABS-KEY(("social network analysis" OR "network analysis") 
+     AND ("indigenous" OR "traditional knowledge" OR "knowledge exchange"))
