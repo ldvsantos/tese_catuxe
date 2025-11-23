@@ -32,7 +32,7 @@ for (pkg in packages) {
 cat("\n")
 cat("================================================================================\n")
 cat("TIME SERIES ANALYSIS (2010-2025) - GGPLOT2\n")
-cat("Machine Learning for Geographical Indications\n")
+cat("Machine Learning para Conhecimentos Tradicionais\n")
 cat("================================================================================\n\n")
 
 ################################################################################
@@ -81,9 +81,9 @@ extrair_dados_temporais <- function(caminho_bib) {
   )
   
   # Filtrar anos válidos
-  dados <- dados %>% filter(Ano >= 2010, Ano <= 2025)
+  dados <- dados %>% filter(Ano >= 2016, Ano <= 2025)
   
-  cat(sprintf("✓ Total studies extracted: %d (2010-2025)\n\n", nrow(dados)))
+  cat(sprintf("✓ Total studies extracted: %d (2016-2025)\n\n", nrow(dados)))
   
   return(dados)
 }
@@ -168,13 +168,13 @@ plot_publicacoes_tempo <- function(publicacoes_ano, output_file = "temporal_publ
     geom_point(color = "#2E86AB", size = 4, alpha = 0.8) +
     geom_smooth(method = "loess", se = TRUE, color = "#FC4E07", 
                 fill = "#FC4E07", alpha = 0.2, linetype = "dashed") +
-    scale_x_continuous(breaks = seq(2010, 2025, 2)) +
+    scale_x_continuous(breaks = seq(2016, 2025, 1), limits = c(2016, 2025)) +
     labs(
-      title = "Evolution of Publications in ML for Geographical Indications",
-      subtitle = "Period: 2010-2025",
-      x = "Year",
-      y = "Number of Publications",
-      caption = "Dashed line: LOESS trend"
+      title = "Evolução das Publicações em ML para Conhecimentos Tradicionais",
+      subtitle = "Período: 2016-2025",
+      x = "Ano",
+      y = "Número de Publicações",
+      caption = "Linha tracejada: tendência LOESS"
     ) +
     theme_minimal(base_size = 14) +
     theme(
@@ -202,11 +202,11 @@ plot_algoritmos_tempo <- function(algoritmos_ano, output_file = "temporal_algori
     scale_x_continuous(breaks = seq(2010, 2025, 1)) +
     scale_color_viridis_d(option = "plasma", begin = 0.1, end = 0.9) +
     labs(
-      title = "Temporal Evolution of Machine Learning Algorithm Adoption (2010–2025)",
-      subtitle = "Frequency of use in Geographical Indications studies by year",
-      x = "Publication Year",
-      y = "Absolute Frequency",
-      color = "Algorithm"
+      title = "Evolução Temporal da Adoção de Algoritmos de Machine Learning (2010–2025)",
+      subtitle = "Frequência de uso em estudos de Conhecimentos Tradicionais por ano",
+      x = "Ano de Publicação",
+      y = "Frequência Absoluta",
+      color = "Algoritmo"
     ) +
     theme_minimal(base_size = 14) +
     theme(
@@ -302,14 +302,14 @@ plot_regioes_tempo <- function(regioes_ano, output_file = "temporal_regioes.png"
     scale_x_continuous(breaks = seq(2010, 2025, 1)) +
     scale_color_manual(values = c("Europe" = "#2E86AB", "Asia" = "#FC4E07", 
                                    "Americas" = "#A23B72"),
-                       labels = c("Europe" = "Europe", "Asia" = "Asia", 
-                                  "Americas" = "Americas")) +
+                       labels = c("Europe" = "Europa", "Asia" = "Ásia", 
+                                  "Americas" = "Américas")) +
     labs(
-      title = "Geographic Distribution of ML in GI Studies (2010–2025)",
-      subtitle = "Absolute frequency of publications by region and year",
-      x = "Publication Year",
-      y = "Absolute Frequency",
-      color = "Geographic Region"
+      title = "Distribuição Geográfica de ML em Estudos de CT (2010–2025)",
+      subtitle = "Frequência absoluta de publicações por região e ano",
+      x = "Ano de Publicação",
+      y = "Frequência Absoluta",
+      color = "Região Geográfica"
     ) +
     theme_minimal(base_size = 14) +
     theme(
@@ -380,7 +380,7 @@ calcular_tendencias <- function(dados_temporais) {
         Correlacao = cor_test$estimate,
         PValue = cor_test$p.value,
         Significativo = cor_test$p.value < 0.05,
-        Tendencia = ifelse(cor_test$estimate > 0, "Increasing", "Decreasing"),
+        Tendencia = ifelse(cor_test$estimate > 0, "Crescente", "Decrescente"),
         stringsAsFactors = FALSE
       )
     }
@@ -399,7 +399,7 @@ calcular_tendencias <- function(dados_temporais) {
         Correlacao = cor_test$estimate,
         PValue = cor_test$p.value,
         Significativo = cor_test$p.value < 0.05,
-        Tendencia = ifelse(cor_test$estimate > 0, "Increasing", "Decreasing"),
+        Tendencia = ifelse(cor_test$estimate > 0, "Crescente", "Decrescente"),
         stringsAsFactors = FALSE
       )
     }
@@ -434,11 +434,11 @@ plot_tendencias <- function(tendencias, output_file = "temporal_tendencias.png")
     geom_vline(xintercept = 0, linetype = "dashed", color = "gray30") +
     scale_fill_viridis_d(option = "plasma", begin = 0.2, end = 0.8) +
     labs(
-      title = "Statistically Significant Temporal Trends (p < 0.05)",
-      subtitle = "Spearman correlation coefficient (ρ) between frequency and publication year",
-      x = "Spearman Correlation (ρ)",
-      y = "Feature (Algorithm or Product)",
-      fill = "Category"
+      title = "Tendências Temporais Estatisticamente Significativas (p < 0.05)",
+      subtitle = "Coeficiente de correlação de Spearman (ρ) entre frequência e ano de publicação",
+      x = "Correlação de Spearman (ρ)",
+      y = "Feature (Algoritmo ou Produto)",
+      fill = "Categoria"
     ) +
     theme_minimal(base_size = 14) +
     theme(
@@ -460,7 +460,7 @@ gerar_relatorio <- function(dados_temporais, tendencias, output_file = "temporal
   
   sink(output_file)
   cat("================================================================================\n")
-  cat("TEMPORAL ANALYSIS REPORT - ML FOR GEOGRAPHICAL INDICATIONS\n")
+  cat("TEMPORAL ANALYSIS REPORT - ML PARA CONHECIMENTOS TRADICIONAIS\n")
   cat("================================================================================\n\n")
   cat(sprintf("Data de execução: %s\n", Sys.time()))
   cat(sprintf("Período analisado: 2010-2025\n\n"))

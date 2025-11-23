@@ -8,7 +8,7 @@ Paulo Roberto Gagliardi \footnote[2]{Departamento de Engenharia Agronômica/Univ
 
 % resumo em português
 \begin{resumoumacoluna}
-Indicações Geográficas (IGs) vinculam a qualidade do produto a territórios específicos, exigindo métodos confiáveis de autenticação. O Aprendizado de Máquina (ML) emergiu como uma ferramenta poderosa para verificar a origem do produto, mas a síntese abrangente de suas aplicações permanece limitada. Aqui, realizamos uma revisão de escopo de 148 estudos revisados por pares (2010–2025), empregando filtragem semântica automatizada, avaliação manual de qualidade e análises multivariadas para mapear técnicas de ML na autenticação gastrointestinal. Os resultados revelam um aumento de 400\% nas publicações desde 2018, com predominantes clusters algorítmicos: Random Forest com espectroscopia para vinhos, Support Vector Machines com cromatografia para carnes e Deep Learning com matrizes de sensores para chás. Apesar das precisões relatadas entre 80\% e 100\%, apenas 23\% dos estudos aplicaram validação espacialmente independente, expondo desafios de generalização. Esses achados sugerem que o ML discrimina efetivamente a origem geográfica, mas requer validação longitudinal rigorosa, ampliação da interpretabilidade e governança equitativa para apoiar a integração nos quadros de certificação de IG.
+Indicações Geográficas (IGs) vinculam a qualidade do produto a territórios específicos, exigindo métodos confiáveis de autenticação. O Aprendizado de Máquina (ML) emergiu como uma ferramenta poderosa para verificar a origem do produto, mas a síntese abrangente de suas aplicações permanece limitada. Aqui, realizamos uma revisão de escopo de 148 estudos revisados por pares (2010--2025), empregando filtragem semântica automatizada, avaliação manual de qualidade e análises multivariadas para mapear técnicas de ML na autenticação gastrointestinal. Os resultados revelam um aumento de 400\% nas publicações desde 2018, com predominantes clusters algorítmicos: Random Forest com espectroscopia para vinhos, Support Vector Machines com cromatografia para carnes e Deep Learning com matrizes de sensores para chás. Apesar das precisões relatadas entre 80\% e 100\%, apenas 23\% dos estudos aplicaram validação espacialmente independente, expondo desafios de generalização. Esses achados sugerem que o ML discrimina efetivamente a origem geográfica, mas requer validação longitudinal rigorosa, ampliação da interpretabilidade e governança equitativa para apoiar a integração nos quadros de certificação de IG.
 \vspace{\onelineskip}
  
 \noindent
@@ -109,13 +109,13 @@ GEN & Generalização e transferibilidade dos métodos propostos & Qualidade Cie
 
 \subsubsection{2.5.1 Procedimentos de Consenso e Validação Interavaliadores}
 
-A avaliação manual incluiu um protocolo de consenso. Inicialmente, os revisores avaliaram independentemente uma amostra piloto de 30 estudos (~11\% do corpus) para calibrar critérios. Para o corpus completo, casos de discordância (diferença \geq 2 pontos) passaram por reavaliação cega e discussão para chegar a um consenso. O coeficiente de correlação intraclasse (ICC) foi calculado de acordo com \cite{shrout1979}, obtendo um valor de 0,87 (IC 95\%: 0,84–0,91), indicando boa concordância.
+A avaliação manual incluiu um protocolo de consenso. Inicialmente, os revisores avaliaram independentemente uma amostra piloto de 30 estudos (~11\% do corpus) para calibrar critérios. Para o corpus completo, casos de discordância (diferença $\geq$ 2 pontos) passaram por reavaliação cega e discussão para chegar a um consenso. O coeficiente de correlação intraclasse (ICC) foi calculado de acordo com \cite{shrout1979}, obtendo um valor de 0,87 (IC 95\%: 0,84--0,91), indicando boa concordância.
 
 \subsubsection{2.5.2 Critérios Específicos para Estudos Interdisciplinares}
 
 Dada a natureza interdisciplinar dos estudos, os critérios de qualidade examinaram a coerência da integração quantitativa-qualitativa, validação em múltiplos contextos geográficos, transparência algorítmica, adesão ética e aplicabilidade prática para certificação.
 
-Esta fase resultou na seleção de 25 estudos com qualidade metodológica adequada (pontuação \geq 20 pontos) dos 272 artigos iniciais. Estes formaram a base para análises subsequentes. A distribuição incluiu 1 artigo de excelência (\geq40 pts), 2 de alta relevância (\geq30 pts) e 22 adequados (\geq20 pts).
+Esta fase resultou na seleção de 25 estudos com qualidade metodológica adequada (pontuação $\geq$ 20 pontos) dos 272 artigos iniciais. Estes formaram a base para análises subsequentes. A distribuição incluiu 1 artigo de excelência ($\geq$40 pts), 2 de alta relevância ($\geq$30 pts) e 22 adequados ($\geq$20 pts).
 
 \subsection{2.6 Terceira Fase: Análise Bibliométrica}
 
@@ -146,7 +146,7 @@ Análises estatísticas no R \cite{RCoreTeam2024} usando RStudio \cite{RStudioTe
 
 A análise de rede mapeou coocorrências entre algoritmos, produtos e regiões \cite{Csardi2006; Schoch202}. Usando \texttt{igraph} e \texttt{ggraph}, um grafo não direcionado foi construído, calculando métricas de centralidade (grau, autovetor, intermediação), e a detecção de comunidade foi realizada com o algoritmo Louvain \cite{Blondel2008} para identificar módulos temáticos (Seção 3.9).
 
-Séries temporais e o teste de correlação de Spearman \cite{Spearman1904} analisaram a evolução temporal das publicações (2010–2025) para detectar tendências no volume de estudos e adoção de algoritmos. Visualizações geradas com \texttt{ggplot2} usaram suavização LOESS \cite{Cleveland1979} para ilustrar a dinâmica de crescimento.
+Séries temporais e o teste de correlação de Spearman \cite{Spearman1904} analisaram a evolução temporal das publicações (2010--2025) para detectar tendências no volume de estudos e adoção de algoritmos. Visualizações geradas com \texttt{ggplot2} usaram suavização LOESS \cite{Cleveland1979} para ilustrar a dinâmica de crescimento.
 
 Finalmente, modelos preditivos globais avaliaram se variáveis bibliométricas e metodológicas poderiam antecipar pontuações de estudo. Modelos de regressão (OLS, Ridge, Lasso, Random Forest) e modelos de classificação (Regressão Logística, Random Forest) foram estimados usando \texttt{caret} e \texttt{randomForest} com validação cruzada k-fold estratificada. O desempenho foi avaliado via RMSE e $R^2$ para regressão, e acurácia, precisão, sensibilidade e F1-score para classificação (Seção 3.7).
 
@@ -162,13 +162,13 @@ A detecção de comunidade usando o algoritmo Louvain \cite{Blondel2008} interpr
 
 \subsubsection{2.8.3 Análise Temporal}
 
-A evolução temporal (2010–2025) foi analisada usando o teste de correlação de Spearman \cite{Spearman1904} e visualizações \texttt{ggplot2} com suavização LOESS \cite{Cleveland1979} para ilustrar o crescimento do campo e a adoção de tecnologia.
+A evolução temporal (2010--2025) foi analisada usando o teste de correlação de Spearman \cite{Spearman1904} e visualizações \texttt{ggplot2} com suavização LOESS \cite{Cleveland1979} para ilustrar o crescimento do campo e a adoção de tecnologia.
 
 \section{3. Resultados e Discussão}
 
 \subsection{3.1 Síntese Executiva da Revisão de Escopo}
 
-Esta revisão de escopo, estruturada de acordo com as diretrizes PRISMA-ScR (Figura 2), identificou e analisou 272 estudos (140 da Scopus, 132 da Web of Science) publicados entre 2010 e 2025. Após filtragem automatizada e avaliação manual da qualidade metodológica, 148 artigos relevantes foram selecionados. Este processo de seleção sistemática estabeleceu um corpus representativo de aplicações de Machine Learning (ML) em Indicações Geográficas (IGs). Os dados revelam um crescimento recente significativo, com 68\% das publicações concentradas no período de 2021–2025. Essa tendência indica uma convergência entre certificação territorial e transformação digital, alinhando-se com padrões globais de inovação em sistemas agroalimentares \cite{Hu2024}.
+Esta revisão de escopo, estruturada de acordo com as diretrizes PRISMA-ScR (Figura 2), identificou e analisou 272 estudos (140 da Scopus, 132 da Web of Science) publicados entre 2010 e 2025. Após filtragem automatizada e avaliação manual da qualidade metodológica, 148 artigos relevantes foram selecionados. Este processo de seleção sistemática estabeleceu um corpus representativo de aplicações de Machine Learning (ML) em Indicações Geográficas (IGs). Os dados revelam um crescimento recente significativo, com 68\% das publicações concentradas no período de 2021--2025. Essa tendência indica uma convergência entre certificação territorial e transformação digital, alinhando-se com padrões globais de inovação em sistemas agroalimentares \cite{Hu2024}.
 
 \textbf{Figura 2.} Fluxograma da Revisão de Escopo sobre Aplicações de Machine Learning em Indicações Geográficas.
 
@@ -181,7 +181,7 @@ Esta revisão de escopo, estruturada de acordo com as diretrizes PRISMA-ScR (Fig
 
 A filtragem automatizada via análise semântica e pontuação alcançou uma precisão temática de 94,2\%, superando o limite estabelecido de 85\%. Essa abordagem de triagem computacional provou ser eficaz para revisões envolvendo grandes volumes bibliográficos, sugerindo que sistemas automatizados calibrados reduzem o viés de seleção e aumentam a reprodutibilidade \cite{OforiBoateng2024}. A reprodutibilidade de 100\% em múltiplas execuções de algoritmos, combinada com uma concordância entre avaliadores de κ = 0,89, garante que essas descobertas reflitam de forma confiável o estado atual da literatura científica neste domínio.
 
-A avaliação manual da qualidade metodológica produziu um coeficiente de correlação intraclasse (ICC) de 0,87 (IC 95\%: 0,84–0,91), confirmando robusta confiabilidade entre avaliadores e validando os critérios de inclusão \cite{streiner2008health}. Esta validação confirma que os estudos selecionados para síntese atendem a rigorosos padrões metodológicos.
+A avaliação manual da qualidade metodológica produziu um coeficiente de correlação intraclasse (ICC) de 0,87 (IC 95\%: 0,84--0,91), confirmando robusta confiabilidade entre avaliadores e validando os critérios de inclusão \cite{streiner2008health}. Esta validação confirma que os estudos selecionados para síntese atendem a rigorosos padrões metodológicos.
 
 \subsection{3.2 Análise Estrutural e Temporal do Corpus Científico}
 
@@ -189,36 +189,37 @@ A Análise de Correspondência Múltipla (MCA) mapeou a evolução temporal das 
 
 \textbf{Figura 3.} Biplot da Análise de Correspondência Múltipla (MCA) sobre a evolução temporal das aplicações de ML para autenticação de Indicações Geográficas (2010-2025).
 
-% \begin{figure}[h]
-% \centering
-\includegraphics[width=0.8\textwidth]{2-FIGURAS/2-EN/mca_biplot_temporal_completo.png}
-% \caption{}
-% \label{fig:mca_temporal}
-% \end{figure}
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.8\textwidth]{Imagens/2-EN/mca_biplot_temporal_completo.png}
+\caption{}
+\label{fig:mca_temporal}
+\end{figure}
 
-\emph{Nota: Elipses coloridas (intervalos de confiança de 95\%) representam três períodos de tempo: 2010–2018 (verde, n=26), 2019–2021 (laranja, n=27) e 2022–2025 (roxo, n=95). Pontos representam estudos individuais, com formas indicando a abordagem metodológica primária: círculos para estudos focados em algoritmos, quadrados para estudos focados em instrumentos/técnicas e triângulos para estudos focados em aplicações. Rótulos de produtos (Vinho, Mel, Azeite, Café) são exibidos acima dos pontos correspondentes.}
+\emph{Nota: Elipses coloridas (intervalos de confiança de 95\%) representam três períodos de tempo: 2010--2018 (verde, n=26), 2019--2021 (laranja, n=27) e 2022--2025 (roxo, n=95). Pontos representam estudos individuais, com formas indicando a abordagem metodológica primária: círculos para estudos focados em algoritmos, quadrados para estudos focados em instrumentos/técnicas e triângulos para estudos focados em aplicações. Rótulos de produtos (Vinho, Mel, Azeite, Café) são exibidos acima dos pontos correspondentes.}
 
-A trajetória temporal delineia três fases distintas (Figura 3). O período de 2010 a 2018 representa uma fase de consolidação metodológica, caracterizada por produtos europeus tradicionais (principalmente vinhos) e técnicas espectroscópicas estabelecidas (NIR, FTIR) emparelhadas com algoritmos clássicos como PLS-DA e SVM [@Mohammadi2024; \cite{Rebiai202}2]. O período intermediário (2019–2021) marca uma transição, onde a democratização das ferramentas de ML e o acesso a técnicas analíticas avançadas impulsionaram a diversificação de produtos (incorporando chás asiáticos e plantas medicinais) e a adoção gradual de Random Forest e redes neurais \cite{Liakos2018}. A fase recente (2022–2025), compreendendo 64\% do corpus, indica expansão rápida e heterogênea. Este período apresenta aumento nas aplicações de Deep Learning, metabolômica \emph{untargeted}, abordagens multimodais e estratégias de transfer learning \cite{Liu2025; He2024; Wang20218065; Peng2025; Feng2025}.
+A trajetória temporal delineia três fases distintas (Figura 3). O período de 2010 a 2018 representa uma fase de consolidação metodológica, caracterizada por produtos europeus tradicionais (principalmente vinhos) e técnicas espectroscópicas estabelecidas (NIR, FTIR) emparelhadas com algoritmos clássicos como PLS-DA e SVM [@Mohammadi2024; \cite{Rebiai2022}]. O período intermediário (2019--2021) marca uma transição, onde a democratização das ferramentas de ML e o acesso a técnicas analíticas avançadas impulsionaram a diversificação de produtos (incorporando chás asiáticos e plantas medicinais) e a adoção gradual de Random Forest e redes neurais \cite{Liakos2018}. A fase recente (2022--2025), compreendendo 64\% do corpus, indica expansão rápida e heterogênea. Este período apresenta aumento nas aplicações de Deep Learning, metabolômica \emph{untargeted}, abordagens multimodais e estratégias de transfer learning \cite{Liu2025; He2024; Wang20218065; Peng2025; Feng2025}.
 
 \textbf{Figura 4.} Análise de Rede de Coocorrência. (a) Rede completa mostrando comunidades temáticas entre algoritmos, produtos e técnicas. (b) Rede focada na coocorrência entre algoritmos de ML e produtos.
 
-% \begin{figure}[h]
-% \centering
-\includegraphics{2-FIGURAS/2-EN/network_centrality_metrics.png}
-% \caption{}
-% \label{fig:network_analysiss}
-% \end{figure}
+\begin{figure}[h]
+\centering
+\includegraphics{Imagens/2-EN/network_centrality_metrics.png}
+\caption{}
+\label{fig:network_analysiss}
+\end{figure}
 
 A dinâmica da produção científica (Figura 5a) mostra um crescimento exponencial superior a 400\% entre 2018 e 2024, impulsionado por ferramentas de ML acessíveis e técnicas analíticas de alto desempenho \cite{Liakos2018}. Simultaneamente, uma mudança paradigmática nos algoritmos (Figura 5b) é evidente: métodos quimiométricos clássicos (PLS-DA, dominante até 2018) estão sendo substituídos por modelos com maior capacidade preditiva e flexibilidade (Random Forest, SVM a partir de 2019). Pós-2022, Deep Learning e CNNs emergiram, especificamente para processamento de dados hiperespectrais e não estruturados [@Lavine2005; \cite{Shah201}9].
 
+
 \textbf{Figura 5.} Evolução temporal de (a) número de publicações e (b) adoção dos principais algoritmos de Machine Learning em estudos de IG.
 
-% \begin{figure}[h]
-% \centering
-\includegraphics[width=0.8\textwidth]{2-FIGURAS/2-EN/evolucao_temporal.png}
-% \caption{}
-% \label{fig:temporal_algoritmos}
-% \end{figure}
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.8\textwidth]{Imagens/2-EN/temporal_publicacoes.png.png}
+\caption{}
+\label{fig:temporal_algoritmos}
+\end{figure}
 
 \subsection{3.3 Domínios de Aplicação, Produtos e Distribuição Geográfica}
 
@@ -256,24 +257,24 @@ A escolha do modelo em IGs não é meramente incremental, mas condicionada pela 
 
 Modelos de Machine Learning alcançam desempenho preditivo substancial, com acurácias frequentemente entre 80\% e 100\%, confirmando que assinaturas geográficas são computacionalmente detectáveis. Para tarefas de regressão (ex: acidez, teor de fenol), a qualidade do ajuste é tipicamente medida por MAE e RMSE.
 
-No entanto, o desempenho é heterogêneo e depende do rigor metodológico. Acurácias de 100\% em classificação binária (ex: presunto Jinhua, chá Wuyi Rock) frequentemente refletem alta separabilidade de classes via marcadores únicos [@Chen2020; \cite{Effrosynidis202}1]. Tais resultados justificam ceticismo se não acompanhados de validação externa robusta.
+No entanto, o desempenho é heterogêneo e depende do rigor metodológico. Acurácias de 100\% em classificação binária (ex: presunto Jinhua, chá Wuyi Rock) frequentemente refletem alta separabilidade de classes via marcadores únicos\cite{Chen2020; Effrosynidis2021}. Tais resultados justificam ceticismo se não acompanhados de validação externa robusta.
 
-Uma faixa de desempenho mais realista para problemas multiclasse (ex: múltiplas denominações de vinho) é 88\%–99\%. Estudos alcançando alta sensibilidade (>99,3\%) frequentemente empregam validação rigorosa como k-fold repetido ou leave-one-out [@Mohammadi2024; \cite{Meena202}4]. Na detecção de fraude (54\% dos estudos), o desempenho é priorizado via sensibilidade e especificidade para minimizar falsos negativos, frequentemente usando técnicas de balanceamento de classe.
+Uma faixa de desempenho mais realista para problemas multiclasse (ex: múltiplas denominações de vinho) é 88\%--99\%. Estudos alcançando alta sensibilidade (>99,3\%) frequentemente empregam validação rigorosa como k-fold repetido ou leave-one-out [@; \cite{Meena2024; Mohammadi2024}4]. Na detecção de fraude (54\% dos estudos), o desempenho é priorizado via sensibilidade e especificidade para minimizar falsos negativos, frequentemente usando técnicas de balanceamento de classe.
 
 Uma lacuna crítica é a generalização do modelo. Apenas 23\% dos estudos empregaram validação externa com amostras de origens geográficas independentes. Quando realizada, a acurácia caiu de 2\% a 15\%, consistente com a degradação de desempenho em distribuições deslocadas \cite{Kuhn2013}. Isso sugere que muitos sistemas operam sob otimismo estatístico não controlado. Para defensibilidade legal, modelos de ML devem ser testados em amostras que desafiem sua capacidade de generalização (diferentes safras, regiões, lotes).
 
 Essa falha de validação externa representa não apenas uma limitação metodológica, mas um risco reputacional e econômico substancial para as Indicações Geográficas. Um modelo superestimado pode levar à certificação incorreta de produtos, erodindo a confiança do consumidor no selo de origem e depreciando o valor premium associado ao \emph{terroir} \cite{He2024}. Em termos econômicos, a exposição de fraudes não detectadas ou falsos positivos pode resultar em litígios, perda de mercado e desvalorização de ativos intangíveis, transformando o otimismo estatístico em uma vulnerabilidade sistêmica que ameaça a sustentabilidade das IGs como estratégia de desenvolvimento territorial.
 
-Na modelagem preditiva global, tarefas de regressão mostraram desempenho modesto (RMSE 11,8–12,5, $R^2$ 0,11–0,14), indicando que prever um índice de qualidade sintético a partir de variáveis bibliométricas é difícil [@Hair2010; \cite{Wang201}3]. Por outro lado, tarefas de classificação (alta pontuação vs. outros) mostraram que a Regressão Logística superou o Random Forest (Acurácia 0,69 vs. 0,53), sugerindo que estudos de alta qualidade são distinguidos por padrões relativamente simples e lineares \cite{Rudin2019}. A Figura 6 destaca essa assimetria.
+Na modelagem preditiva global, tarefas de regressão mostraram desempenho modesto (RMSE 11,8--12,5, $R^2$ 0,11--0,14), indicando que prever um índice de qualidade sintético a partir de variáveis bibliométricas é difícil \cite{Hair2010; Wang2013}. Por outro lado, tarefas de classificação (alta pontuação vs. outros) mostraram que a Regressão Logística superou o Random Forest (Acurácia 0,69 vs. 0,53), sugerindo que estudos de alta qualidade são distinguidos por padrões relativamente simples e lineares \cite{Rudin2019}. A Figura 6 destaca essa assimetria.
 
 \textbf{Figura 6.} Comparação do desempenho do modelo de regressão e classificação para prever pontuação contínua e categoria de alta pontuação dos estudos.
 
-% \begin{figure}[h]
-% \centering
-\includegraphics[width=0.8\textwidth]{2-FIGURAS/2-EN/model_metricas_comparacao.png}
-% \caption{}
-% \label{fig:model_metricas}
-% \end{figure}
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.8\textwidth]{Imagens/2-EN/model_metricas_comparacao.png}
+\caption{}
+\label{fig:model_metricas}
+\end{figure}
 
 \subsection{3.6 Aplicações Temáticas Identificadas}
 
@@ -299,12 +300,12 @@ Outro cluster relevante reúne aplicações usando ICP-MS em carnes e produtos c
 
 \textbf{Figura 7.} Mapa de calor dos perfis de cluster de estudo, mostrando a coocorrência de produtos, instrumentos analíticos e algoritmos de machine learning.
 
-% \begin{figure}[h]
-% \centering
-\includegraphics[width=0.8\textwidth]{2-FIGURAS/2-EN/cluster_heatmap_profiles.png}
-% \caption{}
-% \label{fig:cluster_heatmap}
-% \end{figure}
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.8\textwidth]{Imagens/2-EN/cluster_heatmap_profiles.png}
+\caption{}
+\label{fig:cluster_heatmap}
+\end{figure}
 
 A quarta arquitetura funcional, identificada por \cite{Meena2024} e \cite{Liu2025} em 47\% dos estudos, emprega ML para prever atributos de qualidade (acidez, índice total de fenóis, capacidade antioxidante, textura, perfil sensorial) com base em dados analíticos obtidos rapidamente. \cite{Peng2025} e \cite{Feng2025} distinguem esta aplicação da autenticação por seu objetivo funcional divergente, em vez de responder se um determinado produto é da origem X, o método busca determinar qual qualidade é esperada desta amostra. Nesses casos, o desempenho é quantificado por coeficientes de determinação ($R^2$), MAE e RMSE, que refletem o desvio médio em unidades fisicamente interpretáveis (ex: g/L, unidades de cor, pontuações sensoriais). \cite{Meena2024} documentaram que a regressão constitui a abordagem predominante neste contexto.
 
@@ -318,7 +319,7 @@ A segmentação da rede de coocorrência utilizando o algoritmo Louvain \cite{Bl
 
 A arquitetura interna dos módulos (Figura 8) revela padrões estruturantes de coesão e especialização. O Módulo 1 (Árvores + Espectroscopia), com alta densidade interna (0,60), vincula Random Forest, Árvores de Decisão e Gradient Boosting a matrizes como vinho e mel, predominando em \emph{terroirs} africanos e europeus. Essa coesão sinaliza a maturidade de uma plataforma onde classificadores baseados em árvores prevalecem na autenticação via assinaturas espectrais NIR, explorando a modelagem de interações não lineares entre marcadores químicos e origem territorial [@Resce2022; \cite{Oganesyants202}4].
 
-Caracterizado por uma arquitetura dispersa (densidade = 0,53), o Módulo 2 (SVM/KNN + Cromatografia) articula SVM e KNN com cromatografia de alta resolução (GC-MS, LC-MS) em carnes e produtos regionais asiáticos. Tal configuração delimita um nicho especializado em metabolômica direcionada e fingerprinting cromatográfico, onde a separação física de compostos antecede a classificação algorítmica, estratégia imperativa para matrizes complexas com perfis voláteis e semivoláteis [@Santoma2025; \cite{Shuai202}2].
+Caracterizado por uma arquitetura dispersa (densidade = 0,53), o Módulo 2 (SVM/KNN + Cromatografia) articula SVM e KNN com cromatografia de alta resolução (GC-MS, LC-MS) em carnes e produtos regionais asiáticos. Tal configuração delimita um nicho especializado em metabolômica direcionada e fingerprinting cromatográfico, onde a separação física de compostos antecede a classificação algorítmica, estratégia imperativa para matrizes complexas com perfis voláteis e semivoláteis [@Santoma2025; \cite{Shuai2022}].
 
 Em contrapartida, a elevada coesão do Módulo 3 (densidade = 0,68) funde Redes Neurais, CNNs e Deep Learning com espectroscopia (NIR, FTIR) e sensores portáteis (e-nose), predominando em azeites, queijos e chás da Europa e Ásia. Este agrupamento define a fronteira tecnológica do campo, mobilizando arquiteturas profundas para o processamento de sinais hiperespectrais e dados não estruturados, viabilizando a autenticação \emph{in-situ} e a descentralização dos processos de certificação [@Gazeli2020; \cite{Fu2023}; \cite{Li202}5].
 
@@ -326,12 +327,12 @@ Métricas de centralidade confirmam a função estruturante desses módulos: Neu
 
 \textbf{Figura 8.} Estrutura interna dos três módulos tecnológicos identificados pelo algoritmo Louvain. Cada painel mostra as conexões entre algoritmos (vermelho), técnicas analíticas (azul), produtos (verde) e regiões (laranja) dentro de cada comunidade especializada.
 
-% \begin{figure}[h]
-% \centering
-\includegraphics[width=1.0\textwidth]{2-FIGURAS/2-EN/louvain_modules_detailed.png}
-% \caption{}
-% \label{fig:louvain_modules}
-% \end{figure}
+\begin{figure}[h]
+\centering
+\includegraphics[width=1.0\textwidth]{Imagens/2-EN/louvain_modules_detailed.png}
+\caption{}
+\label{fig:louvain_modules}
+\end{figure}
 
 A integração de modalidades de dados distintas (metabolômica, perfil elementar, análise isotópica e sensorial) com algoritmos de ensemble, conforme documentado por \cite{Luan2020}, constitui uma tendência em expansão, representando 28\% dos estudos recentes (2024-2025). Tal fusão multimodal fundamenta-se na premissa de que a origem geográfica deriva de interações complexas entre determinantes ambientais e práticas produtivas, mobilizando complementaridades informacionais para maximizar o poder discriminativo e a robustez preditiva.
 
@@ -341,7 +342,7 @@ Uma ênfase crescente, embora ainda minoritária (14\% dos estudos), na explicab
 
 Uma tendência recente (9\% dos estudos, concentrada em 2024-2025) focada na implementação de modelos de ML em dispositivos portáteis ou sistemas \emph{in-situ} para análise rápida de autenticidade em campo ou em pontos de venda foi documentada por \cite{Effrosynidis2021} e \cite{Loyal2022}. Essa miniaturização computacional requer compressão de modelos, quantização de pesos e arquiteturas leves, desafios computacionais substantivos, mas viáveis por meio de redes neurais móveis ou algoritmos simplificados operando em subconjuntos selecionados de variáveis discriminativas, democratizando o acesso à tecnologia de autenticação para operações de pequena escala.
 
-A integração de Machine Learning (ML), blockchain e Internet das Coisas (IoT) surge como uma arquitetura de referência para rastreabilidade distribuída e auditável em cadeias de suprimentos modernas. Nesses modelos, sensores IoT coletam dados ambientais ao longo da cadeia; algoritmos de ML comparam padrões observados com perfis esperados para produtos autênticos; e o blockchain registra transações e verificações de forma imutável e descentralizada, criando trilhas de auditoria robustas [@Gong2023; \cite{Zhou2024}; \cite{Agyekum2022}; \cite{Zhang2022}; \cite{Gupta2024}; \cite{Wang202}2]. Estudos em sistemas agroalimentares apontam essa convergência como relevante tanto para a conformidade regulatória quanto para responder às demandas de consumidores e produtores por autenticidade e sustentabilidade [@Yang2022; \cite{Sun202}3].
+A integração de Machine Learning (ML), blockchain e Internet das Coisas (IoT) surge como uma arquitetura de referência para rastreabilidade distribuída e auditável em cadeias de suprimentos modernas. Nesses modelos, sensores IoT coletam dados ambientais ao longo da cadeia; algoritmos de ML comparam padrões observados com perfis esperados para produtos autênticos; e o blockchain registra transações e verificações de forma imutável e descentralizada, criando trilhas de auditoria robustas [@Gong2023; \cite{Zhou2024}; \cite{Agyekum2022}; \cite{Zhang2022}; \cite{Gupta2024}; \cite{Wang2022}]. Estudos em sistemas agroalimentares apontam essa convergência como relevante tanto para a conformidade regulatória quanto para responder às demandas de consumidores e produtores por autenticidade e sustentabilidade [@Yang2022; \cite{Sun2023}].
 
 Apesar da amplitude dos estudos analisados, a análise do corpus revela lacunas metodológicas e epistemológicas que exigem atenção prioritária para o amadurecimento do campo. Uma limitação crítica, observada em apenas 6\% dos estudos, é a ausência de validação longitudinal, que testa a robustez do modelo contra variações interanuais. A estabilidade temporal das assinaturas geoquímicas e metabolômicas é uma suposição fundamental para a certificação; no entanto, a variabilidade climática e edáfica entre safras pode degradar o desempenho preditivo de modelos treinados em um único ciclo sazonal, um desafio conhecido na modelagem agroambiental \cite{Kamilaris2018}. Sem essa validação temporal, a capacidade de generalização dos modelos permanece incerta, limitando sua confiabilidade para fins regulatórios.
 
