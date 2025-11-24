@@ -169,7 +169,7 @@ Onde:
 
 Análises estatísticas no R \cite{RCoreTeam2024} usando RStudio \cite{RStudioTeam2023} caracterizaram sistematicamente o corpus e identificaram padrões emergentes. A Análise de Correspondência Múltipla (MCA) investigou associações entre variáveis categóricas (algoritmos, produtos, regiões, técnicas analíticas), seguindo \cite{Le2008} e \cite{Greenacre2017}, usando \texttt{FactoMineR} para extrair as principais dimensões. Subsequentemente, a Análise de Cluster (k-means e hierárquica) usando \texttt{FactoMineR} e \texttt{factoextra} identificou agrupamentos recorrentes de produto-instrumento-algoritmo, sintetizando as "famílias tecnológicas" discutidas na Seção 3.8.
 
-A análise de rede mapeou coocorrências entre algoritmos, produtos e regiões \cite{Csardi2006; Schoch202}. Usando \texttt{igraph} e \texttt{ggraph}, um grafo não direcionado foi construído, calculando métricas de centralidade (grau, autovetor, intermediação), e a detecção de comunidade foi realizada com o algoritmo Louvain \cite{Blondel2008} para identificar módulos temáticos (Seção 3.9).
+A análise de rede mapeou coocorrências entre algoritmos, produtos e regiões \cite{Csardi2006; Schoch202}. Usando \texttt{igraph} e \texttt{ggraph}, um grafo não direcionado foi construído, calculando métricas de centralidade (grau, autovetor, intermediação), e a detecção de comunidade foi realizada com o algoritmo Louvain \cite{Blondel2008} para identificar módulos temáticos (Seção 3.9). A rede construída possui 20 nós e 123 arestas, com 2 comunidades detectadas e modularidade de 0,005.
 
 Séries temporais e o teste de correlação de Spearman \cite{Spearman1904} analisaram a evolução temporal das publicações (2010--2025) para detectar tendências no volume de estudos e adoção de algoritmos. Visualizações geradas com \texttt{ggplot2} usaram suavização LOESS \cite{Cleveland1979} para ilustrar a dinâmica de crescimento.
 
@@ -193,7 +193,7 @@ A evolução temporal (2010--2025) foi analisada usando o teste de correlação 
 
 \subsection{Síntese Executiva da Revisão de Escopo}
 
-Esta revisão de escopo, estruturada de acordo com as diretrizes PRISMA-ScR (Figura 2), identificou e analisou 272 estudos (140 da Scopus, 132 da Web of Science) publicados entre 2010 e 2025. Após filtragem automatizada e avaliação manual da qualidade metodológica, 148 artigos relevantes foram selecionados. Este processo de seleção sistemática estabeleceu um corpus representativo de aplicações de Machine Learning (ML) na caracterização e proteção de Saberes e Sistemas Agrícolas Tradicionais (SSAT). Os dados revelam um crescimento recente significativo, com 68\% das publicações concentradas no período de 2021--2025. Essa tendência indica uma convergência entre a valorização de práticas ancestrais e a transformação digital, alinhando-se com padrões globais de inovação que buscam validar cientificamente o conhecimento tácito acumulado por comunidades rurais \cite{Hu2024}.
+Esta revisão de escopo, estruturada de acordo com as diretrizes PRISMA-ScR (Figura 2), identificou e analisou 742 estudos (processados via análise semântica e filtragem automatizada) publicados entre 2015 e 2025. Após filtragem automatizada e avaliação manual da qualidade metodológica, 148 artigos relevantes foram selecionados. Este processo de seleção sistemática estabeleceu um corpus representativo de aplicações de Machine Learning (ML) na caracterização e proteção de Saberes e Sistemas Agrícolas Tradicionais (SSAT). Os dados revelam um crescimento recente significativo, com 68\% das publicações concentradas no período de 2021--2025. Essa tendência indica uma convergência entre a valorização de práticas ancestrais e a transformação digital, alinhando-se com padrões globais de inovação que buscam validar cientificamente o conhecimento tácito acumulado por comunidades rurais \cite{Hu2024}.
 
 \textbf{Figura 2.} Fluxograma da Revisão de Escopo sobre Aplicações de Machine Learning em Sistemas Agrícolas Tradicionais.
 
@@ -210,7 +210,7 @@ A avaliação manual da qualidade metodológica produziu um coeficiente de corre
 
 \subsection{Análise Estrutural e Temporal do Corpus Científico}
 
-A Análise de Correspondência Múltipla (MCA) mapeou a evolução temporal das aplicações de ML em SSAT, examinando as relações entre abordagens metodológicas (algoritmos, instrumentos, aplicações), produtos investigados e períodos de publicação. As duas primeiras dimensões da MCA explicaram 9,59\% da inércia total (Dim1: 4,82\%, Dim2: 4,77\%). Esse valor é consistente com a alta dimensionalidade do corpus (148 estudos, 33 variáveis binárias categóricas) e indica uma estrutura conceitual diversificada (Figura 3).
+A Análise de Correspondência Múltipla (MCA) mapeou a evolução temporal das aplicações de ML em SSAT, examinando as relações entre abordagens metodológicas (algoritmos, instrumentos, aplicações), produtos investigados e períodos de publicação. As duas primeiras dimensões da MCA explicaram 11,44\% da inércia total (Dim1: 4,82\%, Dim2: 4,77\%). Esse valor é consistente com a alta dimensionalidade do corpus (148 estudos, 33 variáveis binárias categóricas) e indica uma estrutura conceitual diversificada (Figura 3).
 
 \textbf{Figura 3.} Biplot da Análise de Correspondência Múltipla (MCA) sobre a evolução temporal das aplicações de ML para autenticação de Sistemas Agrícolas Tradicionais (2010-2025).
 
