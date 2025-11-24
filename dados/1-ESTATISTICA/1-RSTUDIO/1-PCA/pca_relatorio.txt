@@ -81,3 +81,5 @@ PC2: Captura a segunda maior fonte de variação ortogonal a PC1.
 
 PC1+PC2 juntos explicam a proporção predominante da variância observada.
 ================================================================================
+
+

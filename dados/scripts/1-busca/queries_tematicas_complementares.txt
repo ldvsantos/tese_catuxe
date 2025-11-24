@@ -19,3 +19,5 @@ TITLE-ABS-KEY(("classification" OR "machine learning" OR "pattern recognition")
 E. Análise de Redes Sociais
 TITLE-ABS-KEY(("social network analysis" OR "network analysis") 
      AND ("indigenous" OR "traditional knowledge" OR "knowledge exchange"))
+
+

@@ -1,0 +1,101 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Compilar tese com latexmk",
+			"type": "shell",
+			"command": "latexmk -pdf Tese-Catuxe-PPGPI.tex",
+			"args": [],
+			"isBackground": false,
+			"problemMatcher": [
+				"$latexmk"
+			],
+			"group": "build"
+		},
+		{
+			"label": "Compilar tese após correção Unicode",
+			"type": "shell",
+			"command": "latexmk -pdf Tese-Catuxe-PPGPI.tex",
+			"args": [],
+			"isBackground": false,
+			"problemMatcher": [
+				"$latexmk"
+			],
+			"group": "build"
+		},
+		{
+			"label": "Compilar tese após correção de espaços e comandos",
+			"type": "shell",
+			"command": "latexmk -pdf Tese-Catuxe-PPGPI.tex",
+			"args": [],
+			"isBackground": false,
+			"problemMatcher": [
+				"$latexmk"
+			],
+			"group": "build"
+		},
+		{
+			"label": "Compilar tese após normalização de encoding",
+			"type": "shell",
+			"command": "pdflatex Tese-Catuxe-PPGPI.tex",
+			"isBackground": false,
+			"group": "build"
+		},
+		{
+			"label": "Compilar tese após correção de encoding extra",
+			"type": "shell",
+			"command": "pdflatex Tese-Catuxe-PPGPI.tex",
+			"isBackground": false,
+			"group": "build"
+		},
+		{
+			"label": "Compilar tese após correção final de encoding",
+			"type": "shell",
+			"command": "pdflatex Tese-Catuxe-PPGPI.tex",
+			"isBackground": false,
+			"group": "build"
+		},
+		{
+			"label": "Compilar tese após mais correções de encoding",
+			"type": "shell",
+			"command": "pdflatex Tese-Catuxe-PPGPI.tex",
+			"isBackground": false,
+			"group": "build"
+		},
+		{
+			"label": "Compilar tese após mais correções de encoding",
+			"type": "shell",
+			"command": "pdflatex Tese-Catuxe-PPGPI.tex",
+			"isBackground": false,
+			"group": "build"
+		},
+		{
+			"label": "Compilar tese após mais correções de encoding",
+			"type": "shell",
+			"command": "pdflatex Tese-Catuxe-PPGPI.tex",
+			"isBackground": false,
+			"group": "build"
+		},
+		{
+			"label": "Compilar tese após mais correções de encoding",
+			"type": "shell",
+			"command": "pdflatex Tese-Catuxe-PPGPI.tex",
+			"isBackground": false,
+			"group": "build"
+		},
+		{
+			"label": "Compilar tese após mais correções de encoding",
+			"type": "shell",
+			"command": "pdflatex Tese-Catuxe-PPGPI.tex",
+			"isBackground": false,
+			"group": "build"
+		},
+		{
+			"label": "Compilar tese após mais correções de encoding",
+			"type": "shell",
+			"command": "pdflatex Tese-Catuxe-PPGPI.tex",
+			"isBackground": false,
+			"group": "build"
+		}
+	]
+}
