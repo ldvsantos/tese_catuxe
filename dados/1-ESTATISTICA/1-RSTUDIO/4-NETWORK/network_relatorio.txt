@@ -1,5 +1,5 @@
 ================================================================================NETWORK ANALYSIS REPORT - ML FOR GEOGRAPHICAL INDICATIONS
-================================================================================Execution date: 2025-11-23 11:12:04.162563
+================================================================================Execution date: 2025-11-24 08:31:35.98027
 
 --------------------------------------------------------------------------------
 GENERAL NETWORK STATISTICS
@@ -7,9 +7,9 @@ GENERAL NETWORK STATISTICS
 Number of nodes: 20
 Number of edges: 123
 Density: 0.6474
-Transitivity (clustering coefficient): 0.8326
-Network diameter: 19
-Average distance: 9.36
+Transitivity (clustering coefficient): 0.8397
+Network diameter: 20
+Average distance: 9.86
 
 --------------------------------------------------------------------------------
 TOP 15 NÓS POR GRAU (DEGREE CENTRALITY)
@@ -21,55 +21,55 @@ Interview                       Interview     17
 IndigenousPeoples       IndigenousPeoples     17
 Asia                                 Asia     16
 Ethnobotany                   Ethnobotany     15
-LocalKnowledge             LocalKnowledge     15
 Biodiversity                 Biodiversity     15
 Ethnography                   Ethnography     14
 Participatory               Participatory     14
+Observation                   Observation     14
+LocalKnowledge             LocalKnowledge     14
 LatinAmerica                 LatinAmerica     14
 Africa                             Africa     14
-Observation                   Observation     13
 FocusGroup                     FocusGroup     13
-Europe                             Europe      9
+Europe                             Europe     10
 
 --------------------------------------------------------------------------------
 TOP 15 NÓS POR BETWEENNESS CENTRALITY
 --------------------------------------------------------------------------------
                                      Node Betweenness
-TraditionalFarming     TraditionalFarming  0.19298246
-NeuralNetwork               NeuralNetwork  0.14961014
-TraditionalKnowledge TraditionalKnowledge  0.14230019
-Europe                             Europe  0.14083821
-Conservation                 Conservation  0.13255361
-Agroecology                   Agroecology  0.08966862
-Observation                   Observation  0.08674464
-Asia                                 Asia  0.07699805
-NLP                                   NLP  0.07017544
-Participatory               Participatory  0.05945419
-Ethnography                   Ethnography  0.04873294
-Biodiversity                 Biodiversity  0.03703704
-IndigenousPeoples       IndigenousPeoples  0.02631579
-Africa                             Africa  0.02387914
-LocalKnowledge             LocalKnowledge  0.02339181
+TraditionalFarming     TraditionalFarming  0.20760234
+Europe                             Europe  0.17884990
+NeuralNetwork               NeuralNetwork  0.17397661
+Observation                   Observation  0.15302144
+Conservation                 Conservation  0.13450292
+TraditionalKnowledge TraditionalKnowledge  0.12865497
+Asia                                 Asia  0.09454191
+Participatory               Participatory  0.08479532
+Agroecology                   Agroecology  0.07017544
+Biodiversity                 Biodiversity  0.04093567
+Ethnography                   Ethnography  0.03996101
+NLP                                   NLP  0.01754386
+Africa                             Africa  0.01510721
+IndigenousPeoples       IndigenousPeoples  0.01169591
+LatinAmerica                 LatinAmerica  0.00877193
 
 --------------------------------------------------------------------------------
 TOP 15 NÓS POR EIGENVECTOR CENTRALITY
 --------------------------------------------------------------------------------
                                      Node Eigenvector
 Interview                       Interview  1.00000000
-Ethnobotany                   Ethnobotany  0.77226782
-TraditionalKnowledge TraditionalKnowledge  0.76041442
-IndigenousPeoples       IndigenousPeoples  0.73769770
-Conservation                 Conservation  0.64572864
-Asia                                 Asia  0.49483662
-Biodiversity                 Biodiversity  0.34866044
-Africa                             Africa  0.33536079
-LatinAmerica                 LatinAmerica  0.31995724
-FocusGroup                     FocusGroup  0.31499308
-Participatory               Participatory  0.29108543
-LocalKnowledge             LocalKnowledge  0.28861402
-Ethnography                   Ethnography  0.16503155
-Observation                   Observation  0.12632318
-Europe                             Europe  0.06808575
+Ethnobotany                   Ethnobotany  0.78375793
+TraditionalKnowledge TraditionalKnowledge  0.73784921
+IndigenousPeoples       IndigenousPeoples  0.71902276
+Conservation                 Conservation  0.63525140
+Asia                                 Asia  0.46623059
+Biodiversity                 Biodiversity  0.34944918
+Africa                             Africa  0.33651801
+LatinAmerica                 LatinAmerica  0.31213003
+FocusGroup                     FocusGroup  0.30702313
+Participatory               Participatory  0.27113466
+LocalKnowledge             LocalKnowledge  0.26123453
+Ethnography                   Ethnography  0.13844139
+Observation                   Observation  0.12707958
+Europe                             Europe  0.07380316
 
 --------------------------------------------------------------------------------
 COMUNIDADES DETECTADAS (LOUVAIN)

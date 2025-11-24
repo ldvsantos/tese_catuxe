@@ -2,7 +2,7 @@
 TEMPORAL ANALYSIS REPORT - ML PARA CONHECIMENTOS TRADICIONAIS
 ================================================================================
 
-Data de execução: 2025-11-23 15:59:31.850139
+Data de execução: 2025-11-24 08:31:55.990526
 Período analisado: 2010-2025
 
 --------------------------------------------------------------------------------
@@ -11,22 +11,22 @@ PUBLICATIONS EVOLUTION
 # A tibble: 10 × 2
      Ano Total
    <dbl> <int>
- 1  2016    49
- 2  2017    31
- 3  2018    45
- 4  2019    55
- 5  2020    80
- 6  2021    66
- 7  2022    40
+ 1  2016    52
+ 2  2017    30
+ 3  2018    46
+ 4  2019    60
+ 5  2020    86
+ 6  2021    69
+ 7  2022    38
  8  2023    63
- 9  2024   105
-10  2025   134
+ 9  2024   106
+10  2025   139
 
 --------------------------------------------------------------------------------
 SIGNIFICANT TEMPORAL TRENDS (p < 0.05)
 --------------------------------------------------------------------------------
               Feature      Tipo Correlacao      PValue Significativo Tendencia
-rho...1 NeuralNetwork Algoritmo  0.8622494 0.001329521          TRUE Crescente
+rho...1 NeuralNetwork Algoritmo  0.8608833 0.001380664          TRUE Crescente
 rho...2           NLP Algoritmo  0.8127768 0.004259473          TRUE Crescente
 rho...3  RandomForest Algoritmo  0.7490253 0.012657311          TRUE Crescente
 
@@ -36,7 +36,7 @@ MOST USED ALGORITHMS (2020-2025)
 # A tibble: 6 × 2
   Algoritmo     Total
   <chr>         <int>
-1 NeuralNetwork    21
+1 NeuralNetwork    22
 2 NLP              13
 3 RandomForest      5
 4 SVM               3
@@ -49,4 +49,61 @@ MOST STUDIED PRODUCTS (2020-2025)
 
 ❌ ERROR during execution:
 método não aplicável para 'filter' aplicado a um objeto de classe "NULL" 
+
+✅ Temporal Analysis concluída com sucesso!
+
+================================================================================
+ETAPA 6/6: MODELAGEM PREDITIVA
+================================================================================
+
+================================================================================
+MODELAGEM PREDITIVA - GGPLOT2
+Machine Learning em etnografia e conhecimentos tradicionais
+================================================================================
+
+📚 Extraindo dados do arquivo .bib...
+✓ Total de estudos extraídos: 742
+  Score médio: 60.77 (σ = 11.63)
+
+🔬 Preparando dados para modelagem...
+✓ Treino: 557 | Teste: 185
+
+🔬 Executando modelos de regressão...
+  - Linear Regression...
+  - Ridge Regression...
+  - Lasso Regression...
+  - Random Forest Regression...
+✓ Regressão concluída
+
+🔬 Executando modelos de classificação...
+  - Logistic Regression...
+  - Random Forest Classification...
+✓ Classificação concluída
+
+📊 Gerando visualizações...
+📊 Gerando comparação de modelos de regressão...
+✓ Comparação de regressão salva: model_regressao_comparacao.png
+📊 Gerando importância de features (regressão)...
+✓ Feature importance (regressão) salvo: model_feature_importance_reg.png
+📊 Gerando importância de features (classificação)...
+✓ Feature importance (classificação) salvo: model_feature_importance_clf.png
+📊 Gerando matriz de confusão...
+✓ Matriz de confusão salva: model_confusion_matrix.png
+📊 Gerando comparação de métricas...
+✓ Comparação de métricas salva: model_metricas_comparacao.png
+
+📝 Gerando relatório estatístico...
+✓ Relatório estatístico salvo: model_relatorio.txt
+
+✓ Dados salvos: model_dados_completos.csv
+
+================================================================================
+✅ MODELAGEM PREDITIVA CONCLUÍDA COM SUCESSO!
+================================================================================
+
+✅ Predictive Modeling concluída com sucesso!
+
+================================================================================
+RESUMO DA EXECUÇÃO
+================================================================================
 

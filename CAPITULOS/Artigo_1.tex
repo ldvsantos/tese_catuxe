@@ -8,7 +8,7 @@ Paulo Roberto Gagliardi \footnote[2]{Departamento de Engenharia Agronômica/Univ
 
 % resumo em português
 \begin{resumoumacoluna}
-Os Saberes e Sistemas Agrícolas Tradicionais constituem ecossistemas de inovação adaptativa, onde a acumulação secular de conhecimento ecológico configura capacidades dinâmicas vitais, exigindo métodos analíticos capazes de capturar sua complexidade multidimensional. O Aprendizado de Máquina (ML) apresenta-se como ferramenta hermenêutica promissora; contudo, a síntese de sua aplicação na validação desses conhecimentos tácitos carece de sistematização. Diante disto, esta revisão de escopo tem por objetivo fundamentar a legitimidade científica dos Saberes e Sistemas Agrícolas Tradicionais, transcendendo o inventário bibliométrico para instrumentalizar a inteligência artificial como decodificadora de processos de inovação tácita. A análise de 148 estudos revisados por pares (2010--2025), processados via filtragem semântica e rigor estatístico, revelou um crescimento de 400\% na produção científica recente, identificando clusters onde algoritmos como Random Forest, Support Vector Machines e Deep Learning decodificam com precisão (80\% a 100\%) a assinatura metabólica e cultural de territórios ancestrais, desde terroirs vitivinícolas até sistemas de processamento artesanal. Entretanto, a constatação de que apenas 23\% das pesquisas aplicaram validação espacialmente independente expõe a necessidade de protocolos mais robustos de generalização. Conclui-se que a modelagem computacional valida efetivamente a sofisticação tecnológica dos saberes tradicionais, mas sua implementação como política de salvaguarda exige uma governança de dados que assegure a interpretabilidade dos modelos e a proteção do patrimônio biocultural contra apropriações reducionistas.
+Os Saberes e Sistemas Agrícolas Tradicionais constituem ecossistemas de inovação adaptativa, onde a acumulação secular de conhecimento ecológico configura capacidades dinâmicas vitais, exigindo métodos analíticos capazes de capturar sua complexidade multidimensional. O Aprendizado de Máquina (ML) apresenta-se como ferramenta hermenêutica promissora; contudo, a síntese de sua aplicação na validação desses conhecimentos tácitos carece de sistematização. Diante disto, esta revisão de escopo tem por objetiva analisar de forma crítica as aplicações de Aprendizado de Máquina na interface com Saberes e Sistemas Agrícolas Tradicionais, avaliando o alcance, as implicações epistemológicas e o potencial dessas técnicas para interpretar e valorizar dinâmicas de conhecimento local. A análise de 148 estudos revisados por pares (2010--2025), processados via filtragem semântica e rigor estatístico, revelou um crescimento de 400\% na produção científica recente, identificando clusters onde algoritmos como Random Forest, Support Vector Machines e Deep Learning decodificam com precisão (80\% a 100\%) a assinatura metabólica e cultural de territórios ancestrais, desde terroirs vitivinícolas até sistemas de processamento artesanal. Entretanto, a constatação de que apenas 23\% das pesquisas aplicaram validação espacialmente independente expõe a necessidade de protocolos mais robustos de generalização. Conclui-se que a modelagem computacional valida efetivamente a sofisticação tecnológica dos saberes tradicionais, mas sua implementação como política de salvaguarda exige uma governança de dados que assegure a interpretabilidade dos modelos e a proteção do patrimônio biocultural contra apropriações reducionistas.
 \vspace{\onelineskip}
  
 \noindent
@@ -16,29 +16,27 @@ Os Saberes e Sistemas Agrícolas Tradicionais constituem ecossistemas de inovaç
 \vspace{\onelineskip}
 
 
-
-
 \section{Introdução}
 
-A dicotomia clássica entre tradição e inovação dissolve-se quando analisamos os Saberes e Sistemas Agrícolas Tradicionais (SSAT) sob a urgência imposta pelo Antropoceno. Longe de representarem relíquias estáticas de um passado pré-moderno, estes sistemas constituem a materialização tangível do conceito de "novas combinações" de Joseph Schumpeter \cite{Schumpeter1942}, reorientado para a sobrevivência em regimes climáticos extremos. A persistência secular de práticas agroecológicas em ambientes de alta restrição de recursos não denota estagnação tecnológica, mas evidencia um vigoroso processo de experimentação empírica contínua. A exemplo, cada variedade crioula preservada e cada técnica de manejo adaptada representam o resultado de ciclos iterativos de destruição criativa em microescala, onde soluções ineficientes são descartadas em favor de arranjos produtivos que maximizam a resiliência ecológica e a segurança alimentar diante da instabilidade planetária.
+A dicotomia clássica entre tradição e inovação dissolve-se quando analisamos os Saberes e Sistemas Agrícolas Tradicionais (SSAT) sob a urgência imposta pelo Antropoceno. Longe de representarem relíquias estáticas de um passado pré-moderno, estes sistemas constituem a materialização tangível do conceito de "novas combinações" de Joseph Schumpeter \cite{Schumpeter1942}, reorientado por exemplo para a sobrevivência em regimes climáticos extremos. A persistência secular de práticas agroecológicas em ambientes de alta restrição de recursos não denota estagnação tecnológica, mas evidencia um vigoroso processo de experimentação empírica contínua\cite{Wezel2024Agro}. A exemplo, cada variedade crioula preservada e cada técnica de manejo adaptada representam o resultado de ciclos iterativos de destruição criativa em microescala \cite{Gonzalez2014}, onde soluções ineficientes são descartadas em favor de arranjos produtivos que maximizam a resiliência ecológica e a segurança alimentar diante da instabilidade planetária \cite{Rodríguez-Robayo202047}.
 
-Nessa perspectiva analítica, o acervo de conhecimentos tácitos detido pelas comunidades locais transcende o folclore para se configurar como um repositório crítico de Capacidades Dinâmicas, conforme a estrutura teórica de Teece, Pisano e Shuen. O monitoramento fenológico minucioso e a leitura dos sinais climáticos ancestrais correspondem ao mecanismo organizacional de *sensing*, permitindo a antecipação de estressores ambientais que hoje desafiam a agricultura industrial. Concomitantemente, a seleção rigorosa de genótipos adaptados e a mobilização de redes de troca de sementes operam como o *seizing* de oportunidades produtivas, enquanto a modificação incremental das paisagens reflete a capacidade de *transforming* e reconfiguração de ativos. O saber tradicional revela-se, portanto, não como um passivo histórico, mas como um ativo estratégico de gestão de riscos e uma reserva de segurança para a adaptação climática global.
+Nessa perspectiva, o acervo de conhecimentos tácitos detido pelas comunidades tradicionais transcende o folclore para se configurar como um repositório crítico de Capacidades Dinâmicas, conforme a estrutura teórica de \citeonline{Teece1997Dynamic}. O monitoramento fenológico minucioso e a leitura dos sinais climáticos ancestrais correspondem ao mecanismo organizacional de \textit{sensing}, permitindo a antecipação de estressores ambientais que hoje desafiam a agricultura industrial \cite{Chao2025Pastoral}. Concomitantemente, a seleção rigorosa de genótipos adaptados e a mobilização de redes de troca de sementes operam como o *seizing* de oportunidades produtivas, enquanto a modificação incremental das paisagens reflete a capacidade de *transforming* e reconfiguração de ativos. O saber tradicional revela-se, portanto, não como um passivo histórico, mas como um ativo estratégico de gestão de riscos e uma reserva de segurança para a adaptação climática global.\cite{Ghafouri2025,Tian-Liang2025,Díaz-Pérez2025}
 
-É fundamental, contudo, delinear a distinção ontológica entre a inovação formal e o que denominamos aqui como ``Inovação Tácita''. Enquanto a primeira é codificada em protocolos explícitos e desenvolvida em ambientes controlados de P\&D, a inovação nos sistemas tradicionais opera sob uma lógica fenomenológica de \textit{learning-by-doing}, enraizada na premissa polanyiana de que o conhecimento humano excede sua capacidade de verbalização. Nestes agroecossistemas, o laboratório é o próprio território e a experimentação ocorre em tempo real, imersa na estocasticidade climática e biológica, sem o isolamento de variáveis típico do método reducionista. Essa natureza fluida e oralmente transmitida frequentemente condena tais avanços à invisibilidade perante a ciência hegemônica, que confunde a ausência de registro escrito com estagnação tecnológica. Paradoxalmente, é justamente essa interação direta e contínua com o ambiente que gera um rastro de dados fenológicos, produtivos e ecológicos de tamanha densidade que escapa à estatística convencional, exigindo a aplicação de algoritmos de Aprendizado de Máquina para rastrear e validar a sofisticação oculta nessas práticas ancestrais.
+É fundamental, contudo, delinear a distinção ontológica entre a inovação formal e o que denominamos aqui como Inovação Tácita. Enquanto a primeira é codificada em protocolos explícitos e desenvolvida em ambientes controlados de P\&D, a inovação nos sistemas tradicionais opera sob uma lógica fenomenológica de \textit{learning-by-doing}, enraizada na premissa polanyiana de que o conhecimento humano excede sua capacidade de verbalização \cite{Klerkx2022FarmerInnovation}. Nestes agroecossistemas, o laboratório é o próprio território e a experimentação ocorre em tempo real, imersa na estocasticidade climática e biológica, sem o isolamento de variáveis típico do método reducionista. Essa natureza fluida e oralmente transmitida frequentemente condena tais avanços à invisibilidade perante a ciência hegemônica, que confunde a ausência de registro escrito com estagnação tecnológica \cite{Wheeler2021FarmerKnowledge}. Paradoxalmente, é justamente essa interação direta e contínua com o ambiente que gera um rastro de dados fenológicos, produtivos e ecológicos de tamanha densidade que escapa à estatística convencional, exigindo a aplicação de algoritmos de Aprendizado de Máquina para rastrear e validar a sofisticação oculta nessas práticas ancestrais.\cite{Awoke2025,Yifru2025,Rendón-Sandoval2021,Gallegos-Riofrío202161}
 
-A complexidade inerente a essa arquitetura de inovação exige uma abordagem que considere a multidimensionalidade dos fenômenos observados. Utilizando o framework de Crossan e Apaydin, os sistemas tradicionais devem ser classificados simultaneamente como inovação de processo e inovação organizacional, onde a tecnologia não é apenas artefactual, mas sistêmica e socialmente incrustada. A densidade dessas interações e a natureza tácita dos processos decisórios excedem a capacidade de apreensão por métodos de observação linear, justificando imperativamente a aplicação de ferramentas de Aprendizado de Máquina. Somente através da capacidade de processamento de alta dimensionalidade desses algoritmos torna-se possível capturar, sistematizar e validar essa tecnologia ancestral antes que a erosão cultural acelerada dissipe esse capital intelectual acumulado.
+A complexidade inerente a essa arquitetura de inovação exige uma abordagem que considere a multidimensionalidade dos fenômenos observados. Utilizando o framework de Crossan e Apaydin \cite{Crossan2010Innovation}, os sistemas tradicionais devem ser classificados simultaneamente como inovação de processo e inovação organizacional, onde a tecnologia não é apenas artefactual, mas sistêmica e socialmente incrustada. A densidade dessas interações e a natureza tácita dos processos decisórios excedem a capacidade de apreensão por métodos de observação linear, justificando imperativamente a aplicação de ferramentas de Aprendizado de Máquina \cite{Chen2024AI_AgrifoodSurvey}. Somente através da capacidade de processamento de alta dimensionalidade desses algoritmos torna-se possível capturar, sistematizar e validar essa tecnologia ancestral antes que a erosão cultural acelerada dissipe esse capital intelectual acumulado \cite{Wheeler2021FarmerKnowledge}.
 
-Nesta perspectiva, propõe-se a conceituação dos algoritmos de Aprendizado de Máquina como Decodificadores Tecnológicos de Capacidades Dinâmicas em um cenário de escassez temporal. Se, conforme Polanyi e Nonaka, grande parte do conhecimento tradicional reside em uma dimensão tácita e inefável, inacessível a métricas lineares, o ML atua através de uma verdadeira hermenêutica computacional urgente. Ao processar a alta dimensionalidade de dados biológicos e ambientais, esses algoritmos conseguem identificar os padrões latentes que constituem os microfundamentos da adaptação, o *sensing* das variações climáticas sutis, o *seizing* na seleção de genótipos resilientes e o *transforming* das práticas de manejo. Desta forma, a inteligência artificial não impõe uma lógica exógena, mas opera a explicitação de conhecimento tácito, traduzindo a complexidade sistêmica dos saberes ancestrais em linguagem científica validável, permitindo que a inovação inerente a estes sistemas seja integrada às estratégias de mitigação climática sem incorrer em reducionismos epistemológicos.
+Nesta perspectiva, propõe-se a conceituação dos algoritmos de Aprendizado de Máquina como Decodificadores Tecnológicos de Capacidades Dinâmicas em um cenário de escassez temporal. Se, conforme Polanyi e Nonaka, grande parte do conhecimento tradicional reside em uma dimensão tácita e inefável, inacessível a métricas lineares, o ML atua através de uma verdadeira hermenêutica computacional urgente \cite{HosseiniyanKhatibi2024ML}. Ao processar a alta dimensionalidade de dados biológicos e ambientais, esses algoritmos conseguem identificar os padrões latentes que constituem os microfundamentos da adaptação, o \textit{sensing} das variações climáticas sutis, o \textit{seizing} na seleção de genótipos resilientes e o \textit{transforming} das práticas de manejo \cite{Chen2024AI_AgrifoodSurvey}. Desta forma, a inteligência artificial não impõe uma lógica exógena, mas opera a explicitação de conhecimento tácito, traduzindo a complexidade sistêmica dos saberes ancestrais em linguagem científica validável, permitindo que a inovação inerente a estes sistemas seja integrada às estratégias de mitigação climática sem incorrer em reducionismos epistemológicos \cite{Wheeler2021FarmerKnowledge}.
 
-Diante disto, esta revisão de escopo tem por objetivo fundamentar a legitimidade científica dos Saberes e Sistemas Agrícolas Tradicionais, transcendendo o inventário bibliométrico para instrumentalizar a inteligência artificial como decodificadora de processos de inovação tácita. A hipótese central que orienta esta investigação postula que os algoritmos de Aprendizado de Máquina, ao atuarem como decodificadores de capacidades dinâmicas, transcendem a função de mapeamento para operar a validação epistemológica do conhecimento tácito. Ao converter saberes e sistemas das comunidades em parâmetros auditáveis, a modelagem computacional estabelece a ponte necessária entre a sabedoria ancestral e os mercados de valor agregado, assegurando que a proteção dos ativos intangíveis e a integridade ecológica desses sistemas sejam reconhecidas não como externalidades culturais, mas como vetores de competitividade e resiliência no Antropoceno.
+Diante disto, o estudo objetiva analisar de forma crítica as aplicações de Aprendizado de Máquina na interface com Saberes e Sistemas Agrícolas Tradicionais, avaliando o alcance, as implicações epistemológicas e o potencial dessas técnicas para interpretar e valorizar dinâmicas de conhecimento local. A hipótese central deste estudo postula que as aplicações de Aprendizado de Máquina podem revelar padrões, heurísticas e lógicas decisórias subjacentes aos Saberes e Sistemas Agrícolas Tradicionais, oferecendo bases para reinterpretar seus fundamentos epistemológicos e ampliar sua valorização científica. Ao converter saberes e sistemas das comunidades em parâmetros auditáveis, a modelagem computacional estabelece a ponte necessária entre a sabedoria ancestral e os mercados de valor agregado, assegurando que a proteção dos ativos intangíveis e a integridade ecológica desses sistemas sejam reconhecidas não como externalidades culturais, mas como vetores de competitividade e resiliência no Antropoceno.
 
 \section{Materiais e Métodos}
 
-Esta revisão de escopo segue as diretrizes PRISMA-ScR (*Preferred Reporting Items for Systematic Reviews and Meta-Analyses extension for Scoping Reviews*) para garantir transparência metodológica e reprodutibilidade. O protocolo está registrado no Open Science Framework para facilitar o acesso público e a replicabilidade.
+Esta revisão de escopo segue as diretrizes PRISMA-ScR (\textit{Preferred Reporting Items for Systematic Reviews and Meta-Analyses extension for Scoping Reviews}) para garantir transparência metodológica e reprodutibilidade. O protocolo está registrado no Open Science Framework para facilitar o acesso público e a replicabilidade.
 
 \subsection{Questão de Pesquisa}
 
-O estudo emprega a estrutura PCC (*População, Conceito, Contexto*) para formular a questão de pesquisa: *Como as técnicas de Machine Learning têm sido aplicadas para autenticação, avaliação e apoio à decisão em Saberes e Sistemas Agrícolas Tradicionais?*
+O estudo utiliza o arcabouço PCC (População, Conceito e Contexto) para orientar a formulação da questão de pesquisa, a qual indaga: de que modo as técnicas de Aprendizado de Máquina têm sido mobilizadas para interpretar, modelar e apoiar processos decisórios associados aos Saberes e Sistemas Agrícolas Tradicionais?
 
 
 \begin{table}[h]
@@ -52,13 +50,15 @@ O estudo emprega a estrutura PCC (*População, Conceito, Contexto*) para formul
 \end{tabular}
 \end{table}
 
-Este estudo identifica e caracteriza aplicações de ML relatadas na literatura, categorizando técnicas por tipo de algoritmo, abordagem metodológica e métricas de desempenho, sob a ótica da preservação de saberes. Além disso, analisa a distribuição de aplicações por tipo de sistema produtivo, região geográfica e período de tempo, identificando lacunas metodológicas, limitações e direções para pesquisas futuras na interface entre tecnologia e tradição.
+O estudo sistematiza e caracteriza as aplicações de Aprendizado de Máquina identificadas na literatura, organizando-as segundo tipo de algoritmo, abordagem metodológica e critérios de desempenho, sempre considerando sua capacidade de revelar padrões, heurísticas e estruturas implícitas nos Saberes e Sistemas Agrícolas Tradicionais. Além disso, examina a distribuição dessas aplicações por sistema produtivo, contexto geográfico e período histórico, evidenciando lacunas teóricas e metodológicas e delineando direções promissoras para pesquisas que busquem integrar tecnologia e conhecimento tradicional em bases epistemologicamente consistentes.
 
-\subsection{2.1.1 Fluxograma Metodológico PRISMA-ScR}
+
+\subsection{Fluxograma Metodológico PRISMA-ScR}
 
 A Figura 1 apresenta o fluxograma metodológico, estruturado em quatro fases sequenciais: (1) Estratégias de busca nas principais bases de dados, (2) Filtragem automatizada com sistema de pontuação ponderada, (3) Avaliação manual de qualidade com avaliação multidisciplinar e (4) Análise bibliométrica e síntese qualitativa integrando metodologias quantitativas e documentais. O fluxograma detalha o caminho desde a identificação do registro até a síntese final, oferecendo recomendações para a implementação de Machine Learning na salvaguarda de Sistemas Agrícolas Tradicionais.
 
 \textbf{Figura 1.} Fluxograma da Revisão de Escopo sobre Aplicações de Machine Learning em Sistemas Agrícolas Tradicionais.
+
 
 Os descritores empregaram terminologia controlada em inglês e operadores booleanos (AND, OR, NOT), cobrindo publicações de 2010 a 2025 para capturar o estado da arte. A estratégia de busca seguiu esta lógica:
 
@@ -68,9 +68,9 @@ Os critérios de inclusão compreenderam artigos revisados por pares em inglês,
 
 A extração de dados utilizou um formulário padronizado para registrar metadados bibliográficos (autor, ano, título), características geográficas (país de origem, região, tipo de sistema), detalhes do produto (categoria, denominação específica), abordagem metodológica (algoritmos de ML, técnicas analíticas/instrumentais, tamanho da amostra) e métricas de desempenho (acurácia, sensibilidade, especificidade, RMSE).
 
-\subsection{2.4 Primeira Fase: Sistema Automatizado de Filtragem de Relevância Temática}
+\subsection{Primeira Fase: Sistema Automatizado de Filtragem de Relevância Temática}
 
-\subsubsection{2.4.1 Algoritmo de Pontuação Ponderada}
+\subsubsection{Algoritmo de Pontuação Ponderada}
 
 Complementando a triagem manual, um sistema de filtragem automatizado atribui pontuações de relevância temática com base na presença e localização de descritores no título, resumo e palavras-chave. Implementado em Python (NLTK, spaCy), o algoritmo aplica um esquema de ponderação hierárquica a cada termo identificado. O sistema de pontuação adere aos princípios do Processo de Análise Hierárquica (AHP) (Equação 1), organizando descritores em cinco categorias com pesos diferenciados \cite{SAATY1991}.
 
@@ -88,19 +88,19 @@ onde:
 
 Termos Prioritários (5 pontos) representam o núcleo conceitual da revisão (ex: \emph{traditional systems, indigenous knowledge, traceability}). Termos de Alta Relevância (3 pontos) capturam conceitos metodológicos centrais (ex: \emph{machine learning, deep learning, neural networks}). Termos de Média Relevância (2 pontos) cobrem temas complementares (ex: \emph{chemometrics, data mining}), enquanto Termos de Contexto (1 ponto) indicam ambientes potenciais (ex: \emph{regional products, biocultural heritage}). Termos de Exclusão recebem pesos negativos para penalizar registros fora do escopo, particularmente nos domínios \emph{médico/clínico} (-5), \emph{planejamento urbano} (-3) e \emph{finanças} (-2) \cite{tMUNN2018, ricco2018}.
 
-\subsubsection{2.4.2 Implementação e Validação do Algoritmo}
+\subsubsection{Implementação e Validação do Algoritmo}
 
 Para cada registro, o algoritmo varre o título, resumo e palavras-chave, aplica os pesos da categoria e multiplica cada ocorrência pelo fator de localização. A pontuação final soma esses produtos em todos os termos identificados.
 
 A distribuição empírica da pontuação definiu o limite mínimo de inclusão, identificando o ponto de inflexão na curva cumulativa (critério de Pareto/cotovelo) e ajustando-o via validação manual com amostragem estratificada. O valor final representa o compromisso ideal entre sensibilidade e especificidade, estabilizando a concordância entre avaliadores em casos limítrofes.
 
-\subsubsection{2.4.3 Validação Participativa e Refinamento do Algoritmo}
+\subsubsection{Validação Participativa e Refinamento do Algoritmo}
 
 Para garantir a validade científica, foi implementado um protocolo de validação envolvendo três revisores independentes especializados em machine learning e sistemas tradicionais. O protocolo incluiu uma revisão manual sistemática de 272 estudos para verificar a aderência aos critérios de inclusão. Um teste de concordância entre avaliadores verificou a consistência da classificação \cite{Tricco2018}.
 
 O processo envolveu investigação qualitativa de casos limítrofes e refinamento iterativo dos critérios de elegibilidade. A validação produziu uma taxa de concordância de 90,2\% entre o sistema automatizado e a avaliação manual, indicando alta eficácia algorítmica na triagem temática.
 
-\subsubsection{2.4.4 Verificação de Cobertura Bibliográfica e Categorização Automatizada}
+\subsubsection{Verificação de Cobertura Bibliográfica e Categorização Automatizada}
 
 Um sistema automatizado verificou a cobertura bibliográfica, garantindo completude e consistência entre citações textuais e arquivos bibliográficos.
 
@@ -108,7 +108,7 @@ O corpus consolidado passou por categorização automatizada usando Processament
 
 Para quantificar a cobertura e a adequação do estudo, foram aplicadas métricas de cobertura de citação e taxas de uso bibliográfico do corpus \cite{webster2002; tranfield2003}. Essas métricas permitem a avaliação quantitativa da utilização da base de referência, garantindo que os estudos selecionados reflitam adequadamente o escopo temático da revisão.
 
-\subsection{2.5 Segunda Fase: Avaliação Manual da Qualidade Metodológica}
+\subsection{Segunda Fase: Avaliação Manual da Qualidade Metodológica}
 
 Na segunda fase, três revisores independentes avaliaram a qualidade metodológica dos estudos selecionados, garantindo análise multidisciplinar e reduzindo o viés interpretativo. A escala MMAT \cite{hong2018; pluye2009} foi adaptada para estudos interdisciplinares envolvendo ML e sistemas tradicionais, estruturando oito indicadores em uma escala Likert de 3 pontos. Os indicadores incluíram rigor metodológico, validação de algoritmo, adesão a protocolos éticos, reprodutibilidade, integração quantitativa-qualitativa, impacto nos sistemas tradicionais, completude da documentação e generalização do método (Tabela 2).
 
@@ -133,21 +133,20 @@ GEN & Generalização e transferibilidade dos métodos propostos & Qualidade Cie
 \end{tabular}
 \end{table}
 
-\subsubsection{2.5.1 Procedimentos de Consenso e Validação Interavaliadores}
+\subsubsection{Procedimentos de Consenso e Validação Interavaliadores}
 
 A avaliação manual incluiu um protocolo de consenso. Inicialmente, os revisores avaliaram independentemente uma amostra piloto de 30 estudos (~11\% do corpus) para calibrar critérios. Para o corpus completo, casos de discordância (diferença $\geq$ 2 pontos) passaram por reavaliação cega e discussão para chegar a um consenso. O coeficiente de correlação intraclasse (ICC) foi calculado de acordo com \cite{shrout1979}, obtendo um valor de 0,87 (IC 95\%: 0,84--0,91), indicando boa concordância.
 
-\subsubsection{2.5.2 Critérios Específicos para Estudos Interdisciplinares}
-
+\subsubsection{Critérios Específicos para Estudos Interdisciplinares}
 Dada a natureza interdisciplinar dos estudos, os critérios de qualidade examinaram a coerência da integração quantitativa-qualitativa, validação em múltiplos contextos geográficos, transparência algorítmica, adesão ética e aplicabilidade prática para certificação.
 
 Esta fase resultou na seleção de 25 estudos com qualidade metodológica adequada (pontuação $\geq$ 20 pontos) dos 272 artigos iniciais. Estes formaram a base para análises subsequentes. A distribuição incluiu 1 artigo de excelência ($\geq$40 pts), 2 de alta relevância ($\geq$30 pts) e 22 adequados ($\geq$20 pts).
 
-\subsection{2.6 Terceira Fase: Análise Bibliométrica}
+\subsection{Terceira Fase: Análise Bibliométrica}
 
 A Lei de Lotka \cite{lotka1926} analisou a produtividade científica, descrevendo a distribuição não linear da produtividade do autor para identificar padrões de concentração ou dispersão. Análises de acoplamento bibliográfico e cocitação não foram realizadas devido à falta de campos de referência citada nos arquivos bibliográficos disponíveis.
 
-\subsection{2.7 Quarta Fase: Síntese Qualitativa e Integração com Análise Documental}
+\subsection{Quarta Fase: Síntese Qualitativa e Integração com Análise Documental}
 
 A quarta fase integrou sistematicamente as descobertas com a análise documental de marcos regulatórios para fundamentar recomendações metodológicas.
 
@@ -166,7 +165,7 @@ Onde:
 - $Q_{tem}$ = relevância temática normalizada (0-1)
 - $Q_{biblio}$ = impacto bibliométrico normalizado (0-1)
 
-\subsection{2.8 Análises Estatísticas}
+\subsection{Análises Estatísticas}
 
 Análises estatísticas no R \cite{RCoreTeam2024} usando RStudio \cite{RStudioTeam2023} caracterizaram sistematicamente o corpus e identificaram padrões emergentes. A Análise de Correspondência Múltipla (MCA) investigou associações entre variáveis categóricas (algoritmos, produtos, regiões, técnicas analíticas), seguindo \cite{Le2008} e \cite{Greenacre2017}, usando \texttt{FactoMineR} para extrair as principais dimensões. Subsequentemente, a Análise de Cluster (k-means e hierárquica) usando \texttt{FactoMineR} e \texttt{factoextra} identificou agrupamentos recorrentes de produto-instrumento-algoritmo, sintetizando as "famílias tecnológicas" discutidas na Seção 3.8.
 
@@ -176,17 +175,17 @@ Séries temporais e o teste de correlação de Spearman \cite{Spearman1904} anal
 
 Finalmente, modelos preditivos globais avaliaram se variáveis bibliométricas e metodológicas poderiam antecipar pontuações de estudo. Modelos de regressão (OLS, Ridge, Lasso, Random Forest) e modelos de classificação (Regressão Logística, Random Forest) foram estimados usando \texttt{caret} e \texttt{randomForest} com validação cruzada k-fold estratificada. O desempenho foi avaliado via RMSE e $R^2$ para regressão, e acurácia, precisão, sensibilidade e F1-score para classificação (Seção 3.7).
 
-\subsubsection{2.8.1 Análise de Correspondência Múltipla (MCA)}
+\subsubsection{Análise de Correspondência Múltipla (MCA)}
 
 A MCA investigou associações entre variáveis categóricas, empregando \texttt{FactoMineR} para interpretar relacionamentos conceituais.
 
-\subsubsection{2.8.2 Análise de Rede}
+\subsubsection{Análise de Rede}
 
 A análise de rede mapeou coocorrências, construindo um grafo não direcionado ponderado onde nós representam entidades e arestas indicam coocorrência. Métricas de centralidade identificaram elementos estruturalmente centrais.
 
 A detecção de comunidade usando o algoritmo Louvain \cite{Blondel2008} interpretou a estrutura modular resultante como módulos tecnológicos temáticos (Seção 3.9).
 
-\subsubsection{2.8.3 Análise Temporal}
+\subsubsection{Análise Temporal}
 
 A evolução temporal (2010--2025) foi analisada usando o teste de correlação de Spearman \cite{Spearman1904} e visualizações \texttt{ggplot2} com suavização LOESS \cite{Cleveland1979} para ilustrar o crescimento do campo e a adoção de tecnologia.
 
