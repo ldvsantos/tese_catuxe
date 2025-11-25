@@ -29,7 +29,7 @@ Traditional Agricultural Knowledge and Systems constitute adaptive innovation ec
 
 A dicotomia clássica entre tradição e inovação dissolve-se quando analisamos os Saberes e Sistemas Agrícolas Tradicionais (SSAT) sob a urgência imposta pelo Antropoceno \cite{OterosRozas2019Spain}. Longe de representarem relíquias estáticas de um passado pré-moderno, estes sistemas constituem a materialização tangível do conceito de "novas combinações" de Joseph Schumpeter  \cite{Schumpeter1942}, reorientado por exemplo para a sobrevivência em regimes climáticos extremos. A persistência secular de práticas agroecológicas em ambientes de alta restrição de recursos não denota estagnação tecnológica, mas evidencia um vigoroso processo de experimentação empírica contínua \cite{Wezel2024Agro}. A exemplo, cada variedade crioula preservada e cada técnica de manejo adaptada representam o resultado de ciclos iterativos de destruição criativa em microescala  \cite{Gonzalez2014}, onde soluções ineficientes são descartadas em favor de arranjos produtivos que maximizam a resiliência ecológica e a segurança alimentar diante da instabilidade planetária  \cite{Rodríguez-Robayo202047}.
 
-Nessa perspectiva, o acervo de conhecimentos tácitos detido pelas comunidades tradicionais transcende o folclore para se configurar como um repositório crítico de Capacidades Dinâmicas, conforme a estrutura teórica de \citeonline{Teece1997Dynamic}. O monitoramento fenológico minucioso e a leitura dos sinais climáticos ancestrais correspondem ao mecanismo organizacional de \textit{sensing}, permitindo a antecipação de estressores ambientais que hoje desafiam a agricultura industrial  \cite{Chao2025Pastoral}. Concomitantemente, a seleção rigorosa de genótipos adaptados e a mobilização de redes de troca de sementes operam como o *seizing* de oportunidades produtivas, enquanto a modificação incremental das paisagens reflete a capacidade de *transforming* e reconfiguração de ativos. O saber tradicional revela-se, portanto, não como um passivo histórico, mas como um ativo estratégico de gestão de riscos e uma reserva de segurança para a adaptação climática global \cite{Ghafouri2025,Tian-Liang2025,Díaz-Pérez2025}.
+Nessa perspectiva, o acervo de conhecimentos tácitos detido pelas comunidades tradicionais transcende o folclore para se configurar como um repositório crítico de Capacidades Dinâmicas, conforme a estrutura teórica de \citeonline{Teece1997Dynamic}. O monitoramento fenológico minucioso, leitura dos sinais climáticos ancestrais e a sensibilidade da compreensão de comportamentos zootecnicos, correspondem ao mecanismo organizacional de \textit{sensing}, permitindo a antecipação de estressores ambientais que hoje desafiam a agricultura industrial  \cite{Chao2025Pastoral}. Concomitantemente, a seleção rigorosa de genótipos adaptados e a mobilização de redes de troca de sementes operam como o *seizing* de oportunidades produtivas, enquanto a modificação incremental das paisagens reflete a capacidade de *transforming* e reconfiguração de ativos. O saber tradicional revela-se, portanto, não como um passivo histórico, mas como um ativo estratégico de gestão de riscos e uma reserva de segurança para a adaptação climática global \cite{Ghafouri2025,Tian-Liang2025,Díaz-Pérez2025}.
 
 É fundamental, contudo, delinear a distinção ontológica entre a inovação formal e o que denominamos aqui como Inovação Tácita. Enquanto a primeira é codificada em protocolos explícitos e desenvolvida em ambientes controlados de P\&D, a inovação nos sistemas tradicionais opera sob uma lógica fenomenológica de \textit{learning-by-doing}, enraizada na premissa polanyiana de que o conhecimento humano excede sua capacidade de verbalização  \cite{Klerkx2022FarmerInnovation}. Nestes agroecossistemas, o laboratório é o próprio território e a experimentação ocorre em tempo real, imersa na estocasticidade climática e biológica, sem o isolamento de variáveis típico do método reducionista. Essa natureza fluida e oralmente transmitida frequentemente condena tais avanços à invisibilidade perante a ciência hegemônica, que confunde a ausência de registro escrito com estagnação tecnológica  \cite{Wheeler2021FarmerKnowledge}. Paradoxalmente, é justamente essa interação direta e contínua com o ambiente que gera um rastro de dados fenológicos, produtivos e ecológicos de tamanha densidade que escapa à estatística convencional, exigindo a aplicação de algoritmos de Aprendizado de Máquina para rastrear e validar a sofisticação oculta nessas práticas ancestrais. \cite{Awoke2025,Yifru2025,Rendón-Sandoval2021,Gallegos-Riofrío202161}
 
@@ -67,6 +67,14 @@ O estudo sistematiza e caracteriza as aplicações de Aprendizado de Máquina id
 A Figura 1 apresenta o fluxograma metodológico, estruturado em quatro fases sequenciais: (1) Estratégias de busca nas principais bases de dados, (2) Filtragem automatizada com sistema de pontuação ponderada, (3) Avaliação manual de qualidade com avaliação multidisciplinar e (4) Análise bibliométrica e síntese qualitativa integrando metodologias quantitativas e documentais. O fluxograma detalha o caminho desde a identificação do registro até a síntese final, oferecendo recomendações para a implementação de Machine Learning na salvaguarda de Sistemas Agrícolas Tradicionais.
 
 \textbf{Figura 1.} Fluxograma da Revisão de Escopo sobre Aplicações de Machine Learning em Sistemas Agrícolas Tradicionais.
+
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.8\textwidth]{Imagens/CAP-1/ml_sistemas_agricolas.png}
+\caption{}
+\label{fig:prisma2020}
+\end{figure}
 
 
 Os descritores empregaram terminologia controlada em inglês e operadores booleanos (AND, OR, NOT), cobrindo publicações de 2010 a 2025 para capturar o estado da arte. A estratégia de busca seguiu esta lógica:
@@ -111,13 +119,13 @@ O processo envolveu investigação qualitativa de casos limítrofes e refinament
 
 Um sistema automatizado verificou a cobertura bibliográfica, garantindo completude e consistência entre citações textuais e arquivos bibliográficos.
 
-O corpus consolidado passou por categorização automatizada usando Processamento de Linguagem Natural (PLN). Um pipeline computacional extraiu, tokenizou e vetorizou metadados de referência e resumos, usando modelos supervisionados e regras semânticas para reconhecimento de padrões  \cite{Young2019, Casey2021}. As referências foram classificadas em categorias metodológicas predefinidas, incluindo técnicas de machine learning e sistemas tradicionais.
+O corpus consolidado passou por categorização automatizada usando Processamento de Linguagem Natural (PLN). Um pipeline computacional extraiu, tokenizou e vetorizou metadados de referência e resumos, usando modelos supervisionados e regras semânticas para reconhecimento de padrões  \cite{Young2019; Casey2021}. As referências foram classificadas em categorias metodológicas predefinidas, incluindo técnicas de machine learning e sistemas tradicionais.
 
-Para quantificar a cobertura e a adequação do estudo, foram aplicadas métricas de cobertura de citação e taxas de uso bibliográfico do corpus  \cite{webster2002, tranfield2003}. Essas métricas permitem a avaliação quantitativa da utilização da base de referência, garantindo que os estudos selecionados reflitam adequadamente o escopo temático da revisão.
+Para quantificar a cobertura e a adequação do estudo, foram aplicadas métricas de cobertura de citação e taxas de uso bibliográfico do corpus  \cite{webster2002; tranfield2003}. Essas métricas permitem a avaliação quantitativa da utilização da base de referência, garantindo que os estudos selecionados reflitam adequadamente o escopo temático da revisão.
 
 \subsection{Segunda Fase: Avaliação Manual da Qualidade Metodológica}
 
-Na segunda fase, três revisores independentes avaliaram a qualidade metodológica dos estudos selecionados, garantindo análise multidisciplinar e reduzindo o viés interpretativo. A escala MMAT  \cite{hong2018, pluye2009} foi adaptada para estudos interdisciplinares envolvendo ML e sistemas tradicionais, estruturando oito indicadores em uma escala Likert de 3 pontos. Os indicadores incluíram rigor metodológico, validação de algoritmo, adesão a protocolos éticos, reprodutibilidade, integração quantitativa-qualitativa, impacto nos sistemas tradicionais, completude da documentação e generalização do método (Tabela 2).
+Na segunda fase, três revisores independentes avaliaram a qualidade metodológica dos estudos selecionados, garantindo análise multidisciplinar e reduzindo o viés interpretativo. A escala MMAT  \cite{hong2018; pluye2009} foi adaptada para estudos interdisciplinares envolvendo ML e sistemas tradicionais, estruturando oito indicadores em uma escala Likert de 3 pontos. Os indicadores incluíram rigor metodológico, validação de algoritmo, adesão a protocolos éticos, reprodutibilidade, integração quantitativa-qualitativa, impacto nos sistemas tradicionais, completude da documentação e generalização do método (Tabela 2).
 
 Cada indicador recebeu uma pontuação de 0 a 2: zero para critérios não atendidos ou deficiências substanciais; um para cumprimento parcial com limitações; e dois para cumprimento completo com evidências claras. Uma escala de 3 pontos foi selecionada porque avaliações dicotômicas falham em capturar a complexidade interdisciplinar, enquanto escalas maiores geram inconsistência entre avaliadores  \cite{Likert3vs52025}.
 
@@ -204,14 +212,14 @@ Esta revisão de escopo, estruturada de acordo com as diretrizes PRISMA-ScR (Fig
 
 \textbf{Figura 2.} Fluxograma da Revisão de Escopo sobre Aplicações de Machine Learning em Sistemas Agrícolas Tradicionais.
 
-% \begin{figure}[h]
-% \centering
-\includegraphics[width=0.8\textwidth]{Imagens/2-EN/prisma_flowdiagram.png}
-% \caption{}
-% \label{fig:prisma2020}
-% \end{figure}
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.8\textwidth]{Imagens/CAP-1/prisma_flowdiagram.png}
+\caption{}
+\label{fig:prisma2020}
+\end{figure}
 
-...ragem automatizada via análise semântica e pontuação alcançou uma precisão temática de 94,2\%, superando o limite estabelecido de 85\%. Essa abordagem de triagem computacional provou ser eficaz para revisões envolvendo grandes volumes bibliográficos, sugerindo que sistemas automatizados calibrados reduzem o viés de seleção e aumentam a reprodutibilidade  \cite{OforiBoateng2024}. A reprodutibilidade de 100\% em múltiplas execuções de algoritmos, combinada com uma concordância entre avaliadores de $\kappa = 0,89$, garante que essas descobertas reflitam de forma confiável o estado atual da literatura científica neste domínio emergente.
+A abordagem automatizada via análise semântica e pontuação alcançou uma precisão temática de 94,2\%, superando o limite estabelecido de 85\%. Essa abordagem de triagem computacional provou ser eficaz para revisões envolvendo grandes volumes bibliográficos, sugerindo que sistemas automatizados calibrados reduzem o viés de seleção e aumentam a reprodutibilidade  \cite{OforiBoateng2024}. A reprodutibilidade de 100\% em múltiplas execuções de algoritmos, combinada com uma concordância entre avaliadores de $\kappa = 0,89$, garante que essas descobertas reflitam de forma confiável o estado atual da literatura científica neste domínio emergente.
 
 A avaliação manual da qualidade metodológica produziu um coeficiente de correlação intraclasse (ICC) de 0,87 (IC 95\%: 0,84--0,91), confirmando robusta confiabilidade entre avaliadores e validando os critérios de inclusão  \cite{streiner2008health}. Esta validação confirma que os estudos selecionados para síntese atendem a rigorosos padrões metodológicos, essenciais para suportar a integração entre ciência de dados e etnoconhecimento.
 
@@ -223,7 +231,7 @@ A Análise de Correspondência Múltipla (MCA) mapeou a evolução temporal das 
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=0.8\textwidth]{Imagens/2-EN/mca_categorias_separadas.png}
+\includegraphics[width=0.8\textwidth]{Imagens/CAP-1/mca_categorias_separadas.png}
 \caption{}
 \label{fig:mca_temporal}
 \end{figure}
@@ -236,7 +244,7 @@ A trajetória temporal delineia três fases distintas (Figura 3). O período de 
 
 \begin{figure}[h]
 \centering
-\includegraphics{Imagens/2-EN/network_centrality_metrics.png}
+\includegraphics{Imagens/CAP-1/network_centrality_metrics.png}
 \caption{}
 \label{fig:network_analysiss}
 \end{figure}
@@ -248,20 +256,36 @@ A dinâmica da produção científica mostra um crescimento significativo, com o
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=0.8\textwidth]{Imagens/2-EN/temporal_publicacoes.png}
+\includegraphics[width=0.8\textwidth]{Imagens/CAP-1/temporal_publicacoes.png}
 \caption{}
 \label{fig:temporal_algoritmos}
 \end{figure}
 
 \subsubsection{Análise de Clusters}
 
-A Análise de Cluster (k-means e hierárquica) identificou agrupamentos recorrentes no corpus, sintetizando "famílias tecnológicas" de aplicações de ML em SSAT. Utilizando 685 observações, o k-means revelou 5 clusters com uma razão Between SS / Total SS de 17,64\%, indicando boa separação estrutural. O Cluster 1 (n=7) concentrou-se em Random Forest e entrevistas etnográficas, representando abordagens integradas de ML e métodos qualitativos. O Cluster 2 (n=219), o maior, focou em avaliações de ML combinadas com etnografia e biodiversidade, refletindo estudos amplos em comunidades tradicionais. O Cluster 3 (n=203) enfatizou conservação e etnografia, enquanto o Cluster 4 (n=225) priorizou estudos de caso e etnografia. O Cluster 5 (n=31) destacou Neural Networks e etnografia avançada. Esses agrupamentos evidenciam padrões emergentes, como a combinação de algoritmos supervisionados com métodos etnográficos, facilitando a identificação de nichos temáticos para futuras pesquisas (Figura 7).
+A Análise de Cluster (k-means e hierárquica) identificou agrupamentos recorrentes no corpus, sintetizando "famílias tecnológicas" de aplicações de ML em SSAT. Utilizando 685 observações, o k-means revelou 5 clusters com uma razão Between SS / Total SS de 17,64\%, indicando boa separação estrutural. O Cluster 1 (n=7) concentrou-se em Random Forest e entrevistas etnográficas, representando abordagens integradas de ML e métodos qualitativos. O Cluster 2 (n=219), o maior, focou em avaliações de ML combinadas com etnografia e biodiversidade, refletindo estudos amplos em comunidades tradicionais. O Cluster 3 (n=203) enfatizou conservação e etnografia, enquanto o Cluster 4 (n=225) priorizou estudos de caso e etnografia. O Cluster 5 (n=31) destacou Neural Networks e etnografia avançada. Esses agrupamentos evidenciam padrões emergentes, como a combinação de algoritmos supervisionados com métodos etnográficos, facilitando a identificação de nichos temáticos para futuras pesquisas (Figura 7 e Tabela 1).
+
+\textbf{Tabela 1.} Famílias Tecnológicas Identificadas pela Análise de Cluster.
+
+\begin{table}[h]
+\centering
+\small
+\begin{tabular}{|l|l|l|l|l|}
+\hline
+\textbf{Cluster} & \textbf{Produto Principal} & \textbf{Técnica Analítica} & \textbf{Algoritmo ML} & \textbf{Aplicação em SSAT} \\ \hline
+1 & Mel de Abelhas Nativas & Espectroscopia NIR & SVM, KNN & Detecção de adulteração com xaropes \\ \hline
+2 & Queijos Artesanais & Espectroscopia NIR & Redes Neurais & Validação de origem e tempo de cura \\ \hline
+3 & Produtos da Sociobiodiversidade & LC-MS, GC-MS & Random Forest & Rastreabilidade química completa \\ \hline
+\end{tabular}
+\end{table}
+
+\emph{Fonte: Clusters tecnológicos principais, destacando a combinação de ferramentas para resolver problemas específicos de validação em cadeias de valor tradicionais.}
 
 \textbf{Figura 7.} Biplot dos Clusters Identificados via K-Means, Mostrando Agrupamentos Temáticos de Aplicações de ML em SSAT.
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=0.8\textwidth]{Imagens/2-EN/cluster_heatmap_profiles.png}
+\includegraphics[width=0.8\textwidth]{Imagens/CAP-1/cluster_heatmap_profiles.png}
 \caption{}
 \label{fig:cluster_biplot}
 \end{figure}
@@ -274,7 +298,7 @@ Modelos preditivos globais foram empregados para avaliar se variáveis bibliomé
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=0.8\textwidth]{Imagens/2-EN/model_metricas_comparacao.png}
+\includegraphics[width=0.8\textwidth]{Imagens/CAP-1/model_metricas_comparacao.png}
 \caption{}
 \label{fig:model_metrics}
 \end{figure}
@@ -283,7 +307,30 @@ Modelos preditivos globais foram empregados para avaliar se variáveis bibliomé
 
 A Lei de Lotka aplicada ao corpus revelou uma distribuição de produtividade do autor aproximando-se do padrão esperado ($n \approx 2$). A análise identificou 869 autores únicos: 623 (71,7\%) publicaram um único artigo, 152 (17,5\%) publicaram dois, enquanto um autor (Li) publicou 28. Isso sugere um campo colaborativo com muitos contribuintes esporádicos e alguns especialistas altamente produtivos, provavelmente focados na quimiometria aplicada a produtos naturais.
 
-A aplicação do princípio de Pareto (80/20) selecionou os 20\% melhores artigos com base em uma pontuação combinada (Equação 2: 40\% qualidade metodológica, 35\% relevância temática, 25\% impacto bibliométrico). A Tabela A.2 (Apêndice A) lista os dez artigos com maior pontuação.
+A aplicação do princípio de Pareto (80/20) selecionou os 20\% melhores artigos com base em uma pontuação combinada (Equação 2: 40\% qualidade metodológica, 35\% relevância temática, 25\% impacto bibliométrico). A Tabela 2 apresenta os dez artigos com maior pontuação.
+
+\textbf{Tabela 2.} Artigos Selecionados pelo Princípio de Pareto (80/20) - Foco em SSAT.
+
+\begin{table}[h]
+\centering
+\small
+\begin{tabular}{|l|l|l|l|}
+\hline
+\textbf{Posição} & \textbf{Artigo} & \textbf{Pontuação} & \textbf{Contribuição para SSAT} \\ \hline
+1 & Metabolomics for origin traceability of lamb & 0.75 & Rastreabilidade de cordeiro usando metabolômica e Random Forest \\ \hline
+2 & Integrated Metabolomics-KPCA-ML for jujube & 0.745 & Rastreabilidade geográfica de jujube com KPCA e ML \\ \hline
+3 & Metabolomics for origin traceability of lamb & 0.731 & Rastreabilidade de cordeiro com eliminação de características \\ \hline
+4 & Geographical origin of olive oils with e-nose & 0.726 & Autenticação de azeites com nariz eletrônico e redes neurais \\ \hline
+5 & Traceability of honey origin & 0.722 & Rastreabilidade de mel baseada em padrões voláteis \\ \hline
+6 & Geographical traceability of mitten crab & 0.717 & Rastreabilidade de caranguejo chinês com ML \\ \hline
+7 & Authentication of organic milk & 0.712 & Autenticação de leite orgânico com espectroscopia \\ \hline
+8 & Geographical origin of olive oil & 0.707 & Identificação de origem de azeite com análise multivariada \\ \hline
+9 & Discrimination of Iberian pig production & 0.702 & Discriminação de método de produção de porco ibérico \\ \hline
+10 & Geographical traceability of mitten crab & 0.697 & Rastreabilidade de caranguejo com análise isotópica \\ \hline
+\end{tabular}
+\end{table}
+
+\emph{Fonte: 10 artigos de maior pontuação selecionados pelo princípio de Pareto no corpus reanalisado, com foco em aplicações de ML para rastreabilidade e autenticação de produtos tradicionais.}
 
 A classificação dos artigos principais revelou características distintas que refletem as tendências emergentes no campo. Os estudos de maior pontuação destacam-se pelo uso de metabolômica integrada com algoritmos de aprendizado de máquina para rastreabilidade de origem de produtos tradicionais, como cordeiro e jujube, empregando técnicas avançadas como eliminação recursiva de características com Random Forest e análise de componentes principais com kernel. Artigos intermediários utilizam redes neurais artificiais combinadas com narizes eletrônicos para autenticação de azeites de oliva extra virgem e processamento de padrões voláteis para mel, demonstrando aplicações práticas em validação territorial. Os trabalhos de menor pontuação na lista concentram-se em métodos espectroscópicos tradicionais com SVM e PLS-DA para produtos cárneos, azeites e plantas medicinais. Essa distribuição indica uma evolução metodológica da quimiometria clássica para frameworks integrados de metabolômica e aprendizado de máquina, priorizando a rastreabilidade química e a preservação de saberes tradicionais em contextos de diversidade biocultural global.
 
@@ -331,7 +378,23 @@ A quinta arquitetura, \textit{Detecção de Fraudes e Adulterações} (38\% dos 
 
 \subsection{Tendências Metodológicas e Tecnológicas}
 
-A análise de redes (Algoritmo Louvain) revelou três módulos tecnológicos que sustentam essas aplicações (Tabela A.3). O Módulo 1 (Árvores + Espectroscopia) consolida o uso de Random Forest e NIR para produtos como mel e vinho em contextos de agricultura familiar, oferecendo soluções robustas e interpretáveis. O Módulo 2 (Cromatografia + SVM) foca em matrizes complexas como plantas medicinais, onde a separação química detalhada é necessária para validar o uso tradicional. O Módulo 3 (Deep Learning + Sensores) representa a fronteira tecnológica, aplicando redes neurais a dados de sensores portáteis (e-nose) e imagens, viabilizando a autenticação \emph{in-situ} e descentralizada.
+A análise de redes (Algoritmo Louvain) revelou três módulos tecnológicos que sustentam essas aplicações (Tabela 3). O Módulo 1 (Árvores + Espectroscopia) consolida o uso de Random Forest e NIR para produtos como mel e vinho em contextos de agricultura familiar, oferecendo soluções robustas e interpretáveis. O Módulo 2 (Cromatografia + SVM) foca em matrizes complexas como plantas medicinais, onde a separação química detalhada é necessária para validar o uso tradicional. O Módulo 3 (Deep Learning + Sensores) representa a fronteira tecnológica, aplicando redes neurais a dados de sensores portáteis (e-nose) e imagens, viabilizando a autenticação \emph{in-situ} e descentralizada.
+
+\textbf{Tabela 3.} Módulos Tecnológicos para Validação de SSAT.
+
+\begin{table}[h]
+\centering
+\small
+\begin{tabular}{|l|l|l|l|l|}
+\hline
+\textbf{Módulo} & \textbf{Algoritmos Principais} & \textbf{Técnicas Analíticas} & \textbf{Sistemas Produtivos} & \textbf{Foco Tecnológico} \\ \hline
+\textbf{M1} & Random Forest, Árvores de Decisão & Espectroscopia (NIR) & Agricultura Familiar (Mel, Vinho) & Acessibilidade e Interpretabilidade \\ \hline
+\textbf{M2} & SVM, KNN & Cromatografia (GC-MS) & Processamento Artesanal (Carnes) & Detecção de Marcadores Químicos Complexos \\ \hline
+\textbf{M3} & Deep Learning, CNN & Sensores (e-nose), Imagem & Cultivos Extensivos (Chá, Azeite) & Automação e Análise Visual/Olfativa \\ \hline
+\end{tabular}
+\end{table}
+
+\emph{Fonte: Módulos tecnológicos identificados pela análise de redes, agrupando ferramentas de ML e técnicas analíticas aplicadas a diferentes tipos de Sistemas Agrícolas Tradicionais.}
 
 Uma tendência crítica é a busca por \textit{Explicabilidade (XAI)}. Apenas 14\% dos trabalhos empregaram técnicas como SHAP ou LIME, mas sua relevância é crescente. Para comunidades tradicionais, não basta que o modelo diga "é autêntico"; é necessário entender *por que*, quais marcadores químicos validam seu manejo. A interpretabilidade empodera os produtores, permitindo que compreendam como suas práticas influenciam a qualidade final e participem ativamente do processo de certificação [@Lundberg2017;  \\cite{Chen2024AIagrifoodSurvey}].
 
@@ -339,7 +402,27 @@ Outra direção promissora é a \textit{Miniaturização e Portabilidade} (9\% d
 
 \subsection{Domínios de Aplicação, Produtos e Distribuição Geográfica}
 
-As aplicações de ML em SSAT visam predominantemente produtos agroalimentares derivados de práticas culturais específicas, enfatizando bebidas fermentadas, carnes curadas artesanalmente e bens agrícolas de variedades crioulas (Apêndice A, Tabela A.1). Essa distribuição reflete a convergência de mercados de nicho que valorizam a história produtiva, a incidência significativa de apropriação cultural indevida e a disponibilidade de métodos analíticos capazes de traduzir o "saber-fazer" em dados multivariados.
+As aplicações de ML em SSAT visam predominantemente produtos agroalimentares derivados de práticas culturais específicas, enfatizando bebidas fermentadas, carnes curadas artesanalmente e bens agrícolas de variedades crioulas (Tabela 4). Essa distribuição reflete a convergência de mercados de nicho que valorizam a história produtiva, a incidência significativa de apropriação cultural indevida e a disponibilidade de métodos analíticos capazes de traduzir o "saber-fazer" em dados multivariados.
+
+\textbf{Tabela 4.} Distribuição de Produtos de Sistemas Agrícolas Tradicionais por Categoria.
+
+\begin{table}[h]
+\centering
+\small
+\begin{tabular}{|l|l|l|l|l|}
+\hline
+\textbf{Categoria de Produto} & \textbf{Exemplos de Sistemas Tradicionais} & \textbf{Regiões/Territórios Típicos} & \textbf{Técnicas de ML Predominantes} & \textbf{Frequência Relativa} \\ \hline
+Bebidas Fermentadas Tradicionais & Vinhos de Talha, Destilados Artesanais, Cervejas Locais & Alentejo, Douro, Regiões de Agricultura Familiar & Random Forest, SVM, PLS-DA & 34\% \\ \hline
+Chás e Infusões Ancestrais & Chás de Montanha, Ervas de Coleta, Chás Fermentados & Sistemas Agroflorestais Asiáticos (China, Índia) & NIR + PLS-DA, GC-MS + ML & 18\% \\ \hline
+Produtos Cárneos Artesanais & Embutidos de Raças Autóctones, Presuntos de Cura Natural & Dehesas Ibéricas, Sistemas Silvipastoris & Análise Elementar + SVM, Deep Learning & 15\% \\ \hline
+Frutas e Vegetais Crioulos & Variedades Locais, Frutas Nativas, Hortaliças Tradicionais & Quintais Produtivos, Agrobiodiversidade Local & Metabolômica + Random Forest, NIR & 12\% \\ \hline
+Plantas Medicinais e Aromáticas & Ervas de Coleta Silvestre, Raízes Tradicionais & Farmácias Vivas, Extrativismo Sustentável & Metabolômica Untargeted, CNN & 8\% \\ \hline
+Azeites e Óleos Tradicionais & Azeites de Oliveiras Centenárias, Óleos de Palmeiras Nativas & Olivais Tradicionais, Sistemas Extrativistas & Fingerprinting NIR, SVM & 8\% \\ \hline
+Mel e Produtos da Colmeia & Mel de Abelhas Nativas (ASF), Mel Silvestre & Meliponicultura, Apicultura Migratória & Espectrometria Elementar, PLS-DA & 5\% \\ \hline
+\end{tabular}
+\end{table}
+
+\emph{Fonte: Distribuição de produtos de Sistemas Agrícolas Tradicionais por categoria, territórios associados, técnicas de Machine Learning predominantes e frequência relativa de estudos no corpus analisado (N=148).}
 
 Vinhos produzidos em sistemas tradicionais, como os de talha ou de regiões históricas, e azeites de oliveiras centenárias constituem o domínio de aplicação primário. Nesses estudos, a discriminação de origem e método de produção baseia-se em \emph{fingerprinting} metabolômico e análise de traços elementares, demonstrando que o perfil químico está intrinsecamente ligado às práticas de manejo e ao ecossistema local. Estudos de azeites de oliva com nariz eletrônico e redes neurais mostram como essas tecnologias validam a autenticidade de produtos tradicionais. Carnes e produtos cárneos de raças autóctones formam uma segunda categoria importante, onde a discriminação é baseada em assinaturas elementares e isotópicas processadas por algoritmos como Random Forest e SVM para validar a dieta e o sistema de criação extensivo. Estudos de metabolômica para rastreabilidade de cordeiro demonstram como essas técnicas distinguem raças indicadoras geográficas de sistemas tradicionais.
 
@@ -363,85 +446,6 @@ Esta revisão de escopo demonstra que o Machine Learning está redefinindo as fr
 No entanto, a maturidade tecnológica deve ser acompanhada de maturidade metodológica. A escassez de validações externas e longitudinais limita a generalização dos modelos atuais. Para que o ML sirva efetivamente às comunidades rurais, é imperativo desenvolver protocolos de validação que considerem a variabilidade natural dos sistemas tradicionais como uma característica a ser preservada, não um ruído a ser eliminado.
 
 O futuro da área reside na democratização do acesso, através de sensores portáteis e modelos interpretáveis, e na construção de uma governança de dados justa. Ao aliar a precisão dos algoritmos à sabedoria das práticas ancestrais, podemos criar sistemas de certificação mais inclusivos, transparentes e eficazes na valorização do patrimônio alimentar global.
-
-\section{Apêndices}
-
-\subsection{Apêndice A: Tabelas Suplementares}
-
-\subsubsection{Tabela A.1: Distribuição de Produtos de Sistemas Agrícolas Tradicionais por Categoria}
-
-\begin{table}[h]
-\centering
-\small
-\begin{tabular}{|l|l|l|l|l|}
-\hline
-\textbf{Categoria de Produto} & \textbf{Exemplos de Sistemas Tradicionais} & \textbf{Regiões/Territórios Típicos} & \textbf{Técnicas de ML Predominantes} & \textbf{Frequência Relativa} \\ \hline
-Bebidas Fermentadas Tradicionais & Vinhos de Talha, Destilados Artesanais, Cervejas Locais & Alentejo, Douro, Regiões de Agricultura Familiar & Random Forest, SVM, PLS-DA & 34\% \\ \hline
-Chás e Infusões Ancestrais & Chás de Montanha, Ervas de Coleta, Chás Fermentados & Sistemas Agroflorestais Asiáticos (China, Índia) & NIR + PLS-DA, GC-MS + ML & 18\% \\ \hline
-Produtos Cárneos Artesanais & Embutidos de Raças Autóctones, Presuntos de Cura Natural & Dehesas Ibéricas, Sistemas Silvipastoris & Análise Elementar + SVM, Deep Learning & 15\% \\ \hline
-Frutas e Vegetais Crioulos & Variedades Locais, Frutas Nativas, Hortaliças Tradicionais & Quintais Produtivos, Agrobiodiversidade Local & Metabolômica + Random Forest, NIR & 12\% \\ \hline
-Plantas Medicinais e Aromáticas & Ervas de Coleta Silvestre, Raízes Tradicionais & Farmácias Vivas, Extrativismo Sustentável & Metabolômica Untargeted, CNN & 8\% \\ \hline
-Azeites e Óleos Tradicionais & Azeites de Oliveiras Centenárias, Óleos de Palmeiras Nativas & Olivais Tradicionais, Sistemas Extrativistas & Fingerprinting NIR, SVM & 8\% \\ \hline
-Mel e Produtos da Colmeia & Mel de Abelhas Nativas (ASF), Mel Silvestre & Meliponicultura, Apicultura Migratória & Espectrometria Elementar, PLS-DA & 5\% \\ \hline
-\end{tabular}
-\end{table}
-
-\emph{Fonte: Distribuição de produtos de Sistemas Agrícolas Tradicionais por categoria, territórios associados, técnicas de Machine Learning predominantes e frequência relativa de estudos no corpus analisado (N=148).}
-
-\subsubsection{Tabela A.2: Artigos Selecionados pelo Princípio de Pareto (80/20) - Foco em SSAT}
-
-\begin{table}[h]
-\centering
-\small
-\begin{tabular}{|l|l|l|l|}
-\hline
-\textbf{Posição} & \textbf{Artigo} & \textbf{Pontuação} & \textbf{Contribuição para SSAT} \\ \hline
-1 & Metabolomics for origin traceability of lamb & 0.75 & Rastreabilidade de cordeiro usando metabolômica e Random Forest \\ \hline
-2 & Integrated Metabolomics-KPCA-ML for jujube & 0.745 & Rastreabilidade geográfica de jujube com KPCA e ML \\ \hline
-3 & Metabolomics for origin traceability of lamb & 0.731 & Rastreabilidade de cordeiro com eliminação de características \\ \hline
-4 & Geographical origin of olive oils with e-nose & 0.726 & Autenticação de azeites com nariz eletrônico e redes neurais \\ \hline
-5 & Traceability of honey origin & 0.722 & Rastreabilidade de mel baseada em padrões voláteis \\ \hline
-6 & Geographical traceability of mitten crab & 0.717 & Rastreabilidade de caranguejo chinês com ML \\ \hline
-7 & Authentication of organic milk & 0.712 & Autenticação de leite orgânico com espectroscopia \\ \hline
-8 & Geographical origin of olive oil & 0.707 & Identificação de origem de azeite com análise multivariada \\ \hline
-9 & Discrimination of Iberian pig production & 0.702 & Discriminação de método de produção de porco ibérico \\ \hline
-10 & Geographical traceability of mitten crab & 0.697 & Rastreabilidade de caranguejo com análise isotópica \\ \hline
-\end{tabular}
-\end{table}
-
-\emph{Fonte: 10 artigos de maior pontuação selecionados pelo princípio de Pareto no corpus reanalisado, com foco em aplicações de ML para rastreabilidade e autenticação de produtos tradicionais.}
-
-\subsubsection{Tabela A.3: Módulos Tecnológicos para Validação de SSAT}
-
-\begin{table}[h]
-\centering
-\small
-\begin{tabular}{|l|l|l|l|l|}
-\hline
-\textbf{Módulo} & \textbf{Algoritmos Principais} & \textbf{Técnicas Analíticas} & \textbf{Sistemas Produtivos} & \textbf{Foco Tecnológico} \\ \hline
-\textbf{M1} & Random Forest, Árvores de Decisão & Espectroscopia (NIR) & Agricultura Familiar (Mel, Vinho) & Acessibilidade e Interpretabilidade \\ \hline
-\textbf{M2} & SVM, KNN & Cromatografia (GC-MS) & Processamento Artesanal (Carnes) & Detecção de Marcadores Químicos Complexos \\ \hline
-\textbf{M3} & Deep Learning, CNN & Sensores (e-nose), Imagem & Cultivos Extensivos (Chá, Azeite) & Automação e Análise Visual/Olfativa \\ \hline
-\end{tabular}
-\end{table}
-
-\emph{Fonte: Módulos tecnológicos identificados pela análise de redes, agrupando ferramentas de ML e técnicas analíticas aplicadas a diferentes tipos de Sistemas Agrícolas Tradicionais.}
-
-\subsubsection{Tabela A.4: Famílias Tecnológicas Identificadas pela Análise de Cluster}
-
-\begin{table}[h]
-\centering
-\small
-\begin{tabular}{|l|l|l|l|l|}
-\hline
-\textbf{Cluster} & \textbf{Produto Principal} & \textbf{Técnica Analítica} & \textbf{Algoritmo ML} & \textbf{Aplicação em SSAT} \\ \hline
-1 & Mel de Abelhas Nativas & Espectroscopia NIR & SVM, KNN & Detecção de adulteração com xaropes \\ \hline
-2 & Queijos Artesanais & Espectroscopia NIR & Redes Neurais & Validação de origem e tempo de cura \\ \hline
-3 & Produtos da Sociobiodiversidade & LC-MS, GC-MS & Random Forest & Rastreabilidade química completa \\ \hline
-\end{tabular}
-\end{table}
-
-\emph{Fonte: Clusters tecnológicos principais, destacando a combinação de ferramentas para resolver problemas específicos de validação em cadeias de valor tradicionais.}
 
 
 
