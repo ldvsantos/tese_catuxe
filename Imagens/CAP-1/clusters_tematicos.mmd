@@ -1,0 +1,55 @@
+%%{init: {'theme': 'base', 'themeVariables': { 'fontSize': '14px', 'primaryColor': '#1B5E20', 'primaryBorderColor': '#0D3817', 'lineColor': '#424242', 'tertiaryColor': '#C8E6C9'}, 'flowchart': {'useMaxWidth': true, 'htmlLabels': true, 'curve': 'basis'}}}%%
+
+flowchart TB
+    
+    START["<b>CORPUS FINAL</b><br/>622 Estudos Únicos<br/>Período: 2010-2025"]
+    
+    START --> ANALYSIS["<b>ANÁLISE DE CLUSTERING</b><br/>Método: K-means (k=5)<br/>Variância Explicada: 17.27%"]
+    
+    ANALYSIS --> C1["<b>CLUSTER 1</b><br/>Mineração de Dados e Conhecimentos Tradicionais<br/><b>n = 21 estudos (3.4%)</b>"]
+    ANALYSIS --> C2["<b>CLUSTER 2</b><br/>Machine Learning em Conservação<br/><b>n = 159 estudos (25.6%)</b>"]
+    ANALYSIS --> C3["<b>CLUSTER 3</b><br/>Machine Learning e Povos Indígenas<br/><b>n = 237 estudos (38.1%)</b>"]
+    ANALYSIS --> C4["<b>CLUSTER 4</b><br/>Etnobotânica Aplicada<br/><b>n = 140 estudos (22.5%)</b>"]
+    ANALYSIS --> C5["<b>CLUSTER 5</b><br/>Machine Learning e Mudanças Climáticas<br/><b>n = 65 estudos (10.4%)</b>"]
+    
+    C1 --> C1_FEATURES["<b>Características Principais:</b><br/>• DataMining (90.5%)<br/>• TraditionalKnowledge (90.5%)<br/>• Assessment (85.7%)<br/>• CaseStudy (61.9%)"]
+    
+    C2 --> C2_FEATURES["<b>Características Principais:</b><br/>• MachineLearning (100%)<br/>• Assessment (92.5%)<br/>• Management (90.6%)<br/>• Conservation (86.8%)"]
+    
+    C3 --> C3_FEATURES["<b>Características Principais:</b><br/>• MachineLearning (94.5%)<br/>• Indigenous (67.1%)<br/>• TraditionalKnowledge (54.9%)<br/>• Ethnography (45.6%)"]
+    
+    C4 --> C4_FEATURES["<b>Características Principais:</b><br/>• Ethnobotany (96.4%)<br/>• MachineLearning (97.9%)<br/>• Assessment (94.3%)<br/>• Interview (91.4%)"]
+    
+    C5 --> C5_FEATURES["<b>Características Principais:</b><br/>• ClimateChange (100%)<br/>• MachineLearning (95.4%)<br/>• TraditionalKnowledge (78.5%)<br/>• Management (69.2%)"]
+    
+    C1_FEATURES --> APPS1["<b>Aplicações:</b><br/>• Mineração de texto em narrativas<br/>• Análise automatizada de entrevistas<br/>• Extração de padrões históricos"]
+    
+    C2_FEATURES --> APPS2["<b>Aplicações:</b><br/>• Modelos preditivos para conservação<br/>• Sistemas de apoio à decisão<br/>• Classificação de práticas sustentáveis"]
+    
+    C3_FEATURES --> APPS3["<b>Aplicações:</b><br/>• Documentação digital de línguas<br/>• Preservação de patrimônio imaterial<br/>• Análise de redes sociais"]
+    
+    C4_FEATURES --> APPS4["<b>Aplicações:</b><br/>• Classificação de plantas medicinais<br/>• Reconhecimento de espécies botânicas<br/>• Modelos preditivos farmacológicos"]
+    
+    C5_FEATURES --> APPS5["<b>Aplicações:</b><br/>• Integração de previsões tradicionais<br/>• Análise de estratégias adaptativas<br/>• Modelagem de vulnerabilidades"]
+    
+    %% ESTILOS
+    style START fill:#0D3817,stroke:#051A0F,stroke-width:4px,color:#fff,font-weight:bold
+    style ANALYSIS fill:#1B5E20,stroke:#0D3817,stroke-width:3px,color:#fff
+    
+    style C1 fill:#E41A1C,stroke:#A00000,stroke-width:2px,color:#fff,font-weight:bold
+    style C2 fill:#377EB8,stroke:#1A4D7C,stroke-width:2px,color:#fff,font-weight:bold
+    style C3 fill:#4DAF4A,stroke:#2E7D32,stroke-width:2px,color:#fff,font-weight:bold
+    style C4 fill:#FF7F00,stroke:#CC6600,stroke-width:2px,color:#fff,font-weight:bold
+    style C5 fill:#984EA3,stroke:#6A1B70,stroke-width:2px,color:#fff,font-weight:bold
+    
+    style C1_FEATURES fill:#FFE5E5,stroke:#E41A1C,stroke-width:1px,color:#000
+    style C2_FEATURES fill:#E5F2FF,stroke:#377EB8,stroke-width:1px,color:#000
+    style C3_FEATURES fill:#E8F5E9,stroke:#4DAF4A,stroke-width:1px,color:#000
+    style C4_FEATURES fill:#FFF3E0,stroke:#FF7F00,stroke-width:1px,color:#000
+    style C5_FEATURES fill:#F3E5F5,stroke:#984EA3,stroke-width:1px,color:#000
+    
+    style APPS1 fill:#FFF0F0,stroke:#E41A1C,stroke-width:1px,color:#000
+    style APPS2 fill:#F0F8FF,stroke:#377EB8,stroke-width:1px,color:#000
+    style APPS3 fill:#F1F8F1,stroke:#4DAF4A,stroke-width:1px,color:#000
+    style APPS4 fill:#FFF9F0,stroke:#FF7F00,stroke-width:1px,color:#000
+    style APPS5 fill:#F9F0FA,stroke:#984EA3,stroke-width:1px,color:#000

@@ -14,6 +14,10 @@
 *.lof
 *.lot
 *.pdf
+*.brf
+*.idx
+*.ilg
+*.ind
 Rplots.pdf
 
 # Arquivos temporários
