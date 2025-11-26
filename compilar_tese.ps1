@@ -56,7 +56,8 @@ function Invoke-LaTeX {
         pdflatex -interaction=nonstopmode $ArquivoPrincipal | Out-Null
     }
     
-    if ($LASTEXITCODE -eq 0) {
+    # LaTeX pode retornar 1 com warnings, mas ainda gerar PDF com sucesso
+    if ($LASTEXITCODE -le 1) {
         Write-ColorMessage "$StepName concluido" "Green"
     } else {
         Write-ColorMessage "ERRO durante $StepName" "Red"
