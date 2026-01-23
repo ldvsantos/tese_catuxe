@@ -1,0 +1,69 @@
+\section{Validação de Mercado e Mecanismos de Signaling}
+
+Este módulo organiza simulações e experimentos de compra/avaliação (incluindo disposição a pagar) para testar o efeito do selo/índice como mecanismo de \textit{signaling} e reduzir assimetria informacional.
+
+\subsection{Fundamentação Metodológica}
+
+A Teoria da Sinalização \cite{Spence1973,Connelly2011} postula que, em mercados com assimetria informacional, agentes com informação privada sobre qualidade podem emitir sinais críveis para diferenciar-se de competidores de qualidade inferior. Para produtos da sociobiodiversidade, onde atributos de processo (manejo sustentável, autenticidade cultural) são difíceis de verificar ex ante pelo consumidor, selos e certificações funcionam como sinais que reduzem incerteza e permitem captura de prêmio de preço.
+
+A disposição a pagar (\textit{willingness to pay} -- WTP) constitui métrica central para avaliar a efetividade de mecanismos de sinalização, mensurada mediante técnicas de preferência declarada ou experimentos de escolha.
+
+\subsection{Delineamento Experimental}
+
+\subsubsection{Fase 1: Análise Conjunta (Choice-Based Conjoint)}
+
+Será conduzido experimento de escolha discreta para decompor a utilidade associada a diferentes atributos dos produtos quilombolas, incluindo o selo de valoração bioeconômica.
+
+\textbf{Atributos e Níveis:}
+\begin{itemize}
+\item \textbf{Origem:} Quilombola (Sul de Sergipe) / Agricultura Familiar / Convencional
+\item \textbf{Certificação:} Orgânica / Fair Trade / Selo IVB / Sem certificação
+\item \textbf{Preço:} R\$ X / R\$ 1,3X / R\$ 1,6X / R\$ 2,0X (onde X é o preço de referência)
+\item \textbf{Narrativa:} Com história do produtor / Sem história
+\end{itemize}
+
+\textbf{Desenho Experimental:} geração de conjuntos de escolha balanceados mediante desenho ortogonal fracionário, minimizando multicolinearidade entre atributos. Cada respondente avaliará 8--12 conjuntos de escolha, cada um contendo 3 alternativas mais a opção "nenhuma das anteriores".
+
+\textbf{Amostra:} n~=~300--400 consumidores potenciais em Aracaju e municípios do Sul de Sergipe, recrutados mediante amostragem por cotas (renda, escolaridade, idade). Aplicação via plataforma online (Qualtrics ou similar) com estímulos visuais das embalagens.
+
+\textbf{Análise:} estimação de modelo logit condicional (conditional logit) ou logit misto (mixed logit com parâmetros aleatórios) para mensuração de utilidades parciais e WTP marginal por atributo. A WTP pelo selo IVB será calculada como:
+
+\begin{equation}
+WTP_{selo} = - \frac{\beta_{selo}}{\beta_{preco}}
+\end{equation}
+
+onde $\beta_{selo}$ é o coeficiente do atributo "Selo IVB" e $\beta_{preco}$ é o coeficiente de preço.
+
+\subsubsection{Fase 2: Leilão Experimental (Vickrey Auction)}
+
+Para validação de WTP com incentivo real, será conduzido leilão de segundo preço (Vickrey) com uma subamostra (n~=~60--80), onde participantes farão lances em produtos reais (com e sem selo IVB) e o vencedor pagará o segundo maior lance.
+
+\textbf{Protocolo:}
+\begin{enumerate}
+\item Apresentação de produto quilombola (ex.: farinha de mandioca artesanal) com informações básicas (origem, modo de produção).
+\item Rodada 1: lances individuais sem apresentação do IVB.
+\item Intervalo: apresentação do sistema fuzzy, explicação do IVB e exibição do índice do produto em questão.
+\item Rodada 2: novos lances após apresentação do IVB.
+\item Pagamento e entrega do produto ao vencedor de cada rodada.
+\end{enumerate}
+
+\textbf{Análise:} comparação de lances médios entre rodadas (teste t pareado ou Wilcoxon), mensuração do prêmio de preço atribuível ao sinal (IVB), e análise de heterogeneidade de resposta por perfil sociodemográfico.
+
+\subsubsection{Fase 3: Experimento de Campo (Field Experiment)}
+
+Em parceria com pontos de venda (feiras, lojas especializadas), será conduzido experimento natural onde o mesmo produto será ofertado em períodos alternados com e sem o selo IVB, mensurando-se volume de vendas e preço de transação.
+
+\textbf{Desenho:} aleatorização de períodos (semanas) com e sem selo, controlando sazonalidade. Coleta de dados de vendas (unidades, receita) e entrevistas breves com compradores sobre motivação da compra.
+
+\textbf{Análise:} regressão de diferenças em diferenças (DiD) comparando vendas/preços em períodos tratamento vs. controle, controlando covariáveis (clima, eventos locais, preços de substitutos).
+
+\subsection{Indicadores de Validação}
+
+\begin{itemize}
+\item \textbf{WTP incremental pelo selo:} percentual de prêmio de preço atribuível ao IVB (meta: $\geq$ 15\%).
+\item \textbf{Taxa de escolha:} proporção de escolhas do produto com selo IVB em experimentos conjoint (meta: aumento $\geq$ 20 pontos percentuais vs. produto sem selo).
+\item \textbf{Aumento de volume de vendas:} incremento percentual de vendas em períodos com selo vs. sem selo (meta: $\geq$ 25\%).
+\item \textbf{Heterogeneidade de resposta:} identificação de segmentos de consumidores mais responsivos ao sinal (ex.: alta escolaridade, familiaridade prévia com produtos tradicionais).
+\end{itemize}
+
+A convergência de evidências dos três métodos (conjoint, leilão, campo) fortalecerá a validade externa dos achados e permitirá parametrizar estratégias de precificação e comunicação para captura de valor premium.
