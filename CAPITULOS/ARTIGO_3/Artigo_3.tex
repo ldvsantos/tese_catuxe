@@ -1,24 +1,26 @@
 \pagestyle{plain}
 
-\chapter{CAPÍTULO 2: Valoração Participativa para a Salvaguarda de Sistemas Agroecológicos Tradicionais propostos por Machine Learning}
+\chapter{CAPÍTULO 3: Valoração Psicométrico-Econômica e Modelagem Fuzzy de Saberes Agroecológicos Tradicionais: Integração TRI-VAIC-IVB em Comunidades Quilombolas}
 
 
 \begin{flushright}
 Catuxe Varjão de Santana Oliveira  \footnote[1]{Programa de Pós-graduação em Ciências da Propriedade Intelectual-PPGPI/Universidade Federal de Sergipe-UFS. *E-mail:  \href{mailto:catuxe@academico.ufs.br}{\color{blue}{\underline{catuxe@academico.ufs.br}}}}
-\\[0.5cm] 
-Paulo Roberto Gagliardi \footnote[2]{Departamento de Engenharia Agronômica/Universidade Federal de Sergipe, São Cristóvão, Brasil. E-mail \href{mailto:ppgagri@yahoo.com.br}{\color{blue}{\underline{ppgagri@yahoo.com.br}}}}
+\\[0.3cm]
+Luiz Diego Vidal Santos \footnote[2]{Universidade Estadual de Feira de Santana - UEFS, Brasil. E-mail: \href{mailto:ldvsantos@uefs.br}{\color{blue}{\underline{ldvsantos@uefs.br}}}}
+\\[0.3cm]
+Paulo Roberto Gagliardi \footnotemark[1]
 \end{flushright}
 
 
-% resumo em português
+% resumo em português — bookmark suprimido para manter hierarquia do capítulo
+{\renewcommand{\PRIVATEbookmarkthis}[1]{}%
 \begin{resumoumacoluna}
-\section*{Resumo}
 A assimetria entre a riqueza biocultural dos Sistemas Agroecológicos Tradicionais (SSAT) e sua invisibilidade econômica configura um impasse epistemológico e metodológico que impede a tradução desses saberes tácitos em ativos intangíveis auditáveis, perpetuando a vulnerabilidade territorial e econômica das comunidades quilombolas diante de cadeias produtivas globais. Esta investigação tem como objetivo identificar e analisar o potencial dos sistemas agroecológicos tradicionais como ativos intangíveis, mapeando dimensões de valor cultural, científico e econômico que orientem sua valoração comunitária e incorporação em estratégias de gestão do conhecimento. Aplicada a comunidades quilombolas do semiárido brasileiro, a pesquisa integrou instrumentos psicométricos para mensuração de capital cognitivo-cultural, modelos econômicos baseados no framework VAIC e validação comunitária participativa atendendo aos critérios VRIN (Valiosos, Raros, Inimitáveis e Não-substituíveis), fornecendo a base probatória necessária para segurança fundiária, negociação equitativa em cadeias de valor da bioeconomia e fortalecimento da soberania epistêmica comunitária. Os resultados demonstram que a integração psicométrica-econômica-participativa não apenas quantifica o valor estratégico dos conhecimentos tradicionais, mas também instrumentaliza as comunidades para protagonismo ativo na gestão de seus ativos bioculturais, estabelecendo um protocolo replicável para a transição de saberes tácitos a ativos econômicos tangíveis em contextos de justiça cognitiva e repartição equitativa de benefícios.
 
 \vspace{\onelineskip}
 \noindent
 \textbf{Palavras-chave}: Valoração de ativos intangíveis; Psicometria aplicada; Bioeconomia; Soberania epistêmica; Sistemas agroecológicos tradicionais.
-\end{resumoumacoluna}
+\end{resumoumacoluna}}
 
 \newpage
 
@@ -151,6 +153,19 @@ A valoração econômica incorporou adicionalmente a metodologia de custo de rep
 \begin{equation}
 CRP = \sum_{i=1}^{n} C_i \times T_i \times W_i
 \end{equation}
+
+\subsection{Modelagem Fuzzy e Construção do Índice de Valoração Bioeconômica (IVB)}
+
+O Índice de Valoração Bioeconômica (IVB) será construído mediante sistema de inferência fuzzy tipo Mamdani \cite{Mamdani1975}, integrando as variáveis linguísticas validadas pelo painel Delphi (Capítulo~2) com os escores psicométricos TRI e os indicadores econômicos VAIC. A arquitetura do sistema compreende três módulos integrados:
+
+\textbf{Módulo 1 --- Fuzzificação.} As variáveis de entrada serão fuzzificadas mediante funções de pertinência triangulares e trapezoidais calibradas com base nos limiares de consenso do Delphi (mediana, IQR) e nos parâmetros TRI ($\theta_n$, $\delta_{ik}$). Para cada variável linguística validada, três a cinco termos linguísticos (e.g., \textit{muito baixo}, \textit{baixo}, \textit{médio}, \textit{alto}, \textit{muito alto}) serão definidos com universos de discurso ancorados nas distribuições empíricas dos respondentes e nos consensos dos especialistas. Os escores VAIC (HCE, SCE, CEE) serão fuzzificados como variáveis de entrada adicionais, representando a dimensão econômica da valoração.
+
+\textbf{Módulo 2 --- Base de regras SE-ENTÃO.} As regras de inferência serão construídas mediante elicitação híbrida: (i)~regras derivadas diretamente do consenso Delphi, onde as relações de importância entre variáveis validadas ($CVC \geq 0,80$; $W \geq 0,70$) informam as proposições condicionais; (ii)~regras derivadas dos modelos TRI, onde os limiares de dificuldade e os padrões de resposta ao item indicam interações não-lineares entre dimensões; e (iii)~regras derivadas da validação participativa, incorporando relações causais identificadas pelos mestres de saberes nas oficinas comunitárias. A consistência da base de regras será verificada computacionalmente para eliminação de contradições e redundâncias \cite{Zadeh1965}.
+
+\textbf{Módulo 3 --- Defuzzificação e IVB.} O método do centroide será empregado para defuzzificação, produzindo um índice numérico contínuo (IVB $\in [0, 100]$) que sintetiza as múltiplas dimensões de valoração. O IVB será decomposto em sub-índices correspondentes às dimensões validadas (cultural-simbólica, biofísica-ambiental, econômica-mercadológica, institucional-governança, adaptativa-resiliência, social-organizacional), permitindo análise diferenciada por componente e comparação inter-comunitária.
+
+A validação do sistema fuzzy seguirá protocolo dual: (i)~validação técnica mediante análise de sensibilidade, superfícies de resposta e comparação com rankings obtidos pela agregação linear ponderada dos escores VAIC; e (ii)~validação participativa mediante oficinas devolutivas onde representantes comunitários avaliarão a congruência entre o IVB computado e suas percepções sobre o valor relativo dos sistemas avaliados. Discrepâncias significativas entre valoração computacional e percepção comunitária acionarão ciclos de revisão da base de regras, assegurando conformidade com o princípio de validade consequencial \cite{Messick1995}.
+
 
 \subsection{Validação Participativa e Validade Consequencial}
 

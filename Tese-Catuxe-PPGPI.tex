@@ -10,6 +10,8 @@
 \usepackage{array} % Necessário para colunas p{} em longtable/array
 \usepackage{pdflscape} % Suporte ao ambiente landscape com PDF rotacionado
 \usepackage{booktabs} % Regras \toprule, \midrule, \bottomrule
+\usepackage{fvextra} % Verbatim melhorado (quebra de linha) - Artigo 1
+\usepackage{float} % Posicionamento [H] de figuras - Artigo 1
 % Compat: colortbl + array (LaTeX 2023+) pode requerer \insert@pcolumn
 \makeatletter
 \providecommand\insert@pcolumn{\insert@column}
@@ -86,8 +88,11 @@
 %\include{CONTEUDOS/RESULTADOS/Resultados}
 %\include{CONTEUDOS/CONCLUSAO/Consideracoes}
 
-\include{CAPITULOS/Artigo_1}
-\include{CAPITULOS/Artigo_2}
+\include{CAPITULOS/ARTIGO_1/Artigo_1}
+\include{CAPITULOS/ARTIGO_2/Artigo_2} % OE2: Adaptação transcultural WOCAT-SLM + Delphi (elicitação estruturada)
+\include{CAPITULOS/ARTIGO_3/Artigo_3} % OE3: TRI-VAIC + Fuzzy → IVB (valoração psicométrico-econômica)
+\include{CAPITULOS/ARTIGO_4/Artigo_4} % OE4: Sinalização de mercado e WTP (futuro)
+\include{CAPITULOS/ARTIGO_5/Artigo_5} % OE5: Design participativo de governança (futuro)
 
 %\include{CONTEUDO/TrabalhosRelacionados}
 
