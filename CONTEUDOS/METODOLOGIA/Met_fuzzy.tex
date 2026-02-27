@@ -1,66 +1,68 @@
-\section{Modelagem Fuzzy e Construção do Índice de Valoração Bioeconômica (IVB)}
+\section{Modelagem Fuzzy e Construção do Índice de Salvaguarda Biocultural (ISB)}
 
-Este módulo especifica o motor de inferência fuzzy (funções de pertinência, regras e defuzzificação) para gerar o Índice de Valoração Bioeconômica (IVB) como saída quantitativa de apoio à decisão.
+Este módulo especifica o motor de inferência fuzzy (funções de pertinência, regras e defuzzificação) para gerar o Índice de Salvaguarda Biocultural (ISB) como saída quantitativa que classifica saberes e práticas tradicionais segundo urgência de proteção e documentação.
 
 \subsection{Fundamentação Metodológica}
 
-A Teoria dos Conjuntos Difusos, proposta por \citeonline{Zadeh1965}, permite representar e processar informações incertas, ambíguas e subjetivas mediante atribuição de graus de pertinência a elementos em relação a conjuntos. Em contraste com a lógica booleana (pertinência 0 ou 1), a lógica fuzzy admite pertinência parcial ($\mu \in [0,1]$), possibilitando modelar conceitos linguísticos como "alta qualidade cultural" ou "manejo muito sustentável".
+A Teoria dos Conjuntos Difusos, proposta por \citeonline{Zadeh1965}, permite representar e processar informações incertas, ambíguas e subjetivas mediante atribuição de graus de pertinência a elementos em relação a conjuntos. Em contraste com a lógica booleana (pertinência 0 ou 1), a lógica fuzzy admite pertinência parcial ($\mu \in [0,1]$), possibilitando modelar conceitos linguísticos como ``alto risco de erosão intergeracional'' ou ``complexidade biocultural muito elevada''.
 
-Para valoração de ativos tradicionais, onde as dimensões de valor envolvem percepções qualitativas e fronteiras imprecisas, a lógica fuzzy oferece vantagens sobre modelos lineares aditivos: (i) captura de não linearidades; (ii) representação de trade-offs e limiares; (iii) incorporação de conhecimento especializado na forma de regras linguísticas; e (iv) transparência e interpretabilidade das decisões.
+Para a salvaguarda de ativos tradicionais, onde as dimensões de vulnerabilidade envolvem percepções qualitativas e fronteiras imprecisas, a lógica fuzzy oferece vantagens sobre classificações lineares ou ordinais ao capturar não linearidades na interação entre fatores de risco, representar limiares de urgência e incorporar conhecimento especializado e comunitário na forma de regras linguísticas auditáveis e rastreáveis.
 
 \subsection{Arquitetura do Sistema Fuzzy}
 
-O sistema fuzzy proposto é do tipo Mamdani \cite{Mamdani1975}, estruturado em quatro componentes:
+O sistema fuzzy proposto é do tipo Mamdani \cite{Mamdani1975}, estruturado em quatro componentes.
 
 \subsubsection{1. Variáveis de Entrada (Antecedentes)}
 
-Com base no painel Delphi, serão definidas 5--8 variáveis de entrada linguísticas (ex.: Autenticidade Cultural, Sustentabilidade Ambiental, Complexidade Produtiva, Reputação Territorial, Organização Social). Cada variável será associada a funções de pertinência triangulares ou trapezoidais, definindo termos linguísticos (ex.: Baixa, Média, Alta) com suporte em intervalos numéricos calibrados com o painel.
+Com base no painel Delphi e na adaptação WOCAT-SLM-QBR, serão definidas 5--8 variáveis de entrada linguísticas orientadas à avaliação de vulnerabilidade e prioridade de salvaguarda. As variáveis candidatas incluem Risco de Erosão Intergeracional (proporção de jovens que dominam o saber e status de transmissão ativa), Complexidade Biocultural (número de interações solo-planta-clima codificadas no saber), Singularidade Territorial (exclusividade comunitária e vínculo cosmológico local), Status de Documentação (grau de registro formal existente), Vulnerabilidade Jurídica (exposição a biopirataria e ausência de proteção formal) e Organização Social para Transmissão (estruturas comunitárias ativas de ensino e prática). Cada variável será associada a funções de pertinência triangulares ou trapezoidais, definindo termos linguísticos (Baixa, Média, Alta) com suporte em intervalos numéricos calibrados com o painel.
 
-\textbf{Exemplo de Fuzzificação -- Autenticidade Cultural:}
+\textbf{Exemplo de Fuzzificação -- Risco de Erosão Intergeracional:}
 \begin{itemize}
-\item \textbf{Baixa:} $\mu_{Baixa}(x) = \text{trimf}(x; [0, 0, 4])$
-\item \textbf{Média:} $\mu_{Media}(x) = \text{trimf}(x; [3, 5, 7])$
-\item \textbf{Alta:} $\mu_{Alta}(x) = \text{trimf}(x; [6, 10, 10])$
+\item \textbf{Baixo:} $\mu_{Baixo}(x) = \text{trimf}(x; [0, 0, 4])$
+\item \textbf{Médio:} $\mu_{Medio}(x) = \text{trimf}(x; [3, 5, 7])$
+\item \textbf{Alto:} $\mu_{Alto}(x) = \text{trimf}(x; [6, 10, 10])$
 \end{itemize}
 
 \subsubsection{2. Base de Regras (Inferência)}
 
-Serão construídas regras do tipo SE-ENTÃO que representem o conhecimento especializado consensuado pelo painel. As regras terão a forma:
+Serão construídas regras do tipo SE-ENTÃO que representem o conhecimento especializado consensuado pelo painel e a percepção comunitária de urgência. As regras terão a forma:
 
-\textbf{SE} Autenticidade é Alta \textbf{E} Sustentabilidade é Alta \textbf{ENTÃO} IVB é Muito Alto
+\textbf{SE} Risco de Erosão é Alto \textbf{E} Status de Documentação é Baixo \textbf{ENTÃO} ISB é Crítico
 
-\textbf{SE} Autenticidade é Baixa \textbf{OU} Organização Social é Baixa \textbf{ENTÃO} IVB é Baixo
+\textbf{SE} Singularidade é Alta \textbf{E} Vulnerabilidade Jurídica é Alta \textbf{ENTÃO} ISB é Muito Alto
 
-A base de regras será construída de forma colaborativa em oficinas com o painel Delphi, explorando cenários extremos e intermediários. Estima-se um conjunto de 50--100 regras cobrindo as principais combinações de estados das variáveis.
+\textbf{SE} Risco de Erosão é Baixo \textbf{E} Documentação é Alta \textbf{ENTÃO} ISB é Consolidado
+
+A base de regras será construída de forma colaborativa em oficinas com o painel Delphi e representantes comunitários, explorando cenários extremos e intermediários. Estima-se um conjunto de 50--100 regras cobrindo as principais combinações de estados das variáveis.
 
 \subsubsection{3. Mecanismo de Inferência}
 
-Aplicação do operador de agregação (mínimo para "E", máximo para "OU") e cálculo do grau de ativação de cada regra. As saídas parciais serão agregadas mediante operador de união (máximo), gerando uma superfície de pertinência fuzzy para a variável de saída (IVB).
+Aplicação do operador de agregação (mínimo para ``E'', máximo para ``OU'') e cálculo do grau de ativação de cada regra. As saídas parciais serão agregadas mediante operador de união (máximo), gerando uma superfície de pertinência fuzzy para a variável de saída (ISB).
 
 \subsubsection{4. Defuzzificação}
 
 Conversão da saída fuzzy em valor numérico mediante método do centróide (centro de área), conforme equação:
 
 \begin{equation}
-IVB = \frac{\int \mu_{IVB}(y) \cdot y \, dy}{\int \mu_{IVB}(y) \, dy}
+ISB = \frac{\int \mu_{ISB}(y) \cdot y \, dy}{\int \mu_{ISB}(y) \, dy}
 \end{equation}
 
-O IVB resultante será normalizado em escala 0--100, permitindo classificação em categorias (ex.: Muito Baixo [0--20], Baixo [20--40], Médio [40--60], Alto [60--80], Muito Alto [80--100]).
+O ISB resultante será normalizado em escala 0--100, permitindo classificação em categorias de prioridade de salvaguarda: Consolidado [0--20], Monitoramento [20--40], Atenção [40--60], Alto [60--80] e Crítico [80--100].
 
 \subsection{Implementação Computacional}
 
-O sistema será implementado em Python utilizando a biblioteca \texttt{scikit-fuzzy} \cite{Warner2015}, com interface gráfica para entrada de dados e visualização dos resultados. Serão geradas superfícies de decisão tridimensionais ilustrando a relação entre pares de variáveis de entrada e o IVB.
+O sistema será implementado em Python utilizando a biblioteca \texttt{scikit-fuzzy} \cite{Warner2015}, com interface gráfica para entrada de dados e visualização dos resultados. Serão geradas superfícies de decisão tridimensionais ilustrando a relação entre pares de variáveis de entrada e o ISB.
 
 \subsection{Validação do Modelo}
 
 \begin{enumerate}
-\item \textbf{Validação lógica (face validity):} apresentação do conjunto de regras ao painel Delphi para verificação de coerência com o conhecimento especializado.
+\item \textbf{Validação lógica (face validity):} apresentação do conjunto de regras ao painel Delphi e a representantes comunitários para verificação de coerência com o conhecimento especializado e a percepção êmica de urgência.
 
-\item \textbf{Validação empírica:} aplicação do modelo a casos reais (3--5 produtos quilombolas do Sul de Sergipe) e comparação do IVB com avaliações independentes de especialistas (correlação de Spearman).
+\item \textbf{Validação empírica:} aplicação do modelo a casos reais (3--5 práticas e saberes de comunidades quilombolas do Território de Identidade Semiárido Nordeste II, Bahia) e comparação do ISB com avaliações independentes de especialistas em salvaguarda (correlação de Spearman).
 
-\item \textbf{Análise de sensibilidade:} variação sistemática de cada variável de entrada ($\pm$ 10\%, $\pm$ 20\%) e mensuração do impacto no IVB, identificando variáveis críticas e verificando robustez do modelo.
+\item \textbf{Análise de sensibilidade:} variação sistemática de cada variável de entrada ($\pm$ 10\%, $\pm$ 20\%) e mensuração do impacto no ISB, identificando variáveis críticas e verificando robustez do modelo.
 
-\item \textbf{Comparação com modelo linear:} construção de modelo de regressão múltipla com as mesmas variáveis de entrada e comparação da aderência (R², RMSE) às avaliações de referência.
+\item \textbf{Comparação com classificação linear:} construção de modelo ordinal com as mesmas variáveis de entrada e comparação da aderência às avaliações de referência, testando se a modelagem fuzzy captura nuances que classificações lineares perdem.
 \end{enumerate}
 
-O resultado será um sistema fuzzy validado, documentado e operacional, capaz de gerar índices de valoração com transparência e rastreabilidade das decisões.
+O resultado será um sistema fuzzy validado, documentado e operacional, capaz de classificar saberes segundo prioridade de salvaguarda com transparência e rastreabilidade das decisões, produzindo dossiês auditáveis para instruir processos de proteção.

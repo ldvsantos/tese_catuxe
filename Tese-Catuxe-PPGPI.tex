@@ -12,6 +12,8 @@
 \usepackage{booktabs} % Regras \toprule, \midrule, \bottomrule
 \usepackage{fvextra} % Verbatim melhorado (quebra de linha) - Artigo 1
 \usepackage{float} % Posicionamento [H] de figuras - Artigo 1
+\usepackage{tikz}  % Diagramas vetoriais técnico-científicos
+\usetikzlibrary{positioning, arrows.meta, shapes.geometric, calc, fit, backgrounds}
 % Compat: colortbl + array (LaTeX 2023+) pode requerer \insert@pcolumn
 \makeatletter
 \providecommand\insert@pcolumn{\insert@column}
@@ -38,9 +40,8 @@
 
 \pretextual
 
-\titulo{Sistema Integrado de Governança Bioeconômica e Modelagem Computacional de Ativos Intangíveis em Saberes e Sistemas Agrícolas Tradicionais no Sul de Sergipe}
+\titulo{Decodificação Computacional de Saberes Agrícolas Tradicionais para Salvaguarda de Ativos Intangíveis em Comunidades Quilombolas do Semiárido Nordeste II}
 
-%\titulo{Modelo empírico para salvaguarda de saberes e fazeres agroecológicos tradicionais por meio de machine learning}
 
 \orientador{Prof. Dr.~Paulo Roberto Gagliardi}
 \author{Catuxe Varjão de Santana Oliveira}
@@ -88,11 +89,12 @@
 %\include{CONTEUDOS/RESULTADOS/Resultados}
 %\include{CONTEUDOS/CONCLUSAO/Consideracoes}
 
-\include{CAPITULOS/ARTIGO_1/Artigo_1}
+\include{CAPITULOS/ARTIGO_1/Artigo_1} % OE1: Revisão de escopo PRISMA-ScR sobre ML em SAT (meta-análise da prontidão operacional)
 \include{CAPITULOS/ARTIGO_2/Artigo_2} % OE2: Adaptação transcultural WOCAT-SLM + Delphi (elicitação estruturada)
-\include{CAPITULOS/ARTIGO_3/Artigo_3} % OE3: TRI-VAIC + Fuzzy → IVB (valoração psicométrico-econômica)
-\include{CAPITULOS/ARTIGO_4/Artigo_4} % OE4: Sinalização de mercado e WTP (futuro)
-\include{CAPITULOS/ARTIGO_5/Artigo_5} % OE5: Design participativo de governança (futuro)
+\include{CAPITULOS/ARTIGO_3/Artigo_3} % OE3: Meta-análise de dimensões de vulnerabilidade para construção do ISB
+\include{CAPITULOS/ARTIGO_4/Artigo_4} % OE4: Auditoria computacional e aceitação institucional
+\include{CAPITULOS/ARTIGO_5/Artigo_5} % OE5: Design participativo e validação territorial de salvaguarda
+\include{CAPITULOS/ARTIGO_6/Artigo_6} % OE6: Design participativo de governança (futuro)
 
 %\include{CONTEUDO/TrabalhosRelacionados}
 
