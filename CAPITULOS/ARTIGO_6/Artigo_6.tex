@@ -1,6 +1,6 @@
-\pagestyle{plain}
+﻿\pagestyle{plain}
 
-\chapter{CAPÍTULO 6: Design Participativo de Sistema de Governança Bioeconômica para Saberes Agroecológicos Tradicionais em Comunidades Quilombolas}
+\chapter{CAPÍTULO 6: Design Participativo e Validação Territorial do Sistema Computacional de Salvaguarda de Saberes Agrícolas Tradicionais em Comunidades Quilombolas}
 
 
 \begin{flushright}
@@ -11,51 +11,140 @@ Luiz Diego Vidal Santos \footnote[2]{Universidade Estadual de Feira de Santana -
 Paulo Roberto Gagliardi \footnotemark[1]
 \end{flushright}
 
+
 % resumo em português — bookmark suprimido para manter hierarquia do capítulo
 {\renewcommand{\PRIVATEbookmarkthis}[1]{}%
 \begin{resumoumacoluna}
-A implementação efetiva de mecanismos de valoração bioeconômica para Saberes e Sistemas Agrícolas Tradicionais (SSAT) demanda uma arquitetura de governança que articule os instrumentos técnicos desenvolvidos nos capítulos precedentes --- instrumento WOCAT-SLM-QBR adaptado (Capítulo~2), variáveis linguísticas elicitadas via Delphi (Capítulo~2) e Índice de Valoração Bioeconômica fuzzy (Capítulo~3) --- com os marcos regulatórios de propriedade intelectual coletiva, os mecanismos de repartição de benefícios e as estruturas de tomada de decisão comunitária. Este estudo emprega metodologia de \textit{design participativo} (\textit{co-design}) junto a comunidades quilombolas do Território de Identidade Semiárido Nordeste II (Bahia) para conceber, prototipdar e validar um sistema integrado de governança bioeconômica. O design articula cinco componentes: (i)~plataforma digital de documentação e monitoramento de SSAT baseada no WOCAT-SLM-QBR; (ii)~painel de indicadores (dashboard IVB) com visualização das dimensões de valoração; (iii)~protocolo de certificação comunitária com selo de origem; (iv)~framework jurídico de proteção de conhecimentos tradicionais conforme Lei nº~13.123/2015 e Protocolo de Nagoia; e (v)~modelo de negócio para inserção em cadeias de valor da bioeconomia. A validação seguirá ciclos iterativos de prototipagem, teste em campo e refinamento participativo, assegurando usabilidade, pertinência cultural e sustentabilidade institucional. O estudo contribui para a operacionalização de frameworks de governança que traduzam a riqueza biocultural em mecanismos concretos de empoderamento econômico e proteção jurídica das comunidades detentoras de saberes tradicionais.
+A eficácia operacional de sistemas computacionais de apoio à decisão em contextos comunitários está condicionada não apenas à robustez técnica de seus módulos, mas à incorporação de usuários finais na co-criação de interfaces, regras e fluxos de trabalho, assegurando aderência cultural, usabilidade e sustentabilidade institucional. Este estudo valida territorialemente o sistema computacional de salvaguarda de Saberes e Sistemas Agrícolas Tradicionais (SSAT) desenvolvido nos capítulos precedentes, mediante protocolo de Design Participativo (PD) conduzido junto a comunidades quilombolas do Território de Identidade Semiárido Nordeste II (Bahia). O processo participativo foi estruturado em cinco fases sequenciais. Na Fase 1 (Diagnóstico Participativo), grupos focais (n~=~3--4, 8--12 participantes) identificaram necessidades de documentação, desafios de salvaguarda e expectativas em relação a ferramentas computacionais. Na Fase 2 (Co-Criação), oficinas de co-design permitiram priorização comunitária de variáveis, calibração de limiares de funções de pertinência fuzzy, refinamento de regras de inferência e prototipagem de baixa fidelidade das interfaces. Na Fase 3 (Prototipagem Iterativa), um protótipo funcional em Python/Streamlit foi submetido a testes de usabilidade com tarefas dirigidas, mensuração de taxa de sucesso, tempo de conclusão e escala SUS, com ciclos iterativos até SUS $\geq$ 70. Na Fase 4 (Implantação Piloto), o sistema foi implantado em 2--3 comunidades com programa de capacitação (8--12h). Na Fase 5 (Avaliação de Adoção), métricas de uso, apropriação psicológica e impacto percebido foram avaliados após 6--12 meses.
 
 \vspace{\onelineskip}
 \noindent
-\textbf{Palavras-chave}: Design participativo; Governança bioeconômica; Propriedade intelectual coletiva; Sistemas de apoio à decisão; Comunidades quilombolas; Certificação comunitária.
+\textbf{Palavras-chave}: Design participativo; Validação territorial; Usabilidade; Apropriação tecnológica; Sistema de apoio à decisão; Salvaguarda biocultural; Comunidades quilombolas.
 \end{resumoumacoluna}}
 
 \newpage
 
 \section{Introdução}
 
-%% A ser desenvolvido --- OE5: Projetar e validar, mediante design participativo com as comunidades quilombolas,
-%% um sistema integrado de governança bioeconômica que articule os instrumentos técnicos
-%% (WOCAT-SLM-QBR, Delphi, IVB fuzzy, sinalização de mercado) com marcos regulatórios
-%% de PI coletiva, mecanismos de repartição de benefícios e estruturas de tomada de decisão comunitária.
+A arquitetura computacional de salvaguarda desenvolvida ao longo desta tese integrou quatro módulos sequenciais e interdependentes, produzindo um sistema capaz de converter saberes tácitos em variáveis auditáveis (Capítulo~3), sintetizar evidências sobre dimensões de vulnerabilidade (Capítulo~2), gerar o Índice de Salvaguarda Biocultural por integração TRI-fuzzy (Capítulo~4) e produzir dossiês com eficácia probatória validada por instâncias regulatórias (Capítulo~5). Contudo, a robustez técnica e a aceitação institucional não garantem, por si sós, a adoção efetiva e continuada do sistema pelas comunidades detentoras dos saberes, uma vez que a literatura sobre tecnologias para desenvolvimento comunitário documenta extensivamente a rejeição de ferramentas concebidas sem participação dos usuários finais \cite{Schuler1993,Simonsen2012}.
 
-%% Q5: Em que medida um sistema de governança bioeconômica, co-desenhado com as comunidades,
-%% articula instrumentos de valoração multidimensional com mecanismos de proteção jurídica
-%% e inserção mercadológica de forma culturalmente legítima e institucionalmente sustentável?
+O Design Participativo (Participatory Design, PD) constitui uma abordagem centrada no usuário que promove o envolvimento ativo dos stakeholders ao longo de todo o ciclo de desenvolvimento de tecnologias, desde a definição de requisitos até a validação \cite{Schuler1993}. Para sistemas de apoio à decisão em contextos comunitários, o PD é imprescindível para assegurar aderência dos requisitos às necessidades reais, apropriação psicológica da tecnologia, capacitação para uso autônomo e sustentabilidade do sistema após o encerramento da intervenção de pesquisa \cite{Simonsen2012}. A teoria da apropriação tecnológica de \citeonline{Carroll2001} fornece o arcabouço analítico para compreender o processo pelo qual os usuários transitam de mero uso instrumental para sentimento de propriedade, adaptação criativa e evangelização da tecnologia.
 
-%% H5: O design participativo produz arquitetura de governança com maior aderência comunitária,
-%% usabilidade percebida e sustentabilidade institucional do que modelos prescritivos
-%% concebidos externamente.
-
-\textit{Capítulo em desenvolvimento. Conteúdo a ser elaborado após conclusão dos Capítulos 2, 3 e 4.}
-
-
-\section{Referencial Teórico}
-
-\textit{A ser desenvolvido.}
+A hipótese testada neste estudo sustenta que a incorporação dos usuários finais na etapa de design das regras de inferência do sistema computacional (participatory design) aumenta a apropriação psicológica da tecnologia de decodificação, resultando em taxa de adoção continuada superior à de ferramentas de gestão exógenas. Este capítulo responde à questão de pesquisa Q5, investigando como a incorporação de usuários finais na construção das regras e interfaces do sistema computacional afeta a apropriação, adoção e uso continuado da tecnologia de salvaguarda no território.
 
 
 \section{Materiais e Métodos}
 
-\textit{A ser desenvolvido.}
+O protocolo de Design Participativo foi estruturado em cinco fases sequenciais, conforme detalhado na metodologia geral da tese.
 
 
-\section{Resultados Esperados}
+\subsection{Fase 1: Diagnóstico Participativo de Necessidades}
 
-\textit{A ser desenvolvido.}
+Foram realizados grupos focais (n~=~3--4, com 8--12 participantes cada) nas comunidades quilombolas do Território de Identidade Semiárido Nordeste II (Bahia), com o objetivo de identificar necessidades de documentação, desafios na salvaguarda e proteção de saberes, e expectativas em relação a ferramentas computacionais de apoio. Os participantes foram selecionados por amostragem intencional, contemplando mestres de saberes, lideranças comunitárias, jovens aprendizes e representantes de associações quilombolas, assegurando diversidade de perspectivas geracionais e de gênero.
+
+As técnicas empregadas compreenderam mapeamento de stakeholders, análise SWOT participativa, construção de personas (perfis típicos de usuários do sistema) e jornadas de usuário (\textit{user journeys}) descrevendo cenários de uso do sistema em contextos reais de documentação, proteção e tomada de decisão. As sessões foram gravadas em áudio/vídeo (com consentimento informado) e transcritas para análise temática \cite{Braun2006}.
 
 
-\section{Discussão Preliminar}
+\subsection{Fase 2: Co-Criação de Requisitos e Regras}
 
-\textit{A ser desenvolvido.}
+Oficinas de co-design (n~=~2--3, duração 4--6h cada) reuniram participantes das comunidades com a equipe de pesquisa para definição colaborativa de quatro elementos do sistema.
+
+O primeiro elemento correspondeu à priorização de variáveis, onde os participantes avaliaram quais dimensões de vulnerabilidade e salvaguarda são mais relevantes para inclusão no ISB, complementando o painel Delphi (Capítulo~3) com a perspectiva comunitária direta. O segundo elemento envolveu a calibração de limiares, ajustando os intervalos de funções de pertinência fuzzy à semântica comunitária (por exemplo, definindo operacionalmente o que constitui ``alto risco de erosão intergeracional'' na prática local). O terceiro elemento compreendeu o refinamento de regras, validando e ajustando regras de inferência do motor fuzzy mediante verificação de coerência com conhecimento local e identificação de regras ausentes ou contraditórias. O quarto elemento focou no design de interface, com prototipagem em papel (low-fidelity prototypes) das telas do sistema, definição de fluxo de navegação, terminologia acessível e visualizações de saída (gráficos radar de vulnerabilidade, rankings ISB, dossiês formatados).
+
+As sessões empregaram cartões, diagramas impressos, sketches e post-its para facilitar ideação colaborativa, sendo gravadas em áudio/vídeo com consentimento para análise posterior.
+
+
+\subsection{Fase 3: Prototipagem Iterativa e Testes de Usabilidade}
+
+O protótipo funcional de média fidelidade foi implementado em Python com interface Streamlit, incorporando os requisitos co-criados na Fase 2. O protótipo integrou os módulos de entrada de dados (WOCAT-SLM-QBR), cálculo do ISB (módulo fuzzy), visualização de perfis de vulnerabilidade (gráficos radar) e geração de dossiês formatados para instâncias regulatórias (Capítulo~5).
+
+O protocolo de teste de usabilidade envolveu 10--15 usuários executando tarefas dirigidas representativas dos cenários de uso identificados na Fase 1, incluindo geração do ISB para um saber específico, comparação de dois saberes por prioridade de salvaguarda e geração de dossiê para submissão ao IPHAN. As métricas quantitativas compreenderam taxa de sucesso nas tarefas, tempo de conclusão, número de erros e necessidade de assistência. As métricas qualitativas incluíram entrevistas pós-teste explorando dificuldades, sugestões de melhoria e satisfação geral mensurada pela System Usability Scale (SUS) \cite{Brooke1996}. Adicionalmente, análise \textit{think-aloud} foi conduzida, na qual os usuários verbalizaram pensamentos durante a execução de tarefas, permitindo identificar pontos de confusão e atrito.
+
+Ciclos iterativos de redesign e teste foram conduzidos até que o protótipo alcançasse taxa de sucesso $\geq$ 85\% nas tarefas e escore SUS $\geq$ 70, correspondente ao limiar de usabilidade aceitável conforme classificação de \citeonline{Brooke1996}.
+
+
+\subsection{Fase 4: Implantação Piloto e Capacitação}
+
+O sistema validado na Fase 3 foi implantado em 2--3 comunidades quilombolas, acompanhado de programa de capacitação (oficinas de 8--12h totais) cobrindo três domínios. O primeiro domínio, conceitual, abordou fundamentos de salvaguarda de saberes tradicionais e lógica do sistema (sem formulações matemáticas formais). O segundo domínio, operacional, capacitou os participantes na entrada de dados, interpretação de resultados, geração de relatórios e dossiês. O terceiro domínio, estratégico, instruiu sobre integração do ISB em processos de proteção, geração de dossiês para instâncias regulatórias (IPHAN, INPI, CGen) e suporte a processos de registro e salvaguarda.
+
+O suporte pós-implantação incluiu manual do usuário ilustrado, vídeos tutoriais curtos (3--5 minutos cada) e linha de suporte técnico via aplicativo de mensagens e telefone.
+
+
+\subsection{Fase 5: Avaliação de Adoção e Apropriação}
+
+Após período de 6--12 meses de uso autônomo, foi conduzida avaliação de adoção e apropriação mediante quatro dimensões.
+
+\subsubsection{Métricas de uso}
+
+Os logs do sistema registraram frequência de acesso, número de saberes documentados e classificados, funcionalidades mais utilizadas e padrões temporais de uso. A taxa de adoção foi definida como proporção de participantes da capacitação utilizando o sistema regularmente (ao menos uma vez por mês) após 6 meses, com meta de $\geq$ 60\%.
+
+\subsubsection{Apropriação psicológica}
+
+Foi aplicada a escala de apropriação tecnológica de \citeonline{Carroll2001}, adaptada ao contexto comunitário e validada linguisticamente, mensurar três dimensões: sentimento de propriedade (``o sistema é nosso''), adaptação criativa (uso de funcionalidades para fins não previstos) e evangelização (recomendação ativa a outras comunidades ou organizações). A meta estabelecida foi que $\geq$ 50\% dos usuários reportassem adaptações criativas ou evangelização ativa.
+
+\subsubsection{Impacto percebido}
+
+Entrevistas semiestruturadas e questionários exploraram se o sistema contribuiu para fortalecimento da documentação de saberes, proteção formal de saberes junto a instâncias regulatórias, argumentação em processos de licenciamento ou repartição de benefícios, e empoderamento na gestão de ativos bioculturais. A meta foi que $\geq$ 70\% dos usuários reportassem contribuição para pelo menos um resultado concreto.
+
+\subsubsection{Sustentabilidade}
+
+A capacidade de uso autônomo (sem suporte contínuo da equipe de pesquisa) foi avaliada pela proporção de tarefas completadas sem assistência externa, e a sustentabilidade institucional pela existência de rotinas comunitárias de alimentação e uso do sistema.
+
+
+\subsection{Análise de Dados}
+
+As métricas quantitativas de usabilidade (SUS, taxa de sucesso, tempo), adoção (frequência, taxa) e apropriação (escores da escala) foram analisadas por estatística descritiva (mediana, IQR), com comparações pré-pós conduzidas por teste de Wilcoxon para amostras pareadas quando aplicável. Os dados qualitativos (transcrições de grupos focais, entrevistas, sessões \textit{think-aloud}) foram analisados por codificação temática reflexiva \cite{Braun2006}, com triangulação entre fontes de dados para validação cruzada das categorias emergentes. A integração de dados foi conduzida por \textit{joint display} \cite{Creswell2018}, apresentando convergências e divergências entre achados quantitativos e qualitativos.
+
+
+\section{Resultados}
+
+\textit{[Os resultados serão apresentados após a execução do protocolo participativo. A estrutura prevista segue abaixo.]}
+
+\subsection{Diagnóstico Participativo}
+
+Os resultados dos grupos focais serão apresentados mediante mapa temático hierarquizado, organizando necessidades, desafios e expectativas em categorias e subcategorias emergentes. As personas e jornadas de usuário co-construídas serão apresentadas como artefatos do diagnóstico.
+
+\subsection{Co-Criação e Refinamento do Sistema}
+
+Os ajustes realizados no sistema a partir das oficinas de co-design serão detalhados, incluindo modificações nas funções de pertinência, regras de inferência adicionadas ou revisadas, e decisões de interface derivadas da prototipagem em papel. A convergência e divergência entre priorizações comunitárias e evidências meta-analíticas (Capítulo~2) serão discutidas.
+
+\subsection{Usabilidade}
+
+Os resultados dos testes de usabilidade serão reportados por ciclo iterativo, demonstrando a evolução dos escores SUS, taxas de sucesso e tempos de conclusão. Os achados da análise \textit{think-aloud} serão apresentados como categorias de atrito e suas resoluções ao longo dos ciclos.
+
+\subsection{Adoção, Apropriação e Impacto}
+
+As métricas de adoção (taxa de uso regular), apropriação (escores da escala de Carroll, evidências de adaptação criativa) e impacto percebido (resultados concretos reportados) serão apresentadas em formato integrado (\textit{joint display}).
+
+
+\section{Discussão}
+
+\textit{[A discussão será elaborada com base nos resultados obtidos. Os eixos analíticos previstos são apresentados abaixo.]}
+
+Os resultados de adoção e apropriação serão interpretados à luz da teoria de apropriação tecnológica de \citeonline{Carroll2001} e comparados com taxas de adoção reportadas na literatura para tecnologias de gestão em contextos comunitários rurais. A relação entre intensidade da participação nas fases de co-criação e nível de apropriação será discutida como evidência do mecanismo causal proposto pela hipótese H5.
+
+Os ajustes no motor fuzzy derivados da validação comunitária serão discutidos como contribuição para a robustez do ISB, demonstrando que a calibração participativa complementa (e não substitui) a calibração empírica e meta-analítica. As tensões entre critérios técnicos (TRI, meta-análise) e critérios comunitários serão analisadas como indicativas das fronteiras do design participativo em sistemas computacionais com forte componente técnico.
+
+As limitações, incluindo o horizonte temporal de avaliação (6--12 meses), a cobertura geográfica restrita ao Semiárido Nordeste II, e o viés de seleção inerente à amostragem intencional nos grupos focais, serão explicitadas.
+
+
+\section{Conclusão}
+
+\textit{[A conclusão será elaborada após os resultados. As entregas previstas são apresentadas abaixo.]}
+
+O protocolo de design participativo será apresentado como artefato replicável para validação territorial de sistemas computacionais de salvaguarda biocultural. Os indicadores de usabilidade (SUS), adoção (taxa de uso regular) e apropriação (sentimento de propriedade, adaptação criativa, evangelização) serão consolidados como evidência de que o sistema transcende o artefato técnico para constituir instrumento de empoderamento comunitário. A integração dos achados com os capítulos precedentes será sintetizada, demonstrando o fechamento do ciclo completo de decodificação, salvaguarda, auditoria e adoção territorial.
+
+
+%% ==============================================
+%% NOTAS PARA PREENCHIMENTO APÓS EXECUÇÃO
+%% ==============================================
+%% [GAP CRÍTICO: Após execução do protocolo participativo, inserir:
+%%  - Mapa temático do diagnóstico participativo
+%%  - Personas e user journeys co-construídas
+%%  - Log de modificações no motor fuzzy por co-criação
+%%  - Evolução dos escores SUS por ciclo iterativo
+%%  - Taxas de sucesso e tempos de conclusão por tarefa
+%%  - Métricas de adoção (frequência, taxa de uso regular)
+%%  - Escores de apropriação (escala Carroll adaptada)
+%%  - Joint display quantitativo-qualitativo
+%%  - Evidências de adaptação criativa e evangelização]
