@@ -1,0 +1,830 @@
+% =============================================================================
+% PROJETO DE PESQUISA PARA SUBMISSÃO AO COMITÊ DE ÉTICA EM PESQUISA (CEP)
+% VIA PLATAFORMA BRASIL
+% =============================================================================
+% Pesquisadora: Catuxe Varjão de Santana Oliveira
+% Orientador: Prof. Dr. Paulo Roberto Gagliardi
+% Coorientador: Prof. Dr. Luiz Diego Vidal Santos
+% Instituição: Universidade Federal de Sergipe (UFS) — PPGPI
+% =============================================================================
+
+\documentclass[12pt,a4paper,brazil]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[brazil]{babel}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{indentfirst}
+\usepackage{enumitem}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+
+\geometry{a4paper, left=3cm, right=2cm, top=3cm, bottom=2cm}
+\onehalfspacing
+
+% Formatação de seções
+\titleformat{\section}{\normalfont\bfseries\large}{\thesection.}{0.5em}{}
+\titleformat{\subsection}{\normalfont\bfseries\normalsize}{\thesubsection.}{0.5em}{}
+\titleformat{\subsubsection}{\normalfont\itshape\normalsize}{\thesubsubsection.}{0.5em}{}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    citecolor=blue,
+    urlcolor=blue
+}
+
+% Cabeçalho
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\small Projeto CEP --- Plataforma Brasil}
+\lhead{\small PPGPI/UFS}
+\cfoot{\thepage}
+
+\begin{document}
+
+% =============================================================================
+% FOLHA DE ROSTO
+% =============================================================================
+\begin{titlepage}
+\centering
+\vspace*{2cm}
+
+{\Large\bfseries UNIVERSIDADE FEDERAL DE SERGIPE}\\[0.3cm]
+{\large Programa de Pós-Graduação em Ciência da Propriedade Intelectual (PPGPI)}\\[2cm]
+
+{\LARGE\bfseries PROJETO DE PESQUISA}\\[0.5cm]
+{\large Para submissão ao Comitê de Ética em Pesquisa (CEP/UFS)\\via Plataforma Brasil}\\[2cm]
+
+{\Large\bfseries Adaptação Transcultural do Questionário WOCAT-SLM, Elicitação Estruturada de Saberes Agroecológicos Tradicionais e Construção do Índice de Salvaguarda Biocultural (ISB) em Comunidades Quilombolas do Semiárido Nordeste II (Bahia)}\\[2.5cm]
+
+\begin{tabular}{ll}
+\textbf{Pesquisadora Responsável:} & Catuxe Varjão de Santana Oliveira \\
+\textbf{Orientador:}               & Prof. Dr. Paulo Roberto Gagliardi \\
+\textbf{Coorientador:}             & Prof. Dr. Luiz Diego Vidal Santos \\
+\textbf{Instituição Proponente:}   & Universidade Federal de Sergipe (UFS) \\
+\textbf{Programa:}                 & PPGPI --- Ciência da Propriedade Intelectual \\
+\textbf{Área Temática:}            & Ciências Humanas e Sociais Aplicadas \\
+\end{tabular}
+
+\vfill
+São Cristóvão --- SE\\
+2026
+\end{titlepage}
+
+% =============================================================================
+% SUMÁRIO
+% =============================================================================
+\tableofcontents
+\newpage
+
+% =============================================================================
+% 1. APRESENTAÇÃO
+% =============================================================================
+\section{Apresentação}
+
+O presente projeto de pesquisa é submetido ao Comitê de Ética em Pesquisa da Universidade Federal de Sergipe (CEP/UFS) conforme exigências da Resolução CNS nº~466/2012 e da Resolução CNS nº~510/2016, que dispõem, respectivamente, sobre pesquisas envolvendo seres humanos e pesquisas em Ciências Humanas e Sociais. O estudo integra a tese de doutorado intitulada \textit{``Modelo Computacional para Salvaguarda de Saberes Agrícolas Tradicionais como Ativos Intangíveis em Comunidades Quilombolas do Semiárido Nordeste~II''}, vinculada ao Programa de Pós-Graduação em Ciência da Propriedade Intelectual (PPGPI) da UFS.
+
+A pesquisa envolve participação humana em três componentes interligados, todos relativos aos Objetivos Específicos 3 (OE3) e 4 (OE4) da tese:
+
+\begin{enumerate}[label=\alph*)]
+    \item \textbf{Adaptação transcultural do questionário WOCAT-SLM} (Capítulo~3/OE3): inclui participação de tradutores, comitê de especialistas (com mestres de saberes quilombolas), pré-teste com agricultores quilombolas e debriefing cognitivo;
+    \item \textbf{Elicitação estruturada via método Delphi} (Capítulo~3/OE3): envolve painel de 15--25 especialistas (incluindo mestres de saberes quilombolas) em três rodadas de consulta, além de entrevistas semiestruturadas de triangulação com agricultores;
+    \item \textbf{Calibração psicométrica e validação do Índice de Salvaguarda Biocultural --- ISB} (Capítulo~4/OE4): abrange aplicação de instrumento psicométrico a 384 agricultores quilombolas e oficinas devolutivas de validação participativa.
+\end{enumerate}
+
+
+% =============================================================================
+% 2. INTRODUÇÃO E JUSTIFICATIVA
+% =============================================================================
+\section{Introdução e Justificativa}
+
+\subsection{Contextualização}
+
+Os Saberes e Sistemas Agrícolas Tradicionais (SSAT) de comunidades quilombolas constituem ativos intangíveis de elevada complexidade biocultural, representando a materialização da memória biocultural --- uma matriz indissociável onde a diversidade biológica é mantida e amplificada pela diversidade cultural, linguística e simbólica das comunidades (TOLEDO; BARRERA-BASSOLS, 2008). Esses sistemas operam sob o complexo Conhecimento-Prática-Crença (K-P-B), onde crenças funcionam como regulador ético-cosmológico do manejo (BERKES, 2017).
+
+O Território de Identidade Semiárido Nordeste~II (Bahia) compreende 18 municípios, com destaque para Jeremoabo, que concentra 11 comunidades quilombolas certificadas pela Fundação Cultural Palmares. Essas comunidades mantêm sistemas agroflorestais e práticas de manejo adaptados ao semiárido que enfrentam duplo desafio: erosão acelerada dos saberes sob pressão de monoculturas e inexistência de instrumentos formais para traduzir a sofisticação de seus sistemas em linguagem acessível a mercados e marcos regulatórios.
+
+\subsection{Lacuna Metodológica e Justificativa}
+
+A vulnerabilidade dos SSAT opera em seis dimensões funcionais interconectadas: erosão intergeracional ($V_1$), complexidade biocultural ($V_2$), singularidade territorial ($V_3$), status de documentação ($V_4$), vulnerabilidade jurídica ($V_5$) e organização social ($V_6$). A interdependência não linear dessas dimensões configura problema de engenharia de sistemas que métodos setoriais isolados não conseguem resolver.
+
+O questionário WOCAT (\textit{World Overview of Conservation Approaches and Technologies}), referência global para documentação de tecnologias de gestão sustentável da terra adotado pela FAO e UNCCD, não dispõe de versão adaptada para comunidades tradicionais brasileiras. Sua aplicação direta esbarra em barreiras semântico-idiomáticas, experienciais e conceituais que produzem viés sistemático de mensuração (HERDMAN et al., 1999; GUILLEMIN; BOMBARDIER; BEATON, 1993).
+
+Paralelamente, a ausência de protocolos validados para converter saberes tácitos, oralmente transmitidos e corporalmente incorporados (POLANYI, 1966), em variáveis mensuráveis e auditáveis impede a instrução de processos formais de salvaguarda patrimonial (IPHAN), registro de propriedade intelectual coletiva (INPI), autorização de acesso ao patrimônio genético (CGen) e candidatura a programas internacionais de preservação (FAO-GIAHS).
+
+\subsection{Justificativa Ética}
+
+A pesquisa justifica-se eticamente por buscar o empoderamento das comunidades quilombolas por meio de ferramentas de documentação e proteção de seus saberes. A insegurança jurídica territorial permanece crítica, com associação documentada entre ausência de titulação e violência contra comunidades quilombolas (CONAQ, 2023). A falta de documentação técnica padronizada que comprove a ocupação ancestral e a gestão sustentável dos recursos naturais frequentemente fragiliza a posição dessas comunidades em disputas fundiárias e processos de licenciamento (SANTILLI, 2009).
+
+O modelo proposto visa converter complexidade biocultural em evidência auditável, fortalecendo a governança territorial e a soberania epistemológica das comunidades, em alinhamento com o princípio de pesquisa-ação participativa (FALS BORDA, 1991).
+
+
+% =============================================================================
+% 3. HIPÓTESES
+% =============================================================================
+\section{Hipóteses}
+
+As hipóteses testadas nos componentes que envolvem participação humana são:
+
+\begin{description}[style=nextline]
+    \item[H3 --- Adaptação transcultural e Delphi:] A aplicação combinada de adaptação transcultural do questionário WOCAT-SLM e método Delphi produz variáveis computacionalmente processáveis cujo índice de consenso estatístico (coeficiente de concordância de Kendall $W \geq 0{,}70$; Coeficiente de Validade de Conteúdo $CVC \geq 0{,}80$) é superior ao obtido por métodos de levantamento qualitativo não estruturados.
+    
+    \item[H4 --- ISB e percepção comunitária:] O Índice de Salvaguarda Biocultural (ISB), construído pela integração de lógica fuzzy e modelagem psicométrica (TRI) sobre variáveis elicitadas e validadas, produz rankings de prioridade de salvaguarda com maior concordância com a percepção comunitária de urgência do que métodos de classificação linear ou ordinal.
+\end{description}
+
+
+% =============================================================================
+% 4. OBJETIVOS
+% =============================================================================
+\section{Objetivos}
+
+\subsection{Objetivo Geral}
+
+Desenvolver e validar um modelo integrado de decodificação e salvaguarda, articulando adaptação transcultural de instrumentos, elicitação estruturada de variáveis, modelagem psicométrica e lógica fuzzy, para documentar e proteger ativos intangíveis em Saberes e Sistemas Agrícolas Tradicionais de comunidades quilombolas do Território de Identidade Semiárido Nordeste~II (Bahia).
+
+\subsection{Objetivos Específicos (Componentes com Participação Humana)}
+
+\begin{enumerate}[label=OE\arabic*.]
+    \setcounter{enumi}{2}
+    \item Converter saberes tácitos em variáveis computacionalmente processáveis e auditáveis mediante adaptação transcultural do questionário WOCAT-SLM e técnicas de elicitação estruturada (Delphi), aumentando consenso e comparabilidade entre avaliadores.
+    
+    \item Desenvolver e implementar um motor de inferência baseado em lógica fuzzy e modelagem psicométrica (TRI), integrando as variáveis ponderadas para gerar o Índice de Salvaguarda Biocultural (ISB), classificando saberes segundo urgência de documentação e proteção.
+\end{enumerate}
+
+
+% =============================================================================
+% 5. METODOLOGIA
+% =============================================================================
+\section{Metodologia}
+
+\subsection{Delineamento Geral}
+
+Esta investigação configura-se como estudo metodológico de métodos mistos (CRESWELL; CRESWELL, 2018), com três componentes que envolvem participação humana, organizados em fases sequenciais integradas:
+
+\begin{itemize}
+    \item \textbf{Componente~A:} Adaptação Transcultural do WOCAT-SLM (pesquisa metodológica, protocolo de Beaton et al., 2000);
+    \item \textbf{Componente~B:} Elicitação Delphi e entrevistas de triangulação (estudo exploratório-descritivo com triangulação qualitativa);
+    \item \textbf{Componente~C:} Calibração psicométrica via TRI e validação participativa do ISB (estudo transversal analítico com validação comunitária).
+\end{itemize}
+
+
+% -------------------------------------------------------
+% COMPONENTE A — ADAPTAÇÃO TRANSCULTURAL
+% -------------------------------------------------------
+\subsection{Componente~A: Adaptação Transcultural do WOCAT-SLM}
+
+\subsubsection{Descrição do Procedimento}
+
+O questionário WOCAT-SLM (seções 2, 3, 5 e 6) será adaptado transculturalmente para aplicação em comunidades quilombolas do Território de Identidade Semiárido Nordeste~II (Bahia), seguindo o protocolo de Beaton et al.\ (2000) complementado pelas diretrizes da International Test Commission (ITC, 2017). O processo compreende seis etapas:
+
+\begin{enumerate}
+    \item \textbf{Tradução direta (Inglês $\rightarrow$ Português):} Dois tradutores independentes --- um com formação em ciências agrárias (T1, priorizando equivalência técnica) e outro sem formação técnica na área (T2, priorizando linguagem coloquial) --- produzirão versões independentes com relatório de decisões.
+    
+    \item \textbf{Síntese das traduções (T-12):} Os tradutores e um mediador produzirão versão sintetizada, com discrepâncias resolvidas mediante negociação documentada.
+    
+    \item \textbf{Retrotradução (Português $\rightarrow$ Inglês):} Dois retrotradutores independentes, com proficiência C2 em inglês, sem conhecimento do instrumento original, produzirão retrotraduções (BT1 e BT2).
+    
+    \item \textbf{Comitê de especialistas:} Composto por 8--12 membros (\textit{participantes da pesquisa}), incluindo:
+    \begin{itemize}
+        \item 2--3 mestres de saberes quilombolas (agricultores com experiência mínima de 20 anos);
+        \item 2--3 pesquisadores em agroecologia e etnoecologia;
+        \item 1--2 especialistas em psicometria e adaptação transcultural;
+        \item 2--3 gestores de PI e extensionistas.
+    \end{itemize}
+    Cada membro avaliará os itens em quatro dimensões de equivalência (semântica, idiomática, experiencial e conceitual) em escala de 4 pontos. Critérios: IVC $\geq$ 0,80 (aceito); 0,60 $\leq$ IVC $<$ 0,80 (revisão); IVC $<$ 0,60 (reformulação/exclusão).
+    
+    \item \textbf{Pré-teste:} Versão pré-final aplicada a \textbf{30--40 agricultores quilombolas de Jeremoabo (BA)}, selecionados por amostragem intencional com variabilidade em idade, gênero, escolaridade e sistema produtivo. Aplicação em formato de entrevista assistida. Após cada seção, debriefing cognitivo com perguntas padronizadas de compreensão, alternativas linguísticas e pertinência experiencial. Indicadores: taxa de compreensão por item ($\geq$ 85\%), taxa de não resposta ($\leq$ 15\%), tempo de aplicação.
+    
+    \item \textbf{Consolidação:} Versão final WOCAT-SLM-QBR com dossiê completo de adaptação.
+\end{enumerate}
+
+\subsubsection{Participantes do Componente~A}
+
+\begin{longtable}{p{4cm}p{2.5cm}p{5.5cm}p{2cm}}
+\toprule
+\textbf{Grupo} & \textbf{N estimado} & \textbf{Critérios de inclusão} & \textbf{Etapa} \\
+\midrule
+\endhead
+Tradutores & 2 & Bilíngues português--inglês; perfis complementares & Etapa 1 \\
+Retrotradutores & 2 & Proficiência C2 em inglês; sem conhecimento do original & Etapa 3 \\
+Comitê de especialistas & 8--12 & Experiência na área; representatividade multidisciplinar e multicultural & Etapa 4 \\
+Mestres de saberes (comitê) & 2--3 & Agricultores quilombolas com $\geq$ 20 anos de experiência; reconhecidos pela comunidade & Etapa 4 \\
+Agricultores quilombolas (pré-teste) & 30--40 & Idade $\geq$ 18 anos; residentes em comunidades quilombolas certificadas de Jeremoabo (BA); ambos os sexos & Etapa 5 \\
+\bottomrule
+\end{longtable}
+
+
+% -------------------------------------------------------
+% COMPONENTE B — DELPHI E ENTREVISTAS
+% -------------------------------------------------------
+\subsection{Componente~B: Elicitação Delphi e Entrevistas de Triangulação}
+
+\subsubsection{Painel Delphi}
+
+\paragraph{Composição do Painel.}
+O painel será composto por 15--25 participantes selecionados por amostragem intencional (PATTON, 2015), buscando heterogeneidade controlada em quatro categorias:
+
+\begin{itemize}
+    \item \textbf{Mestres de saberes quilombolas:} 4--6 agricultores reconhecidos por suas comunidades, com experiência mínima de 20 anos;
+    \item \textbf{Pesquisadores acadêmicos:} 4--6 doutores em agroecologia, etnoecologia, propriedade intelectual ou gestão da inovação;
+    \item \textbf{Técnicos extensionistas:} 3--5, com experiência mínima de 5 anos em assessoria a comunidades tradicionais;
+    \item \textbf{Gestores de PI e bioeconomia:} 3--5, vinculados a NITs, SEBRAE, INPI ou secretarias territoriais.
+\end{itemize}
+
+\paragraph{Critérios de inclusão:} Experiência mínima de 5 anos na área de atuação; reconhecimento pela comunidade epistêmica ou territorial; disponibilidade para participar de 3 rodadas em 4 meses.
+
+\paragraph{Critérios de exclusão:} Participantes que não completem pelo menos 2 das 3 rodadas previstas; participantes que declinem do consentimento em qualquer fase do estudo.
+
+\paragraph{Estrutura das Rodadas.}
+
+\begin{description}
+    \item[Rodada~1 --- Divergência e Exploração:] Questionário aberto solicitando enumeração de variáveis relevantes para avaliação de vulnerabilidade e salvaguarda de SSAT, organizadas nas seis dimensões de vulnerabilidade biocultural ($V_1$--$V_6$). Mestres de saberes com preferência por participação oral terão respostas transcritas por facilitadores treinados.
+    
+    \item[Rodada~2 --- Convergência:] Questionário estruturado com lista consolidada. Avaliação em escala Likert de 5 pontos para relevância, clareza e operacionalidade. Cálculo de mediana, intervalo interquartil (IQR), coeficiente de variação e frequência de respostas extremas.
+    
+    \item[Rodada~3 --- Consenso:] Reenvio com feedback agregado (medianas, distribuição, posicionamento individual anonimizado). Consenso operacional: IQR $\leq$ 1,0 e mediana $\geq$ 4,0.
+\end{description}
+
+\subsubsection{Entrevistas Semiestruturadas de Triangulação}
+
+Entrevistas com \textbf{15--20 agricultores quilombolas de Jeremoabo (BA)}, selecionados por critério de saturação teórica (GLASER; STRAUSS, 1967).
+
+\paragraph{Critérios de inclusão:} Idade $\geq$ 18 anos; residentes em comunidades quilombolas certificadas pela Fundação Cultural Palmares em Jeremoabo (BA); praticantes ativos de atividades agrícolas tradicionais; ambos os sexos.
+
+\paragraph{Critérios de exclusão:} Pessoas que não consintam com a gravação em áudio; pessoas com impedimentos cognitivos que comprometam a compreensão do TCLE.
+
+\paragraph{Procedimento:} Roteiro semiestruturado abordando percepção sobre variáveis do Delphi, dimensões não contempladas, adequação da linguagem e hierarquização espontânea de prioridades de salvaguarda. Gravação em áudio com transcrição integral. Análise temática por dois pesquisadores independentes (kappa de Cohen $\geq$ 0,60).
+
+\subsubsection{Grupo Focal Comparativo}
+
+Grupo focal com \textbf{8--10 especialistas} do mesmo universo amostral do painel Delphi, para comparação entre índices de consenso de método estruturado (Delphi) versus não estruturado (grupo focal). Diferença testada por permutação ou bootstrap.
+
+\subsubsection{Participantes do Componente~B}
+
+\begin{longtable}{p{4cm}p{2.5cm}p{5.5cm}p{2cm}}
+\toprule
+\textbf{Grupo} & \textbf{N estimado} & \textbf{Critérios de inclusão} & \textbf{Procedimento} \\
+\midrule
+\endhead
+Painelistas Delphi & 15--25 & Experiência $\geq$ 5 anos; heterogeneidade controlada (4 categorias); disponibilidade para 3 rodadas & Delphi \\
+Mestres de saberes (Delphi) & 4--6 & Agricultores quilombolas com $\geq$ 20 anos de experiência & Delphi \\
+Agricultores quilombolas (entrevistas) & 15--20 & Idade $\geq$ 18; residentes em comunidades certificadas; praticantes ativos & Entrevista \\
+Especialistas (grupo focal) & 8--10 & Mesmo universo amostral do Delphi & Grupo focal \\
+\bottomrule
+\end{longtable}
+
+
+% -------------------------------------------------------
+% COMPONENTE C — CALIBRAÇÃO TRI E VALIDAÇÃO ISB
+% -------------------------------------------------------
+\subsection{Componente~C: Calibração Psicométrica e Validação Participativa do ISB}
+
+\subsubsection{Calibração TRI --- Coleta de Dados em Campo}
+
+\paragraph{Amostra.} A amostra ($n = 384$) foi calculada mediante fórmula de Cochran (1977) para populações finitas, considerando margem de erro de 5\%, nível de confiança de 95\% e proporção estimada de 50\%, com amostragem estratificada proporcional.
+
+\paragraph{Critérios de inclusão:}
+\begin{itemize}
+    \item Produtores agrícolas com idade $\geq$ 18 anos, de ambos os sexos;
+    \item Residentes em comunidades quilombolas certificadas pela Fundação Cultural Palmares e registradas na Base de Informações sobre Povos Indígenas e Localidades Quilombolas do IBGE;
+    \item Ênfase nas 11 comunidades quilombolas de Jeremoabo (BA).
+\end{itemize}
+
+\paragraph{Critérios de exclusão:}
+\begin{itemize}
+    \item Pessoas com idade inferior a 18 anos;
+    \item Pessoas que não residam em comunidades quilombolas certificadas;
+    \item Pessoas que se recusem a assinar o Termo de Consentimento Livre e Esclarecido (TCLE);
+    \item Pessoas com impedimentos cognitivos que comprometam a compreensão do TCLE e/ou do instrumento.
+\end{itemize}
+
+\paragraph{Instrumento de coleta.} Questionário WOCAT-SLM-QBR adaptado transculturalmente (Componente~A), com 30 itens distribuídos em seis dimensões de vulnerabilidade biocultural, em escalas Likert de 5 pontos. A primeira dimensão compreende variáveis sociodemográficas de caracterização (idade, gênero, escolaridade, ocupação, tempo de residência e envolvimento em atividades agrícolas).
+
+\paragraph{Procedimento de coleta.} Aplicação presencial em formato de entrevista assistida, conduzida por equipe de 5 entrevistadores previamente capacitados mediante protocolo padronizado de treinamento (FOWLER, 2014). Duração estimada: 30--45 minutos por entrevista.
+
+\subsubsection{Validação Participativa do ISB --- Oficinas Devolutivas}
+
+Realização de \textbf{3--4 oficinas devolutivas} nas comunidades quilombolas, com \textbf{8--12 participantes cada}, onde:
+
+\begin{itemize}
+    \item Os rankings ISB e perfis de vulnerabilidade por dimensão serão apresentados em visualizações acessíveis;
+    \item Os participantes avaliarão criticamente a concordância entre a classificação computacional e sua percepção comunitária de urgência;
+    \item Discrepâncias significativas acionarão ciclos de revisão da base de regras fuzzy;
+    \item A concordância será quantificada pelo coeficiente de correlação de concordância de Lin ($\rho_c$) e pelo coeficiente $W$ de Kendall.
+\end{itemize}
+
+\subsubsection{Participantes do Componente~C}
+
+\begin{longtable}{p{4cm}p{2.5cm}p{5.5cm}p{2cm}}
+\toprule
+\textbf{Grupo} & \textbf{N estimado} & \textbf{Critérios de inclusão} & \textbf{Procedimento} \\
+\midrule
+\endhead
+Agricultores quilombolas (TRI) & 384 & Idade $\geq$ 18; residentes em comunidades certificadas; ambos os sexos & Questionário \\
+Participantes oficinas & 24--48 & Membros das comunidades quilombolas do Semiárido NE~II & Oficina devolutiva \\
+\bottomrule
+\end{longtable}
+
+
+% =============================================================================
+% 6. NÚMERO TOTAL DE PARTICIPANTES
+% =============================================================================
+\section{Número Total de Participantes}
+
+\begin{longtable}{p{6cm}p{3cm}p{4cm}}
+\toprule
+\textbf{Componente / Procedimento} & \textbf{N estimado} & \textbf{Tipo de participação} \\
+\midrule
+\endhead
+\textbf{Componente~A} & & \\
+\quad Comitê de especialistas & 8--12 & Avaliação de itens \\
+\quad Pré-teste (agricultores) & 30--40 & Entrevista assistida \\[0.3cm]
+\textbf{Componente~B} & & \\
+\quad Painel Delphi & 15--25 & Questionários iterativos \\
+\quad Entrevistas semiestruturadas & 15--20 & Entrevista gravada \\
+\quad Grupo focal comparativo & 8--10 & Grupo focal gravado \\[0.3cm]
+\textbf{Componente~C} & & \\
+\quad Calibração TRI & 384 & Questionário presencial \\
+\quad Oficinas devolutivas & 24--48 & Oficina participativa \\
+\midrule
+\textbf{Total estimado\textsuperscript{*}} & \textbf{460--530} & \\
+\bottomrule
+\multicolumn{3}{p{13cm}}{\footnotesize \textsuperscript{*}O total considera que alguns participantes poderão participar de mais de um componente (e.g., mestres de saberes do comitê poderão integrar o painel Delphi).} \\
+\end{longtable}
+
+
+% =============================================================================
+% 7. RISCOS E BENEFÍCIOS
+% =============================================================================
+\section{Análise de Riscos e Benefícios}
+
+\subsection{Riscos}
+
+Os riscos associados à participação nesta pesquisa são classificados como \textbf{mínimos}, conforme detalhamento abaixo:
+
+\begin{description}[style=nextline]
+    \item[Riscos de desconforto emocional:] A abordagem de temas relacionados à perda de saberes tradicionais, à pressão territorial e à vulnerabilidade jurídica pode gerar desconforto emocional em alguns participantes. \textit{Mitigação:} O participante poderá interromper sua participação a qualquer momento, sem necessidade de justificativa e sem qualquer prejuízo. A equipe será capacitada para identificar sinais de desconforto e oferecer acolhimento. Será disponibilizado encaminhamento para serviços de apoio psicossocial, se necessário.
+    
+    \item[Riscos de constrangimento:] Participantes com baixa escolaridade podem sentir-se constrangidos diante de instrumentos escritos ou linguagem técnica. \textit{Mitigação:} Todos os instrumentos foram adaptados transculturalmente com priorização de linguagem acessível. A aplicação será em formato de entrevista assistida, com facilitadores capacitados. Mestres de saberes com preferência por participação oral terão suas respostas transcritas por facilitadores.
+    
+    \item[Riscos de identificação indevida:] Devido ao tamanho reduzido de algumas comunidades, há risco de identificação indireta dos participantes. \textit{Mitigação:} Os dados serão anonimizados e codificados. Resultados serão apresentados de forma agregada. Dados sensíveis serão armazenados em ambiente seguro, com acesso restrito à equipe de pesquisa. Em publicações, nenhuma informação que permita identificação individual será divulgada.
+    
+    \item[Riscos relativos a dados sobre conhecimentos tradicionais:] A documentação de saberes tradicionais pode expor conhecimentos a apropriação indevida. \textit{Mitigação:} Conformidade com o Protocolo de Nagoia e a Lei nº~13.123/2015 (Marco Legal da Biodiversidade). As comunidades serão informadas sobre os mecanismos de proteção disponíveis. Os dados sobre saberes específicos serão tratados conforme protocolo comunitário, quando existente.
+    
+    \item[Riscos de uso inadequado do tempo dos participantes:] A participação em múltiplas etapas (especialmente no Delphi, com 3 rodadas) pode sobrecarregar os participantes. \textit{Mitigação:} Os instrumentos foram dimensionados para aplicação em tempo compatível (30--45 minutos por sessão). As datas e horários serão acordados com os participantes, respeitando seus calendários agrícolas e compromissos comunitários.
+\end{description}
+
+\subsection{Benefícios}
+
+\begin{description}[style=nextline]
+    \item[Benefícios diretos aos participantes:]
+    \begin{itemize}
+        \item Acesso a instrumento de documentação de seus saberes (WOCAT-SLM-QBR) em linguagem acessível;
+        \item Participação ativa na definição de indicadores de vulnerabilidade e salvaguarda de seus sistemas agrícolas;
+        \item Recebimento de perfil de vulnerabilidade e urgência de salvaguarda de seus saberes (relatório ISB individual e comunitário em linguagem acessível);
+        \item Fortalecimento da capacidade argumentativa perante órgãos regulatórios (dossiês auditáveis para IPHAN, INPI, CGen);
+        \item Mestres de saberes serão reconhecidos como coautores do instrumento adaptado.
+    \end{itemize}
+    
+    \item[Benefícios indiretos e sociais:]
+    \begin{itemize}
+        \item Produção de instrumento validado para documentação de conhecimentos tradicionais, replicável em outros contextos (comunidades indígenas, ribeirinhas, caiçaras, fundo de pasto);
+        \item Contribuição para políticas públicas de salvaguarda patrimonial e proteção de propriedade intelectual coletiva;
+        \item Fortalecimento da visibilidade e do reconhecimento institucional dos saberes quilombolas;
+        \item Avanço metodológico na integração entre adaptação transcultural, elicitação estruturada e modelagem computacional em contextos de comunidades tradicionais.
+    \end{itemize}
+\end{description}
+
+A relação risco-benefício é amplamente favorável, com benefícios substantivos para as comunidades participantes que superam os riscos mínimos envolvidos.
+
+
+% =============================================================================
+% 8. CRITÉRIOS DE INCLUSÃO E EXCLUSÃO (CONSOLIDADO)
+% =============================================================================
+\section{Critérios de Inclusão e Exclusão (Consolidado)}
+
+\subsection{Critérios de Inclusão Gerais}
+
+\begin{itemize}
+    \item Idade igual ou superior a 18 anos;
+    \item Concordância em participar da pesquisa mediante assinatura do TCLE;
+    \item Para agricultores quilombolas: residência em comunidade quilombola certificada pela Fundação Cultural Palmares no Território de Identidade Semiárido Nordeste~II (BA);
+    \item Para especialistas (Delphi/comitê): experiência mínima de 5 anos na área de atuação e reconhecimento pela comunidade epistêmica ou territorial.
+\end{itemize}
+
+\subsection{Critérios de Exclusão Gerais}
+
+\begin{itemize}
+    \item Idade inferior a 18 anos;
+    \item Recusa em assinar o TCLE;
+    \item Impedimentos cognitivos que comprometam a compreensão do TCLE e/ou dos instrumentos de pesquisa;
+    \item Para painelistas Delphi: não completar ao menos 2 das 3 rodadas previstas.
+\end{itemize}
+
+
+% =============================================================================
+% 9. PROCEDIMENTOS DE COLETA DE DADOS
+% =============================================================================
+\section{Procedimentos de Coleta de Dados}
+
+\subsection{Local de Realização}
+
+A pesquisa será realizada nas comunidades quilombolas do Território de Identidade Semiárido Nordeste~II (Bahia), com foco nas 11 comunidades quilombolas certificadas de Jeremoabo (BA). As atividades presenciais (pré-teste, entrevistas, aplicação do questionário TRI e oficinas devolutivas) serão conduzidas nas sedes das associações comunitárias, escolas, igrejas ou outros espaços indicados pelas lideranças locais, conforme conveniência e acessibilidade para os participantes.
+
+As rodadas Delphi serão conduzidas preferencialmente por meio eletrônico (formulário online), com opção de participação presencial assistida para mestres de saberes que prefiram modalidade oral.
+
+\subsection{Período de Coleta}
+
+A coleta de dados está prevista para o período de \textbf{[a definir conforme cronograma do doutorado]}, com duração estimada de 8--12 meses, distribuídos conforme quadro abaixo:
+
+\begin{longtable}{p{6cm}p{3cm}p{3cm}}
+\toprule
+\textbf{Atividade} & \textbf{Duração estimada} & \textbf{Mês previsto} \\
+\midrule
+\endhead
+Tradução e retrotradução (Etapas 1--3) & 2 meses & Meses 1--2 \\
+Comitê de especialistas (Etapa 4) & 1 mês & Mês 3 \\
+Pré-teste e debriefing cognitivo (Etapa 5) & 1 mês & Mês 4 \\
+Delphi --- 3 rodadas & 4 meses & Meses 3--6 \\
+Entrevistas semiestruturadas & 2 meses & Meses 5--6 \\
+Grupo focal comparativo & 1 mês & Mês 6 \\
+Aplicação questionário TRI ($n=384$) & 3 meses & Meses 7--9 \\
+Oficinas devolutivas & 1 mês & Meses 10--11 \\
+\bottomrule
+\end{longtable}
+
+\subsection{Instrumentos de Coleta}
+
+Os seguintes instrumentos serão utilizados na coleta de dados:
+
+\begin{enumerate}
+    \item \textbf{Questionário WOCAT-SLM (original em inglês)} --- para tradução e adaptação transcultural;
+    \item \textbf{Formulário de avaliação de equivalência transcultural} --- para o comitê de especialistas (Etapa 4), com escala de 4 pontos em quatro dimensões (semântica, idiomática, experiencial e conceitual);
+    \item \textbf{Questionário WOCAT-SLM-QBR (versão adaptada)} --- para pré-teste (Etapa 5) e aplicação TRI (Componente~C);
+    \item \textbf{Roteiro de debriefing cognitivo} --- para pré-teste (Etapa 5), com perguntas padronizadas sobre compreensão, alternativas linguísticas e pertinência;
+    \item \textbf{Formulários Delphi} (Rodadas 1, 2 e 3) --- questionário aberto (R1) e estruturado com escala Likert de 5 pontos (R2, R3);
+    \item \textbf{Roteiro de entrevista semiestruturada} --- para triangulação qualitativa;
+    \item \textbf{Roteiro de grupo focal} --- para comparação com método Delphi;
+    \item \textbf{Formulário de avaliação participativa} --- para oficinas devolutivas (Componente~C).
+\end{enumerate}
+
+\textit{Nota: Os instrumentos 2--8 serão anexados a este projeto como apêndices, antes da submissão final à Plataforma Brasil.}
+
+
+% =============================================================================
+% 10. ANÁLISE DE DADOS
+% =============================================================================
+\section{Análise de Dados}
+
+\subsection{Componente~A --- Adaptação Transcultural}
+
+\begin{itemize}
+    \item Índice de Validade de Conteúdo (IVC) por item e global ($\geq$ 0,80);
+    \item Kappa de Fleiss para concordância interavaliadores ($\geq$ 0,75);
+    \item Taxa de compreensão por item no pré-teste ($\geq$ 85\%);
+    \item Análise qualitativa dos debriefings cognitivos (análise de conteúdo).
+\end{itemize}
+
+\subsection{Componente~B --- Delphi e Entrevistas}
+
+\begin{itemize}
+    \item Mediana, IQR e distribuição por variável e por rodada;
+    \item Coeficiente de concordância de Kendall ($W \geq 0{,}70$ como consenso forte);
+    \item Coeficiente de Validade de Conteúdo --- CVC ($\geq 0{,}80$);
+    \item Teste de Friedman com post-hoc de Dunn;
+    \item Análise temática das entrevistas (BRAUN; CLARKE, 2006) com codificação por dois pesquisadores independentes (kappa de Cohen $\geq$ 0,60);
+    \item Comparação Delphi vs.\ grupo focal por permutação ou bootstrap.
+\end{itemize}
+
+\subsection{Componente~C --- Calibração TRI e Validação ISB}
+
+\begin{itemize}
+    \item Modelo de Crédito Parcial de Masters (TRI) --- Infit/Outfit MNSQ (0,6--1,4), ZSTD ($< \pm 2{,}0$), correlação ponto-medida ($> 0{,}30$);
+    \item Confiabilidade de separação: $G_{person} > 0{,}80$; $G_{item} > 0{,}90$;
+    \item Funcionamento Diferencial dos Itens (DIF) --- Mantel-Haenszel com Bonferroni;
+    \item Análise Fatorial Confirmatória --- $\chi^2/df < 3{,}0$; RMSEA $< 0{,}06$; CFI/TLI $> 0{,}95$;
+    \item Validação ISB: RMSE entre rankings fuzzy e percepção comunitária; coeficiente de concordância de Lin ($\rho_c$); $W$ de Kendall.
+\end{itemize}
+
+
+% =============================================================================
+% 11. DESFECHOS PRIMÁRIOS E SECUNDÁRIOS
+% =============================================================================
+\section{Desfechos Primários e Secundários}
+
+\subsection{Desfechos Primários}
+
+\begin{enumerate}
+    \item Instrumento WOCAT-SLM-QBR adaptado transculturalmente com IVC global $\geq$ 0,90 e kappa $\geq$ 0,75;
+    \item Conjunto validado de 20--30 variáveis linguísticas com CVC $\geq$ 0,80 e $W \geq$ 0,70;
+    \item Índice de Salvaguarda Biocultural (ISB) com RMSE inferior ao de rankings lineares na comparação com percepção comunitária.
+\end{enumerate}
+
+\subsection{Desfechos Secundários}
+
+\begin{enumerate}
+    \item Identificação de dimensões culturalmente específicas não contempladas pelo WOCAT original (espiritual-ritual, transmissão intergeracional por oralidade, coletividade como bens comuns);
+    \item Manual de operacionalização do protocolo integrado adaptação-Delphi para contextos de comunidades tradicionais;
+    \item Perfis multidimensionais de vulnerabilidade biocultural por comunidade quilombola;
+    \item Dossiês ISB auditáveis para instrução de processos regulatórios.
+\end{enumerate}
+
+
+% =============================================================================
+% 12. ASPECTOS ÉTICOS
+% =============================================================================
+\section{Aspectos Éticos}
+
+\subsection{Fundamentação Legal e Normativa}
+
+Este projeto fundamenta-se nas seguintes normativas:
+
+\begin{itemize}
+    \item \textbf{Resolução CNS nº~466/2012:} Diretrizes e normas regulamentadoras de pesquisas envolvendo seres humanos --- assegura autonomia, beneficência, não maleficência, justiça e equidade;
+    \item \textbf{Resolução CNS nº~510/2016:} Normas aplicáveis a pesquisas em Ciências Humanas e Sociais com metodologias que envolvam coleta de dados junto a participantes;
+    \item \textbf{Lei nº~13.123/2015 (Marco Legal da Biodiversidade):} Regulamenta o acesso ao patrimônio genético e aos conhecimentos tradicionais associados, e a repartição de benefícios;
+    \item \textbf{Protocolo de Nagoia (Decreto nº~2/2004):} Acesso a recursos genéticos e repartição justa e equitativa dos benefícios;
+    \item \textbf{Convenção 169 da OIT (Decreto nº~5.051/2004):} Direito à consulta prévia, livre e informada dos povos e comunidades tradicionais;
+    \item \textbf{Constituição Federal de 1988, Art.~216:} Proteção do patrimônio cultural imaterial;
+    \item \textbf{Lei Geral de Proteção de Dados --- LGPD (Lei nº~13.709/2018):} Tratamento de dados pessoais e dados sensíveis.
+\end{itemize}
+
+\subsection{Termo de Consentimento Livre e Esclarecido (TCLE)}
+
+O TCLE será apresentado a todos os participantes \textbf{antes do início de qualquer procedimento de coleta}. O documento conterá:
+
+\begin{itemize}
+    \item Descrição clara dos objetivos, procedimentos, duração e natureza da participação;
+    \item Descrição dos riscos e benefícios;
+    \item Garantia de voluntariedade e direito de retirada a qualquer momento, sem prejuízo;
+    \item Garantia de sigilo e anonimato;
+    \item Informações de contato da pesquisadora responsável e do CEP/UFS;
+    \item Número de protocolo CAAE (após aprovação);
+    \item Duas vias --- uma para o participante e uma para a pesquisadora.
+\end{itemize}
+
+Para participantes não alfabetizados ou com dificuldade de leitura, o TCLE será lido em voz alta pela equipe de pesquisa, com assinatura por impressão digital e presença de testemunha.
+
+\textit{Nota: O modelo de TCLE será anexado como apêndice deste projeto.}
+
+\subsection{Consentimento Comunitário Prévio}
+
+Para além do consentimento individual (TCLE), será obtido \textbf{consentimento coletivo/comunitário} junto às lideranças e associações das comunidades quilombolas participantes, conforme preconizado pela Convenção 169 da OIT e pelas boas práticas de pesquisa com povos e comunidades tradicionais. Este consentimento será formalizado em reunião com associação comunitária, com ata registrada.
+
+\subsection{Proteção de Dados e Confidencialidade}
+
+\begin{itemize}
+    \item Os dados pessoais serão codificados e armazenados em ambiente digital seguro (criptografado), com acesso restrito à equipe de pesquisa;
+    \item Os dados serão mantidos por 5 anos após a publicação dos resultados, conforme Resolução CNS nº~466/2012;
+    \item Nenhuma informação que permita identificação individual será publicada;
+    \item Os áudios das entrevistas e grupos focais serão destruídos após transcrição e verificação;
+    \item Os dados sobre conhecimentos tradicionais específicos serão tratados conforme protocolo comunitário e Lei nº~13.123/2015, com repartição de benefícios.
+\end{itemize}
+
+\subsection{Reconhecimento e Devolutiva}
+
+\begin{itemize}
+    \item Mestres de saberes participantes do comitê de adaptação e do painel Delphi serão reconhecidos como coautores do instrumento WOCAT-SLM-QBR;
+    \item Os resultados da pesquisa serão devolvidos às comunidades em formato acessível (relatórios simplificados, apresentações visuais, materiais bilíngues quando necessário);
+    \item As oficinas devolutivas (Componente~C) constituem parte integral da metodologia, assegurando que as comunidades tenham acesso e possam avaliar criticamente os resultados;
+    \item Será disponibilizado às comunidades acesso ao instrumento adaptado e aos dossiês gerados.
+\end{itemize}
+
+\subsection{Atendimento às Especificidades Culturais}
+
+\begin{itemize}
+    \item As datas e horários de coleta respeitarão calendários agrícolas e festividades comunitárias;
+    \item A linguagem dos instrumentos e procedimentos será continuamente ajustada para acessibilidade;
+    \item Facilitadores locais (membros da comunidade capacitados) auxiliarão na mediação cultural durante a coleta;
+    \item A participação oral será garantida para mestres de saberes que não se sintam confortáveis com instrumentos escritos.
+\end{itemize}
+
+
+% =============================================================================
+% 13. ORÇAMENTO
+% =============================================================================
+\section{Orçamento}
+
+\begin{longtable}{p{6cm}p{2.5cm}p{2cm}p{2.5cm}}
+\toprule
+\textbf{Item} & \textbf{Custo unitário} & \textbf{Qtde} & \textbf{Total (R\$)} \\
+\midrule
+\endhead
+Deslocamento (combustível e diárias) & Variável & --- & A estimar \\
+Material de impressão (TCLE, instrumentos) & R\$ 0,50/folha & 3.000 & 1.500,00 \\
+Gravadores de áudio digitais & R\$ 200,00 & 3 & 600,00 \\
+Material de escritório (oficinas) & R\$ 50,00 & 8 & 400,00 \\
+Alimentação para oficinas e grupos focais & R\$ 25,00/pessoa & 100 & 2.500,00 \\
+Transcrição de áudios & R\$ 150,00/hora & 40h & 6.000,00 \\
+Licença de software estatístico (Winsteps) & R\$ 2.500,00 & 1 & 2.500,00 \\
+Capacitação de entrevistadores & R\$ 500,00 & 5 & 2.500,00 \\
+Devolutiva às comunidades (material) & R\$ 300,00 & 5 & 1.500,00 \\
+\midrule
+\textbf{Subtotal estimado} & & & \textbf{17.500,00} \\
+\textbf{Reserva de contingência (10\%)} & & & \textbf{1.750,00} \\
+\midrule
+\textbf{Total estimado} & & & \textbf{19.250,00} \\
+\bottomrule
+\multicolumn{4}{p{13cm}}{\footnotesize Valores estimados, sujeitos a ajuste conforme fontes de financiamento disponíveis (bolsa CAPES/CNPq, editais de pesquisa, recursos do PPGPI/UFS).} \\
+\end{longtable}
+
+
+% =============================================================================
+% 14. CRONOGRAMA
+% =============================================================================
+\section{Cronograma}
+
+\begin{longtable}{p{5.5cm}cccccccccccc}
+\toprule
+\textbf{Atividade} & \rotatebox{90}{\textbf{M1}} & \rotatebox{90}{\textbf{M2}} & \rotatebox{90}{\textbf{M3}} & \rotatebox{90}{\textbf{M4}} & \rotatebox{90}{\textbf{M5}} & \rotatebox{90}{\textbf{M6}} & \rotatebox{90}{\textbf{M7}} & \rotatebox{90}{\textbf{M8}} & \rotatebox{90}{\textbf{M9}} & \rotatebox{90}{\textbf{M10}} & \rotatebox{90}{\textbf{M11}} & \rotatebox{90}{\textbf{M12}} \\
+\midrule
+\endhead
+Tradução e retrotradução & $\bullet$ & $\bullet$ & & & & & & & & & & \\
+Comitê de especialistas & & & $\bullet$ & & & & & & & & & \\
+Pré-teste e debriefing & & & & $\bullet$ & & & & & & & & \\
+Consolidação WOCAT-SLM-QBR & & & & $\bullet$ & & & & & & & & \\
+Delphi --- Rodada 1 & & & $\bullet$ & & & & & & & & & \\
+Delphi --- Rodada 2 & & & & $\bullet$ & $\bullet$ & & & & & & & \\
+Delphi --- Rodada 3 & & & & & & $\bullet$ & & & & & & \\
+Entrevistas semiestruturadas & & & & & $\bullet$ & $\bullet$ & & & & & & \\
+Grupo focal comparativo & & & & & & $\bullet$ & & & & & & \\
+Capacitação entrevistadores & & & & & & $\bullet$ & $\bullet$ & & & & & \\
+Aplicação questionário TRI & & & & & & & $\bullet$ & $\bullet$ & $\bullet$ & & & \\
+Análise TRI e modelagem fuzzy & & & & & & & & & $\bullet$ & $\bullet$ & & \\
+Oficinas devolutivas & & & & & & & & & & $\bullet$ & $\bullet$ & \\
+Redação de relatórios & & & & & & & & & & & $\bullet$ & $\bullet$ \\
+\bottomrule
+\end{longtable}
+
+
+% =============================================================================
+% 15. REFERÊNCIAS BIBLIOGRÁFICAS
+% =============================================================================
+\section{Referências Bibliográficas}
+
+\begin{enumerate}[label={[\arabic*]}, leftmargin=*]
+    \item AGRAWAL, A. Common resources and institutional sustainability. In: OSTROM, E.\ et al.\ (Eds.). \textit{The Drama of the Commons}. Washington: National Academy Press, 2002.
+    
+    \item ALTIERI, M.\ A. \textit{Agroecology: the science of sustainable agriculture}. 2.\ ed. Boulder: Westview Press, 1995.
+    
+    \item BEATON, D.\ E.\ et al. Guidelines for the process of cross-cultural adaptation of self-report measures. \textit{Spine}, v.~25, n.~24, p.~3186--3191, 2000.
+    
+    \item BERKES, F. \textit{Sacred Ecology}. 4.\ ed. New York: Routledge, 2017.
+    
+    \item BOND, T.\ G.; FOX, C.\ M. \textit{Applying the Rasch Model: Fundamental Measurement in the Human Sciences}. 4.\ ed. New York: Routledge, 2020.
+    
+    \item BRAUN, V.; CLARKE, V. Using thematic analysis in psychology. \textit{Qualitative Research in Psychology}, v.~3, n.~2, p.~77--101, 2006.
+    
+    \item BRASIL. \textit{Lei nº~13.123, de 20 de maio de 2015}. Marco Legal da Biodiversidade. Brasília: Diário Oficial da União, 2015.
+    
+    \item BRASIL. \textit{Resolução CNS nº~466, de 12 de dezembro de 2012}. Brasília: Conselho Nacional de Saúde, 2012.
+    
+    \item BRASIL. \textit{Resolução CNS nº~510, de 7 de abril de 2016}. Brasília: Conselho Nacional de Saúde, 2016.
+    
+    \item COCHRAN, W.\ G. \textit{Sampling Techniques}. 3.\ ed. New York: John Wiley \& Sons, 1977.
+    
+    \item CONAQ. \textit{Racismo e violência contra quilombos no Brasil}. Brasília: CONAQ/Terra de Direitos, 2023.
+    
+    \item CRESWELL, J.\ W.; CRESWELL, J.\ D. \textit{Research Design: Qualitative, Quantitative, and Mixed Methods Approaches}. 5.\ ed. Thousand Oaks: SAGE, 2018.
+    
+    \item FALS BORDA, O. \textit{Action and Knowledge: Breaking the Monopoly with Participatory Action-Research}. New York: Apex Press, 1991.
+    
+    \item FLEISS, J.\ L. Measuring nominal scale agreement among many raters. \textit{Psychological Bulletin}, v.~76, n.~5, p.~378--382, 1971.
+    
+    \item FOWLER, F.\ J. \textit{Survey Research Methods}. 5.\ ed. Thousand Oaks: SAGE, 2014.
+    
+    \item GLASER, B.\ G.; STRAUSS, A.\ L. \textit{The Discovery of Grounded Theory}. Chicago: Aldine, 1967.
+    
+    \item GUILLEMIN, F.; BOMBARDIER, C.; BEATON, D. Cross-cultural adaptation of health-related quality of life measures: literature review and proposed guidelines. \textit{Journal of Clinical Epidemiology}, v.~46, n.~12, p.~1417--1432, 1993.
+    
+    \item HERDMAN, M.\ et al. A model of equivalence in the cultural adaptation of HRQoL instruments: the universalist approach. \textit{Quality of Life Research}, v.~8, n.~4, p.~323--335, 1999.
+    
+    \item HERNÁNDEZ-NIETO, R. \textit{Contributions to Statistical Analysis}. Mérida: Universidad de Los Andes, 2002.
+    
+    \item ITC --- International Test Commission. \textit{ITC Guidelines for Translating and Adapting Tests}. 2.\ ed. 2017.
+    
+    \item LINIGER, H.\ et al. \textit{WOCAT: Where the Land is Greener}. CDE/FAO/WOCAT, 2019.
+    
+    \item LINSTONE, H.\ A.; TUROFF, M. (Eds.). \textit{The Delphi Method: Techniques and Applications}. Reading: Addison-Wesley, 1975.
+    
+    \item MAMDANI, E.\ H. Application of fuzzy algorithms for control of simple dynamic plant. \textit{Proc.\ IEE}, v.~121, n.~12, p.~1585--1588, 1975.
+    
+    \item MASTERS, G.\ N. A Rasch model for partial credit scoring. \textit{Psychometrika}, v.~47, n.~2, p.~149--174, 1982.
+    
+    \item NONAKA, I.; TAKEUCHI, H. \textit{The Knowledge-Creating Company}. Oxford: Oxford University Press, 1995.
+    
+    \item OSTROM, E. \textit{Governing the Commons}. Cambridge: Cambridge University Press, 1990.
+    
+    \item PATTON, M.\ Q. \textit{Qualitative Research \& Evaluation Methods}. 4.\ ed. Thousand Oaks: SAGE, 2015.
+    
+    \item POLANYI, M. \textit{The Tacit Dimension}. New York: Doubleday, 1966.
+    
+    \item RASCH, G. \textit{Probabilistic Models for Some Intelligence and Attainment Tests}. Copenhagen: Danish Institute for Educational Research, 1960.
+    
+    \item ROWE, G.; WRIGHT, G. The Delphi technique as a forecasting tool: issues and analysis. \textit{International Journal of Forecasting}, v.~15, n.~4, p.~353--375, 1999.
+    
+    \item SANTILLI, J. \textit{Agrobiodiversidade e direitos dos agricultores}. São Paulo: Peirópolis, 2009.
+    
+    \item SANTOS, B.\ S. \textit{Para além do pensamento abissal}. \textit{Novos Estudos CEBRAP}, v.~79, p.~71--94, 2007.
+    
+    \item SCHMIDT, R.\ C. Managing Delphi surveys using nonparametric statistical techniques. \textit{Decision Sciences}, v.~28, n.~3, p.~763--774, 2014.
+    
+    \item SCHULER, D.; NAMIOKA, A. (Eds.). \textit{Participatory Design: Principles and Practices}. Hillsdale: Lawrence Erlbaum, 1993.
+    
+    \item SCHWILCH, G.\ et al. Experiences in monitoring and assessment of sustainable land management. \textit{Land Degradation \& Development}, v.~22, n.~2, p.~214--225, 2011.
+    
+    \item TOLEDO, V.\ M.; BARRERA-BASSOLS, N. \textit{La Memoria Biocultural}. Barcelona: Icaria, 2008.
+    
+    \item WILLIS, G.\ B. \textit{Cognitive Interviewing}. Thousand Oaks: SAGE, 2005.
+    
+    \item WOCAT. \textit{Questionnaire on SLM Technologies (QT)}. Bern: CDE/University of Bern, 2023.
+    
+    \item ZADEH, L.\ A. Fuzzy sets. \textit{Information and Control}, v.~8, n.~3, p.~338--353, 1965.
+\end{enumerate}
+
+
+% =============================================================================
+% 16. ANEXOS E APÊNDICES (INDICAÇÃO)
+% =============================================================================
+\section{Anexos e Apêndices}
+
+Os seguintes documentos deverão ser anexados na submissão à Plataforma Brasil:
+
+\begin{enumerate}[label=\Alph*.]
+    \item \textbf{Termo de Consentimento Livre e Esclarecido (TCLE)} --- versão para agricultores quilombolas;
+    \item \textbf{TCLE} --- versão para especialistas (Delphi/comitê);
+    \item \textbf{Termo de Consentimento Comunitário} --- modelo de ata de consentimento coletivo;
+    \item \textbf{Termo de Autorização para Gravação de Áudio};
+    \item \textbf{Formulário de avaliação de equivalência transcultural} (Etapa 4);
+    \item \textbf{Roteiro de debriefing cognitivo} (Etapa 5);
+    \item \textbf{Formulários Delphi} --- Rodadas 1, 2 e 3;
+    \item \textbf{Roteiro de entrevista semiestruturada};
+    \item \textbf{Roteiro de grupo focal};
+    \item \textbf{Questionário WOCAT-SLM-QBR} (versão pré-final para TRI);
+    \item \textbf{Formulário de avaliação participativa} (oficinas devolutivas);
+    \item \textbf{Currículo Lattes} da pesquisadora responsável;
+    \item \textbf{Folha de rosto da Plataforma Brasil} (gerada pelo sistema);
+    \item \textbf{Carta de anuência} das lideranças comunitárias e/ou associações quilombolas;
+    \item \textbf{Carta de anuência institucional} (PPGPI/UFS);
+    \item \textbf{Declaração de infraestrutura} e concordância do orientador.
+\end{enumerate}
+
+
+% =============================================================================
+% DECLARAÇÃO DA PESQUISADORA
+% =============================================================================
+\vfill
+\noindent\rule{\textwidth}{0.4pt}
+
+\vspace{1cm}
+\noindent
+\textbf{Declaração da Pesquisadora Responsável}
+
+\vspace{0.5cm}
+\noindent
+Declaro que o presente projeto de pesquisa será conduzido em conformidade com as Resoluções CNS nº~466/2012 e nº~510/2016, com a Lei nº~13.123/2015, com a LGPD (Lei nº~13.709/2018) e com as demais normativas éticas aplicáveis. Comprometo-me a respeitar a autonomia, dignidade, direitos e saberes dos participantes, a conduzir a devolutiva dos resultados às comunidades e a submeter qualquer alteração no protocolo à apreciação do CEP/UFS.
+
+\vspace{2cm}
+
+\noindent
+\begin{minipage}[t]{0.45\textwidth}
+\centering
+\rule{6cm}{0.4pt}\\
+Catuxe Varjão de Santana Oliveira\\
+Pesquisadora Responsável\\
+PPGPI/UFS
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.45\textwidth}
+\centering
+\rule{6cm}{0.4pt}\\
+Prof. Dr. Paulo Roberto Gagliardi\\
+Orientador\\
+PPGPI/UFS
+\end{minipage}
+
+\vspace{2cm}
+
+\noindent
+\begin{center}
+\begin{minipage}[t]{0.45\textwidth}
+\centering
+\rule{6cm}{0.4pt}\\
+Prof. Dr. Luiz Diego Vidal Santos\\
+Coorientador\\
+UEFS
+\end{minipage}
+\end{center}
+
+\vspace{1cm}
+\noindent
+São Cristóvão --- SE, \rule{2cm}{0.4pt} de \rule{3cm}{0.4pt} de 2026.
+
+\end{document}

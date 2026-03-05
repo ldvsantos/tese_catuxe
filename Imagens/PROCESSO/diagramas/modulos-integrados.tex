@@ -1,77 +1,83 @@
-% Diagrama TikZ: Fluxo Integrado dos Processos Metodológicos
+% Diagrama TikZ: Fluxo Integrado dos Processos Metodológicos (6 fases)
 % Requer \usepackage{tikz} e \usetikzlibrary{...} no preâmbulo
 
 \begin{tikzpicture}[
   % ── Estilos de nós ──────────────────────────────────────
   phase/.style={
     draw=#1!70!black, fill=#1!12, rounded corners=3pt,
-    font=\scriptsize, text width=2.4cm, align=center,
-    minimum height=2.0cm, inner sep=3pt, line width=0.8pt},
+    font=\scriptsize, text width=2.2cm, align=center,
+    minimum height=2.0cm, inner sep=2pt, line width=0.8pt},
   phasenum/.style={
     circle, draw=#1!70!black, fill=#1!25,
     font=\scriptsize\bfseries, inner sep=1.5pt,
     minimum size=0.5cm},
   output/.style={
     draw=gray!60, fill=gray!6, rounded corners=2pt,
-    font=\tiny\itshape, text width=2.4cm, align=center,
+    font=\tiny\itshape, text width=2.2cm, align=center,
     minimum height=0.9cm, inner sep=2pt, dashed},
   method/.style={
     draw=gray!40, fill=white, rounded corners=1pt,
-    font=\tiny, text width=2.4cm, align=center,
+    font=\tiny, text width=2.2cm, align=center,
     minimum height=0.7cm, inner sep=2pt},
   titlebox/.style={
     draw=black!70, fill=black!7, rounded corners=3pt,
-    font=\footnotesize\bfseries, text width=13.8cm, align=center,
+    font=\footnotesize\bfseries, text width=16.4cm, align=center,
     minimum height=0.8cm, inner sep=4pt},
   integbox/.style={
     draw=black!70, fill=black!7, rounded corners=3pt,
-    font=\scriptsize, text width=13.8cm, align=center,
+    font=\scriptsize, text width=16.4cm, align=center,
     minimum height=0.9cm, inner sep=4pt},
   arr/.style={-{Stealth[length=5pt]}, thick, draw=gray!60},
   dataarr/.style={-{Stealth[length=4pt]}, semithick, draw=blue!40, densely dashed},
 ]
 
 % ══════════════════════════════════════════════════════════
-% TÍTULO
+% T\'ITULO
 % ══════════════════════════════════════════════════════════
-\node[titlebox] (TITLE) {\textsc{Arquitetura Metodológica Integrada}};
+\node[titlebox] (TITLE) {\textsc{Arquitetura Metodol\'ogica Integrada}};
 
 % ══════════════════════════════════════════════════════════
 % FASES (linha horizontal)
 % ══════════════════════════════════════════════════════════
 \node[phase=blue, below=1.0cm of TITLE.south west, anchor=north west] (F1) {
   \textbf{Fase I}\\[2pt]
-  Revisão de Escopo\\PRISMA-ScR\\[2pt]
-  {\tiny Meta-análise de acurácia\\Conformidade FAIR\\Validação espacial}};
+  Revis\~ao de Escopo\\PRISMA-ScR\\[2pt]
+  {\tiny Meta-an\'alise de acur\'acia\\Conformidade FAIR\\Valida\c{c}\~ao espacial}};
 
-\node[phase=teal, right=0.3cm of F1] (F2) {
+\node[phase=cyan!70!black, right=0.18cm of F1] (F2) {
   \textbf{Fase II}\\[2pt]
-  Adaptação Transcultural\\+ Delphi\\[2pt]
-  {\tiny WOCAT-SLM-QBR\\Elicitação estruturada\\Variáveis linguísticas}};
+  Meta-an\'alise\\PRISMA\,2020\\[2pt]
+  {\tiny Dimens\~oes $V_1$--$V_6$\\Magnitudes de efeito\\Hierarquiza\c{c}\~ao}};
 
-\node[phase=violet, right=0.3cm of F2] (F3) {
+\node[phase=teal, right=0.18cm of F2] (F3) {
   \textbf{Fase III}\\[2pt]
-  Modelagem Fuzzy\\TRI + Fuzzy $\rightarrow$ ISB\\[2pt]
-  {\tiny Funções de pertinência\\Regras de inferência\\Defuzzificação}};
+  Adapta\c{c}\~ao Transcultural\\+ Delphi\\[2pt]
+  {\tiny WOCAT-SLM-QBR\\Elicita\c{c}\~ao estruturada\\Vari\'aveis lingu\'\i sticas}};
 
-\node[phase=orange, right=0.3cm of F3] (F4) {
+\node[phase=violet, right=0.18cm of F3] (F4) {
   \textbf{Fase IV}\\[2pt]
-  Auditoria Computacional\\Aceitação Institucional\\[2pt]
-  {\tiny Completude documental\\Painel regulatório\\Conformidade FAIR}};
+  Modelagem Fuzzy\\TRI + Fuzzy $\rightarrow$ ISB\\[2pt]
+  {\tiny Fun\c{c}\~oes de pertin\^encia\\Regras de infer\^encia\\Defuzzifica\c{c}\~ao}};
 
-\node[phase=green!60!black, right=0.3cm of F4] (F5) {
+\node[phase=orange, right=0.18cm of F4] (F5) {
   \textbf{Fase V}\\[2pt]
-  Design Participativo\\Validação Territorial\\[2pt]
-  {\tiny Co-design comunitário\\Usabilidade (SUS)\\Adoção continuada}};
+  Auditoria Computacional\\Aceita\c{c}\~ao Institucional\\[2pt]
+  {\tiny Completude documental\\Painel regulat\'orio\\Conformidade FAIR}};
+
+\node[phase=green!60!black, right=0.18cm of F5] (F6) {
+  \textbf{Fase VI}\\[2pt]
+  Design Participativo\\Valida\c{c}\~ao Territorial\\[2pt]
+  {\tiny Co-design comunit\'ario\\Usabilidade (SUS)\\Ado\c{c}\~ao continuada}};
 
 % ══════════════════════════════════════════════════════════
 % OUTPUTS
 % ══════════════════════════════════════════════════════════
-\node[output, below=0.5cm of F1] (O1) {Diagnóstico de prontidão\\operacional do ML\\para SAT};
-\node[output, below=0.5cm of F2] (O2) {Instrumento\\WOCAT-SLM-QBR\\+ variáveis validadas};
-\node[output, below=0.5cm of F3] (O3) {Índice de Salvaguarda\\Biocultural\\(ISB: 0--100)};
-\node[output, below=0.5cm of F4] (O4) {Taxa de aceitação\\institucional e\\conformidade regulatória};
-\node[output, below=0.5cm of F5] (O5) {Sistema validado\\territorialmente\\com indicadores SUS};
+\node[output, below=0.5cm of F1] (O1) {Diagn\'ostico de prontid\~ao\\operacional do ML\\para SAT};
+\node[output, below=0.5cm of F2] (O2) {Magnitudes de efeito\\$V_1$--$V_6$ e\\hierarquiza\c{c}\~ao};
+\node[output, below=0.5cm of F3] (O3) {Instrumento\\WOCAT-SLM-QBR\\+ vari\'aveis validadas};
+\node[output, below=0.5cm of F4] (O4) {\'Indice de Salvaguarda\\Biocultural\\(ISB: 0--100)};
+\node[output, below=0.5cm of F5] (O5) {Qualidade t\'ecnica\\(padroniza\c{c}\~ao, completude,\\rastreabilidade)};
+\node[output, below=0.5cm of F6] (O6) {Sistema validado\\territorialmente\\com indicadores SUS};
 
 % ══════════════════════════════════════════════════════════
 % SETAS ENTRE FASES (sequencial)
@@ -80,40 +86,45 @@
 \draw[arr] (F2.east) -- (F3.west);
 \draw[arr] (F3.east) -- (F4.west);
 \draw[arr] (F4.east) -- (F5.west);
+\draw[arr] (F5.east) -- (F6.west);
 
-% Setas verticais fase → output
-\foreach \i in {1,...,5}{
+% Setas verticais fase \textrightarrow{} output
+\foreach \i in {1,...,6}{
   \draw[arr] (F\i.south) -- (O\i.north);
 }
 
 % ══════════════════════════════════════════════════════════
-% SETAS DE RETROALIMENTAÇÃO (dados entre fases)
+% SETAS DE RETROALIMENTA\c{C}\~AO (dados entre fases)
 % ══════════════════════════════════════════════════════════
-\draw[dataarr] (O1.south) -- ++(0,-0.3) -| 
-  node[pos=0.25, below, font=\tiny\itshape, text=blue!50]{lacunas $\rightarrow$ variáveis} (F2.south);
+\draw[dataarr] (O1.south) -- ++(0,-0.3) -|
+  node[pos=0.25, below, font=\tiny\itshape, text=blue!50]{lacunas $\rightarrow$ dimens\~oes} (F2.south);
 \draw[dataarr] (O2.south) -- ++(0,-0.6) -|
-  node[pos=0.25, below, font=\tiny\itshape, text=blue!50]{variáveis $\rightarrow$ fuzzy} (F3.south);
+  node[pos=0.25, below, font=\tiny\itshape, text=blue!50]{$V_1$--$V_6$ $\rightarrow$ vari\'aveis} (F3.south);
 \draw[dataarr] (O3.south) -- ++(0,-0.3) -|
-  node[pos=0.25, below, font=\tiny\itshape, text=blue!50]{ISB $\rightarrow$ dossi\^e} (F4.south);
+  node[pos=0.25, below, font=\tiny\itshape, text=blue!50]{vari\'aveis $\rightarrow$ fuzzy} (F4.south);
+\draw[dataarr] (O4.south) -- ++(0,-0.6) -|
+  node[pos=0.25, below, font=\tiny\itshape, text=blue!50]{ISB $\rightarrow$ dossi\^e} (F5.south);
 
 % ══════════════════════════════════════════════════════════
-% CAPÍTULOS (mapeamento)
+% CAP\'ITULOS (mapeamento)
 % ══════════════════════════════════════════════════════════
 \node[font=\tiny\bfseries, text=gray!50, below=0.05cm of O1] {Cap.\,1};
 \node[font=\tiny\bfseries, text=gray!50, below=0.05cm of O2] {Cap.\,2};
 \node[font=\tiny\bfseries, text=gray!50, below=0.05cm of O3] {Cap.\,3};
 \node[font=\tiny\bfseries, text=gray!50, below=0.05cm of O4] {Cap.\,4};
 \node[font=\tiny\bfseries, text=gray!50, below=0.05cm of O5] {Cap.\,5};
+\node[font=\tiny\bfseries, text=gray!50, below=0.05cm of O6] {Cap.\,6};
 
 % ══════════════════════════════════════════════════════════
-% INTEGRAÇÃO FINAL
+% INTEGRA\c{C}\~AO FINAL
 % ══════════════════════════════════════════════════════════
-\node[integbox, below=1.6cm of O3] (INT) {
-  \textbf{\textsc{Integração}} ---
-  Sensoriamento remoto · Governança de dados (FAIR) · Inferência fuzzy ·
-  Métricas auditáveis de salvaguarda · Proteção de PI};
+\node[integbox, below=1.6cm of O3.south east] (INT) {
+  \textbf{\textsc{Integra\c{c}\~ao}}\enspace
+  Sensoriamento remoto\enspace$\cdot$\enspace Governan\c{c}a de dados (FAIR)\enspace$\cdot$\enspace
+  Infer\^encia fuzzy\enspace$\cdot$\enspace
+  M\'etricas audit\'aveis de salvaguarda\enspace$\cdot$\enspace Prote\c{c}\~ao de PI};
 
-\foreach \i in {1,...,5}{
+\foreach \i in {1,...,6}{
   \draw[arr, gray!40] (O\i.south) -- ++(0,-0.5) -| (INT.north);
 }
 

@@ -1,31 +1,31 @@
-% Diagrama TikZ: Alinhamento OE → Q → H
+% Diagrama TikZ: Alinhamento OE → Q → H (6 colunas)
 % Requer \usepackage{tikz} e \usetikzlibrary{...} no preâmbulo
 
 \begin{tikzpicture}[
   % ── Estilos dos nós ──────────────────────────────────────────
   OGstyle/.style={
     draw=black!80, fill=black!8, rounded corners=3pt,
-    font=\footnotesize\bfseries, text width=13.8cm, align=center,
+    font=\footnotesize\bfseries, text width=16.4cm, align=center,
     minimum height=1.1cm, inner sep=4pt},
   OEstyle/.style={
     draw=blue!70!black, fill=blue!8, rounded corners=2pt,
-    font=\scriptsize, text width=2.45cm, align=center,
-    minimum height=2.6cm, inner sep=3pt},
+    font=\scriptsize, text width=2.25cm, align=center,
+    minimum height=2.6cm, inner sep=2pt},
   Qstyle/.style={
     draw=orange!70!black, fill=orange!8, rounded corners=2pt,
-    font=\scriptsize, text width=2.45cm, align=center,
-    minimum height=2.6cm, inner sep=3pt},
+    font=\scriptsize, text width=2.25cm, align=center,
+    minimum height=2.6cm, inner sep=2pt},
   Hstyle/.style={
     draw=green!50!black, fill=green!8, rounded corners=2pt,
-    font=\scriptsize, text width=2.45cm, align=center,
-    minimum height=2.6cm, inner sep=3pt},
+    font=\scriptsize, text width=2.25cm, align=center,
+    minimum height=2.6cm, inner sep=2pt},
   CAPstyle/.style={
     draw=gray!60, fill=gray!10, rounded corners=2pt,
-    font=\scriptsize\itshape, text width=2.45cm, align=center,
+    font=\scriptsize\itshape, text width=2.25cm, align=center,
     minimum height=0.7cm, inner sep=2pt},
   CVstyle/.style={
     draw=black!80, fill=black!8, rounded corners=3pt,
-    font=\footnotesize\bfseries, text width=13.8cm, align=center,
+    font=\footnotesize\bfseries, text width=16.4cm, align=center,
     minimum height=1.0cm, inner sep=4pt},
   % ── Setas ────────────────────────────────────────────────────
   arr/.style={-{Stealth[length=4pt]}, thick, draw=gray!70},
@@ -39,108 +39,122 @@
 % ══════════════════════════════════════════════════════════════
 \node[OGstyle] (OG) {%
   \textsc{Objetivo Geral}\\[2pt]
-  Desenvolver e validar uma arquitetura computacional integrada --- articulando\\
-  aprendizado de máquina, lógica fuzzy e modelagem psicométrica ---\\
-  para decodificar, documentar e salvaguardar ativos intangíveis em SSAT quilombolas\\
-  do Semiárido Nordeste\,II (Bahia)};
+  Desenvolver e validar um modelo integrado de decodifica\c{c}\~ao e salvaguarda, articulando\\
+  aprendizado de m\'aquina, l\'ogica fuzzy e modelagem psicom\'etrica,\\
+  para documentar e proteger ativos intang\'\i veis em SSAT quilombolas\\
+  do Semi\'arido Nordeste\,II (Bahia)};
 
 % ══════════════════════════════════════════════════════════════
 % RÓTULOS DE COLUNA
 % ══════════════════════════════════════════════════════════════
 \node[coltitle, below=0.55cm of OG.south west, anchor=west, xshift=0.1cm]
-  (labOE) {Objetivos Específicos};
+  (labOE) {Objetivos Espec\'\i ficos};
 
 % ══════════════════════════════════════════════════════════════
 % LINHA 1 — OBJETIVOS ESPECÍFICOS
 % ══════════════════════════════════════════════════════════════
 \node[OEstyle, below=1.0cm of OG.south west, anchor=north west, xshift=0.0cm]
   (OE1) {\textbf{OE\,1}\\[1pt]
-  Mapear o estado da arte de ML em SAT (PRISMA-ScR), identificando lacunas em validação, XAI e FAIR};
+  Mapear estado da arte de ML em SAT (PRISMA-ScR), lacunas em FAIR, XAI e valida\c{c}\~ao};
 
-\node[OEstyle, right=0.25cm of OE1] (OE2)
+\node[OEstyle, right=0.20cm of OE1] (OE2)
   {\textbf{OE\,2}\\[1pt]
-  Adaptar transculturalmente o WOCAT-SLM e elicitar variáveis via Delphi para decodificação computacional};
+  Sintetizar magnitudes de efeito das 6 dimens\~oes $V_1$--$V_6$ via meta-an\'alise PRISMA\,2020};
 
-\node[OEstyle, right=0.25cm of OE2] (OE3)
+\node[OEstyle, right=0.20cm of OE2] (OE3)
   {\textbf{OE\,3}\\[1pt]
-  Desenvolver motor de inferência fuzzy (TRI + Fuzzy) gerando o Índice de Salvaguarda Biocultural (ISB)};
+  Adaptar WOCAT-SLM e elicitar vari\'aveis via Delphi para decodifica\c{c}\~ao computacional};
 
-\node[OEstyle, right=0.25cm of OE3] (OE4)
+\node[OEstyle, right=0.20cm of OE3] (OE4)
   {\textbf{OE\,4}\\[1pt]
-  Avaliar eficácia probatória e aceitação institucional dos dossiês via auditoria computacional};
+  Desenvolver motor fuzzy + TRI gerando o \'Indice de Salvaguarda Biocultural (ISB)};
 
-\node[OEstyle, right=0.25cm of OE4] (OE5)
+\node[OEstyle, right=0.20cm of OE4] (OE5)
   {\textbf{OE\,5}\\[1pt]
-  Validar a adoção territorial via design participativo com comunidades quilombolas};
+  Avaliar efic\'acia probat\'oria e aceita\c{c}\~ao institucional dos dossi\^es regulat\'orios};
+
+\node[OEstyle, right=0.20cm of OE5] (OE6)
+  {\textbf{OE\,6}\\[1pt]
+  Validar ado\c{c}\~ao territorial via design participativo com comunidades quilombolas};
 
 % ══════════════════════════════════════════════════════════════
 % LINHA 2 — QUESTÕES DE PESQUISA
 % ══════════════════════════════════════════════════════════════
 \node[Qstyle, below=0.55cm of OE1] (Q1)
   {\textbf{Q\,1}\\[1pt]
-  Em que medida ML apresenta prontidão operacional para SAT (acurácia, FAIR, validação espacial)?};
+  Em que medida ML apresenta prontid\~ao operacional para SAT?};
 
 \node[Qstyle, below=0.55cm of OE2] (Q2)
   {\textbf{Q\,2}\\[1pt]
-  Como adaptação transcultural + Delphi convertem saberes tácitos em variáveis computacionais?};
+  Quais dimens\~oes $V_1$--$V_6$ exercem maior magnitude de efeito sobre resili\^encia?};
 
 \node[Qstyle, below=0.55cm of OE3] (Q3)
   {\textbf{Q\,3}\\[1pt]
-  Como lógica fuzzy representa ambiguidade cultural, produzindo ISB com maior aderência comunitária?};
+  Como WOCAT-SLM + Delphi convertem saberes t\'acitos em vari\'aveis computacionais?};
 
 \node[Qstyle, below=0.55cm of OE4] (Q4)
   {\textbf{Q\,4}\\[1pt]
-  Em que medida os dossiês gerados atendem requisitos probatórios de instâncias regulatórias?};
+  O ISB fuzzy produz maior ader\^encia comunit\'aria que classifica\c{c}\~oes lineares?};
 
 \node[Qstyle, below=0.55cm of OE5] (Q5)
   {\textbf{Q\,5}\\[1pt]
-  Como \textit{participatory design} afeta apropriação e adoção continuada da tecnologia?};
+  Os dossi\^es atendem requisitos probat\'orios de inst\^ancias regulat\'orias?};
+
+\node[Qstyle, below=0.55cm of OE6] (Q6)
+  {\textbf{Q\,6}\\[1pt]
+  Como \textit{participatory design} afeta apropria\c{c}\~ao e ado\c{c}\~ao continuada?};
 
 % ══════════════════════════════════════════════════════════════
 % LINHA 3 — HIPÓTESES
 % ══════════════════════════════════════════════════════════════
 \node[Hstyle, below=0.55cm of Q1] (H1)
   {\textbf{H\,1}\\[1pt]
-  ML alcança alta acurácia, porém lacunas em FAIR, XAI e validação espacial limitam prontidão regulatória};
+  Prontid\~ao ML insuficiente por lacunas em governan\c{c}a de dados dos estudos prim\'arios};
 
 \node[Hstyle, below=0.55cm of Q2] (H2)
   {\textbf{H\,2}\\[1pt]
-  WOCAT-SLM-QBR + Delphi produz variáveis com consenso ($W\!\geq\!0{,}70$) superior a métodos não estruturados};
+  Ao menos uma dimens\~ao $V_1$--$V_6$ difere significativamente das demais em magnitude de efeito};
 
 \node[Hstyle, below=0.55cm of Q3] (H3)
   {\textbf{H\,3}\\[1pt]
-  ISB fuzzy apresenta maior fidelidade à percepção comunitária de urgência (menor RMSE) que modelos lineares};
+  WOCAT-SLM + Delphi produz consenso superior a m\'etodos n\~ao estruturados};
 
 \node[Hstyle, below=0.55cm of Q4] (H4)
   {\textbf{H\,4}\\[1pt]
-  Dossiês computacionais alcançam taxa de aceitação institucional superior ($>$85\%) à documentação convencional};
+  ISB fuzzy apresenta maior concord\^ancia comunit\'aria que classifica\c{c}\~oes lineares};
 
 \node[Hstyle, below=0.55cm of Q5] (H5)
   {\textbf{H\,5}\\[1pt]
-  Design participativo eleva apropriação e taxa de adoção continuada vs.\ ferramentas exógenas};
+  Modelo eleva qualidade t\'ecnica (padroniza\c{c}\~ao, completude, rastreabilidade) vs.\ convencional};
+
+\node[Hstyle, below=0.55cm of Q6] (H6)
+  {\textbf{H\,6}\\[1pt]
+  Design participativo eleva ado\c{c}\~ao continuada vs.\ ferramentas ex\'ogenas};
 
 % ══════════════════════════════════════════════════════════════
 % LINHA 4 — CAPÍTULOS (ARTIGOS)
 % ══════════════════════════════════════════════════════════════
-\node[CAPstyle, below=0.45cm of H1] (C1) {Capítulo 1};
-\node[CAPstyle, below=0.45cm of H2] (C2) {Capítulo 2};
-\node[CAPstyle, below=0.45cm of H3] (C3) {Capítulo 3};
-\node[CAPstyle, below=0.45cm of H4] (C4) {Capítulo 4};
-\node[CAPstyle, below=0.45cm of H5] (C5) {Capítulo 5};
+\node[CAPstyle, below=0.45cm of H1] (C1) {Cap\'\i tulo 1};
+\node[CAPstyle, below=0.45cm of H2] (C2) {Cap\'\i tulo 2};
+\node[CAPstyle, below=0.45cm of H3] (C3) {Cap\'\i tulo 3};
+\node[CAPstyle, below=0.45cm of H4] (C4) {Cap\'\i tulo 4};
+\node[CAPstyle, below=0.45cm of H5] (C5) {Cap\'\i tulo 5};
+\node[CAPstyle, below=0.45cm of H6] (C6) {Cap\'\i tulo 6};
 
 % ══════════════════════════════════════════════════════════════
 % CONVERGÊNCIA
 % ══════════════════════════════════════════════════════════════
-\node[CVstyle, below=0.9cm of C3] (CV) {%
-  \textsc{Validação Convergente}\\[1pt]
-  Arquitetura computacional integrada validada: prontidão ML (H1) $\rightarrow$
-  variáveis decodificadas (H2) $\rightarrow$ ISB fuzzy (H3) $\rightarrow$
-  aceitação institucional (H4) $\rightarrow$ adoção territorial (H5)};
+\node[CVstyle, below=0.9cm of C3.south east] (CV) {%
+  \textsc{Valida\c{c}\~ao Convergente}\\[1pt]
+  Modelo integrado: prontid\~ao ML\,(H1) $\rightarrow$
+  dimens\~oes $V_1$--$V_6$\,(H2) $\rightarrow$
+  vari\'aveis Delphi\,(H3) $\rightarrow$ ISB fuzzy\,(H4) $\rightarrow$
+  qualidade t\'ecnica documental\,(H5) $\rightarrow$ ado\c{c}\~ao territorial\,(H6)};
 
 % ══════════════════════════════════════════════════════════════
 % SETAS VERTICAIS
 % ══════════════════════════════════════════════════════════════
-\foreach \i in {1,...,5}{
+\foreach \i in {1,...,6}{
   \draw[arr] (OG.south) -- ++(0,-0.35) -| (OE\i.north);
   \draw[arr] (OE\i.south) -- (Q\i.north);
   \draw[arr] (Q\i.south) -- (H\i.north);
@@ -153,8 +167,8 @@
 % ══════════════════════════════════════════════════════════════
 \begin{scope}[coltitle]
   \node[rotate=90, anchor=south] at ($(OE1.west)+(-0.45,0)$) {Objetivos};
-  \node[rotate=90, anchor=south] at ($(Q1.west)+(-0.45,0)$)  {Questões};
-  \node[rotate=90, anchor=south] at ($(H1.west)+(-0.45,0)$)  {Hipóteses};
+  \node[rotate=90, anchor=south] at ($(Q1.west)+(-0.45,0)$)  {Quest\~oes};
+  \node[rotate=90, anchor=south] at ($(H1.west)+(-0.45,0)$)  {Hip\'oteses};
   \node[rotate=90, anchor=south] at ($(C1.west)+(-0.45,0)$)  {Artigos};
 \end{scope}
 

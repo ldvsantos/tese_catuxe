@@ -1,0 +1,41 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Meta-análise Quantitativa de Vulnerabilidade Biocultural}
+\label{sec:met_meta_analise}
+
+A meta-análise quantitativa constitui o componente metodológico empregado para sintetizar evidências empíricas sobre dimensões de vulnerabilidade biocultural em saberes e sistemas agrícolas tradicionais (SSAT), fornecendo parâmetros calibrados por evidência para a hierarquização de prioridades de salvaguarda. O detalhamento completo da metodologia, incluindo equações, tabelas de variáveis proxy e fluxograma operacional, é apresentado no Capítulo~2; esta seção contextualiza o procedimento no fluxo metodológico integrado da pesquisa.
+
+\subsection{Diretrizes e Registro}
+
+O estudo segue as diretrizes PRISMA~2020 (\textit{Preferred Reporting Items for Systematic Reviews and Meta-Analyses}) \cite{Page2021} para revisões sistemáticas e meta-análises, com protocolo registrado prospectivamente na plataforma PROSPERO. A conformidade com as recomendações do Cochrane Handbook for Systematic Reviews of Interventions \cite{Higgins2019} assegura padronização na extração de dados, avaliação de risco de viés e síntese quantitativa.
+
+\subsection{Framework e Dimensões de Vulnerabilidade}
+
+A vulnerabilidade biocultural é modelada como construto latente hexadimensional, derivado da convergência entre taxonomias de erosão de conhecimento tradicional \cite{Agrawal2002} e indicadores de resiliência socioecológica \cite{Folke2016}. As seis dimensões funcionais compreendem a Erosão Intergeracional ($V_1$), relativa à descontinuidade na transmissão vertical do conhecimento; a Complexidade Biocultural ($V_2$), que mensura a riqueza de interações ecológicas codificadas nos sistemas tradicionais; a Singularidade Territorial ($V_3$), referente à exclusividade geográfica das práticas; o Status de Documentação ($V_4$), que avalia o grau de registro formal preexistente; a Vulnerabilidade Jurídica ($V_5$), correspondente à exposição a apropriação indevida; e a Organização Social ($V_6$), que expressa a vitalidade das estruturas comunitárias de governança do conhecimento.
+
+\subsection{Busca Sistemática e Critérios de Elegibilidade}
+
+Registros bibliográficos foram recuperados das bases Scopus e Web of Science Core Collection, complementados por \textit{backward} e \textit{forward snowballing}. Os critérios de elegibilidade seguem o framework PICOS (População, Intervenção, Comparação, Outcomes, Study design), admitindo estudos empíricos comparativos publicados entre 2016 e 2026 em inglês, português ou espanhol. A triagem foi conduzida por dois revisores independentes, precedida de exercício piloto de calibração, com concordância quantificada por kappa de Cohen ($\kappa \geq 0{,}61$) conforme critérios de \cite{Landis1977}.
+
+\subsection{Protocolo de Integração Multi-Tier e Codificação Ordinal}
+
+A predominância de evidência qualitativa no corpus (74,5\% dos registros como Tier~3 ou Tier~4) tornou impraticável a imputação múltipla por equações encadeadas (MICE). Em substituição, desenvolveu-se um protocolo de integração multi-tier que classifica os 47 estudos finais em cinco níveis de evidência (Tier~1 com médias e variâncias completas; Tier~2a a partir de $p$-values; Tier~2b a partir de limiares ANOVA; Tier~3 com tabelas cruzadas; Tier~4 qualitativos puros) e aplica conversões calibradas com propagação explícita de incerteza, inflando o erro-padrão proporcionalmente ao tier de origem. Para os registros Tier~3 e Tier~4, dois revisores independentes codificaram cada comparação em direção ($+1$, $0$, $-1$) e intensidade (fraca, moderada, forte), com posterior conversão em $lnRR$ sintéticos via transformações de \cite{Hasselblad1995} e \cite{Zhang1998}. Como verificação de robustez, implementou-se modelo bayesiano hierárquico em \textit{brms} \cite{Burkner2017}, no qual dados quantitativos entraram como observações gaussianas e julgamentos ordinais via família cumulativa compartilhando o mesmo parâmetro de dimensão.
+
+\subsection{Métrica de Tamanho de Efeito e Modelo Hierárquico}
+
+O logaritmo da razão de resposta ($lnRR$) foi adotado como métrica de tamanho de efeito por sua interpretabilidade proporcional \cite{Hedges1999}. A síntese empregou modelo hierárquico de efeitos mistos em três níveis (observação, estudo, meta-análise) com estimação REML, implementado no pacote \textit{metafor} do R \cite{Viechtbauer2010}. A heterogeneidade foi quantificada por $Q$ de Cochran e $I^2$ \cite{Higgins2003}, e a estimação robusta de variância (RVE) com correção de pequena amostra (CR2) foi aplicada via \textit{clubSandwich} \cite{Pustejovsky2022}. A matriz de variância-covariância intra-estudo assumiu correlação constante $\rho = 0{,}8$, com análises de sensibilidade no intervalo $[0{,}5;\; 1{,}0]$.
+
+\subsection{Meta-regressão e Moderadores Contextuais}
+
+Meta-regressões multivariadas testaram se tipo de intervenção (documentação, registro patrimonial, proteção jurídica, governança comunitária), região biogeográfica (semiárido, cerrado, amazônia, mata atlântica, savana, floresta tropical) e tipo de comunidade (quilombola, indígena, camponesa, ribeirinha) explicavam proporção significativa da heterogeneidade residual. Um moderador derivado de congruência com o Semiárido Nordeste~II quantificou a transferibilidade dos parâmetros para o contexto-alvo.
+
+\subsection{Viés de Publicação e Sensibilidade}
+
+O viés de publicação foi avaliado por \textit{funnel plots}, testes de Egger \cite{Sterne2005} e Begg \cite{Begg1994}, e método \textit{trim-and-fill} \cite{Duval2000}. Análises de sensibilidade incluíram \textit{leave-one-out} por estudo, comparação entre estimadores DerSimonian-Laird e REML, variação do parâmetro $\rho$ de correlação intra-estudo e restrição ao subconjunto Tier~1.
+
+\subsection{Análise de Lacunas de Evidência}
+
+Para cada dimensão funcional, contabilizou-se o número de variáveis proxy para as quais nenhum estudo elegível reportou dados suficientes para cálculo de $lnRR$, produzindo um vetor de evidência ausente que orienta a elicitação de dados primários em investigações complementares.
+
+\subsection{Outputs para a Arquitetura de Salvaguarda}
+
+Os outputs funcionais da meta-análise abrangem o ranking de magnitudes de efeito ($\overline{lnRR}$) por dimensão, os índices de heterogeneidade ($I^2$, $\tau^2$) por dimensão, os coeficientes de meta-regressão dos moderadores contextuais e os intervalos de confiança e predição de 95\% dos $lnRR$. Esses parâmetros constituem a base empírica para a ponderação de variáveis em instrumentos compostos de avaliação de vulnerabilidade biocultural.

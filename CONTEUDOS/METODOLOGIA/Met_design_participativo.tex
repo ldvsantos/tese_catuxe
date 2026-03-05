@@ -4,7 +4,7 @@ Este módulo incorpora usuários finais na co-criação das regras e interfaces 
 
 \subsection{Fundamentação Metodológica}
 
-O Design Participativo (Participatory Design -- PD) constitui abordagem centrada no usuário que promove envolvimento ativo dos stakeholders ao longo de todo o ciclo de desenvolvimento de tecnologias, desde a definição de requisitos até a validação \cite{Schuler1993,Simonsen2012}. Para sistemas de apoio à decisão em contextos comunitários, o PD é crítico para garantir: (i) aderência dos requisitos às necessidades reais; (ii) apropriação psicológica da tecnologia; (iii) capacitação para uso autônomo; e (iv) sustentabilidade do sistema após a saída da equipe de pesquisa.
+O Design Participativo (Participatory Design, PD) constitui abordagem centrada no usuário que promove envolvimento ativo dos stakeholders ao longo de todo o ciclo de desenvolvimento de tecnologias, desde a definição de requisitos até a validação \cite{Schuler1993,Simonsen2012}. Para sistemas de apoio à decisão em contextos comunitários, o PD é crítico para garantir aderência dos requisitos às necessidades reais, apropriação psicológica da tecnologia, capacitação para uso autônomo e sustentabilidade do modelo após a saída da equipe de pesquisa.
 
 \subsection{Delineamento}
 
@@ -18,14 +18,7 @@ Realização de grupos focais (n~=~3--4, com 8--12 participantes cada) nas comun
 
 \subsubsection{Fase 2: Co-Criação de Requisitos e Regras}
 
-Oficinas de co-design (n~=~2--3, duração 4--6h cada) onde os participantes, juntamente com a equipe de pesquisa, definirão:
-
-\begin{itemize}
-\item \textbf{Priorização de variáveis:} quais dimensões de vulnerabilidade e salvaguarda são mais relevantes para inclusão no ISB (complementando o painel Delphi com perspectiva comunitária).
-\item \textbf{Calibração de limiares:} ajuste dos intervalos de funções de pertinência fuzzy (``o que é 'Alto Risco de Erosão Intergeracional' na prática?'').
-\item \textbf{Refinamento de regras:} validação e ajuste de regras de inferência, verificando coerência com conhecimento local.
-\item \textbf{Design de interface:} prototipagem em papel (low-fidelity prototypes) das telas do sistema, definindo fluxo de navegação, terminologia acessível e visualizações de saída (gráficos, tabelas).
-\end{itemize}
+Oficinas de co-design (n~=~2--3, duração 4--6h cada) onde os participantes, juntamente com a equipe de pesquisa, definirão a priorização de variáveis, identificando quais dimensões de vulnerabilidade e salvaguarda são mais relevantes para inclusão no ISB e complementando o painel Delphi com perspectiva comunitária. As oficinas contemplarão ainda a calibração de limiares das funções de pertinência fuzzy, o refinamento e validação das regras de inferência em confronto com o conhecimento local e a prototipagem em papel (	extit{low-fidelity prototypes}) das telas do modelo, definindo fluxo de navegação, terminologia acessível e visualizações de saída.
 
 \textbf{Ferramentas:} uso de cartões, diagramas impressos, sketches e post-its para facilitar ideação colaborativa. Sessões gravadas em áudio/vídeo (com consentimento) para análise posterior.
 
@@ -33,46 +26,22 @@ Oficinas de co-design (n~=~2--3, duração 4--6h cada) onde os participantes, ju
 
 Desenvolvimento de protótipo funcional de média fidelidade (implementado em Python com interface Streamlit ou similar) incorporando os requisitos co-criados. O protótipo será submetido a testes de usabilidade em laboratório e em campo (nas comunidades).
 
-\textbf{Protocolo de Teste:}
-\begin{enumerate}
-\item \textbf{Tarefas dirigidas:} os usuários (n~=~10--15) executarão tarefas típicas (ex.: ``Gere o ISB para o saber X'', ``Compare dois saberes por prioridade de salvaguarda'', ``Gere dossiê para submissão ao IPHAN'').
-\item \textbf{Métricas quantitativas:} taxa de sucesso nas tarefas, tempo de conclusão, número de erros, necessidade de assistência.
-\item \textbf{Métricas qualitativas:} entrevistas pós-teste explorando dificuldades, sugestões de melhoria e satisfação geral (System Usability Scale -- SUS \cite{Brooke1996}).
-\item \textbf{Análise think-aloud:} usuários verbalizarão pensamentos durante execução de tarefas, permitindo identificar pontos de confusão.
-\end{enumerate}
+O protocolo de teste prevê que os usuários (n~=~10--15) executem tarefas dirigidas típicas, tais como gerar o ISB para um determinado saber, comparar dois saberes por prioridade de salvaguarda e produzir dossiê para submissão ao IPHAN. As métricas quantitativas abrangerão taxa de sucesso, tempo de conclusão, número de erros e necessidade de assistência, enquanto as métricas qualitativas serão coletadas mediante entrevistas pós-teste explorando dificuldades, sugestões de melhoria e satisfação geral conforme a System Usability Scale (SUS) \cite{Brooke1996}. Complementarmente, a análise 	extit{think-aloud} permitirá que os usuários verbalizem seus pensamentos durante a execução, viabilizando a identificação de pontos de confusão.
 
 Ciclos iterativos de redesign e teste serão conduzidos até alcançar taxa de sucesso $\geq$ 85\% e SUS $\geq$ 70 (limiar de usabilidade aceitável).
 
 \subsubsection{Fase 4: Implantação Piloto e Capacitação}
 
-Implantação do sistema finalizado em 2--3 comunidades quilombolas, acompanhada de programa de capacitação (oficinas de 8--12h) cobrindo:
-
-\begin{itemize}
-\item Fundamentos de lógica fuzzy e salvaguarda de ativos intangíveis (conceitual, não técnico).
-\item Operação do sistema: entrada de dados, interpretação de resultados, geração de relatórios.
-\item Estratégias de uso: integração do ISB em processos de proteção, geração de dossiês para instâncias regulatórias (IPHAN, INPI, CGen), suporte a processos de registro e salvaguarda.
-\end{itemize}
+Implantação do modelo finalizado em 2--3 comunidades quilombolas, acompanhada de programa de capacitação (oficinas de 8--12h) que abordará fundamentos conceituais de lógica fuzzy e salvaguarda de ativos intangíveis, operação prática do modelo (entrada de dados, interpretação de resultados e geração de relatórios) e estratégias de uso voltadas à integração do ISB em processos de proteção e geração de dossiês para instâncias regulatórias (IPHAN, INPI, CGen).
 
 \textbf{Materiais:} manual do usuário ilustrado, vídeos tutoriais curtos (3--5 min cada), e linha de suporte técnico (WhatsApp/telefone).
 
 \subsubsection{Fase 5: Avaliação de Adoção e Apropriação}
 
-Após 6--12 meses de uso, será conduzida avaliação de adoção e apropriação mediante:
-
-\begin{itemize}
-\item \textbf{Métricas de uso:} frequência de acesso ao sistema, número de saberes documentados e classificados, funcionalidades mais utilizadas (logs do sistema).
-\item \textbf{Apropriação psicológica:} aplicação da escala de apropriação tecnológica \cite{Carroll2001}, mensurando sentimento de propriedade, adaptação criativa e evangelização (recomendação a outras comunidades).
-\item \textbf{Impacto percebido:} entrevistas e questionários explorando se o sistema contribuiu para fortalecimento da documentação, proteção formal de saberes, argumentação junto a instâncias regulatórias e empoderamento na gestão de ativos intangíveis.
-\item \textbf{Sustentabilidade:} avaliação de capacidade de uso autônomo (sem suporte contínuo da equipe de pesquisa) e manutenção do sistema.
-\end{itemize}
+Após 6--12 meses de uso, será conduzida avaliação de adoção e apropriação. As métricas de uso compreenderão frequência de acesso, número de saberes documentados e classificados e funcionalidades mais utilizadas (registradas via 	extit{logs}). A apropriação psicológica será aferida pela escala de apropriação tecnológica \cite{Carroll2001}, mensurando sentimento de propriedade, adaptação criativa e evangelização para outras comunidades. O impacto percebido será avaliado mediante entrevistas e questionários que investiguem se o modelo contribuiu para fortalecimento da documentação, proteção formal de saberes, argumentação junto a instâncias regulatórias e empoderamento na gestão de ativos intangíveis. A sustentabilidade será verificada pela capacidade de uso autônomo sem suporte contínuo da equipe de pesquisa.
 
 \subsection{Indicadores de Validação}
 
-\begin{itemize}
-\item \textbf{Usabilidade:} SUS $\geq$ 70 (aceitável) ou $\geq$ 80 (bom).
-\item \textbf{Taxa de adoção:} $\geq$ 60\% dos participantes da capacitação utilizando o sistema regularmente (ao menos 1x/mês) após 6 meses.
-\item \textbf{Apropriação:} $\geq$ 50\% dos usuários reportando adaptações criativas do sistema (uso não previsto inicialmente) ou evangelização ativa.
-\item \textbf{Impacto percebido:} $\geq$ 70\% dos usuários reportando contribuição do sistema para algum resultado concreto (melhoria de preço, acesso a mercado, fortalecimento de argumentação).
-\end{itemize}
+Os limiares de validação territorial adotados compreendem usabilidade (SUS $\geq$ 70 como aceitável ou $\geq$ 80 como bom), taxa de adoção ($\geq$ 60\% dos participantes da capacitação utilizando o modelo regularmente, ao menos uma vez por mês, após 6 meses), apropriação ($\geq$ 50\% dos usuários reportando adaptações criativas ou evangelização ativa) e impacto percebido ($\geq$ 70\% dos usuários reportando contribuição do modelo para algum resultado concreto, como fortalecimento de argumentação junto a instâncias regulatórias).
 
 A validação territorial bem-sucedida constituirá evidência de que o sistema não apenas produz saídas tecnicamente corretas, mas é efetivamente utilizável, apropriável e útil no contexto real de governança e comercialização de ativos tradicionais.

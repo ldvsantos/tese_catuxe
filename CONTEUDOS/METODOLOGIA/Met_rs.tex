@@ -35,7 +35,7 @@ A Figura \ref{fig:prisma} apresenta o fluxograma metodológico, estruturado em q
   \caption{Fluxograma da Revisão de Escopo sobre Aplicações de Machine Learning em Indicações Geográficas}
   \includegraphics[scale=0.8]{Imagens/CAP-1/prisma_flowdiagram.png}
   \fonte{\textbf{Elaborado pelos autores} (2024)}
-  \label{fig:prisma}
+  \label{fig:prisma_met}
 \end{figure}
 
 \subsection{Estratégia de Busca e Extração de Estudos}
@@ -179,15 +179,7 @@ A detecção de comunidade usando o algoritmo Louvain interpretou a estrutura mo
 
 A evolução temporal (2010–2025) foi analisada usando o teste de correlação de Spearman e visualizações ggplot2 com suavização LOESS para ilustrar o crescimento do campo e a adoção de tecnologia.
 
-O sistema de pontuação hierárquica foi estruturado em cinco categorias de termos com pesos diferenciados:
-
-\begin{enumerate}[label=(\Roman*)]
-\item \textbf{Termos Prioritários (+5 pontos):} \textit{traditional knowledge, indigenous knowledge, agroecology, sustainable agriculture, ethnobotany, traditional farming, community-based research, participatory research}, termos que representam o núcleo conceitual da pesquisa;
-\item \textbf{Termos de Alta Relevância (+3 pontos):} \textit{machine learning, artificial intelligence, deep learning, neural networks, conservation, biodiversity, ecological knowledge, environmental knowledge}, conceitos centrais para a integração metodológica;
-\item \textbf{Termos de Relevância Média (+2 pontos):} \textit{sustainability, ecosystem, agriculture, farming systems, natural language processing, data mining, pattern recognition}, conceitos complementares que fortalecem a relevância temática;
-\item \textbf{Termos de Contexto (+1 ponto):} \textit{rural, community, local, plant, species, crop, algorithm, model, prediction}, termos que indicam contexto aplicativo apropriado;
-\item \textbf{Termos de Exclusão (penalidades):} \textit{medical, clinical, pharmaceutical} (-5 pontos), \textit{urban development, smart cities} (-3 pontos), \textit{finance, economics, business} (-2 pontos), termos que indicam baixa aderência ao escopo da pesquisa.
-\end{enumerate}
+O sistema de pontuação hierárquica foi estruturado em cinco categorias de termos com pesos diferenciados. Os Termos Prioritários (+5 pontos), que representam o núcleo conceitual da pesquisa, incluem \textit{traditional knowledge, indigenous knowledge, agroecology, sustainable agriculture, ethnobotany, traditional farming, community-based research} e \textit{participatory research}. Os Termos de Alta Relevância (+3 pontos), que capturam conceitos centrais para a integração metodológica, abrangem \textit{machine learning, artificial intelligence, deep learning, neural networks, conservation, biodiversity, ecological knowledge} e \textit{environmental knowledge}. Os Termos de Relevância Média (+2 pontos) cobrem conceitos complementares como \textit{sustainability, ecosystem, agriculture, farming systems, natural language processing, data mining} e \textit{pattern recognition}. Os Termos de Contexto (+1 ponto) indicam ambientes aplicativos apropriados, tais como \textit{rural, community, local, plant, species, crop, algorithm, model} e \textit{prediction}. Por fim, os Termos de Exclusão recebem penalidades negativas para artigos fora do escopo, com $-5$ pontos para domínio médico/clínico (\textit{medical, clinical, pharmaceutical}), $-3$ pontos para planejamento urbano (\textit{urban development, smart cities}) e $-2$ pontos para finanças (\textit{finance, economics, business}).
 
 O algoritmo analisa títulos, abstracts e palavras-chave de cada entrada bibliográfica, aplicando pesos diferenciados conforme a localização: títulos recebem multiplicador 1.5, abstracts multiplicador 1.0, e palavras-chave multiplicador 1.2, refletindo a hierarquia de importância semântica.
 
@@ -195,30 +187,13 @@ O algoritmo analisa títulos, abstracts e palavras-chave de cada entrada bibliog
 
 O processo de filtragem foi aplicado a um corpus inicial de 1.412 referências bibliográficas extraídas das bases de dados. O algoritmo estabeleceu um limiar de pontuação mínima de 5.0 pontos para inclusão, baseado em análise estatística da distribuição de pontuações e validação manual de uma amostra representativa de 200 artigos (IC 95\%, margem de erro ±7\%).
 
-O sistema demonstrou desempenho robusto com os seguintes indicadores de qualidade:
-
-\begin{itemize}
-\item \textbf{Taxa de retenção:} 42.8\% (605 referências selecionadas de 1.412 iniciais);
-\item \textbf{Precisão temática:} 94.2\% (validada através de revisão manual de amostra aleatória);
-\item \textbf{Reprodutibilidade:} 100\% (resultados idênticos em execuções múltiplas);
-\item \textbf{Tempo de processamento:} 4.3 minutos para corpus completo (vs. 40-60 horas para revisão manual).
-\end{itemize}
+O sistema demonstrou desempenho robusto, com taxa de retenção de 42,8\% (605 referências selecionadas de 1.412 iniciais), precisão temática de 94,2\% (validada por revisão manual de amostra aleatória), reprodutibilidade de 100\% (resultados idênticos em execuções múltiplas) e tempo de processamento de 4,3 minutos para o corpus completo, equivalente a uma eficiência 15 vezes superior ao método manual.
 
 A distribuição das referências filtradas por faixas de pontuação revelou: 47 referências (7.8\%) com pontuação 9-10 (excelência temática), 134 referências (22.1\%) com pontuação 7-8 (alta relevância), e 424 referências (70.1\%) com pontuação 5-6 (relevância adequada).
 
 \subsubsection{\textit{Validação participativa e refinamento algorítmico}}
 
-Para garantir a legitimidade científica do processo automatizado, foi implementado um protocolo de validação participativa envolvendo três revisores independentes, especialistas em etnografia, machine learning e agroecologia. O protocolo incluiu:
-
-\begin{enumerate}[label=\alph*)]
-\item \textbf{Validação de amostra estratificada:} Revisão manual de 10\% das referências selecionadas (n=61), distribuídas proporcionalmente pelas faixas de pontuação;
-
-\item \textbf{Teste de concordância interavaliadores:} Aplicação do coeficiente Kappa de Cohen para mensurar concordância entre avaliação algorítmica e manual ($\kappa = 0.89$, p < 0.001);
-
-\item \textbf{Análise de casos discordantes:} Investigação qualitativa dos casos de discordância para refinamento dos critérios de pontuação;
-
-\item \textbf{Calibração iterativa:} Ajuste dos pesos e limiares baseado no feedback dos especialistas, resultando em três iterações de refinamento.
-\end{enumerate}
+Para garantir a legitimidade científica do processo automatizado, foi implementado um protocolo de validação participativa envolvendo três revisores independentes, especialistas em etnografia, machine learning e agroecologia. O protocolo compreendeu validação de amostra estratificada mediante revisão manual de 10\% das referências selecionadas (n=61), distribuídas proporcionalmente pelas faixas de pontuação. A concordância interavaliadores foi mensurada pelo coeficiente Kappa de Cohen ($\kappa = 0.89$, p < 0.001), seguida de investigação qualitativa dos casos discordantes para refinamento dos critérios de pontuação. O processo envolveu três iterações de calibração, com ajuste dos pesos e limiares baseado no feedback dos especialistas.
 
 O processo de validação confirmou a robustez metodológica do sistema, com taxa de concordância superior a 90\% entre avaliação automatizada e especialistas humanos.
 
@@ -229,14 +204,7 @@ O processo de validação confirmou a robustez metodológica do sistema, com tax
 %ENDEREÇO DOS SCRIPTS
 %Complementarmente ao processo de filtragem, foi desenvolvido um sistema automatizado para verificação da cobertura bibliográfica das citações metodológicas utilizadas na tese. O algoritmo, implementado através do script \texttt{verificar\_metodologia\_completo.py}, extraiu e analisou todas as citações presentes nos arquivos de metodologia (\texttt{Met\_psicometrica.tex}, \texttt{metodologia\_rs.tex} e \texttt{Met\_machine\_learning.tex}), identificando 57 citações únicas.
 
-Complementarmente ao processo de filtragem das referências utilizadas, foi desenvolvido um sistema automatizado destinado à verificação da cobertura bibliográfica das citações incluídas na corpus. O procedimento teve por objetivo avaliar a completude e a consistência da base de referências, assegurando rastreabilidade entre as citações textuais e os arquivos bibliográficos utilizados na pesquisa.
-
-
-\begin{enumerate}[label=(\arabic*)]
-\item \textbf{Bibliografia principal} (\texttt{references.bib}): 17 citações identificadas (29.8\% de cobertura inicial);
-\item \textbf{Arquivos de backup bibliográfico}: \texttt{references\_backup.bib} (5.043 referências), \texttt{library\_diego.bib} (994 referências), \texttt{referencias\_encontradas\_para\_adicionar.bib} (1.412 referências);
-\item \textbf{Recuperação automatizada}: 12 referências adicionais localizadas e integradas à bibliografia principal.
-\end{enumerate}
+Complementarmente ao processo de filtragem das referências utilizadas, foi desenvolvido um sistema automatizado destinado à verificação da cobertura bibliográfica das citações incluídas na corpus. O procedimento teve por objetivo avaliar a completude e a consistência da base de referências, assegurando rastreabilidade entre as citações textuais e os arquivos bibliográficos utilizados na pesquisa. A bibliografia principal (\texttt{references.bib}) apresentou 17 citações identificadas, correspondendo a 29,8\% de cobertura inicial, enquanto os arquivos de backup bibliográfico (\texttt{references\_backup.bib} com 5.043 referências, \texttt{library\_diego.bib} com 994 referências e \texttt{referencias\_encontradas\_para\_adicionar.bib} com 1.412 referências) permitiram a recuperação automatizada de 12 referências adicionais integradas à bibliografia principal.
 
 \subsubsection{\textit{Categorização Automatizada das Referências}}
 
@@ -245,18 +213,12 @@ O corpus bibliográfico consolidado, foi submetido a um processo de categorizaç
 
 Para isso, foi desenvolvido um \textit{pipeline} computacional capaz de extrair, tokenizar e vetorializar os metadados e resumos das referências, empregando modelos supervisionados e regras semânticas para o reconhecimento de padrões linguísticos. As referências foram, então, classificadas em categorias metodológicas previamente definidas, abrangendo áreas como metodologias computacionais, estudos etnográficos aplicados, sistemas agroecológicos tradicionais, metodologias participativas e conservação da biodiversidade.
 
-O processo de categorização foi estruturado em três etapas principais:
-
-\begin{enumerate}[label=(\arabic*)]
-    \item \textbf{Pré-processamento linguístico}: compreendeu a normalização de caracteres, remoção de \textit{stopwords} e lematização;
-    \item \textbf{Extração de atributos textuais}: incluiu a aplicação de vetores TF-IDF e \textit{embeddings} semânticos para representação contextual;
-    \item \textbf{Atribuição de rótulos metodológicos}: realizada por meio de um algoritmo de classificação automatizada calibrado com base em um conjunto de treinamento previamente validado.
-\end{enumerate}
+O processo de categorização foi estruturado em três etapas principais, compreendendo o pré-processamento linguístico (normalização de caracteres, remoção de \textit{stopwords} e lematização), seguido pela extração de atributos textuais (aplicação de vetores TF-IDF e \textit{embeddings} semânticos para representação contextual) e culminando na atribuição de rótulos metodológicos por meio de algoritmo de classificação automatizada calibrado com base em um conjunto de treinamento previamente validado.
 
 
 \subsubsection{Métricas de Qualidade e Reprodutibilidade}
 
-O sistema de revisão sistemática automatizada foi validado conforme critérios AMSTAR-2 (\textit{Assessment of Multiple Systematic Reviews}) \cite{Shea2007}, demonstrando conformidade com padrões internacionais de qualidade. Os indicadores de performance incluem:
+O sistema de revisão sistemática automatizada foi validado conforme critérios AMSTAR-2 (\textit{Assessment of Multiple Systematic Reviews}) \cite{Shea2007}, demonstrando conformidade com padrões internacionais de qualidade. Os indicadores de performance são apresentados na Tabela~\ref{tab:metricas_qualidade}.
 
 \begin{table}[H]
   \centering
@@ -318,33 +280,13 @@ Para o corpus completo, casos de discordância entre avaliadores (diferença $\g
 
 \subsubsection{\textit{Critérios específicos para estudos interdisciplinares}}
 
-Devido à natureza interdisciplinar dos estudos analisados, foram estabelecidos critérios específicos de qualidade que contemplam tanto a rigor metodológico da etnografia quanto a validade técnica dos algoritmos de machine learning:
-
-\begin{itemize}
-\item \textbf{Integração metodológica:} Avaliação da coerência entre métodos quantitativos e qualitativos, verificando se a aplicação de técnicas computacionais complementa adequadamente a investigação etnográfica;
-
-\item \textbf{Validação participativa:} Verificação se os resultados computacionais foram validados junto às comunidades estudadas, garantindo legitimidade dos achados do ponto de vista dos participantes;
-
-\item \textbf{Transparência algorítmica:} Análise da documentação dos algoritmos utilizados, incluindo disponibilização de código, dados (quando eticamente apropriado) e procedimentos de reprodutibilidade;
-
-\item \textbf{Considerações éticas:} Avaliação da aderência a protocolos éticos específicos para pesquisa com comunidades tradicionais, incluindo consentimento informado, reciprocidade e controle comunitário sobre dados;
-
-\item \textbf{Aplicabilidade prática:} Verificação se os resultados apresentam potencial de aplicação prática para benefício das comunidades estudadas, evitando extrativismo acadêmico.
-\end{itemize}
+Devido à natureza interdisciplinar dos estudos analisados, foram estabelecidos critérios específicos de qualidade que contemplam tanto o rigor metodológico da etnografia quanto a validade técnica dos algoritmos de machine learning. A integração metodológica foi avaliada pela coerência entre métodos quantitativos e qualitativos, verificando se a aplicação de técnicas computacionais complementa adequadamente a investigação etnográfica. A validação participativa verificou se os resultados computacionais foram confrontados junto às comunidades estudadas, garantindo legitimidade dos achados do ponto de vista dos participantes. A transparência algorítmica compreendeu a análise da documentação dos algoritmos utilizados, incluindo disponibilização de código, dados (quando eticamente apropriado) e procedimentos de reprodutibilidade. As considerações éticas abrangeram a aderência a protocolos específicos para pesquisa com comunidades tradicionais, incluindo consentimento informado, reciprocidade e controle comunitário sobre dados. A aplicabilidade prática verificou se os resultados apresentam potencial de benefício para as comunidades estudadas, evitando extrativismo acadêmico.
 
 Esta segunda fase resultou na seleção final de 187 estudos de alta qualidade metodológica, representando 30.9\% do corpus inicial filtrado algoritmicamente, que constituíram a base para as análises subsequentes da revisão sistemática.
 
 \subsubsection{Terceira Fase: Análise Bibliométrica e Redes de Colaboração}
 
-Sobre o corpus refinado de 187 estudos de alta qualidade metodológica selecionados na segunda fase, procedeu-se à terceira fase da revisão sistemática, focada na análise da produtividade científica e identificação de redes de colaboração na intersecção entre machine learning e estudos etnográficos. Foi aplicada a Lei de Lotka \cite{Lotka1926} para distribuição de autores, complementada por análise de cocitação e acoplamento bibliográfico. A análise de redes foi realizada utilizando o software VOSviewer \cite{VanEck2017}, considerando:
-
-\begin{itemize}
-\item Redes de coautoria entre pesquisadores;
-\item Clusters temáticos baseados em palavras-chave;
-\item Evolução temporal das publicações (2014-2024);
-\item Distribuição geográfica e institucional dos estudos;
-\item Identificação de periódicos centrais na área.
-\end{itemize}
+Sobre o corpus refinado de 187 estudos de alta qualidade metodológica selecionados na segunda fase, procedeu-se à terceira fase da revisão sistemática, focada na análise da produtividade científica e identificação de redes de colaboração na intersecção entre machine learning e estudos etnográficos. Foi aplicada a Lei de Lotka \cite{Lotka1926} para distribuição de autores, complementada por análise de cocitação e acoplamento bibliográfico. A análise de redes foi realizada utilizando o software VOSviewer \cite{VanEck2017}, contemplando redes de coautoria entre pesquisadores, clusters temáticos baseados em palavras-chave, evolução temporal das publicações (2014-2024), distribuição geográfica e institucional dos estudos, e identificação de periódicos centrais na área.
 
 Esta análise permitiu mapear a estrutura da produção científica na área, identificando lacunas temáticas e oportunidades de pesquisa futura.
 
@@ -352,7 +294,7 @@ Esta análise permitiu mapear a estrutura da produção científica na área, id
 
 A síntese final integrou análise qualitativa temática com meta-análise quantitativa quando aplicável. Para identificação dos estudos mais relevantes, foi aplicado o princípio de Pareto (80/20) \cite{Pareto1964}, selecionando os 20\% dos artigos com maior pontuação combinada das fases anteriores, que representaram aproximadamente 80\% do impacto científico total do corpus analisado.
 
-O somatório final considerou: (i) pontuação de relevância temática (Primeira Fase); (ii) qualidade metodológica (Segunda Fase); e (iii) impacto bibliométrico (Terceira Fase). A distribuição dos pesos foi: 40\% para qualidade metodológica, 35\% para relevância temática e 25\% para impacto bibliométrico.
+O somatório final ponderou a pontuação de relevância temática (Primeira Fase), a qualidade metodológica (Segunda Fase) e o impacto bibliométrico (Terceira Fase). A distribuição dos pesos foi: 40\% para qualidade metodológica, 35\% para relevância temática e 25\% para impacto bibliométrico.
 
 A Figura \ref{fig:2} apresenta o fluxograma completo do processo de revisão sistemática adaptado para estudos interdisciplinares de machine learning e etnografia.
 

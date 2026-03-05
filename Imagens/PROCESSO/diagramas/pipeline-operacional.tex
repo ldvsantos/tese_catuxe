@@ -1,0 +1,243 @@
+% ============================================================
+% PFD — Pipeline Operacional Completo da Tese
+% Layout: Y-shape (Evidence + Instruments → Convergence → ISB)
+% Requer: tikz, positioning, arrows.meta, shapes.geometric,
+%         calc, fit, backgrounds
+% ============================================================
+\begin{tikzpicture}[
+  font=\scriptsize,
+  % ── Database cylinder ──
+  db/.style={
+    cylinder, shape border rotate=90,
+    draw=#1!70!black, fill=#1!8, aspect=0.2,
+    minimum height=0.8cm, minimum width=1.4cm,
+    font=\tiny\bfseries, align=center, inner sep=2pt},
+  % ── Chapter process block ──
+  chap/.style={
+    rectangle, draw=#1!70!black, fill=#1!6,
+    rounded corners=3pt, minimum width=5.2cm,
+    align=center, inner sep=4pt, line width=0.8pt},
+  % ── Intermediate product ──
+  prod/.style={
+    rectangle, draw=#1!60!black, fill=#1!18,
+    rounded corners=2pt, minimum width=4.6cm,
+    minimum height=0.5cm,
+    font=\tiny\bfseries, align=center, inner sep=3pt},
+  % ── Convergence node ──
+  conv/.style={
+    rectangle, draw=red!70!black, fill=red!5,
+    rounded corners=3pt, minimum width=9cm,
+    minimum height=0.55cm, line width=1pt,
+    font=\scriptsize\bfseries, align=center, inner sep=3pt},
+  % ── Final output ──
+  finalbox/.style={
+    rectangle, draw=black!80, fill=black!8,
+    rounded corners=3pt, minimum width=9.5cm,
+    font=\scriptsize\bfseries, align=center,
+    inner sep=5pt, line width=1.2pt},
+  % ── Arrows ──
+  flow/.style={-{Stealth[length=4pt]}, semithick, draw=gray!60},
+  vflow/.style={-{Stealth[length=5pt]}, thick, draw=red!60!black},
+  dflow/.style={-{Stealth[length=4pt]}, semithick, draw=blue!40, densely dashed},
+  feedback/.style={-{Stealth[length=4pt]}, semithick, draw=gray!40, densely dotted},
+  % ── Note label ──
+  notelbl/.style={font=\tiny\itshape, text=gray!60},
+  % ── Swim-lane label ──
+  lanelbl/.style={font=\tiny\bfseries\scshape, rotate=90, anchor=south},
+]
+
+% ══════════════════════════════════════════════════════════════
+%  TIER 0 — FONTES DE DADOS
+% ══════════════════════════════════════════════════════════════
+\node[db=blue]          (scopus) at (0,    0)   {Scopus};
+\node[db=blue]          (wos)    at (1.8,  0)   {Web of\\Science};
+\node[db=teal]          (wocat)  at (8.5,  0)   {WOCAT-SLM\\(EN, 7 se\c{c}\~oes)};
+\node[db=green!60!black](comm)   at (13.0,-8.2) {Comunidades\\Quilombolas};
+
+% Merge left sources
+\coordinate (srcL) at (0.9,-0.7);
+\draw[flow] (scopus.south) -- ++(0,-0.15) -| (srcL);
+\draw[flow] (wos.south)    -- ++(0,-0.15) -| (srcL);
+
+% ══════════════════════════════════════════════════════════════
+%  BRAÇO ESQUERDO — SÍNTESE DE EVIDÊNCIA (Caps. 1-2)
+% ══════════════════════════════════════════════════════════════
+
+% ── Cap. 1: PRISMA-ScR ──────────────────────────────────────
+\node[chap=blue] (cap1) at (0.9,-1.7) {%
+  \textbf{Cap.\,1 --- Revis\~ao de Escopo (PRISMA-ScR)}\\[2pt]
+  {\tiny Triagem t\'{\i}tulo/resumo $\rightarrow$
+         Elegibilidade texto integral}\\
+  {\tiny Acur\'acia combinada $>$\,90\%
+         $\cdot$ Conformidade FAIR
+         $\cdot$ Valida\c{c}\~ao espacial}};
+\draw[flow] (srcL) -- (cap1.north);
+
+\node[prod=blue] (p1) at (0.9,-3.0) {%
+  P1: Diagn\'ostico de prontid\~ao operacional do ML para SAT};
+\draw[flow] (cap1) -- (p1);
+
+\node[notelbl, below=0.08cm of p1] (note1) {%
+  lacunas identificadas informam sele\c{c}\~ao de dimens\~oes $\downarrow$};
+
+% ── Cap. 2: Meta-análise PRISMA 2020 ────────────────────────
+\node[chap=cyan!70!black] (cap2) at (0.9,-4.6) {%
+  \textbf{Cap.\,2 --- Meta-an\'alise Quantitativa (PRISMA\,2020)}\\[2pt]
+  {\tiny 47 estudos, 222 registros
+         $\cdot$ Classifica\c{c}\~ao Multi-tier (Tier 1--4)}\\
+  {\tiny lnRR $\cdot$ \texttt{rma.mv} (3 n\'{\i}veis, REML)
+         $\cdot$ RVE-CR2 (\texttt{clubSandwich})}\\
+  {\tiny Meta-regress\~ao (moderadores)
+         $\cdot$ Vi\'es (Egger, \textit{trim-and-fill})
+         $\cdot$ \texttt{brms}}};
+\draw[flow] (p1) -- (cap2.north);
+
+\node[prod=cyan!70!black] (p2) at (0.9,-6.4) {%
+  P2: Magnitudes de efeito $V_1$--$V_6$ + pesos emp\'{\i}ricos (lnRR)};
+\draw[vflow] (cap2) -- (p2);
+
+% ══════════════════════════════════════════════════════════════
+%  BRAÇO DIREITO — DESENVOLVIMENTO INSTRUMENTAL (Cap. 3)
+% ══════════════════════════════════════════════════════════════
+
+% ── Cap. 3a: Adaptação Transcultural ────────────────────────
+\node[chap=teal] (cap3a) at (8.5,-1.7) {%
+  \textbf{Cap.\,3a --- Adapta\c{c}\~ao Transcultural (Beaton)}\\[2pt]
+  {\tiny 6 etapas: T1-T2 $\rightarrow$ T-12 $\rightarrow$
+         RT1-RT2 $\rightarrow$ Comit\^e $\rightarrow$
+         Pr\'e-teste ($n$\,=\,30)}\\
+  {\tiny IVC\,$\geq$\,0,90 $\cdot$ Kappa de Fleiss\,$\geq$\,0,75
+         $\cdot$ Compreens\~ao\,$\geq$\,85\%}};
+\draw[flow] (wocat.south) -- (cap3a.north);
+
+\node[prod=teal] (p3a) at (8.5,-3.3) {%
+  P3a: Instrumento WOCAT-SLM-QBR (PT-BR)};
+\draw[flow] (cap3a) -- (p3a);
+
+% ── Cap. 3b: Delphi ─────────────────────────────────────────
+\node[chap=teal!80!black] (cap3b) at (8.5,-4.6) {%
+  \textbf{Cap.\,3b --- Elicita\c{c}\~ao Estruturada (Delphi)}\\[2pt]
+  {\tiny 3 rodadas $\cdot$ Painel 15--25 especialistas
+         $\cdot$ Kendall $W$}\\
+  {\tiny R1: gera\c{c}\~ao $\rightarrow$
+         R2: converg\^encia $\rightarrow$
+         R3: estabiliza\c{c}\~ao}\\
+  {\tiny Mapeamento WOCAT se\c{c}\~oes $\rightarrow$ $V_1$--$V_6$}};
+\draw[flow] (p3a) -- (cap3b.north);
+
+\node[prod=teal!80!black] (p3b) at (8.5,-6.4) {%
+  P3b: Vari\'aveis lingu\'{\i}sticas calibradas $V_1$--$V_6$};
+\draw[vflow] (cap3b) -- (p3b);
+
+% ══════════════════════════════════════════════════════════════
+%  CONVERGÊNCIA — V₁–V₆
+% ══════════════════════════════════════════════════════════════
+\node[conv] (merge) at (4.7,-7.5) {%
+  \textsc{Converg\^encia}\enspace
+  Pesos emp\'{\i}ricos (lnRR)\enspace$+$\enspace
+  Vari\'aveis instrumentais (Delphi)\enspace$\longrightarrow$\enspace
+  $V_1$--$V_6$};
+\draw[vflow] (p2.south)  -- ++(0,-0.3) -| (merge.west);
+\draw[vflow] (p3b.south) -- ++(0,-0.3) -| (merge.east);
+
+% ══════════════════════════════════════════════════════════════
+%  ESPINHA CENTRAL — MODELAGEM E VALIDAÇÃO (Caps. 4-6)
+% ══════════════════════════════════════════════════════════════
+
+% ── Cap. 4: TRI + Fuzzy → ISB ───────────────────────────────
+\node[chap=violet] (cap4) at (4.7,-9.2) {%
+  \textbf{Cap.\,4 --- Instrumenta\c{c}\~ao Psicom\'etrica + Infer\^encia Fuzzy}\\[2pt]
+  {\tiny TRI\,/\,Rasch $\rightarrow$ Escores latentes $V_1$--$V_6$
+         $\cdot$ AFC (CFI\,$\geq$\,0,95; RMSEA\,$\leq$\,0,06)
+         $\cdot$ CVC\,$\geq$\,0,80}\\
+  {\tiny Mamdani: Fuzzifica\c{c}\~ao (trimf)
+         $\rightarrow$ 50-100 regras SE-ENT\~AO
+         $\rightarrow$ Defuzzifica\c{c}\~ao (centr\'oide)}\\
+  {\tiny Paradoxo $V_1$: peso te\'orico (Delphi)
+         vs.\ peso emp\'{\i}rico (lnRR\,$\approx$\,0)
+         $\rightarrow$ regras de media\c{c}\~ao}};
+\draw[vflow] (merge) -- (cap4.north);
+\draw[dflow] (comm.west) -- ++(-0.6,0) |- (cap4.east);
+
+\node[prod=violet] (p4) at (4.7,-11.0) {%
+  P4: ISB [0--100] ---
+  Consolidado\,\textbar\,Monitoramento\,\textbar\,Aten\c{c}\~ao\,\textbar\,Alto\,\textbar\,Cr\'{\i}tico};
+\draw[vflow] (cap4) -- (p4);
+
+% ── Cap. 5: Auditoria Institucional ─────────────────────────
+\node[chap=orange] (cap5) at (4.7,-12.1) {%
+  \textbf{Cap.\,5 --- Auditoria Computacional + Aceita\c{c}\~ao Institucional}\\[2pt]
+  {\tiny Painel regulat\'orio (IPHAN, CGen, INPI, FAO-GIAHS)
+         $\cdot$ Conformidade FAIR}\\
+  {\tiny Completude documental $\cdot$ Rastreabilidade
+         $\cdot$ Efic\'acia probat\'oria}};
+\draw[flow] (p4) -- (cap5.north);
+
+\node[prod=orange] (p5) at (4.7,-13.3) {%
+  P5: Dossi\^es audit\'aveis
+  (padroniza\c{c}\~ao, completude, rastreabilidade)};
+\draw[flow] (cap5) -- (p5);
+
+% ── Cap. 6: Design Participativo ────────────────────────────
+\node[chap=green!60!black] (cap6) at (4.7,-14.3) {%
+  \textbf{Cap.\,6 --- Design Participativo + Valida\c{c}\~ao Territorial}\\[2pt]
+  {\tiny Co-design comunit\'ario $\cdot$
+         SUS (\textit{System Usability Scale})}\\
+  {\tiny Teste de ado\c{c}\~ao continuada $\cdot$
+         Feedback iterativo $\cdot$
+         Oficinas de devolutiva}};
+\draw[flow] (p5) -- (cap6.north);
+\draw[dflow] (comm.south) |- (cap6.east);
+
+\node[prod=green!60!black] (p6) at (4.7,-15.5) {%
+  P6: Sistema validado territorialmente
+  com indicadores de usabilidade e ado\c{c}\~ao};
+\draw[flow] (cap6) -- (p6);
+
+% ══════════════════════════════════════════════════════════════
+%  ENTREGAS FINAIS
+% ══════════════════════════════════════════════════════════════
+\node[finalbox] (final) at (4.7,-16.7) {%
+  \textsc{Entregas Finais}\\[2pt]
+  {\tiny Instrumento WOCAT-SLM-QBR
+         $\cdot$ Motor de infer\^encia ISB
+         $\cdot$ Dossi\^es regulat\'orios
+         $\cdot$ Sistema computacional validado}};
+\draw[flow, thick] (p6) -- (final);
+
+% ══════════════════════════════════════════════════════════════
+%  RETROALIMENTAÇÃO
+% ══════════════════════════════════════════════════════════════
+% Cap 6 → Cap 3 (refinamento do instrumento via feedback comunitário)
+\draw[feedback]
+  (cap6.west) -- ++(-6.2,0) |- (cap3b.west)
+  node[pos=0.15, left, font=\tiny\itshape, text=gray!50]
+  {refinamento iterativo};
+
+% Cap 5 → Cap 4 (ajuste de regras fuzzy pós-auditoria)
+\draw[feedback]
+  (cap5.west) -- ++(-5.4,0) |- (cap4.west)
+  node[pos=0.15, left, font=\tiny\itshape, text=gray!50]
+  {ajuste de regras};
+
+% ══════════════════════════════════════════════════════════════
+%  SWIM-LANE LABELS (lateral)
+% ══════════════════════════════════════════════════════════════
+\node[lanelbl, text=blue!60!black] at (-5.0,-3.2)
+  {S\'{\.i}ntese de Evid\^encia};
+\node[lanelbl, text=teal!60!black] at (13.5,-3.2)
+  {Desenvolvimento Instrumental};
+\node[lanelbl, text=violet!60!black] at (-5.0,-10)
+  {Modelagem};
+\node[lanelbl, text=green!50!black] at (-5.0,-14)
+  {Valida\c{c}\~ao};
+
+% ══════════════════════════════════════════════════════════════
+%  V₁–V₆ THREAD (fio condutor)
+% ══════════════════════════════════════════════════════════════
+\draw[red!25, line width=3pt, opacity=0.35]
+  (-4.2,-5.8) -- (-4.2,-16.2);
+\node[rotate=90, font=\scriptsize\bfseries, text=red!50!black]
+  at (-4.2,-11) {Fio condutor: $V_1$--$V_6$};
+
+\end{tikzpicture}
