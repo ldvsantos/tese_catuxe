@@ -4,7 +4,7 @@ Este módulo especifica o motor de inferência fuzzy (funções de pertinência,
 
 \subsection{Fundamentação Metodológica}
 
-A Teoria dos Conjuntos Difusos, proposta por \citeonline{Zadeh1965}, permite representar e processar informações incertas, ambíguas e subjetivas mediante atribuição de graus de pertinência a elementos em relação a conjuntos. Em contraste com a lógica booleana (pertinência 0 ou 1), a lógica fuzzy admite pertinência parcial ($\mu \in [0,1]$), possibilitando modelar conceitos linguísticos como ``alto risco de erosão intergeracional'' ou ``complexidade biocultural muito elevada''.
+A Teoria dos Conjuntos Difusos, proposta por \citeonline{Zadeh1965}, permite representar e processar informações incertas, ambíguas e subjetivas mediante atribuição de graus de pertinência a elementos em relação a conjuntos. Em contraste com a lógica booleana (pertinência 0 ou 1), a lógica fuzzy admite pertinência parcial ($\mu \in [0,1]$), possibilitando modelar conceitos linguísticos como ``alto risco de erosão intergeracional e migração'' ou ``complexidade e singularidade biocultural muito elevada''.
 
 Para a salvaguarda de ativos tradicionais, onde as dimensões de vulnerabilidade envolvem percepções qualitativas e fronteiras imprecisas, a lógica fuzzy oferece vantagens sobre classificações lineares ou ordinais ao capturar não linearidades na interação entre fatores de risco, representar limiares de urgência e incorporar conhecimento especializado e comunitário na forma de regras linguísticas auditáveis e rastreáveis.
 
@@ -18,7 +18,7 @@ Com base no painel Delphi e na adaptação WOCAT-SLM-QBR, as variáveis de entra
 
 Convém explicitar o tratamento reservado a $V_1$ no motor de inferência. A meta-análise (Capítulo~2) identificou magnitude de efeito próxima de zero para erosão intergeracional (lnRR $\approx$ 0), resultado que, à primeira vista, poderia sugerir relevância empírica reduzida. Contudo, $V_1$ opera como variável-nexo mediadora cujo efeito se propaga indiretamente por meio de $V_2$ e $V_4$, de modo que sua importância teórica não pode ser capturada por magnitude de efeito direto. No sistema fuzzy, essa característica será incorporada mediante atribuição de peso teórico sustentado pela evidência qualitativa e pelo consenso Delphi, independentemente da ponderação empírica derivada do lnRR. A base de regras contemplará cenários nos quais $V_1$ em nível alto ativa simultaneamente incrementos em $V_2$ e $V_4$, reproduzindo o mecanismo de mediação identificado na literatura.
 
-\textbf{Exemplo de Fuzzificação (Risco de Erosão Intergeracional).} Três funções de pertinência triangulares definem os termos linguísticos: Baixo, com $\mu_{Baixo}(x) = \text{trimf}(x; [0, 0, 4])$; Médio, com $\mu_{Medio}(x) = \text{trimf}(x; [3, 5, 7])$; e Alto, com $\mu_{Alto}(x) = \text{trimf}(x; [6, 10, 10])$.
+\textbf{Exemplo de Fuzzificação (Risco de Erosão Intergeracional e Migração).} Três funções de pertinência triangulares definem os termos linguísticos: Baixo, com $\mu_{Baixo}(x) = \text{trimf}(x; [0, 0, 4])$; Médio, com $\mu_{Medio}(x) = \text{trimf}(x; [3, 5, 7])$; e Alto, com $\mu_{Alto}(x) = \text{trimf}(x; [6, 10, 10])$.
 
 \subsubsection{2. Base de Regras (Inferência)}
 
@@ -26,7 +26,7 @@ Serão construídas regras do tipo SE-ENTÃO que representem o conhecimento espe
 
 \textbf{SE} Risco de Erosão é Alto \textbf{E} Status de Documentação é Baixo \textbf{ENTÃO} ISB é Crítico
 
-\textbf{SE} Complexidade Biocultural é Alta \textbf{E} Vulnerabilidade Jurídica é Alta \textbf{ENTÃO} ISB é Muito Alto
+\textbf{SE} Complexidade e Singularidade Biocultural é Alta \textbf{E} Vulnerabilidade Jurídica e Fundiária é Alta \textbf{ENTÃO} ISB é Muito Alto
 
 \textbf{SE} Risco de Erosão é Baixo \textbf{E} Documentação é Alta \textbf{ENTÃO} ISB é Consolidado
 
