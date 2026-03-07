@@ -1,0 +1,38 @@
+2 Robustez metodológica por etapa
+A) Revisão PRISMA-ScR + meta-análise
+ ? Protocolo transparente; métricas de prontidão FAIR e espacial pouco exploradas na literatura — contribui.
+ ? Meta-análise depende de grande heterogeneidade de estudos; meta-regressão multivariada para fortalecer inferências.
+
+B) Adaptação WOCAT-SLM + Delphi
+ ? CVI > 0,85 indica boa validade de conteúdo.
+ ? Painel Delphi: detalhe n, critérios de saturação e estatística de consenso (IQR, %Agreement). Sem esses números a reprodutibilidade fica opaca.
+
+C) TRI (PCM) + Fuzzy ISB
+ ? Modelo de Crédito Parcial apropriado.
+ ? Amostra piloto n˜30–40 é suficiente para pré-teste, mas não para calibração estável (Bond sugere = 200 respostas/40 itens). Planeje rodada ampliada ou fusão de comunidades equivalentes. (Isso seria em trabalhos futuros no capitulo específico para isos não da para realizar aqui nessa pesquisa talvez essa recomendação = use método “sampling of persons” progressivo.)
+ ? Avalie ajuste global (INFIT/OUTFIT) e unidimensionalidade (PCA residuals); reporte valores-alvo.
+
+D) Auditoria computacional (BN + SBERT + DLT)
+ ? Inovação clara.
+ ? Rede Bayesiana precisa de aprendizado de estrutura ou elicitação de especialistas — explicitar método e tamanho da amostra de casos de treinamento.
+ ? SBERT em PT-BR: use modelo “paraphrase-multilingual-mpnet-base-v2” ou fine-tune em corpus jurídico-regulatório.
+ ? DLT permissionada — especifique governança do consórcio e política de revogação de chaves para evitar lock-in.
+
+E) Validação territorial participativa
+ ? Design participativo aumenta legitimidade.
+ ? Apresente indicadores de adoção pós-projeto (p.e. TAM-UTAUT) e plano de manutenção local dos sistemas informáticos.
+
+3 Ameaças à factibilidade do objetivo principal
+• Bancos de dados regulatórios (IPHAN, INPI, CGen) nem sempre publicam ontologia formal — risco de lacunas semânticas na BN/SBERT. Criar glossário controlado.
+• Conflitos fundiários podem restringir acesso a campo; preveja termo de cooperação com Defensoria/CONAQ para viabilizar coleta.
+• Escassez de conexão de internet nos territórios compromete uso de DLT; contemple modo offline + sincronização.
+
+4 Recomendações de fortalecimento
+
+Triangulação: complemente ISB com métricas objetivas (p.ex. densidade de variedades cultivadas, Shannon).
+Rastreabilidade ética: registre Consentimento Livre × Esclarecido em padrão CSpec/COSSH para compatibilizar com CGen.
+Governança de dados: instale data-steward comunitário e protocolo de atualização anual do ISB.
+Publicar dataset FAIR: crie landing-page em repositório (Zenodo/CKAN) com DOI — aumenta transparência.
+Gestão de risco: matriz SWOT para cada instância regulatória; antecipe cenários de indeferimento.
+Indicadores de impacto: inclua KPI de tempo médio de tramitação dos dossiês vs. baseline manual.
+Conclusão

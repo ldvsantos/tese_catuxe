@@ -1,0 +1,84 @@
+%% ============================================================
+%% SEÇÕES TRANSVERSAIS: ÉTICA, DADOS, RISCOS, ONTOLOGIA, ESCALABILIDADE
+%% ============================================================
+
+\section{Aspectos Éticos e Protocolo de Consentimento}
+\label{sec:etica_geral}
+
+O projeto foi submetido ao Comitê de Ética em Pesquisa da Universidade Federal de Sergipe (CEP-UFS), em conformidade com as Resoluções do Conselho Nacional de Saúde nº~466/2012 (pesquisa envolvendo seres humanos) e nº~510/2016 (pesquisa em ciências humanas e sociais). O parecer consubstanciado do CEP-UFS será registrado com número de protocolo CAAE na Plataforma Brasil, e eventuais emendas ao protocolo (ampliação amostral, inclusão de novas comunidades ou instrumentos) seguirão o mesmo fluxo de análise ética.
+
+O Termo de Consentimento Livre e Esclarecido (TCLE) foi elaborado em duas modalidades complementares. A modalidade escrita, redigida em linguagem acessível e sem jargão técnico, será apresentada a todos os participantes alfabetizados, com leitura conjunta conduzida pelo entrevistador antes da assinatura. A modalidade oral, destinada a participantes com letramento reduzido, será registrada em áudio com consentimento verbal gravado na presença de testemunha indicada pelo próprio participante, conforme protocolo recomendado pela Resolução CNS nº~510/2016 para populações tradicionais. O TCLE esclarece objetivos da pesquisa, procedimentos de coleta, riscos e benefícios, garantia de anonimato, direito de recusa e retirada a qualquer momento sem prejuízo, e formas de contato com a equipe e com o CEP-UFS.
+
+A autorização para registro audiovisual (fotografia, vídeo, gravação de áudio) será solicitada em cláusula específica separada do consentimento para participação na entrevista, assegurando que o participante possa consentir com a entrevista sem necessariamente autorizar a captura de imagens ou sons. Os mestres de saberes que participarem do comitê de adaptação transcultural (Capítulo~3) ou do painel Delphi serão reconhecidos como coautores do instrumento WOCAT-SLM-QBR, conforme acordado em termo de coautoria específico assinado antes do início das atividades.
+
+A articulação institucional com comunidades quilombolas do Território de Identidade Semiárido Nordeste~II será formalizada mediante termo de cooperação técnica com a Coordenação Nacional de Articulação das Comunidades Negras Rurais Quilombolas (CONAQ) e com as associações comunitárias locais de Jeremoabo. Esse termo especificará o escopo da pesquisa, a contrapartida de devolutiva dos resultados e a vedação de uso comercial de conhecimentos tradicionais sem repartição de benefícios, em consonância com o Protocolo de Nagoia e a Lei nº~13.123/2015 \cite{Brasil2015}. A pesquisa observará, adicionalmente, os princípios de soberania dos dados comunitários (\textit{CARE principles}: \textit{Collective Benefit, Authority to Control, Responsibility, Ethics}) \cite{Carroll2020}, garantindo que nenhum dado sensível ou conhecimento sagrado seja publicado sem aprovação prévia da comunidade detentora.
+
+A conformidade com a Lei Geral de Proteção de Dados Pessoais (LGPD, Lei nº~13.709/2018) será assegurada mediante anonimização de dados pessoais na etapa de tabulação, atribuição de códigos identificadores desvinculados de nomes e localização precisa, armazenamento em repositório institucional com acesso restrito por senha e criptografia, e definição de cronograma de retenção de dados brutos (5~anos após a publicação final, conforme normas do programa de pós-graduação) com destruição certificada ao término do prazo.
+
+
+\section{Plano de Gestão de Dados e Conformidade FAIR}
+\label{sec:fair_geral}
+
+O plano de gestão de dados desta pesquisa operacionaliza os princípios FAIR (\textit{Findable, Accessible, Interoperable, Reusable}) \cite{Wilkinson2016} de forma integrada aos requisitos de proteção de conhecimentos tradicionais.
+
+Os dados quantitativos (respostas ao instrumento psicométrico, escores TRI, valores ISB, probabilidades de conformidade da Rede Bayesiana e escores de aderência semântica SBERT) serão depositados no repositório Zenodo, vinculado ao CERN, sob licença Creative Commons BY-NC 4.0, com identificador persistente DOI atribuído automaticamente. O embargo de publicação dos dados será definido conforme cronograma de submissão dos artigos derivados de cada capítulo, não excedendo 12~meses após a defesa da tese. Os metadados descritivos seguirão o esquema DataCite Metadata Schema 4.4, incluindo título, autores, palavras-chave, descrição do dataset, método de coleta, formato de arquivo e condições de acesso.
+
+Os dados qualitativos (transcrições de entrevistas, gravações de áudio, fotografias e vídeos) serão armazenados em repositório institucional da UFS com acesso restrito, dada a natureza sensível e a possibilidade de identificação indireta dos participantes. O acesso será condicionado a solicitação formal ao pesquisador responsável, mediante justificativa e compromisso de uso exclusivamente acadêmico, em conformidade com a LGPD e com os termos de cooperação comunitária. Campos contendo conhecimentos sagrados ou restritos pela comunidade serão sinalizados como ``acesso controlado pela comunidade detentora'' nos metadados, com contato da associação comunitária para solicitação de autorização.
+
+A interoperabilidade será garantida pela exportação dos dados em formatos abertos (CSV para dados tabulares, JSON-LD para metadados estruturados, TEI-XML para transcrições) e pela adoção de vocabulários controlados alinhados às ontologias do domínio. A reutilização será facilitada pela documentação do pipeline de processamento (scripts R e Python) em repositório Git público, com versionamento semântico e README descritivo.
+
+
+\section{Gestão de Riscos}
+\label{sec:riscos_geral}
+
+A pesquisa envolve interações com comunidades quilombolas detentoras de saberes agrícolas tradicionais, contexto que demanda identificação e mitigação sistemática de riscos éticos, culturais e operacionais. A Tabela~\ref{tab:riscos} sintetiza a matriz de riscos e as respectivas estratégias de mitigação.
+
+\begin{table}[H]
+\centering
+\caption{Matriz de riscos e estratégias de mitigação}\label{tab:riscos}
+\footnotesize
+\begin{tabular}{@{}p{3.5cm}p{2cm}p{2cm}p{6cm}@{}}
+\toprule
+\textbf{Risco} & \textbf{Probabilidade} & \textbf{Impacto} & \textbf{Mitigação} \\
+\midrule
+Biopirataria ou apropriação indevida de conhecimentos tradicionais & Baixa & Crítico & Termo de cooperação com CONAQ e associações locais; vedação de uso comercial sem repartição de benefícios; embargo em dados sensíveis; cláusula de aprovação comunitária prévia à publicação \\
+\addlinespace
+Violação de consentimento ou exposição de dados pessoais & Baixa & Alto & TCLE em dupla modalidade (escrita e oral); anonimização na tabulação; armazenamento criptografado; conformidade LGPD; cronograma de destruição \\
+\addlinespace
+Apropriação cultural ou descontextualização de saberes & Média & Alto & Inclusão de mestres de saberes como coautores; devolutiva de resultados em formato acessível; revisão comunitária dos dossiês antes da publicação \\
+\addlinespace
+Tamanho amostral insuficiente para calibração TRI & Média & Moderado & Piloto dimensionado por critério de Linacre (1994); validação em larga escala ($n \geq 200$) prevista como fase subsequente; análise de sensibilidade dos parâmetros \\
+\addlinespace
+Falha de consenso no painel Delphi & Baixa & Moderado & Critérios de parada e protocolo para variáveis sem consenso (Seção~\ref{sec:delphi_parada}); inclusão de painelistas substitutos \\
+\addlinespace
+Degradação de desempenho do modelo SBERT em corpus PT-BR & Média & Moderado & Modelo multilíngue como \textit{fallback}; avaliação de desempenho por curva ROC e AUC sobre conjunto anotado \\
+\addlinespace
+Indisponibilidade de infraestrutura DLT em campo & Alta & Baixo & Modo de operação offline com sincronização periódica; ancoragem em lote quando conectividade restabelecida \\
+\bottomrule
+\end{tabular}
+\fonte{Elaborado pela autora (2025)}
+\end{table}
+
+O monitoramento dos riscos será conduzido pelo pesquisador responsável em periodicidade trimestral, com registro de ocorrências e atualização das estratégias de mitigação quando necessário. Eventos adversos serão reportados ao CEP-UFS conforme prazos da Resolução CNS nº~466/2012.
+
+
+\section{Glossário Controlado e Engenharia de Ontologia}
+\label{sec:glossario_geral}
+
+A operacionalização dos princípios FAIR e a interoperabilidade dos dossiês de salvaguarda demandam vocabulários controlados que padronizem a terminologia empregada nos campos documentais, nos metadados e nas interfaces do sistema computacional. O glossário controlado será construído em três etapas sequenciais.
+
+Na primeira etapa, os termos-chave serão extraídos dos normativos regulatórios (Decreto 3.551/2000, Lei 9.279/1996, Lei 13.123/2015, diretrizes GIAHS/FAO) e dos instrumentos desenvolvidos nesta pesquisa (WOCAT-SLM-QBR, dimensões $V_1$--$V_8$, campos do dossiê ISB). Na segunda etapa, os termos serão validados e complementados pelo painel Delphi (Capítulo~3) e por consulta aos mestres de saberes, assegurando a inclusão de termos etnotaxonômicos de uso local que não possuem equivalentes na terminologia técnica formal. Na terceira etapa, os termos serão organizados em estrutura hierárquica e relacional utilizando o editor de ontologias Protégé \cite{Musen2015}, com serialização em formato OWL 2 para interoperabilidade com sistemas de metadados.
+
+O glossário contemplará equivalências em português brasileiro, inglês e, quando aplicável, termos locais das comunidades quilombolas de Jeremoabo, assegurando capacidade multilíngue compatível com os requisitos de indexação internacional e com o respeito à terminologia vernacular dos detentores dos saberes.
+
+
+\section{Escalabilidade e Protocolo de Replicação}
+\label{sec:escalabilidade_geral}
+
+O sistema computacional desenvolvido nesta tese (ISB/TRI-fuzzy + auditoria BN/SBERT/DLT) foi calibrado para comunidades quilombolas do Território de Identidade Semiárido Nordeste~II (Bahia). A replicação para outros territórios e biomas demandará adaptações documentadas nesta seção.
+
+A adaptação territorial exigirá recalibração do instrumento WOCAT-SLM-QBR para o contexto cultural e ecológico do novo território, mediante aplicação do protocolo de adaptação transcultural descrito no Capítulo~3 (tradução, retrotradução, comitê de especialistas com mestres locais, pré-teste e \textit{debriefing} cognitivo). Os limiares de dificuldade ($\delta_{ik}$) do Modelo de Crédito Parcial deverão ser recalibrados com amostra local, e a análise de funcionamento diferencial dos itens (DIF) entre territórios verificará a invariância de medida. As funções de pertinência e a base de regras fuzzy poderão requerer ajuste caso o perfil de vulnerabilidade das novas comunidades difira substancialmente do perfil do Semiárido Nordeste~II.
+
+A estrutura da Rede Bayesiana (Capítulo~5) permanecerá estável desde que os marcos regulatórios de referência (IPHAN, INPI, CGen, FAO-GIAHS) sejam mantidos, exigindo atualização apenas quando normativos forem revisados. Os modelos SBERT e a infraestrutura DLT são independentes do território e podem ser reutilizados sem modificação, desde que a rede Hyperledger Fabric seja expandida com nós correspondentes às novas organizações participantes.
+
+A documentação completa do pipeline de processamento (scripts, parâmetros, regras fuzzy, topologia da BN) será disponibilizada em repositório Git público para facilitar a replicação por outros grupos de pesquisa ou instituições regulatórias.
