@@ -96,6 +96,20 @@
 			"command": "pdflatex Tese-Catuxe-PPGPI.tex",
 			"isBackground": false,
 			"group": "build"
+		},
+		{
+			"label": "Renderizar Apresentação (Quarto)",
+			"type": "shell",
+			"command": "quarto render 3-APRESENTACAO/apresentacao_tese.qmd",
+			"isBackground": false,
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"presentation": {
+				"reveal": "always",
+				"panel": "shared"
+			}
 		}
 	]
 }

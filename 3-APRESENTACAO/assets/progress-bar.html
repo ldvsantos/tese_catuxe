@@ -1,0 +1,61 @@
+<script>
+/* Barra de progresso superior — RevealJS
+   Trilho cinza + barra colorida que preenche conforme avança nos slides */
+(function () {
+  "use strict";
+  function initProgressBar() {
+    /* Criar elementos */
+    var track = document.createElement("div");
+    track.id = "slide-progress-track";
+    document.body.appendChild(track);
+
+    var bar = document.createElement("div");
+    bar.id = "slide-progress-bar";
+    document.body.appendChild(bar);
+
+    /* Atualizar largura da barra e visibilidade do footer */
+    function updateBar() {
+      var reveal = Reveal;
+      if (!reveal || !reveal.getTotalSlides) return;
+      var total = reveal.getTotalSlides();
+      var current = reveal.getSlidePastCount() + 1;
+      var pct = total > 1 ? ((current - 1) / (total - 1)) * 100 : 0;
+      bar.style.width = pct + "%";
+
+      /* Esconder footer e barra de progresso na capa (slide 0,0) */
+      var idx = reveal.getIndices();
+      var footer = document.querySelector(".reveal .footer");
+      if (footer) {
+        if (idx.h === 0 && (idx.v === 0 || idx.v === undefined)) {
+          footer.style.display = "none";
+          track.style.display = "none";
+          bar.style.display = "none";
+        } else {
+          footer.style.display = "";
+          track.style.display = "";
+          bar.style.display = "";
+        }
+      }
+    }
+
+    /* Esperar Reveal carregar */
+    function bindReveal() {
+      if (typeof Reveal !== "undefined" && Reveal.isReady && Reveal.isReady()) {
+        updateBar();
+        Reveal.on("slidechanged", updateBar);
+        Reveal.on("fragmentshown", updateBar);
+        Reveal.on("fragmenthidden", updateBar);
+      } else {
+        setTimeout(bindReveal, 200);
+      }
+    }
+    bindReveal();
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", initProgressBar);
+  } else {
+    initProgressBar();
+  }
+})();
+</script>
