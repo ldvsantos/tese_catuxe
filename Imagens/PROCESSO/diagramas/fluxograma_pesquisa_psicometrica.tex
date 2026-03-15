@@ -1,0 +1,124 @@
+% Fluxograma do processo de pesquisa psicométrica
+% Requer: tikz, positioning, arrows.meta, shapes.geometric, calc, fit, backgrounds
+% (já carregados no preâmbulo da tese)
+
+\definecolor{violetA}{HTML}{6D28D9}
+\definecolor{violetB}{HTML}{8B5CF6}
+\definecolor{roseA}{HTML}{BE185D}
+\definecolor{emeraldA}{HTML}{047857}
+\definecolor{slateG}{HTML}{475569}
+\definecolor{amberA}{HTML}{D97706}
+\definecolor{amberC}{HTML}{FEF3C7}
+
+\begin{tikzpicture}[
+  phase/.style={
+    fill=#1!12, draw=#1!60,
+    font=\sffamily\bfseries\small,
+    minimum width=2.0cm, minimum height=0.8cm,
+    align=center, rounded corners=3pt,
+    line width=0.6pt
+  },
+  stepbox/.style={
+    draw=#1!50, fill=#1!6,
+    font=\small, align=center,
+    minimum width=6.0cm, minimum height=0.9cm,
+    rounded corners=3pt, text width=5.8cm,
+    line width=0.6pt
+  },
+  metricbox/.style={
+    draw=amberA!60, fill=amberC!40,
+    font=\small, align=center,
+    minimum width=4.6cm, minimum height=0.9cm,
+    rounded corners=3pt, text width=4.4cm,
+    line width=0.6pt, dashed
+  },
+  outputbox/.style={
+    draw=#1!70, fill=#1!15,
+    font=\small\bfseries, align=center,
+    minimum width=6.0cm, minimum height=1.0cm,
+    rounded corners=4pt, text width=5.8cm,
+    line width=1pt
+  },
+  arr/.style={-{Stealth[length=5pt]}, thick, slateG!70},
+  darr/.style={-{Stealth[length=4pt]}, thin, slateG!40, dashed},
+  node distance=0.50cm
+]
+
+%% ═══ ETAPA 1: População e Amostra ═══
+\node[phase=slateG] (ph1) {ETAPA~1\\[-2pt]{\scriptsize Amostra}};
+
+\node[stepbox=slateG, right=0.6cm of ph1] (pop)
+  {Defini\c{c}\~ao da popula\c{c}\~ao e amostra\\[-2pt]
+   {\scriptsize Territ\'orio Semi\'arido NE~II $\cdot$ Comunidades quilombolas (Jeremoabo)}\\[-2pt]
+   {\scriptsize $n = 30$--$40$ (Linacre, 1994) $\cdot$ Crit\'erios de inclus\~ao}};
+
+%% ═══ ETAPA 2: Construção do Instrumento ═══
+\node[phase=violetA, below=0.8cm of ph1] (ph2)
+  {ETAPA~2\\[-2pt]{\scriptsize Instrumento}};
+
+\node[stepbox=violetB, right=0.6cm of ph2] (instr)
+  {Constru\c{c}\~ao do instrumento de pesquisa\\[-2pt]
+   {\scriptsize 8 dimens\~oes ($V_1$--$V_8$) $\cdot$ Likert 5 pontos + perguntas abertas}\\[-2pt]
+   {\scriptsize 35--45 itens $\cdot$ Derivado do WOCAT-SLM-QBR (Cap.~3)}};
+\draw[arr] (pop) -- (instr);
+
+%% ═══ ETAPA 3: Validação de Conteúdo ═══
+\node[phase=roseA, below=0.8cm of ph2] (ph3)
+  {ETAPA~3\\[-2pt]{\scriptsize Valida\c{c}\~ao}};
+
+\node[stepbox=roseA, right=0.6cm of ph3] (valid)
+  {Valida\c{c}\~ao de conte\'udo\\[-2pt]
+   {\scriptsize Painel de ju\'{\i}zes $\cdot$ CVC $\geq$ 0,80}\\[-2pt]
+   {\scriptsize Kappa de Fleiss $\cdot$ Avalia\c{c}\~ao \`as cegas}};
+\draw[arr] (instr) -- (valid);
+
+\node[metricbox, right=1.4cm of valid] (metr3)
+  {Clareza de linguagem\\[-2pt]
+   Pertin\^encia por dimens\~ao\\[-2pt]
+   Relev\^ancia discriminante};
+\draw[darr] (valid) -- (metr3);
+
+%% ═══ ETAPA 4: Coleta de Dados ═══
+\node[phase=emeraldA, below=0.8cm of ph3] (ph4)
+  {ETAPA~4\\[-2pt]{\scriptsize Coleta}};
+
+\node[stepbox=emeraldA, right=0.6cm of ph4] (coleta)
+  {Coleta de dados em campo\\[-2pt]
+   {\scriptsize 2--3 entrevistadores treinados $\cdot$ Manual de orienta\c{c}\~ao}\\[-2pt]
+   {\scriptsize Supervis\~ao sistem\'atica $\cdot$ Relat\'orios padronizados}};
+\draw[arr] (valid) -- (coleta);
+
+%% ═══ ETAPA 5: Validação de Construto (Cap. 3) ═══
+\node[phase=violetA, below=0.8cm of ph4] (ph5)
+  {ETAPA~5\\[-2pt]{\scriptsize AFC}};
+
+\node[stepbox=violetB, right=0.6cm of ph5] (afc)
+  {Valida\c{c}\~ao de construto (Cap\'{\i}tulo~3)\\[-2pt]
+   {\scriptsize AFC: CFI $\geq$ 0,90, RMSEA $\leq$ 0,08}\\[-2pt]
+   {\scriptsize Confiabilidade: $\omega$ de McDonald $\geq$ 0,70}};
+\draw[arr] (coleta) -- (afc);
+
+\node[metricbox, right=1.4cm of afc] (metr5)
+  {Efeitos de piso e teto\\[-2pt]
+   Padr\~ao de respostas\\[-2pt]
+   Modelo tripartite};
+\draw[darr] (afc) -- (metr5);
+
+%% ═══ ETAPA 6: Calibração TRI (Cap. 4) ═══
+\node[phase=roseA, below=0.8cm of ph5] (ph6)
+  {ETAPA~6\\[-2pt]{\scriptsize TRI}};
+
+\node[stepbox=roseA, right=0.6cm of ph6] (tri)
+  {Calibra\c{c}\~ao TRI (Cap\'{\i}tulo~4)\\[-2pt]
+   {\scriptsize Modelo de Cr\'edito Parcial (Masters)}\\[-2pt]
+   {\scriptsize Escores latentes $\theta_n$ (escala Rasch) $\cdot$ Winsteps 5.5.2}};
+\draw[arr] (afc) -- (tri);
+
+%% ═══ SAÍDA: ISB ═══
+\node[outputbox=emeraldA, below=0.8cm of tri] (isb)
+  {\'Indice de Salvaguarda Biocultural (ISB)\\[-2pt]
+   {\scriptsize Infer\^encia fuzzy Mamdani $\cdot$ Escala 0--100}\\[-2pt]
+   {\scriptsize Dossi\^es para inst\^ancias regulat\'orias}};
+\draw[arr] (tri) -- (isb);
+
+\end{tikzpicture}

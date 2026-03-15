@@ -1,0 +1,1568 @@
+﻿This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex.fmt)
+ restricted \write18 enabled.
+entering extended mode
+(Tese-Catuxe-PPGPI.tex
+LaTeX2e <2025-11-01>
+L3 programming layer <2025-12-29>
+(ppgpi-abntex2.cls
+
+LaTeX Warning: You have requested document class `ppgpi-abntex2',
+               but the document class provides `dcomp-abntex2'.
+
+Document Class: dcomp-abntex2 18/06/2019 v1.5 Modelo DCOMP baseado no projeto a
+bnTeX2
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/abntex2\abntex2.cls
+Document Class: abntex2 2018/11/24 v-1.9.7 abnTeX2
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty)
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/memoir\memoir.cls
+Document Class: memoir 2025/11/04 v3.8.4b configurable book, report, article do
+cument class
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/xpatch\xpatch.sty
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
+tex.def))
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xpars
+e.sty)
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty))
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty)
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/memoir\mem12.clo)
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty)
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/tools\dcolumn.sty)
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/tools\delarray.sty)
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/tools\tabularx.sty)
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/booktabs\booktabs.sty)
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.sty
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty)
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.s
+ty))
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/generic/gettitlestring\gettit
+lestring.sty
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty)
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty
+)))) (C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/tools\verbatim.sty
+) (C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/base\shortvrb.sty))
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/textcase\textcase.sty)
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdefine
+keys.sty)
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/generic/pdfescape\pdfescape.s
+ty
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmds
+.sty))
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/hycolor\hycolor.sty)
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/generic/stringenc\stringenc.s
+ty) (C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
+) (C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty
+) (C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def)
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty)
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/generic/bigintcalc\bigintcalc
+.sty)))
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfil
+echeck.sty
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/generic/uniquecounter\uniquec
+ounter.sty)))
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/memoir\memhfixc.sty)
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/bookmark\bookmark.sty
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/bookmark\bkm-pdftex.def
+)) (C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def)
+*************************************
+* Local config file bblopts.cfg used
+*
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg)
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/invalid\
+babel-brazil.tex)
+
+Package babel Warning: Name 'brazil' is deprecated.
+(babel)                Use 'brazilian' instead.
+(babel)                Reported on input line 4321.
+
+
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/babel-portuges\brazilia
+n.ldf))
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/enumitem\enumitem.sty)
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/tools\calc.sty)
+
+******************************************************
+Stock height and width: 845.04684pt by 597.50787pt
+Top and edge trims: 0pt and 0pt
+Page height and width: 845.04684pt by 597.50787pt
+Text height and width: 708pt by 455pt
+Spine and edge margins: 85.35826pt and 56.9055pt
+Upper and lower margins: 85.35826pt and 51.68858pt
+Headheight and headsep: 14.5pt and 19.8738pt
+Footskip: 30pt
+Columnsep and columnseprule: 10pt and 0pt
+Marginparsep and marginparwidth: 7pt and 42.9055pt
+Sidecapsep and sidecapwidth: 7pt and 42pt
+Sidebarhsep and sidebarwidth: 7pt and 42pt
+Sidebarvsep and sidebartopsep: 14.5pt and 0pt
+Sidebarheight: 590.14995pt
+Sidefoothsep and sidefootwidth: 7pt and 42pt
+Sidefootvsep and sidefootheight: 14.5pt and 590.14995pt
+******************************************************
+
+) (C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/cmap\cmap.sty)
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/placeins\placeins.sty)
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/diagbox\diagbox.sty
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/pict2e\pict2e.sty
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/pict2e\pict2e.cfg)
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
+) (C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/pict2e\p2e-pdftex.def
+) (C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty)))
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty)
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty)
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/lastpage\lastpage.sty
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/lastpage\lastpage2e.sty
+
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/lastpage\lastpagemodern
+.sty) 
+))
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/pdflscape\pdflscape.sty
+
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/pdflscape\pdflscape-nom
+etadata.sty
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/graphics\lscape.sty
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.c
+fg)))))
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/graphics\rotating.sty
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty))
+
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/threeparttable\threepar
+ttable.sty)
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/pgfgantt\pgfgantt.sty
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/pgf/frontendlayer\tikz.
+sty
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgf.sty
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfrcs.st
+y
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil
+-common.tex)
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil
+-latex.def)
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfrcs.
+code.tex
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/generic/pgf\pgf.revision.tex)
+))
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgfcore.
+sty
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/pgf/systemlayer\pgfsys.
+sty
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
+s.code.tex
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys
+.code.tex
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys
+libraryfiltered.code.tex))
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgf.c
+fg)
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
+s-pdftex.def
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
+s-common-pdf.def)))
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
+ssoftpath.code.tex)
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
+sprotocol.code.tex))
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg)
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
+)
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+e.code.tex
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code
+.tex
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathutil.
+code.tex)
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathparse
+r.code.tex)
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.code.tex)
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.basic.code.tex)
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.trigonometric.code.tex)
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.random.code.tex)
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.comparison.code.tex)
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.base.code.tex)
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.round.code.tex)
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.misc.code.tex)
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.integerarithmetics.code.tex)
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathcalc.
+code.tex)
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfloat
+.code.tex))
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfint.code.
+tex)
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+epoints.code.tex)
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+epathconstruct.code.tex)
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+epathusage.code.tex)
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+escopes.code.tex)
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+egraphicstate.code.tex)
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+etransformations.code.tex)
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+equick.code.tex)
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+eobjects.code.tex)
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+epathprocessing.code.tex)
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+earrows.code.tex)
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+eshade.code.tex)
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+eimage.code.tex)
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+eexternal.code.tex)
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+elayers.code.tex)
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+etransparency.code.tex)
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+epatterns.code.tex)
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+erdf.code.tex)))
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
+shapes.code.tex)
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
+plot.code.tex)
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfco
+mp-version-0-65.sty)
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfco
+mp-version-1-18.sty))
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgffor.st
+y
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfkeys.s
+ty
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys
+.code.tex))
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/pgf/math\pgfmath.sty
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code
+.tex))
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgffor.
+code.tex))
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z\tikz.code.tex
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibr
+aryplothandlers.code.tex)
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
+matrix.code.tex)
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z/libraries\tikzlibrarytopaths.code.tex)))
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z/libraries\tikzlibraryarrows.code.tex
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibr
+aryarrows.code.tex))
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z/libraries\tikzlibrarybackgrounds.code.tex)
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z/libraries\tikzlibrarycalc.code.tex)
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z/libraries\tikzlibrarypatterns.code.tex
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibr
+arypatterns.code.tex))
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z/libraries\tikzlibrarypositioning.code.tex)
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z/libraries\tikzlibraryshapes.geometric.code.tex
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes\
+pgflibraryshapes.geometric.code.tex))
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfcalend
+ar.sty
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfcale
+ndar.code.tex)))
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\times.sty)
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf.s
+ty (C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/grfext\grfext.sty)
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
+ase.sty
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.c
+fg)))
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/adjustbox\adjustbox.sty
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/xkeyval\xkeyval.sty
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkeyval.tex
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkvutils.tex)
+))
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/adjustbox\adjcalc.sty)
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/adjustbox\trimclip.sty
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/collectbox\collectbox.s
+ty)
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/adjustbox\tc-pdftex.def
+))
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/ifoddpage\ifoddpage.sty
+) (C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/varwidth\varwidth.sty
+)
+==> First Aid for varwidth.sty applied!
+) (C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption-memoir.
+sto)))
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/import\import.sty)
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/multirow\multirow.sty)
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/tools\longtable.sty)
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1ptm.fd)<<t1.cm
+ap>>)
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/tools\indentfirst.sty)
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/tools\multicol.sty)
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/mathtools\mathtools.sty
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/mathtools\mhsetup.sty)
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+For additional information on amsmath, use the `?' option.
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty))
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty)
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty)))
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty))
+
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/microtype\microtype.sty
+
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/microtype\microtype-pdf
+tex.def)
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/microtype\microtype.cfg
+)) (C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\backref.sty
+)
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/abntex2\abntex2cite.sty
+
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/abntex2\abntex2abrev.st
+y) (C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifpdf.sty)
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifxetex.sty)
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/relsize\relsize.sty))
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/pdfpages\pdfpages.sty
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/eso-pic\eso-pic.sty)
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/pdfpages\pppdftex.def))
+ (C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/breakurl\breakurl.sty
+
+Package breakurl Warning: You are using breakurl while processing via pdflatex.
+
+(breakurl)                \burl will be just a synonym of \url.
+(breakurl)                 on input line 48.
+
+) (C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.sty
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstpatch.sty)
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty)
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.cfg))
+==> First Aid for listings.sty no longer applied!
+    Expected:
+        2024/09/23 1.10c (Carsten Heinz)
+    but found:
+        2025/11/14 1.11b (Carsten Heinz)
+    so I'm assuming it got fixed.
+
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/lstaddons\lstautogobble
+.sty) (C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/lipsum\lipsum.sty
+
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/l3keys2e\l3k
+eys2e.sty)
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/lipsum\lipsum.ltd.tex))
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/colortbl\colortbl.sty)
+
+LaTeX Warning: Package "xcolor" has already been loaded: ignoring load-time
+(LaTeX)        option "xcdraw".
+
+
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\typearea.st
+y
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrkbase.st
+y
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrbase.sty
+
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrlfile.st
+y
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrlfile-ho
+ok.sty
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrlogo.sty
+))))))
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/tools\varioref.sty)
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/cleveref\cleveref.sty)
+==> First Aid for cleveref.sty applied!
+
+Class memoir Warning: The fancyhdr package is not recommended with memoir.
+(memoir)              We have our own well integrated interface to handle
+(memoir)              headers and footers. See the manual section 7.3
+(memoir)              onwards for details. on input line 108.
+
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty)
+(Doutorado-Catuxe.sty))
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty)
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/caption\subcaption.sty)
+ (C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/fvextra\fvextra.sty
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/fancyvrb\fancyvrb.sty)
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/upquote\upquote.sty
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/base\textcomp.sty))
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/lineno\lineno.sty))
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibr
+aryarrows.meta.code.tex)
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z/libraries\tikzlibraryfit.code.tex)
+Writing index file Tese-Catuxe-PPGPI.idx 
+(Tese-Catuxe-PPGPI.aux (PRE_TEXTUAL/Resumo.aux) (Pre_Textual/Abreviaturas.aux)
+(CONTEUDOS/INTRODUCAO/Introducao.aux) (CONTEUDOS/INTRODUCAO/Referencial.aux)
+(CONTEUDOS/METODOLOGIA/Metodologia.aux) (CAPITULOS/ARTIGO_1/Artigo_1.aux)
+(CAPITULOS/ARTIGO_2/Artigo_2.aux) (CAPITULOS/ARTIGO_3/Artigo_3.aux)
+(CAPITULOS/ARTIGO_4/Artigo_4.aux) (CAPITULOS/ARTIGO_5/Artigo_5.aux)
+(POS_TEXTUAL/Apendices.aux))
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
+ii
+[Loading MPS to PDF converter (version 2006.09.02).]
+) (C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/caption\ltcaption.sty
+) (C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-ptm.cfg)
+[1{C:/Users/vidal/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/vi
+dal/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}]
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-cmr.cfg)<<
+ot1.cmap>><<oml.cmap>><<oms.cmap>><<omx.cmap>>
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd)
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msa.cfg)
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd)
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msb.cfg)
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.56 
+      [1] (PRE_TEXTUAL/Resumo.tex [2]) (Tese-Catuxe-PPGPI.lof [3]) [4]
+(Tese-Catuxe-PPGPI.lot) [5] (Pre_Textual/Abreviaturas.tex [6] [7])
+(Tese-Catuxe-PPGPI.toc [8] [9] [10] [11] [12] [13] [14] [15] [16]) [17]
+(CONTEUDOS/INTRODUCAO/Introducao.tex
+Cap\'{\i }tulo 1.
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1pnc.fd)
+[18] [19] [20] [21] [22] [23] [24] [25] [26] [27] [28]) [29]
+(CONTEUDOS/INTRODUCAO/Referencial.tex
+Cap\'{\i }tulo 2.
+[30] [31] [32]
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ptm.fd)
+[33] [34] [35] [36] [37] [38] [39] [40] [41]) [42]
+(CONTEUDOS/METODOLOGIA/Metodologia.tex
+Cap\'{\i }tulo 3.
+(Imagens/PROCESSO/diagramas/objetivos-especificos.tex) [43] [44]
+(Imagens/PROCESSO/diagramas/modulos-integrados.tex) [45]
+(Imagens/PROCESSO/diagramas/pipeline-operacional.tex
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1pcr.fd))
+[46]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 56.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 56.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 56.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 56.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 56.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 56.
+
+
+Overfull \hbox (71.45407pt too wide) in paragraph at lines 64--78
+ [][] 
+[47] (CONTEUDOS/METODOLOGIA/Met_meta_analise.tex [48] [49] [50])
+(CONTEUDOS/METODOLOGIA/Met_delphi.tex [51] [52])
+(CONTEUDOS/METODOLOGIA/Met_fuzzy.tex
+Overfull \hbox (3.97778pt too wide) in paragraph at lines 1--1
+[]\T1/ptm/b/n/17.28 (-20) Modelagem Fuzzy e Cons-tru-þÒo do ═n-dice de Sal-va-g
+uarda
+[53] [54]
+Overfull \hbox (48.3487pt too wide) in paragraph at lines 21--22
+[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 ; [0\OML/cmm/m/it/12 ; \OT
+1/cmr/m/n/12 0\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 4])$\T1/ptm/m/n/12 (-20) ; MÚ-
+dio, com $\OML/cmm/m/it/12 ^^V[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x\OT1/cmr/m/n
+/12 ) = [](\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 ; [3\OML/cmm/m/it/12 ; \OT1/cmr/m/
+n/12 5\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 7])$\T1/ptm/m/n/12 (-20) ; e Alto, com
+ $\OML/cmm/m/it/12 ^^V[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 ) = 
+[](\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 ; [6\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 10\
+OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 10])$\T1/ptm/m/n/12 (-20) . 
+[55]) (CONTEUDOS/METODOLOGIA/Met_signaling_wtp.tex [56] [57] [58])
+(CONTEUDOS/METODOLOGIA/Met_design_participativo.tex [59] [60] [61])
+(CONTEUDOS/METODOLOGIA/Met_rs.tex [62]
+Overfull \hbox (494.59235pt too wide) in paragraph at lines 36--37
+ [][] 
+[63] [64 <./Imagens/PROCESSO/diagramas/prisma_flowdiagram.png>] [65] [66]
+[67] [68] [69] [70] [71]
+Overfull \hbox (82.7596pt too wide) in paragraph at lines 207--208
+\T1/pcr/m/n/12 library_diego.bib \T1/ptm/m/n/12 (-20) com 994 re-fe-rÛn-cias e 
+\T1/pcr/m/n/12 referencias_encontradas_para_adicionar.bib
+[72]
+Overfull \hbox (7.5242pt too wide) in paragraph at lines 221--222
+[]\T1/ptm/m/n/12 (-20) O sis-tema de re-vi-sÒo sis-te-mß-tica au-to-ma-ti-zada 
+foi va-li-dado con-forme cri-tÚ-rios AMSTAR-
+[73] [74] [75] [76] (Imagens/PROCESSO/diagramas/fluxograma_rs_pos_prisma.tex
+(C:\Users\vidal\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1phv.fd))
+[77]
+Overfull \vbox (134.74878pt too high) has occurred while \output is active
+[78] [79]) (CONTEUDOS/METODOLOGIA/Met_psicometrica.tex [80] [81 <./IMAGENS/terr
+itorio.png>] (Imagens/PROCESSO/diagramas/fluxograma_pesquisa_psicometrica.tex)
+[82] [83] [84] [85] [86] [87] [88])
+(CONTEUDOS/METODOLOGIA/Met_etica_dados_riscos.tex
+Overfull \hbox (25.79454pt too wide) in paragraph at lines 16--17
+[]\T1/ptm/m/n/12 (-20) A con-for-mi-dade com a Lei Ge-ral de Pro-te-þÒo de Da-d
+os Pes-so-ais (LGPD, Lei n\TS1/ptm/m/n/12 (-20) ║ \T1/ptm/m/n/12 (-20) 13.709/2
+018)
+[89] [90]
+Overfull \hbox (2.2724pt too wide) in paragraph at lines 42--42
+[]|\T1/ptm/b/n/10 (-20) Probabilidade| 
+
+Underfull \hbox (badness 8132) in paragraph at lines 46--46
+[]|\T1/ptm/m/n/10 (+20) ViolaþÒo de con-sen-ti-
+
+Underfull \hbox (badness 1371) in paragraph at lines 46--47
+\T1/ptm/m/n/10 (+20) ze-na-mento crip-to-gra-fado; con-for-mi-dade
+
+Underfull \hbox (badness 4832) in paragraph at lines 48--48
+\T1/ptm/m/n/10 (+20) des-con-tex-tu-a-li-za-þÒo de
+
+Underfull \hbox (badness 10000) in paragraph at lines 56--56
+[]|\T1/ptm/m/n/10 (+20) Indisponibilidade de
+
+Underfull \hbox (badness 2088) in paragraph at lines 56--56
+\T1/ptm/m/n/10 (+20) in-fra-es-tru-tura DLT em
+[91] [92])) [93] (CAPITULOS/ARTIGO_1/Artigo_1.tex
+Cap\'{\i }tulo 4.
+[94] [95] [96] [97] [98] [99 <./CAPITULOS/ARTIGO_1/FIGURAS/prisma_flowdiagram.p
+ng>] [100] [101]
+Underfull \hbox (badness 10000) in paragraph at lines 160--160
+[]|\T1/ptm/m/n/10.95 (+20) ([][]LI \T1/ptm/m/it/10.95 (+20) et al.[][]\T1/ptm/m
+/n/10.95 (+20) ,
+
+Underfull \hbox (badness 10000) in paragraph at lines 163--163
+[]|\T1/ptm/m/n/10.95 (+20) ([][]SPYROU;
+
+Underfull \hbox (badness 10000) in paragraph at lines 163--163
+\T1/ptm/m/n/10.95 (+20) ARIZA-
+
+Underfull \hbox (badness 10000) in paragraph at lines 163--163
+\T1/ptm/m/n/10.95 (+20) SENTÝS;
+
+Underfull \hbox (badness 10000) in paragraph at lines 166--166
+[]|\T1/ptm/m/n/10.95 (+20) ([][]LI \T1/ptm/m/it/10.95 (+20) et al.[][]\T1/ptm/m
+/n/10.95 (+20) ,
+
+Overfull \hbox (16.0pt too wide) in paragraph at lines 156--169
+ [][] 
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[102 <./CAPITULOS/ARTIGO_1/FIGURAS/temporal_publicacoes.png> <./CAPITULOS/ARTIG
+O_1/FIGURAS/temporal_algoritmos.png>]
+Overfull \vbox (25.70097pt too high) has occurred while \output is active
+[103 <./CAPITULOS/ARTIGO_1/FIGURAS/network_completa.png>]
+Overfull \hbox (7.60214pt too wide) in paragraph at lines 199--200
+[]\T1/ptm/m/n/12 (-20) Neste clus-ter, observa-se forte co-o-cor-rÛn-cia en-tre
+ \T1/ptm/m/it/12 (-20) De-e-pLe-ar-ning\T1/ptm/m/n/12 (-20) , \T1/ptm/m/it/12 (
+-20) Apli-ca-cao=Monitoring
+[104 <./CAPITULOS/ARTIGO_1/FIGURAS/louvain_modules_detailed.png>] [105]
+[106 <./CAPITULOS/ARTIGO_1/FIGURAS/mca_biplot_temporal_completo.png>] [107]
+[108 <./CAPITULOS/ARTIGO_1/FIGURAS/cluster_heatmap_profiles_edit.png>] [109 <./
+CAPITULOS/ARTIGO_1/FIGURAS/fair_radar_only.png> <./CAPITULOS/ARTIGO_1/FIGURAS/f
+air_indicadores.png>]
+
+LaTeX Warning: Citation `Foody2020' on page 110 undefined on input line 289.
+
+
+LaTeX Warning: Citation `Basso2020' on page 110 undefined on input line 291.
+
+
+LaTeX Warning: Citation `Jones2020DigitalTwin' on page 110 undefined on input l
+ine 291.
+
+
+LaTeX Warning: Citation `VanDerHorn2021DigitalTwin' on page 110 undefined on in
+put line 291.
+
+
+LaTeX Warning: Citation `Reichstein2019' on page 110 undefined on input line 29
+3.
+
+[110 <./CAPITULOS/ARTIGO_1/FIGURAS/meta_analise_algoritmos.png> <./CAPITULOS/AR
+TIGO_1/FIGURAS/meta_regressao_ano.png>] [111] [112]) [113]
+(CAPITULOS/ARTIGO_2/Artigo_2.tex
+Cap\'{\i }tulo 5.
+[114] [115] [116] [117] [118 <./CAPITULOS/ARTIGO_2/FIGURAS/prisma_flowdiagram_a
+rtigo2_en.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 101--101
+[]|\T1/ptm/m/n/10.95 (+20) S (De-li-ne-a-
+[119] [120] [121]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 126.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 126.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 126.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 126.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 126.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 126.
+
+
+Underfull \hbox (badness 1688) in paragraph at lines 140--140
+\T1/ptm/m/n/10 (+20) anos) com do-mÝ-nio do sa-
+
+Underfull \hbox (badness 10000) in paragraph at lines 140--140
+[]|\T1/ptm/m/n/10 (+20) %,
+
+Underfull \hbox (badness 10000) in paragraph at lines 140--140
+\T1/ptm/m/n/10 (+20) eventos$\OMS/cmsy/m/n/10 ^^A$\T1/ptm/m/n/10 (+20) ano$[]$,
+
+
+Underfull \hbox (badness 3179) in paragraph at lines 142--142
+[]|\T1/ptm/m/n/10 (+20) Complexidade e
+
+Underfull \hbox (badness 2165) in paragraph at lines 142--142
+\T1/ptm/m/n/10 (+20) de prß-ti-cas (Jac-card, Bray-
+
+Underfull \hbox (badness 10000) in paragraph at lines 142--142
+[]|\T1/ptm/m/n/10 (+20) Ýndice, con-ta-
+
+Underfull \hbox (badness 1708) in paragraph at lines 144--144
+[]|\T1/ptm/m/n/10 (+20) Status de Do-cu-
+
+Underfull \hbox (badness 10000) in paragraph at lines 146--146
+[]|\T1/ptm/m/n/10 (+20) Vulnerabilidade
+
+Underfull \hbox (badness 7362) in paragraph at lines 146--146
+\T1/ptm/m/n/10 (+20) co-le-tiva, re-gis-tro IPHAN);
+
+Underfull \hbox (badness 1565) in paragraph at lines 146--146
+\T1/ptm/m/n/10 (+20) exis-tÛn-cia de pro-to-colo co-
+
+Underfull \hbox (badness 3302) in paragraph at lines 148--148
+[]|\T1/ptm/m/n/10 (+20) OrganizaþÒo So-
+
+Underfull \hbox (badness 10000) in paragraph at lines 148--148
+[]|\T1/ptm/m/n/10 (+20) contagem,
+
+Underfull \hbox (badness 10000) in paragraph at lines 148--148
+\T1/ptm/m/n/10 (+20) eventos$\OMS/cmsy/m/n/10 ^^A$\T1/ptm/m/n/10 (+20) mÛs$[]$,
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 150--150
+[]|\T1/ptm/m/n/10 (+20) Vitalidade Lin-
+
+Underfull \hbox (badness 10000) in paragraph at lines 152--152
+[]|\T1/ptm/m/n/10 (+20) IntegraþÒo ao
+
+Underfull \hbox (badness 10000) in paragraph at lines 154--154
+[]|\T1/ptm/m/n/10 (+20) Ýndice, $[]$C,
+
+Underfull \hbox (badness 10000) in paragraph at lines 154--154
+\T1/ptm/m/n/10 (+20) eventos$\OMS/cmsy/m/n/10 ^^A$\T1/ptm/m/n/10 (+20) ano$[]$,
+
+
+LaTeX Warning: Float too large for page by 84.8858pt on input line 157.
+
+[122] [123] [124] [125] [126]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 220.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 220.
+
+[127] [128] [129] [130] [131] [132 <./CAPITULOS/ARTIGO_2/FIGURAS/methods_flowch
+art.pdf>] [133] [134] [135 <./CAPITULOS/ARTIGO_2/FIGURAS/forest_agregado_V1_V8.
+pdf>] [136 <./CAPITULOS/ARTIGO_2/FIGURAS/meta_regressao_regiao.pdf>] [137 <./CA
+PITULOS/ARTIGO_2/FIGURAS/meta_regressao_comunidade.pdf>] [138 <./CAPITULOS/ARTI
+GO_2/FIGURAS/meta_regressao_intervencao.pdf>]
+
+LaTeX Warning: Float too large for page by 179.07791pt on input line 426.
+
+[139] [140 <./CAPITULOS/ARTIGO_2/FIGURAS/leave_one_out_V1_V3.pdf> <./CAPITULOS/
+ARTIGO_2/FIGURAS/leave_one_out_V4_V6.pdf> <./CAPITULOS/ARTIGO_2/FIGURAS/leave_o
+ne_out_V7_V8.pdf>] [141] [142] [143] [144] [145] [146] [147]) [148]
+(CAPITULOS/ARTIGO_3/Artigo_3.tex
+Cap\'{\i }tulo 6.
+[149] [150] [151] [152] [153] [154]
+Underfull \hbox (badness 10000) in paragraph at lines 86--86
+[]|\T1/ptm/m/n/10.95 (+20) ErosÒo In-ter-ge-
+
+Underfull \hbox (badness 10000) in paragraph at lines 86--86
+\T1/ptm/m/n/10.95 (+20) ra-ci-o-nal e Mi-
+
+Underfull \hbox (badness 5302) in paragraph at lines 86--86
+\T1/ptm/m/n/10.95 (+20) gra-þÒo ([][]REYES-
+
+Underfull \hbox (badness 3179) in paragraph at lines 86--86
+\T1/ptm/m/n/10.95 (+20) GARC═A \T1/ptm/m/it/10.95 (+20) et al.[][]\T1/ptm/m/n/1
+0.95 (+20) ,
+
+Underfull \hbox (badness 1776) in paragraph at lines 86--86
+[][]\T1/ptm/m/n/10.95 (+20) 2013b[][][]; [][]GËMEZ-
+
+Underfull \hbox (badness 10000) in paragraph at lines 86--86
+\T1/ptm/m/n/10.95 (+20) BAGGETHUN;
+
+Underfull \hbox (badness 10000) in paragraph at lines 86--86
+\T1/ptm/m/n/10.95 (+20) REYES-
+
+Underfull \hbox (badness 7064) in paragraph at lines 86--86
+\T1/ptm/m/n/10.95 (+20) GARC═A[][], [][]2013[][][];
+
+Underfull \hbox (badness 10000) in paragraph at lines 86--86
+[][]\T1/ptm/m/n/10.95 (+20) TANG; GA-VIN[][],
+
+Underfull \hbox (badness 7685) in paragraph at lines 88--88
+[]|\T1/ptm/m/n/10.95 (+20) Complexidade e
+
+Underfull \hbox (badness 10000) in paragraph at lines 88--88
+[][]\T1/ptm/m/n/10.95 (+20) 2001[][][]; [][]PRETTY
+
+Underfull \hbox (badness 10000) in paragraph at lines 88--88
+\T1/ptm/m/it/10.95 (+20) et al.[][]\T1/ptm/m/n/10.95 (+20) , [][]2009[][][];
+
+Underfull \hbox (badness 10000) in paragraph at lines 88--88
+[][]\T1/ptm/m/n/10.95 (+20) FERN┴NDEZ-
+
+Underfull \hbox (badness 10000) in paragraph at lines 88--88
+\T1/ptm/m/n/10.95 (+20) LLAMAZARES
+
+Underfull \hbox (badness 10000) in paragraph at lines 88--88
+\T1/ptm/m/n/10.95 (+20) ME-RER \T1/ptm/m/it/10.95 (+20) et al.[][]\T1/ptm/m/n/1
+0.95 (+20) ,
+
+Underfull \hbox (badness 10000) in paragraph at lines 88--89
+[]|\T1/ptm/m/n/10.95 (+20) Agrobiodiversidade (Shan-non
+
+Underfull \hbox (badness 7151) in paragraph at lines 88--89
+\T1/ptm/m/n/10.95 (+20) da-des, in-te-ra-þ§es solo-planta
+
+Underfull \hbox (badness 10000) in paragraph at lines 90--90
+[]|\T1/ptm/m/n/10.95 (+20) Status de Do-
+
+Underfull \hbox (badness 10000) in paragraph at lines 90--90
+\T1/ptm/m/n/10.95 (+20) cu-men-ta-þÒo
+
+Underfull \hbox (badness 10000) in paragraph at lines 90--90
+\T1/ptm/m/n/10.95 (+20) ([][]MAINA[][], [][]2012[][][];
+
+Underfull \hbox (badness 10000) in paragraph at lines 90--90
+[][]\T1/ptm/m/n/10.95 (+20) PO-ORNA;
+
+Underfull \hbox (badness 1122) in paragraph at lines 90--90
+\T1/ptm/m/n/10.95 (+20) MY-MOON; HA-
+
+Underfull \hbox (badness 10000) in paragraph at lines 92--92
+[]|\T1/ptm/m/n/10.95 (+20) Vulnerabilidade
+
+Underfull \hbox (badness 3568) in paragraph at lines 92--92
+\T1/ptm/m/n/10.95 (+20) ria ([][]DUT-FI-ELD[][],
+
+Underfull \hbox (badness 10000) in paragraph at lines 92--92
+\T1/ptm/m/n/10.95 (+20) PA-NIZ-ZON[][],
+
+Underfull \hbox (badness 10000) in paragraph at lines 92--92
+[][]\T1/ptm/m/n/10.95 (+20) 2004[][][]; [][]BA-VI-
+
+Underfull \hbox (badness 1199) in paragraph at lines 92--92
+[]|\T1/ptm/m/n/10.95 (+20) ƒ5.6 Ca-rac-te-rÝs-ti-cas dos
+
+Underfull \hbox (badness 10000) in paragraph at lines 94--94
+[]|\T1/ptm/m/n/10.95 (+20) OrganizaþÒo
+
+Underfull \hbox (badness 4927) in paragraph at lines 94--94
+\T1/ptm/m/n/10.95 (+20) So-cial e Go-ver-
+
+Underfull \hbox (badness 10000) in paragraph at lines 94--94
+[][]\T1/ptm/m/n/10.95 (+20) 2004[][][]; [][]OLS-
+
+Underfull \hbox (badness 10000) in paragraph at lines 94--94
+\T1/ptm/m/n/10.95 (+20) SON; FOLKE;
+
+Underfull \hbox (badness 7030) in paragraph at lines 94--94
+\T1/ptm/m/n/10.95 (+20) BER-KES[][], [][]2004[][][];
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--96
+[]|\T1/ptm/m/n/10.95 (+20) Vitalidade Lin-
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--96
+\T1/ptm/m/n/10.95 (+20) guÝs-tica ([][]MO-
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--96
+\T1/ptm/m/n/10.95 (+20) SE-LEY[][], [][]2010[][][];
+
+Underfull \hbox (badness 6625) in paragraph at lines 98--98
+\T1/ptm/m/n/10.95 (+20) cado ([][]BEL-LON[][],
+
+Underfull \hbox (badness 10000) in paragraph at lines 98--98
+[][]\T1/ptm/m/n/10.95 (+20) 2004[][][]; [][]BRUSH[][],
+
+Underfull \hbox (badness 3965) in paragraph at lines 98--99
+[]|\T1/ptm/m/n/10.95 (+20) ProporþÒo de pro-du-þÒo para
+
+Underfull \hbox (badness 3009) in paragraph at lines 100--100
+\T1/ptm/m/it/10.95 (+20) al.[][]\T1/ptm/m/n/10.95 (+20) , [][]2015[][][]; [][]D
+OS-
+
+Underfull \hbox (badness 10000) in paragraph at lines 100--100
+\T1/ptm/m/n/10.95 (+20) SOU; TOURÚ;
+
+Underfull \hbox (badness 10000) in paragraph at lines 100--100
+\T1/ptm/m/n/10.95 (+20) OLAWOYE[][],
+
+Underfull \hbox (badness 10000) in paragraph at lines 100--100
+[]|\T1/ptm/m/n/10.95 (+20) ƒ5 Am-bi-ente na-tu-ral
+
+Underfull \hbox (badness 5954) in paragraph at lines 100--100
+\T1/ptm/m/n/10.95 (+20) (clima); ƒ6.1 Im-pac-tos
+
+Underfull \hbox (badness 6445) in paragraph at lines 100--101
+\T1/ptm/m/n/10.95 (+20) tre-mos, perda de sa-fra por
+
+LaTeX Warning: Float too large for page by 251.28603pt on input line 103.
+
+[155] [156] [157]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 135.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\rightarrow' on input line 135.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 135.
+
+[158]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 145.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\rightarrow' on input line 145.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 145.
+
+[159] [160] [161] [162] [163] [164]) [165] [166]
+(CAPITULOS/ARTIGO_4/Artigo_4.tex
+Cap\'{\i }tulo 7.
+[167] [168] [169] [170] [171] [172]
+Overfull \hbox (1.82132pt too wide) in paragraph at lines 109--110
+[]\T1/ptm/m/n/12 (-20) Exemplo de fuz-zi-fi-ca-þÒo para Risco de Ero-sÒo In-ter
+-ge-ra-ci-o-nal e Mi-gra-þÒo: $\OML/cmm/m/it/12 ^^V[]\OT1/cmr/m/n/12 (\OML/cmm/
+m/it/12 x\OT1/cmr/m/n/12 ) =
+[173] [174] [175]) [176] (CAPITULOS/ARTIGO_5/Artigo_5.tex
+Cap\'{\i }tulo 8.
+[177] [178] [179] [180] [181] [182] [183] [184] [185] [186]) [187] [188]
+(Tese-Catuxe-PPGPI.bbl (Tese-Catuxe-PPGPI.brf)
+bibitemlist
+[189] [190] [191] [192] [193] [194] [195] [196] [197] [198] [199] [200]
+[201] [202] [203] [204] [205] [206] [207] [208] [209] [210] [211] [212]
+[213]) [214] (POS_TEXTUAL/Apendices.tex [215] (Pos_Textual/appendix-wocat.tex
+AP\^ENDICE A.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 12.0pt
+(hyperref)                replaced by space on input line 30.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 12.0pt
+(hyperref)                replaced by space on input line 32.
+
+[216]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 12.0pt
+(hyperref)                replaced by space on input line 38.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 12.0pt
+(hyperref)                replaced by space on input line 50.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 12.0pt
+(hyperref)                replaced by space on input line 57.
+
+[217]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 12.0pt
+(hyperref)                replaced by space on input line 63.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 12.0pt
+(hyperref)                replaced by space on input line 68.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 12.0pt
+(hyperref)                replaced by space on input line 72.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 73--75
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 12.0pt
+(hyperref)                replaced by space on input line 76.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 77--79
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 12.0pt
+(hyperref)                replaced by space on input line 80.
+
+[218]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 12.0pt
+(hyperref)                replaced by space on input line 83.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 12.0pt
+(hyperref)                replaced by space on input line 86.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 12.0pt
+(hyperref)                replaced by space on input line 98.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 12.0pt
+(hyperref)                replaced by space on input line 103.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 12.0pt
+(hyperref)                replaced by space on input line 113.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 12.0pt
+(hyperref)                replaced by space on input line 115.
+
+[219]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 12.0pt
+(hyperref)                replaced by space on input line 128.
+
+
+Overfull \hbox (2.21623pt too wide) in paragraph at lines 130--133
+[]\T1/ptm/m/n/12 (-20) O uso da terra Ú misto na mesma uni-dade (con-forme de-f
+i-ni-þ§es ICRAF)? $\OMS/cmsy/m/n/12 ^^M$ \T1/ptm/m/n/12 (-20) Sim $\OMS/cmsy/m/
+n/12 ^^M$ \T1/ptm/m/n/12 (-20) NÒo 
+
+Underfull \hbox (badness 10000) in paragraph at lines 166--166
+[]|$\U/msa/m/n/10.95 ^^C$ \T1/ptm/m/n/10.95 (+20) As-sen-ta-men-
+
+Underfull \hbox (badness 1024) in paragraph at lines 167--167
+[]|$\U/msa/m/n/10.95 ^^C$ \T1/ptm/m/n/10.95 (+20) Edi-fi-ca-þ§es; $\U/msa/m/n/1
+0.95 ^^C$ \T1/ptm/m/n/10.95 (+20) Trans-porte; $\U/msa/m/n/10.95 ^^C$
+
+Underfull \hbox (badness 10000) in paragraph at lines 170--170
+[]|$\U/msa/m/n/10.95 ^^C$ \T1/ptm/m/n/10.95 (+20) Cur-sos
+
+Underfull \hbox (badness 10000) in paragraph at lines 170--170
+\T1/ptm/m/n/10.95 (+20) d'ßgua/corpos
+
+Underfull \hbox (badness 7722) in paragraph at lines 170--170
+\T1/ptm/m/n/10.95 (+20) hÝ-dri-cos/ßreas ·mi-
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 12.0pt
+(hyperref)                replaced by space on input line 185.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 12.0pt
+(hyperref)                replaced by space on input line 191.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 12.0pt
+(hyperref)                replaced by space on input line 197.
+
+[220] [221]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 12.0pt
+(hyperref)                replaced by space on input line 217.
+
+
+Underfull \hbox (badness 1968) in paragraph at lines 228--229
+\T1/ptm/m/n/10.95 (+20) (associadas a cul-
+
+Underfull \hbox (badness 10000) in paragraph at lines 230--236
+[]|\T1/ptm/m/n/10.95 (+20) A1: Co-ber-tura ve-ge-
+
+Underfull \hbox (badness 10000) in paragraph at lines 230--236
+\T1/ptm/m/n/10.95 (+20) A2: Ma-tÚ-ria or-gÔ-
+
+Underfull \hbox (badness 1762) in paragraph at lines 230--236
+\T1/ptm/m/n/10.95 (+20) A3: Tra-ta-mento su-per-fi-
+
+Underfull \hbox (badness 10000) in paragraph at lines 239--240
+\T1/ptm/m/n/10.95 (+20) pe-re-nes, ar-bus-tos
+
+Underfull \hbox (badness 1546) in paragraph at lines 239--240
+\T1/ptm/m/n/10.95 (+20) ou ßr-vo-res; longa
+
+Underfull \hbox (badness 10000) in paragraph at lines 241--245
+[]|\T1/ptm/m/n/10.95 (+20) V1: Co-ber-tura ar-b¾-
+
+Underfull \hbox (badness 10000) in paragraph at lines 241--245
+\T1/ptm/m/n/10.95 (+20) V3: Des-ma-ta-mento de
+
+Underfull \hbox (badness 10000) in paragraph at lines 248--249
+\T1/ptm/m/n/10.95 (+20) (permanentes;
+
+Underfull \hbox (badness 10000) in paragraph at lines 248--249
+\T1/ptm/m/n/10.95 (+20) re-que-rem in-ves-ti-
+
+Underfull \hbox (badness 6125) in paragraph at lines 248--249
+\T1/ptm/m/n/10.95 (+20) mo-vi-men-ta-þÒo de
+
+Underfull \hbox (badness 10000) in paragraph at lines 250--260
+\T1/ptm/m/n/10.95 (+20) S3: Va-las gra-du-a-
+
+Underfull \hbox (badness 10000) in paragraph at lines 250--260
+\T1/ptm/m/n/10.95 (+20) S6: Mu-
+
+Overfull \hbox (12.52292pt too wide) in paragraph at lines 250--260
+\T1/ptm/m/n/10.95 (-20) ros/barreiras/paliþadas/cercas 
+
+Underfull \hbox (badness 2460) in paragraph at lines 250--260
+\T1/ptm/m/n/10.95 (+20) S9: Abri-gos para plan-
+
+Underfull \hbox (badness 10000) in paragraph at lines 263--264
+\T1/ptm/m/n/10.95 (+20) (mudanþa fun-da-
+
+Underfull \hbox (badness 10000) in paragraph at lines 263--264
+\T1/ptm/m/n/10.95 (+20) terra; in-ten-si-dade
+
+Underfull \hbox (badness 6001) in paragraph at lines 265--271
+\T1/ptm/m/n/10.95 (+20) M2: Mu-danþa de ma-
+
+Underfull \hbox (badness 3492) in paragraph at lines 272--273
+[]|\T1/ptm/m/n/10.95 (+20) Fechamento de ßrea, pou-sio ge-ren-ci-ado,
+
+LaTeX Warning: Float too large for page by 83.1612pt on input line 278.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 12.0pt
+(hyperref)                replaced by space on input line 283.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 12.0pt
+(hyperref)                replaced by space on input line 292.
+
+[222] [223]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 12.0pt
+(hyperref)                replaced by space on input line 299.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 12.0pt
+(hyperref)                replaced by space on input line 301.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 12.0pt
+(hyperref)                replaced by space on input line 304.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 12.0pt
+(hyperref)                replaced by space on input line 313.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 12.0pt
+(hyperref)                replaced by space on input line 324.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 12.0pt
+(hyperref)                replaced by space on input line 346.
+
+[224]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 12.0pt
+(hyperref)                replaced by space on input line 356.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 12.0pt
+(hyperref)                replaced by space on input line 378.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 379--380
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 12.0pt
+(hyperref)                replaced by space on input line 382.
+
+[225]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 12.0pt
+(hyperref)                replaced by space on input line 386.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 12.0pt
+(hyperref)                replaced by space on input line 398.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 12.0pt
+(hyperref)                replaced by space on input line 411.
+
+[226]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 12.0pt
+(hyperref)                replaced by space on input line 421.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 12.0pt
+(hyperref)                replaced by space on input line 431.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 12.0pt
+(hyperref)                replaced by space on input line 436.
+
+[227]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 12.0pt
+(hyperref)                replaced by space on input line 447.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 12.0pt
+(hyperref)                replaced by space on input line 453.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 12.0pt
+(hyperref)                replaced by space on input line 463.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 12.0pt
+(hyperref)                replaced by space on input line 487.
+
+[228]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 12.0pt
+(hyperref)                replaced by space on input line 491.
+
+[229]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 12.0pt
+(hyperref)                replaced by space on input line 508.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 12.0pt
+(hyperref)                replaced by space on input line 512.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 12.0pt
+(hyperref)                replaced by space on input line 525.
+
+[230]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 12.0pt
+(hyperref)                replaced by space on input line 536.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 12.0pt
+(hyperref)                replaced by space on input line 544.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 12.0pt
+(hyperref)                replaced by space on input line 551.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 12.0pt
+(hyperref)                replaced by space on input line 559.
+
+[231]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 12.0pt
+(hyperref)                replaced by space on input line 579.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 12.0pt
+(hyperref)                replaced by space on input line 581.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 12.0pt
+(hyperref)                replaced by space on input line 590.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 12.0pt
+(hyperref)                replaced by space on input line 595.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 12.0pt
+(hyperref)                replaced by space on input line 598.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 599--600
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 12.0pt
+(hyperref)                replaced by space on input line 602.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 602.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 602.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 602.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 602.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 602.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 602.
+
+[232]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 12.0pt
+(hyperref)                replaced by space on input line 611.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 611.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 611.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 611.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 611--612
+
+
+Overfull \hbox (6.34734pt too wide) in paragraph at lines 613--616
+\OMS/cmsy/m/n/12 ^^M$ \T1/ptm/m/n/12 (-20) Ne-nhum  $\OMS/cmsy/m/n/12 ^^M$ \T1/
+ptm/m/n/12 (-20) Pou-cos ($\OML/cmm/m/it/12 <$\T1/ptm/m/n/12 (-20) 25%)  $\OMS/
+cmsy/m/n/12 ^^M$ \T1/ptm/m/n/12 (-20) Al-guns (25--50%)  $\OMS/cmsy/m/n/12 ^^M$
+ \T1/ptm/m/n/12 (-20) A mai-o-ria (50--75%)  $\OMS/cmsy/m/n/12 ^^M$ \T1/ptm/m/n
+/12 (-20) Quase
+
+Underfull \hbox (badness 10000) in paragraph at lines 630--634
+
+[233]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 12.0pt
+(hyperref)                replaced by space on input line 641.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 641.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 641.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 641.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 641--642
+
+[234]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 12.0pt
+(hyperref)                replaced by space on input line 668.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 668.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 668.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 668.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 668--669
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 701--701
+[]|\T1/ptm/b/n/10.95 (+20) CaracterÝsticas
+
+Underfull \hbox (badness 2846) in paragraph at lines 701--701
+[]|\T1/ptm/b/n/10.95 (+20) Culturas as-so-ci-a-
+
+Underfull \hbox (badness 1776) in paragraph at lines 701--702
+[]|\T1/ptm/b/n/10.95 (+20) Corresp. pe-do-l¾-gica
+[235]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 12.0pt
+(hyperref)                replaced by space on input line 719.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 719.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 719.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 719.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 719--720
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 12.0pt
+(hyperref)                replaced by space on input line 752.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 752.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 752.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 752.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 752--753
+
+[236]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 12.0pt
+(hyperref)                replaced by space on input line 793.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 793.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 793.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 793.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 793--794
+
+[237]
+Underfull \hbox (badness 4543) in paragraph at lines 805--806
+[]|$\OMS/cmsy/m/n/10.95 ^^M$ \T1/ptm/m/n/10.95 (+20) Sim (Ano: [])  $\OMS/cmsy/
+m/n/10.95 ^^M$ \T1/ptm/m/n/10.95 (+20) NÒo
+
+Underfull \hbox (badness 1540) in paragraph at lines 806--806
+[]|\T1/ptm/m/n/10.95 (+20) TÝtulo de pro-pri-e-dade co-le-tiva (IN-
+
+Underfull \hbox (badness 4543) in paragraph at lines 806--807
+[]|$\OMS/cmsy/m/n/10.95 ^^M$ \T1/ptm/m/n/10.95 (+20) Sim (Ano: [])  $\OMS/cmsy/
+m/n/10.95 ^^M$ \T1/ptm/m/n/10.95 (+20) NÒo
+
+Underfull \hbox (badness 10000) in paragraph at lines 829--829
+[]|\T1/ptm/m/n/10.95 (+20) Protocolo Co-mu-ni-tß-rio
+
+Underfull \hbox (badness 5460) in paragraph at lines 830--830
+[]|\T1/ptm/m/n/10.95 (+20) Registro de cul-ti-var tra-di-ci-o-nal
+
+Underfull \hbox (badness 5189) in paragraph at lines 831--832
+[]|$\OMS/cmsy/m/n/10.95 ^^M$ \T1/ptm/m/n/10.95 (+20) NÒo  $\OMS/cmsy/m/n/10.95 
+^^M$ \T1/ptm/m/n/10.95 (+20) Em pro-cesso  $\OMS/cmsy/m/n/10.95 ^^M$ \T1/ptm/m/
+n/10.95 (+20) Sim
+
+Underfull \hbox (badness 10000) in paragraph at lines 842--846
+
+[238]
+Underfull \hbox (badness 10000) in paragraph at lines 849--850
+
+
+Overfull \hbox (6.34734pt too wide) in paragraph at lines 855--858
+\OMS/cmsy/m/n/12 ^^M$ \T1/ptm/m/n/12 (-20) Ne-nhum  $\OMS/cmsy/m/n/12 ^^M$ \T1/
+ptm/m/n/12 (-20) Pou-cos ($\OML/cmm/m/it/12 <$\T1/ptm/m/n/12 (-20) 25%)  $\OMS/
+cmsy/m/n/12 ^^M$ \T1/ptm/m/n/12 (-20) Al-guns (25--50%)  $\OMS/cmsy/m/n/12 ^^M$
+ \T1/ptm/m/n/12 (-20) A mai-o-ria (50--75%)  $\OMS/cmsy/m/n/12 ^^M$ \T1/ptm/m/n
+/12 (-20) Quase
+[239]
+Underfull \hbox (badness 10000) in paragraph at lines 863--864
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 869--873
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 874--875
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 876--880
+
+[240]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 12.0pt
+(hyperref)                replaced by space on input line 889.
+
+
+Overfull \hbox (23.07295pt too wide) in paragraph at lines 897--910
+ [][] 
+)) [241] 
+enddocument/afterlastpage (AED): lastpage setting LastPage.
+(Tese-Catuxe-PPGPI.aux (PRE_TEXTUAL/Resumo.aux) (Pre_Textual/Abreviaturas.aux)
+(CONTEUDOS/INTRODUCAO/Introducao.aux) (CONTEUDOS/INTRODUCAO/Referencial.aux)
+(CONTEUDOS/METODOLOGIA/Metodologia.aux) (CAPITULOS/ARTIGO_1/Artigo_1.aux)
+(CAPITULOS/ARTIGO_2/Artigo_2.aux) (CAPITULOS/ARTIGO_3/Artigo_3.aux)
+(CAPITULOS/ARTIGO_4/Artigo_4.aux) (CAPITULOS/ARTIGO_5/Artigo_5.aux)
+(POS_TEXTUAL/Apendices.aux))
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package rerunfilecheck Warning: File `Tese-Catuxe-PPGPI.brf' has changed.
+(rerunfilecheck)                Rerun to get bibliographical references right.
+
+ )
+(see the transcript file for additional information)<C:/Users/vidal/AppData/Loc
+al/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/vidal/Ap
+pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Users/
+vidal/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><
+C:/Users/vidal/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmm
+i10.pfb><C:/Users/vidal/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
+ts/cm/cmmi12.pfb><C:/Users/vidal/AppData/Local/Programs/MiKTeX/fonts/type1/publ
+ic/amsfonts/cm/cmmi6.pfb><C:/Users/vidal/AppData/Local/Programs/MiKTeX/fonts/ty
+pe1/public/amsfonts/cm/cmmi8.pfb><C:/Users/vidal/AppData/Local/Programs/MiKTeX/
+fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Users/vidal/AppData/Local/Programs
+/MiKTeX/fonts/type1/public/amsfonts/cm/cmmib10.pfb><C:/Users/vidal/AppData/Loca
+l/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/vidal/AppD
+ata/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/vi
+dal/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/U
+sers/vidal/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pf
+b><C:/Users/vidal/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
+cmr8.pfb><C:/Users/vidal/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfo
+nts/cm/cmr9.pfb><C:/Users/vidal/AppData/Local/Programs/MiKTeX/fonts/type1/publi
+c/amsfonts/cm/cmsy10.pfb><C:/Users/vidal/AppData/Local/Programs/MiKTeX/fonts/ty
+pe1/public/amsfonts/cm/cmsy7.pfb><C:/Users/vidal/AppData/Local/Programs/MiKTeX/
+fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/vidal/AppData/Local/Programs
+/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Users/vidal/AppData/Local/
+Programs/MiKTeX/fonts/type1/public/lm/lmmi6.pfb><C:/Users/vidal/AppData/Local/P
+rograms/MiKTeX/fonts/type1/public/lm/lmmi7.pfb><C:/Users/vidal/AppData/Local/Pr
+ograms/MiKTeX/fonts/type1/public/lm/lmmi9.pfb><C:/Users/vidal/AppData/Local/Pro
+grams/MiKTeX/fonts/type1/public/lm/lmr5.pfb><C:/Users/vidal/AppData/Local/Progr
+ams/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/vidal/AppData/Local/Program
+s/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/vidal/AppData/Local/Programs/
+MiKTeX/fonts/type1/public/lm/lmr9.pfb><C:/Users/vidal/AppData/Local/Programs/Mi
+KTeX/fonts/type1/public/lm/lmri7.pfb><C:/Users/vidal/AppData/Local/Programs/MiK
+TeX/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/vidal/AppData/Local/Programs/M
+iKTeX/fonts/type1/public/lm/lmsy7.pfb><C:/Users/vidal/AppData/Local/Programs/Mi
+KTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/vidal/AppData/Loc
+al/Programs/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/vidal/AppData/L
+ocal/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/vidal/AppDat
+a/Local/Programs/MiKTeX/fonts/type1/urw/ncntrsbk/uncb8a.pfb><C:/Users/vidal/App
+Data/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/vidal/App
+Data/Local/Programs/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/vidal/Ap
+pData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/vidal/Ap
+pData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
+Output written on Tese-Catuxe-PPGPI.pdf (242 pages, 7214502 bytes).
+Transcript written on Tese-Catuxe-PPGPI.log.

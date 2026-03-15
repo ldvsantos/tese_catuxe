@@ -1,0 +1,133 @@
+% Fluxograma pós-PRISMA: Pipeline analítico da revisão sistemática
+% Requer: tikz, positioning, arrows.meta, shapes.geometric, calc, fit, backgrounds
+% (já carregados no preâmbulo da tese)
+
+\definecolor{violetA}{HTML}{6D28D9}
+\definecolor{violetB}{HTML}{8B5CF6}
+\definecolor{roseA}{HTML}{BE185D}
+\definecolor{emeraldA}{HTML}{047857}
+\definecolor{slateG}{HTML}{475569}
+\definecolor{amberA}{HTML}{D97706}
+\definecolor{amberC}{HTML}{FEF3C7}
+
+\begin{tikzpicture}[
+  phase/.style={
+    fill=#1!12, draw=#1!60,
+    font=\sffamily\bfseries\small,
+    minimum width=2.2cm, minimum height=0.8cm,
+    align=center, rounded corners=3pt,
+    line width=0.6pt
+  },
+  mainbox/.style={
+    draw=slateG!50, fill=white,
+    font=\small, align=center,
+    minimum width=7.0cm, minimum height=1.0cm,
+    rounded corners=4pt, text width=6.8cm,
+    line width=0.7pt
+  },
+  stepbox/.style={
+    draw=#1!50, fill=#1!6,
+    font=\small, align=center,
+    minimum width=6.4cm, minimum height=0.9cm,
+    rounded corners=3pt, text width=6.2cm,
+    line width=0.6pt
+  },
+  metricbox/.style={
+    draw=amberA!60, fill=amberC!40,
+    font=\small, align=center,
+    minimum width=5.0cm, minimum height=0.9cm,
+    rounded corners=3pt, text width=4.8cm,
+    line width=0.6pt, dashed
+  },
+  outputbox/.style={
+    draw=#1!70, fill=#1!15,
+    font=\small\bfseries, align=center,
+    minimum width=7.0cm, minimum height=1.0cm,
+    rounded corners=4pt, text width=6.8cm,
+    line width=1pt
+  },
+  arr/.style={-{Stealth[length=5pt]}, thick, slateG!70},
+  darr/.style={-{Stealth[length=4pt]}, thin, slateG!40, dashed},
+  node distance=0.55cm
+]
+
+%% ═══ ENTRADA: Corpus PRISMA ═══
+\node[phase=slateG] (ph0) {ENTRADA\\[-2pt]{\scriptsize PRISMA}};
+
+\node[mainbox, right=0.7cm of ph0] (input)
+  {Corpus p\'os-triagem PRISMA-ScR\\[-2pt]
+   {\scriptsize 605 registros (Scopus + Web of Science) $\cdot$ 2015--2025}};
+
+%% ═══ FASE 1: Filtragem Automatizada ═══
+\node[phase=violetA, below=0.9cm of ph0] (ph1)
+  {FASE~1\\[-2pt]{\scriptsize Filtragem}};
+
+\node[stepbox=violetB, right=0.7cm of ph1] (scoring)
+  {Sistema automatizado de pontua\c{c}\~ao ponderada\\[-2pt]
+   {\scriptsize Python (NLTK, spaCy) $\cdot$ Esquema AHP hier\'arquico}\\[-2pt]
+   {\scriptsize 5 categorias de descritores $\cdot$ T\'{\i}tulo, Resumo, Palavras-chave}};
+\draw[arr] (input) -- (scoring);
+
+\node[metricbox, right=1.6cm of scoring] (metr1)
+  {Precis\~ao autom\'atica: 94,2\%\\[-2pt]
+   Pondera\c{c}\~ao: Excel\^encia $>$ Alta\\[-2pt]
+   $>$ Adequada $>$ Marginal};
+\draw[darr] (scoring) -- (metr1);
+
+%% ═══ FASE 2: Avaliação de Qualidade ═══
+\node[phase=roseA, below=0.9cm of ph1] (ph2)
+  {FASE~2\\[-2pt]{\scriptsize Qualidade}};
+
+\node[stepbox=roseA, right=0.7cm of ph2] (mmat)
+  {Avalia\c{c}\~ao manual de qualidade metodol\'ogica\\[-2pt]
+   {\scriptsize MMAT adaptado $\cdot$ 3 revisores independentes}\\[-2pt]
+   {\scriptsize 8 indicadores (Likert 3 pts) $\cdot$ ICC = 0,87}};
+\draw[arr] (scoring) -- (mmat);
+
+\node[metricbox, right=1.6cm of mmat] (metr2)
+  {187 estudos selecionados (30,9\%)\\[-2pt]
+   Integra\c{c}\~ao metodol\'ogica\\[-2pt]
+   Transpar\^encia algor\'{\i}tmica\\[-2pt]
+   {\scriptsize \'Etica participativa}};
+\draw[darr] (mmat) -- (metr2);
+
+%% ═══ FASE 3: Bibliometria ═══
+\node[phase=emeraldA, below=0.9cm of ph2] (ph3)
+  {FASE~3\\[-2pt]{\scriptsize Bibliometria}};
+
+\node[stepbox=emeraldA, right=0.7cm of ph3] (biblio)
+  {An\'alise bibliom\'etrica e redes de colabora\c{c}\~ao\\[-2pt]
+   {\scriptsize Lei de Lotka $\cdot$ VOSviewer $\cdot$ Cocita\c{c}\~ao}\\[-2pt]
+   {\scriptsize Redes de coautoria $\cdot$ Clusters tem\'aticos $\cdot$ Evolu\c{c}\~ao temporal}};
+\draw[arr] (mmat) -- (biblio);
+
+%% ═══ FASE 4: Síntese ═══
+\node[phase=amberA, below=0.9cm of ph3] (ph4)
+  {FASE~4\\[-2pt]{\scriptsize S\'{\i}ntese}};
+
+\node[stepbox=amberA, right=0.7cm of ph4] (sintese)
+  {S\'{\i}ntese qualitativa e quantitativa\\[-2pt]
+   {\scriptsize Princ\'{\i}pio de Pareto (80/20)}\\[-2pt]
+   {\scriptsize Pesos: 40\% qualidade met. $\mid$ 35\% relev\^ancia $\mid$ 25\% bibliometria}};
+\draw[arr] (biblio) -- (sintese);
+
+\node[metricbox, right=1.6cm of sintese] (metr4)
+  {$P_{final} = 0{,}40 \cdot Q_{met} + 0{,}35 \cdot Q_{tem}$\\[-2pt]
+   $+ \; 0{,}25 \cdot Q_{biblio}$\\[-2pt]
+   {\scriptsize An\'alise tem\'atica + meta-an\'alise}};
+\draw[darr] (sintese) -- (metr4);
+
+%% ═══ SAÍDA ═══
+\node[outputbox=violetA, below=0.9cm of sintese] (saida)
+  {Corpus final de excel\^encia\\[-2pt]
+   {\scriptsize 20\% dos artigos com maior pontua\c{c}\~ao combinada}\\[-2pt]
+   {\scriptsize $\approx$ 80\% do impacto cient\'{\i}fico total}};
+\draw[arr] (sintese) -- (saida);
+
+%% ═══ VALIDAÇÃO (lateral) ═══
+\node[stepbox=slateG, below=0.5cm of saida, text width=6.8cm, minimum width=7.0cm] (valid)
+  {Valida\c{c}\~ao AMSTAR-2\\[-2pt]
+   {\scriptsize Conformidade com padr\~oes de qualidade para revis\~oes sistem\'aticas}};
+\draw[darr] (saida) -- (valid);
+
+\end{tikzpicture}

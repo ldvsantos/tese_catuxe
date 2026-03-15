@@ -11,17 +11,15 @@ O estudo emprega a estrutura PCC (\textit{População, Conceito, Contexto}) para
   \centering
   \caption{Estrutura da revisão de escopo de acordo com a estrutura PCC}
   \label{tab:pcc}
-  \resizebox{\textwidth}{!}{%
-    \begin{tabular}{ll}
-      \hline
-      \textbf{Elemento} & \textbf{Descrição} \\
-      \hline
-      \textbf{P (População)} & Comunidades tradicionais, povos indígenas e agricultores familiares que detêm conhecimentos tradicionais sobre agroecologia, conservação da biodiversidade e sistemas agrícolas sustentáveis. \\
-      \textbf{C (Conceito)} & Machine Learning, Inteligência Artificial, algoritmos de classificação e predição, métodos de mineração de dados e Processamento de Linguagem Natural aplicados a estudos etnográficos e mapeamento de conhecimentos tradicionais. \\
-      \textbf{C (Contexto)} & Estudos etnográficos, pesquisa participativa, mapeamento de conhecimentos tradicionais, agroecologia, conservação ambiental, biodiversidade e sistemas agrícolas sustentáveis. \\
-      \hline
-    \end{tabular}%
-  }
+  \begin{tabular}{@{}p{3.2cm}p{11.5cm}@{}}
+    \toprule
+    \textbf{Elemento} & \textbf{Descrição} \\
+    \midrule
+    \textbf{P (População)} & Comunidades tradicionais, povos indígenas e agricultores familiares que detêm conhecimentos tradicionais sobre agroecologia, conservação da biodiversidade e sistemas agrícolas sustentáveis. \\[6pt]
+    \textbf{C (Conceito)} & Machine Learning, Inteligência Artificial, algoritmos de classificação e predição, métodos de mineração de dados e Processamento de Linguagem Natural aplicados a estudos etnográficos e mapeamento de conhecimentos tradicionais. \\[6pt]
+    \textbf{C (Contexto)} & Estudos etnográficos, pesquisa participativa, mapeamento de conhecimentos tradicionais, agroecologia, conservação ambiental, biodiversidade e sistemas agrícolas sustentáveis. \\
+    \bottomrule
+  \end{tabular}
 \end{table}
 
 Este estudo identifica e caracteriza aplicações de ML relatadas na literatura, categorizando técnicas por tipo de algoritmo, abordagem metodológica e métricas de desempenho. Além disso, analisa a distribuição de aplicações por tipo de produto, região geográfica e período de tempo, identificando lacunas metodológicas, limitações e direções para pesquisas futuras.
@@ -33,7 +31,7 @@ A Figura \ref{fig:prisma} apresenta o fluxograma metodológico, estruturado em q
 \begin{figure}[H]
   \centering
   \caption{Fluxograma da Revisão de Escopo sobre Aplicações de Machine Learning em Indicações Geográficas}
-  \includegraphics[scale=0.8]{Imagens/PROCESSO/diagramas/prisma_flowdiagram.png}
+  \includegraphics[width=\textwidth]{Imagens/PROCESSO/diagramas/prisma_flowdiagram.png}
   \fonte{\textbf{Elaborado pelos autores} (2024)}
   \label{fig:prisma_met}
 \end{figure}
@@ -187,7 +185,7 @@ O algoritmo analisa títulos, abstracts e palavras-chave de cada entrada bibliog
 
 O processo de filtragem foi aplicado a um corpus inicial de 1.412 referências bibliográficas extraídas das bases de dados. O algoritmo estabeleceu um limiar de pontuação mínima de 5.0 pontos para inclusão, baseado em análise estatística da distribuição de pontuações e validação manual de uma amostra representativa de 200 artigos (IC 95\%, margem de erro ±7\%).
 
-O sistema demonstrou desempenho robusto, com taxa de retenção de 42,8\% (605 referências selecionadas de 1.412 iniciais), precisão temática de 94,2\% (validada por revisão manual de amostra aleatória), reprodutibilidade de 100\% (resultados idênticos em execuções múltiplas) e tempo de processamento de 4,3 minutos para o corpus completo, equivalente a uma eficiência 15 vezes superior ao método manual.
+O sistema apresentou desempenho consistente, com taxa de retenção de 42,8\% (605 referências selecionadas de 1.412 iniciais), precisão temática de 94,2\% (validada por revisão manual de amostra aleatória), reprodutibilidade de 100\% (resultados idênticos em execuções múltiplas) e tempo de processamento de 4,3 minutos para o corpus completo, equivalente a uma eficiência 15 vezes superior ao método manual.
 
 A distribuição das referências filtradas por faixas de pontuação revelou: 47 referências (7.8\%) com pontuação 9-10 (excelência temática), 134 referências (22.1\%) com pontuação 7-8 (alta relevância), e 424 referências (70.1\%) com pontuação 5-6 (relevância adequada).
 
@@ -204,7 +202,7 @@ O processo de validação confirmou a robustez metodológica do sistema, com tax
 %ENDEREÇO DOS SCRIPTS
 %Complementarmente ao processo de filtragem, foi desenvolvido um sistema automatizado para verificação da cobertura bibliográfica das citações metodológicas utilizadas na tese. O algoritmo, implementado através do script \texttt{verificar\_metodologia\_completo.py}, extraiu e analisou todas as citações presentes nos arquivos de metodologia (\texttt{Met\_psicometrica.tex}, \texttt{metodologia\_rs.tex} e \texttt{Met\_machine\_learning.tex}), identificando 57 citações únicas.
 
-Complementarmente ao processo de filtragem das referências utilizadas, foi desenvolvido um sistema automatizado destinado à verificação da cobertura bibliográfica das citações incluídas na corpus. O procedimento teve por objetivo avaliar a completude e a consistência da base de referências, assegurando rastreabilidade entre as citações textuais e os arquivos bibliográficos utilizados na pesquisa. A bibliografia principal (\texttt{references.bib}) apresentou 17 citações identificadas, correspondendo a 29,8\% de cobertura inicial, enquanto os arquivos de backup bibliográfico (\texttt{references\_backup.bib} com 5.043 referências, \texttt{library\_diego.bib} com 994 referências e \texttt{referencias\_encontradas\_para\_adicionar.bib} com 1.412 referências) permitiram a recuperação automatizada de 12 referências adicionais integradas à bibliografia principal.
+Complementarmente ao processo de filtragem, foi desenvolvido um sistema automatizado para verificação da cobertura bibliográfica das citações incluídas no corpus, com o objetivo de assegurar completude e rastreabilidade entre as citações textuais e a base de referências da pesquisa. A verificação identificou 17 citações na bibliografia principal, correspondendo a 29,8\% de cobertura inicial, e a consulta a bases bibliográficas complementares (totalizando 7.449 referências) permitiu a recuperação automatizada de 12 referências adicionais integradas ao acervo principal.
 
 \subsubsection{\textit{Categorização Automatizada das Referências}}
 
@@ -302,7 +300,9 @@ A Figura \ref{fig:2} apresenta o fluxograma completo do processo de revisão sis
 \begin{figure}[H]
   \centering
   \caption{Fluxograma da revisão sistemática para machine learning em estudos etnográficos}
-  \includegraphics[scale=0.5]{IMAGENS/fig_2.jpg}
+  \resizebox{\linewidth}{!}{%
+    \input{Imagens/PROCESSO/diagramas/fluxograma_rs_pos_prisma.tex}%
+  }
   \fonte{\textbf{Elaborado pelos autores} (2024)}
   \label{fig:2}
 \end{figure}

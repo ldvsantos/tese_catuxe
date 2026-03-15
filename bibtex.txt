@@ -1,0 +1,10 @@
+﻿This is BibTeX, Version 0.99e (MiKTeX 25.12)
+The top-level auxiliary file: Tese-Catuxe-PPGPI.aux
+The style file: abntex2-alf.bst
+Database file #1: abntex2-options.bib
+Database file #2: references.bib
++---------------------------------------------------------+
+| Estilo bibliogr├ífico abntex2-alf.bst vers├úo v-1.9.7           |
+| Em caso de d├║vidas ou problemas com este estilo procure |
+| http://www.abntex.net.br/                               |
++---------------------------------------------------------+
