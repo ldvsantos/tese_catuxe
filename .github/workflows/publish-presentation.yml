@@ -1,0 +1,54 @@
+name: Publicar Apresentação no GitHub Pages
+
+on:
+  push:
+    branches: [master]
+    paths:
+      - '3-APRESENTACAO/**'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repositório
+        uses: actions/checkout@v4
+
+      - name: Instalar Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+
+      - name: Renderizar apresentação
+        run: |
+          cd 3-APRESENTACAO
+          quarto render apresentacao_tese.qmd
+
+      - name: Preparar site para deploy
+        run: |
+          mkdir -p _site
+          cp 3-APRESENTACAO/apresentacao_tese.html _site/index.html
+          cp -r 3-APRESENTACAO/assets _site/assets 2>/dev/null || true
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy no GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
