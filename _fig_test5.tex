@@ -1,0 +1,30 @@
+﻿\pdfminorversion=7
+\documentclass[brazil,msc]{ppgpi-abntex2}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{pdflscape}
+\usepackage{float}
+\usepackage{adjustbox}
+\usepackage{tikz}
+\usetikzlibrary{positioning, arrows.meta, shapes.geometric, calc, fit, backgrounds}
+\makeatletter
+\providecommand\insert@pcolumn{\insert@column}
+\makeatother
+\begin{document}
+Page 1 before.
+\begin{landscape}
+\typeout{PAGEGOAL=\the\pagegoal}
+\typeout{PAGETOTAL-BEFORE=\the\pagetotal}
+\begin{figure}[H]
+  \centering
+  \caption{Fluxograma da revisao sistematica para machine learning em estudos etnograficos}
+  \adjustbox{max size={\linewidth}{\dimexpr\textheight-4cm\relax}}{%
+    \input{Imagens/PROCESSO/diagramas/fluxograma_rs_pos_prisma.tex}%
+  }
+  \par\small\textbf{Fonte:} Elaborado pelos autores (2024)
+  \label{fig:test2}
+\end{figure}
+\typeout{PAGETOTAL-AFTER=\the\pagetotal}
+\end{landscape}
+Page 3 after.
+\end{document}

@@ -1,0 +1,26 @@
+﻿\pdfminorversion=7
+\documentclass[brazil,msc]{ppgpi-abntex2}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{pdflscape}
+\usepackage{float}
+\usepackage{adjustbox}
+\usepackage{tikz}
+\usetikzlibrary{positioning, arrows.meta, shapes.geometric, calc, fit, backgrounds}
+\makeatletter
+\providecommand\insert@pcolumn{\insert@column}
+\makeatother
+\begin{document}
+Page before figure.
+\begin{landscape}
+\begin{figure}[H]
+  \centering
+  \caption{Fluxograma}
+  \adjustbox{max size={\linewidth}{\dimexpr\textheight-3cm\relax}}{%
+    \input{Imagens/PROCESSO/diagramas/fluxograma_rs_pos_prisma.tex}%
+  }
+  \par\small\textbf{Fonte:} Autores (2024)
+\end{figure}
+\end{landscape}
+Page after figure.
+\end{document}

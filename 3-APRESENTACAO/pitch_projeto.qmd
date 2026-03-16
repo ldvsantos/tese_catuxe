@@ -1,0 +1,308 @@
+---
+title: "Projeto de Tese de Doutorado"
+subtitle: "Modelo Computacional para Salvaguarda de Saberes Agrícolas<br>Tradicionais como Ativos Intangíveis em Comunidades<br>Quilombolas do Semiárido Nordeste II"
+author: "Catuxe Varjão de Santana Oliveira"
+institute: "Programa de Pós-Graduação em Ciência da<br>Propriedade Intelectual – PPGPI/UFS"
+format: 
+  revealjs:
+    logo: assets/logo-ufs.png
+    footer: "PPGPI/UFS – Doutorado | Catuxe Varjão de Santana Oliveira"
+    slide-number: c/t
+    theme: [simple, assets/ufs.scss]
+    controls: true
+    controls-layout: bottom-right
+    width: 1280
+    height: 720
+    css: assets/custom.css
+    include-after-body: 
+      - assets/image-lightbox.html
+      - assets/progress-bar.html
+    transition: slide
+    background-transition: fade
+    touch: true
+    navigation-mode: linear
+    embed-resources: true
+    auto-stretch: true
+    min-scale: 0.2
+    max-scale: 2.0
+    margin: 0.04
+execute:
+  echo: false
+---
+
+## O Problema {.smaller-text}
+
+::: {.columns}
+::: {.column width="55%"}
+### Saberes Agrícolas Tradicionais em Risco
+
+Comunidades quilombolas do Semiárido detêm **saberes agrícolas milenares** (etnopedológicos, etnoclimatológicos, agroecológicos) transmitidos oralmente entre gerações.
+
+Esses saberes são:
+
+- **Invisíveis** aos sistemas formais de proteção intelectual
+- **Subprecificados** e vulneráveis a apropriação indevida
+- **Sem registro** que permita salvaguarda jurídica
+- Em **erosão acelerada** por migração juvenil e mudança climática
+:::
+
+::: {.column width="45%"}
+::: {.highlight-box}
+**Lacuna Científica**
+
+Não existe modelo computacional integrado capaz de transformar dados bioculturais em dossiês juridicamente válidos para a salvaguarda de saberes agrícolas tradicionais como ativos intangíveis.
+:::
+
+::: {.info-box}
+**Território:** 11 comunidades quilombolas, Jeremoabo (BA), Semiárido Nordeste II
+:::
+:::
+:::
+
+---
+
+## Objetivo da Tese {.smaller-text}
+
+::: {.highlight-box}
+**Desenvolver e validar modelo integrado** de decodificação e salvaguarda, articulando Machine Learning, lógica fuzzy e modelagem psicométrica, para documentar e proteger ativos intangíveis em Saberes e Sistemas Agrícolas Tradicionais de comunidades quilombolas do Semiárido Nordeste II.
+:::
+
+### 6 Objetivos Específicos → 6 Capítulos (Artigos)
+
+| Cap. | Objetivo Específico | Status |
+|:----:|---------------------|:------:|
+| 1 | Mapear o estado da arte em ML aplicado a sistemas agrícolas tradicionais (Revisão PRISMA-ScR) | ✅ |
+| 2 | Hierarquizar as 8 dimensões de vulnerabilidade biocultural por magnitude de efeito (Meta-análise) | ✅ |
+| 3 | Converter saberes tácitos em variáveis computacionais via adaptação transcultural WOCAT + Delphi | ⏳ |
+| 4 | Desenvolver o Índice de Salvaguarda Biocultural (ISB) por calibração TRI + inferência Fuzzy | ⏳ |
+| 5 | Automatizar auditoria normativa dos dossiês com Redes Bayesianas, SBERT e DLT | ⏳ |
+| 6 | Validar adoção territorial do modelo via design participativo com comunidades quilombolas (a verificar) | 🔮 |
+
+---
+
+## Arquitetura Metodológica {.smaller-text}
+
+![Pipeline Operacional – Arquitetura em Y Convergente](assets/pipeline-operacional.png){fig-align="center" width="92%"}
+
+---
+
+## Resultados – Cap. 1: Revisão de Escopo {.smaller-text}
+
+::: {.columns}
+::: {.column width="45%"}
+### ML em Sistemas Agrícolas Tradicionais
+
+- **244 estudos** analisados (2010–2025)
+- Acurácia corrigida: **89,1%** (IC 95%: 88,2–90,0%)
+- Heterogeneidade moderada (I² = 58%)
+
+::: {.highlight-box}
+**Achado-chave: prontidão insuficiente**
+
+- Conformidade FAIR: **18,7/100**
+- Código disponível: **1,08%**
+- XAI inexistente nos 244 estudos
+- Viés de publicação: Egger p = 0,009
+:::
+:::
+
+::: {.column width="55%"}
+![Forest plot – acurácia combinada por família de algoritmo](assets/meta_analise_algoritmos.png){fig-align="center" width="100%"}
+:::
+:::
+
+---
+
+## Resultados – Cap. 2: Meta-análise de Vulnerabilidade {.smaller-text}
+
+::: {.columns}
+::: {.column width="42%"}
+### 8 Dimensões Hierarquizadas
+
+| Dim. | lnRR | Mudança |
+|------|-----:|--------:|
+| **V₄ Jurídica** | −0,279 | **−24,3%** |
+| **V₈ Climática** | +0,280 | **+32,3%** |
+| V₅ Org. Social | +0,172 | +18,7% |
+| V₁–V₃, V₆, V₇ | ≈ 0 | Variável |
+
+::: {.highlight-box}
+**Prioridades de intervenção**
+
+- V₄ (fragilidade jurídico-fundiária): erosão de 24,3%
+- V₈ (exposição climática): incremento de 32,3%
+- Florestas sagradas: proteção máxima (β = +1,5)
+:::
+:::
+
+::: {.column width="58%"}
+![Forest plot agregado – dimensões V₁ a V₈](assets/forest_agregado_V1_V8.png){fig-align="center" width="100%"}
+:::
+:::
+
+---
+
+## Resultados Parciais – Cap. 3: Instrumento WOCAT-SLM-QBR {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Adaptação Transcultural (Beaton)
+
+- Protocolo de 6 etapas com comitê misto (especialistas + mestres quilombolas)
+- **IVC ≥ 0,90** · Kappa ≥ 0,75
+- CVC validado pelo comitê
+
+### Elicitação Delphi
+
+- 10–15 especialistas · 3 rodadas
+- Meta: W Kendall ≥ 0,70 · CVC ≥ 0,80
+:::
+
+::: {.column width="50%"}
+### Área de Estudo
+
+![Território Semiárido Nordeste II – Jeremoabo, BA](assets/territorio_satelite.png){fig-align="center" width="100%"}
+:::
+:::
+
+---
+
+## Capítulos Futuros (4–6) {.smaller-text}
+
+::: {.columns}
+::: {.column width="33%"}
+### Cap. 4 – Índice ISB
+
+**TRI + Fuzzy Mamdani**
+
+- Calibração psicométrica (Crédito Parcial)
+- 50–100 regras SE-ENTÃO
+- ISB: 0–100, 5 níveis de vulnerabilidade
+- n = 30–40 respondentes
+
+::: {.info-box}
+Integra as 8 dimensões (V₁–V₈) em índice único com tratamento de incerteza
+:::
+:::
+
+::: {.column width="33%"}
+### Cap. 5 – Auditoria
+
+**BN + SBERT + DLT**
+
+- Conformidade automática com IPHAN, INPI, CGen e FAO
+- Ancoragem criptográfica (DLT)
+- 3–5 dossiês quilombolas piloto
+
+::: {.info-box}
+Rastreabilidade e padronização superiores à verificação manual
+:::
+:::
+
+::: {.column width="34%"}
+### Cap. 6 – Validação
+
+**Design Participativo**
+
+- Co-design com 2–3 comunidades
+- Protótipo Python/Streamlit
+- SUS ≥ 70 · Adoção ≥ 60%
+- Avaliação longitudinal (6–12 meses)
+
+::: {.info-box}
+Legitimidade comunitária e sustentabilidade da adoção
+:::
+:::
+:::
+
+---
+
+## Contribuições Esperadas {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Contribuições Científicas
+
+- **Primeiro modelo computacional integrado** (ML + TRI-Fuzzy + BN/NLP/DLT) para salvaguarda de saberes agrícolas tradicionais
+- **ISB:** índice psicométrico-fuzzy inédito para vulnerabilidade biocultural
+- **Meta-análise hierárquica** das 8 dimensões de vulnerabilidade com moderadores regionais
+- **Adaptação transcultural** do WOCAT-SLM para quilombolas brasileiros
+
+### Contribuições Metodológicas
+
+- Pipeline replicável para conversão de conhecimento tácito em variáveis computacionais
+- Auditoria normativa automatizada com ancoragem criptográfica
+:::
+
+::: {.column width="50%"}
+### Impacto Aplicado
+
+::: {.highlight-box}
+**Para as comunidades:**
+
+- Dossiês juridicamente válidos para proteção de saberes
+- Ferramenta de autodiagnóstico de vulnerabilidade
+- Registro rastreável e auditável de práticas
+:::
+
+::: {.info-box}
+**Para políticas públicas:**
+
+- Instrumento para IPHAN, INPI, CGen e FAO-GIAHS
+- Priorização baseada em evidência (V₄ e V₈)
+- Modelo extensível a outras comunidades tradicionais
+:::
+:::
+:::
+
+---
+
+## Cronograma e Situação Atual {.smaller-text}
+
+::: {.columns}
+::: {.column width="60%"}
+
+| Etapa | Período | Status |
+|-------|---------|:------:|
+| Cap. 1 – Revisão PRISMA-ScR | 2024.1–2024.2 | ✅ Concluído |
+| Cap. 2 – Meta-análise | 2024.2–2025.1 | ✅ Concluído |
+| Cap. 3 – WOCAT + Delphi | 2025.1–2025.2 | ⏳ Em andamento |
+| **Qualificação** | **2025.1** | **⏳ Próximo** |
+| Cap. 4 – ISB (TRI + Fuzzy) | 2025.2–2026.1 | Planejado |
+| Cap. 5 – Auditoria computacional | 2026.1–2026.2 | Planejado |
+| Cap. 6 – Design participativo | 2026.2–2027.1 | Planejado |
+| Defesa | 2027.1 | Planejado |
+
+:::
+
+::: {.column width="40%"}
+::: {.highlight-box}
+**Situação**
+
+- 2 capítulos concluídos (artigos em preparação para submissão)
+- 1 capítulo em andamento (campo + Delphi)
+- CEP aprovado (CAAE: 23853219.4.0000.5546)
+- Pipeline computacional em desenvolvimento
+:::
+:::
+:::
+
+---
+
+## {.smaller-text}
+
+::: {style="text-align: center; padding-top: 80px;"}
+
+### Obrigada pela atenção!
+
+**Catuxe Varjão de Santana Oliveira**
+
+Programa de Pós-Graduação em Ciência da Propriedade Intelectual – PPGPI/UFS
+
+<br>
+
+::: {.info-box}
+**Contato para discussão de orientação e colaboração**
+:::
+
+:::

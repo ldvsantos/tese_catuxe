@@ -1,0 +1,27 @@
+﻿\pdfminorversion=7
+\documentclass[brazil,msc]{ppgpi-abntex2}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{pdflscape}
+\usepackage{float}
+\usepackage{adjustbox}
+\usepackage{tikz}
+\usetikzlibrary{positioning, arrows.meta, shapes.geometric, calc, fit, backgrounds}
+\makeatletter
+\providecommand\insert@pcolumn{\insert@column}
+\makeatother
+\begin{document}
+\begin{landscape}
+\typeout{INSIDE-LANDSCAPE-linewidth=\the\linewidth}
+\typeout{INSIDE-LANDSCAPE-textheight=\the\textheight}
+\typeout{INSIDE-LANDSCAPE-textwidth=\the\textwidth}
+\newbox\testbox
+\savebox\testbox{\adjustbox{max size={\linewidth}{\dimexpr\textheight-3cm\relax}}{\input{Imagens/PROCESSO/diagramas/fluxograma_rs_pos_prisma.tex}}}
+\typeout{SCALED-WIDTH=\the\wd\testbox}
+\typeout{SCALED-HEIGHT=\the\ht\testbox}
+\typeout{SCALED-DEPTH=\the\dp\testbox}
+\typeout{SCALED-TOTAL=\the\dimexpr\ht\testbox+\dp\testbox\relax}
+\typeout{TARGET-MAX-H=\the\dimexpr\textheight-3cm\relax}
+test
+\end{landscape}
+\end{document}

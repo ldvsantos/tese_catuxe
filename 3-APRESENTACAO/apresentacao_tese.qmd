@@ -7,7 +7,7 @@ format:
   revealjs:
     logo: assets/logo-ufs.png
     footer: "PPGPI/UFS – Qualificação de Doutorado | Catuxe Varjão de Santana Oliveira"
-    slide-number: false
+    slide-number: c/t
     theme: [simple, assets/ufs.scss]
     controls: true
     controls-layout: bottom-right

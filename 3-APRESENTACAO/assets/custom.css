@@ -295,9 +295,26 @@ section.title-slide .date,
   background-position: left center;
 }
 
-/* Slide number: oculto (substituído pela barra de progresso) */
+/* Slide number: dentro do footer, coluna direita */
 .reveal .slide-number {
-  display: none !important;
+  display: block !important;
+  position: fixed !important;
+  bottom: 0 !important;
+  right: 0 !important;
+  left: auto !important;
+  top: auto !important;
+  background: var(--ufs-amarelo) !important;
+  color: var(--ufs-azul) !important;
+  font-family: 'Ubuntu', sans-serif !important;
+  font-size: 0.5em !important;
+  font-weight: 600 !important;
+  padding: 3px 12px !important;
+  border-top: 2px solid var(--ufs-azul) !important;
+  min-height: 24px !important;
+  max-height: 30px !important;
+  line-height: 24px !important;
+  z-index: 1001 !important;
+  text-align: right !important;
 }
 
 /* ---- Barra de Progresso Superior ---- */

@@ -1,0 +1,33 @@
+﻿\pdfminorversion=7
+\documentclass[brazil,msc]{ppgpi-abntex2}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{pdflscape}
+\usepackage{float}
+\usepackage{adjustbox}
+\usepackage{tikz}
+\usetikzlibrary{positioning, arrows.meta, shapes.geometric, calc, fit, backgrounds}
+\makeatletter
+\providecommand\insert@pcolumn{\insert@column}
+\makeatother
+\newcommand{\fonte}[1]{\par\small\textbf{Fonte:} #1}
+\begin{document}
+Pre.
+\begin{landscape}
+\newbox\testbox
+\savebox\testbox{\input{Imagens/PROCESSO/diagramas/fluxograma_rs_pos_prisma.tex}}
+\typeout{NAT-W=\the\wd\testbox}
+\typeout{NAT-H=\the\dimexpr\ht\testbox+\dp\testbox\relax}
+\typeout{AVAIL-LW=\the\linewidth}
+\typeout{AVAIL-TH=\the\textheight}
+\begin{figure}[H]
+  \centering
+  \caption{Fluxograma da revisao}
+  \adjustbox{max totalsize={\linewidth}{\dimexpr\textheight-5cm\relax}}{%
+    \input{Imagens/PROCESSO/diagramas/fluxograma_rs_pos_prisma.tex}%
+  }
+  \fonte{Autores (2024)}
+\end{figure}
+\end{landscape}
+Post.
+\end{document}
